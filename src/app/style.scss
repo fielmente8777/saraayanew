@@ -1,0 +1,242 @@
+@layer utilities {
+  p {
+    @media (width > 768px) {
+      font-size: 1.125rem; // 18px
+    }
+  }
+  a,
+  button {
+    cursor: pointer;
+  }
+  .demo {
+    .swiper {
+      pointer-events: none;
+    }
+    .swiper-wrapper {
+      transition-timing-function: linear !important;
+    }
+  }
+
+  .box-shadow {
+    box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+  }
+
+  .md-box-shadow {
+    @media (min-width: 768px) {
+      box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+    }
+  }
+
+  .image-border {
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0.5rem;
+      border: 2px solid #fff;
+      z-index: 10;
+      border-radius: 24px;
+      @media (width <= 768px) {
+        inset: 0.25rem;
+        border: 0.5px solid #fff;
+        border-radius: 12px;
+      }
+    }
+  }
+  // container sizes
+
+  .max_screen_width {
+    max-width: 1600px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  // container sizes for xl, lg, md, sm screens
+
+  .max_width {
+    max-width: 100%;
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    @media (min-width: 768px) {
+      max-width: 720px;
+      padding-inline: 1rem;
+    }
+    @media (min-width: 992px) {
+      max-width: 960px;
+      padding-inline: 1rem;
+    }
+    @media (min-width: 1200px) {
+      max-width: 1140px;
+      padding-inline: 1rem;
+    }
+    @media (min-width: 1400px) {
+      max-width: 1320px;
+      padding-inline: 0;
+    }
+  }
+  // mobile desktop and across all devices
+
+  .line {
+    h1,
+    h2,
+    h3,
+    h4 {
+      i {
+        position: relative;
+        overflow-y: auto;
+        padding-bottom: 0.6rem;
+        font-style: italic;
+        color: var(--secondary);
+        &::before {
+          content: "";
+          position: absolute;
+          // border: 1px solid black;
+          bottom: -3px;
+          inset-inline: 0;
+          height: 12px;
+          background: url("/line-2.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+
+          z-index: 1;
+        }
+      }
+    }
+  }
+ .line2 {
+    h1,
+    h2,
+    h3,
+    h4 {
+      i {
+        position: relative;
+        overflow-y: auto;
+        padding-bottom: 0.6rem;
+        font-style: italic;
+        &::before {
+          content: "";
+          position: absolute;
+          // border: 1px solid black;
+          bottom: -3px;
+          inset-inline: 0;
+          height: 12px;
+          background: url("/line-2.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+
+          z-index: 1;
+        }
+      }
+    }
+  }
+  .hide-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scroll {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+// customize scrollbar
+::-webkit-scrollbar {
+  width: 7px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--light);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
+// hide scrollbar
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Swiper adds this class automatically */
+.swiper-slide-thumb-active {
+  .sector-index {
+    background-color: var(--secondary);
+    color: var(--primary);
+  }
+}
+
+.line {
+  h1,
+  h2,
+  h3,
+  h4 {
+    i {
+      position: relative;
+      overflow-y: auto;
+      padding-bottom: 0.6rem;
+      font-family: var(--font-cormorant);
+      font-style: italic;
+      &::before {
+        content: "";
+        position: absolute;
+        // border: 1px solid black;
+        bottom: -3px;
+        left: 0;
+        width: 100%;
+        height: 12.2px;
+        background: url("/line.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        z-index: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .line {
+    h1,
+    h2,
+    h3,
+    h4 {
+      i {
+        &::before {
+          height: 7px;
+        }
+      }
+    }
+  }
+}
+
+.banner {
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0.5rem;
+    border: 2px solid #fff;
+    z-index: 10;
+    border-bottom-right-radius: 56px;
+    border-bottom-left-radius: 56px;
+    @media (width <= 768px) {
+      inset: 0.25rem;
+      border: 0.5px solid #fff;
+      border-bottom-left-radius: 24px;
+      border-bottom-right-radius: 24px;
+    }
+  }
+}
+
+
+.sticky-section {
+  position: sticky;
+  top: 0;
+  z-index: 0;
+  @media (width <= 768px) {
+    position: relative;
+  }
+}
