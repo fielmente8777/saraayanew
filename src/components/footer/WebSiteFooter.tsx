@@ -26,14 +26,14 @@ const WebSiteFooter = () => {
             </ul>
           </div>
           <div className="relative flex flex-col items-center gap-8 max-lg:order-first">
-            <div className="w-65 relative aspect-4/2 lg:ml-50">
+            <Link href="/" className="w-65 block relative aspect-4/2 lg:ml-50">
               <Image
                 src={websiteFooterData.logo}
                 alt="Image"
                 fill
                 className="object-contain"
               />
-            </div>
+            </Link>
             <div className="lg:absolute lg:-bottom-16 lg:left-[65%] lg:translate-x-[-65%]">
               <div className="w-85 relative aspect-[4/.8] mx-auto">
                 <Image

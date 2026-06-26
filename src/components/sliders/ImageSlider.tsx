@@ -1,19 +1,20 @@
 "use client";
 import Image from "next/image";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import SwiperCarousel from "./SwiperCarousel";
 
 const ImageSlider: React.FC<{ images: string[] }> = ({ images }) => {
   return (
-    <div>
+    <div className="room-card">
       <SwiperCarousel
         data={images}
         slidesPerView={1}
         spaceBetween={0}
-        modules={[Autoplay]}
+        modules={[Autoplay, Navigation]}
+        navigation={true}
         loop
         speed={800}
-        autoplay={{ delay: 3500 }}
+        autoplay={{ delay: 3500, disableOnInteraction: false }}
         className="w-full"
         renderSlide={(src) => (
           <div className="w-full relative md:aspect-4/3 aspect-4/3.5">
