@@ -60,7 +60,8 @@ export const accommodationPageData = {
       ],
 
       description:
-        "Named after the sacred deodar cedar often called the “wood of the gods”  a tree revered for its strength, resilience, and timeless presence in the Himalayas. Standing tall through centuries of changing seasons, the deodar symbolizes endurance, protection, and a deep connection to nature. Inspired by these qualities, Devdar is more than just a place; it is a sanctuary designed to offer peace, comfort, and belonging. Like the ancient cedar forests that have sheltered travelers for generations, Devdar holds space quietly and graciously, inviting guests to slow down, reconnect, and immerse themselves in the beauty of the natural world. Here, every moment is shaped by tranquility, authenticity, and the enduring spirit of the mountains.",
+        'Named after the sacred Deodar cedar, known as the "Wood of the Gods," Devdar "The Keeper" symbolizes strength, protection, resilience, and timeless wisdom. Like the majestic Himalayan tree that has sheltered generations, it offers a peaceful sanctuary where guests can slow down, reconnect, and embrace nature. Experience the perfect blend of luxury, comfort, and wilderness in our fully furnished Ultra-Luxury Safari Tent. Spacious interiors open to breathtaking Himalayan mountain and forest views, creating a serene retreat. Thoughtfully designed with a plush king-size bed, premium bedding, wardrobe, study table, ambient lighting, cozy blankets, and secure lockable doors, every detail ensures privacy and relaxation. The private attached bathroom features modern fittings, a spacious shower, running water, and 24/7 hot water. With heaters, coolers, and fans for year-round comfort, Devdar "The Keeper" combines safari-inspired charm with boutique luxury for an unforgettable mountain escape.',
+
       amenities: [
         { title: "Spacious luxury tents", icon: <SpaciousLuxuryIcon /> },
         {
@@ -88,7 +89,7 @@ export const accommodationPageData = {
       ],
       title: 'Rai "The Watcher"',
       description:
-        "Named after the ban oak, rooted deep and still the quiet guardian of the Himalayan forest floor. Strong yet unassuming, the ban oak has long been a symbol of stability, resilience, and quiet wisdom in the mountain landscape. Rai embodies these qualities, offering a space that feels grounded, warm, and enduring. Like the ancient oaks that shelter countless forms of life beneath their canopy, Rai provides comfort, protection, and a sense of belonging. It is a place where nature’s calm presence can be felt in every detail, inviting guests to slow down, breathe deeply, and find peace in the simplicity of the surroundings. Steady, timeless, and deeply connected to the land, Rai is a retreat that nurtures both rest and reflection.",
+        `Named after the resilient Himalayan Oak (Rai), a tree that stands watch over mountain forests through changing seasons, Rai "The Watcher" symbolizes awareness, stability, and quiet strength. Rooted in nature, it invites you to slow down, observe, and experience the mountains at their most peaceful. Wake up to panoramic Himalayan views, the soothing sounds of the nearby stream, and crisp mountain air from your elegantly designed Ultra-Luxury Safari Tent. Thoughtfully crafted to blend modern comfort with the charm of glamping, it features a plush king-size bed with premium linens, cozy blankets, a spacious wardrobe, study desk, warm ambient lighting, bedside lamps, and secure lockable doors. The private attached bathroom includes modern fittings, a spacious shower, running water, and 24/7 hot water. Whether watching the sunrise over mist-covered peaks or relaxing beneath a sky full of stars, Rai "The Watcher" offers an unforgettable luxury retreat immersed in nature.`,
       amenities: [
         { title: "Spacious luxury tents", icon: <SpaciousLuxuryIcon /> },
         {
@@ -117,7 +118,7 @@ export const accommodationPageData = {
       ],
       title: 'BURANSH "THE NURTURER"',
       description:
-        "Named after the rhododendron, whose crimson blooms bring the first warmth to the mountains each spring. Buransh is a gentle reminder that softness is its own kind of strength. Flourishing against rugged slopes and harsh winters, the rhododendron arrives as a symbol of renewal, resilience, and quiet joy. Its vibrant blossoms transform the landscape, painting the hillsides with color and life after months of stillness. Inspired by this spirit, Buransh offers a space that feels both uplifting and restorative a retreat where beauty is found in simplicity and strength is expressed through grace. Like the flower that announces the arrival of a new season, Buransh invites guests to embrace moments of calm, connection, and gentle transformation amidst the timeless rhythms of the mountains.",
+        `Inspired by the vibrant Buransh (Rhododendron), the beloved flowering tree of the Himalayas, Buransh "The Nurturer" symbolizes warmth, renewal, and the vibrant spirit of mountain life. Surrounded by breathtaking Himalayan views and lush forests, this Ultra-Luxury Safari Tent offers a peaceful retreat designed to refresh both body and mind. Thoughtfully furnished with a plush king-size bed, premium bedding, elegant interiors, and a private attached bathroom with modern amenities and 24/7 hot water, it blends safari-style charm with boutique luxury. With year-round comfort and nature all around, Buransh "The Nurturer" promises a truly relaxing mountain escape.`,
       amenities: [
         { title: "Spacious luxury tents", icon: <SpaciousLuxuryIcon /> },
         {
@@ -145,7 +146,7 @@ export const accommodationPageData = {
       ],
       title: 'Kail "The Wanderer"',
       description:
-        "Named after the Himalayan blue pine, whose seeds travel far on the wind before finding ground. Kail is for those who’ve journeyed long and are ready to arrive — not at a destination, but at a feeling. Towering gracefully across the mountain slopes, the blue pine is known for its adaptability, endurance, and quiet elegance. Its seeds drift across valleys and ridgelines, carried by unseen currents until they find a place to take root and thrive. Inspired by this journey, Kail is a space that celebrates both movement and stillness — a place where wandering gives way to belonging. Here, the mountains invite you to slow down, settle into the rhythm of nature, and reconnect with what matters most. Like the blue pine itself, Kail stands as a symbol of resilience, growth, and the profound comfort of finding your place in the world.",
+        `Named after the graceful Himalayan Blue Pine (Kail), Kail "The Wanderer" celebrates curiosity, exploration, and the spirit of adventure. Surrounded by breathtaking Himalayan views and the soothing sounds of a nearby glacier stream, this Ultra-Luxury Safari Tent offers the perfect balance of wilderness and refined comfort. Featuring a plush king-size bed, premium furnishings, elegant interiors, and a private attached bathroom with modern amenities and 24/7 hot water, every detail is designed for a luxurious stay. With year-round comfort and stunning natural surroundings, Kail "The Wanderer" is the ideal retreat for unforgettable mountain escapes.`,
       amenities: [
         { title: "Spacious luxury tents", icon: <SpaciousLuxuryIcon /> },
         {

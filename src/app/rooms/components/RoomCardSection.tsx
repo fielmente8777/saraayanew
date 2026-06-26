@@ -13,7 +13,7 @@ const RoomCardSection: React.FC<{ cards: Props[] }> = ({ cards }) => {
       {cards.map((card, index) => (
         <SectionWithContainer
           key={index}
-          sectionClassName="bg-background sticky-section lg:h-[110dvh]"
+          sectionClassName="bg-background relative"
           containerClassName={`xl:max-w-[1410px]! ${index % 2 === 0 ? "lg:mr-0!" : "lg:ml-0!"}`}
         >
           <div className="grid grid-cols-1 lg:grid-cols-7 gap-8">
