@@ -34,7 +34,7 @@ export const homePageData = {
         S
       </span>araaya is more than a retreat, it is a sanctuary for the soul. Perched beside a crystalline glacier stream born from sacred alpine peaks, we have harmonized the untamed spirit of the Himalayas with the sophisticated comforts of a premier estate. With only four exclusive glamp suites, your stay is a private communion with the wilderness.,Escape the Noise. Rediscover Your Center.,Leave the city lights behind for a canopy of a billion stars.`,
 
-      'Saraaya was created for people who no longer seek crowded luxury, but meaningful stillness.',
+      "Saraaya was created for people who no longer seek crowded luxury, but meaningful stillness.",
     ],
     hostedText: "Hosted by the Saraaya family, since 2019",
   },
@@ -129,6 +129,24 @@ export const homePageData = {
         price: "₹3,000 onwards",
         description:
           "Curated outdoor picnic setup surrounded by nature for a relaxed experience.",
+      },
+      {
+        image: "/exp-6.png",
+        alt: "Village tour",
+        title: "Village Tour",
+        timing: "Morning · Daily",
+        price: "",
+        description:
+          "Guided village tour of the surrounding village with a local guide.",
+      },
+      {
+        image: "/exp-4.png",
+        alt: "Cultural night",
+        title: "Cultural Night",
+        timing: "Evening · Daily",
+        price: "",
+        description:
+          "A cultural night with a local guide to explore the culture of the village.",
       },
     ],
   },

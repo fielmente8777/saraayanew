@@ -51,10 +51,10 @@ export const accommodationPageData = {
       id: "01",
       title: 'DEVDAR "THE KEEPER"',
       images: [
-        "/rooms/Mountain-1.png",
-        "/rooms/Mountain-2.png",
-        "/rooms/Mountain-3.png",
         "/rooms/Mountain-4.png",
+        "/rooms/Mountain-2.png",
+        "/rooms/Mountain-1.png",
+        "/rooms/Mountain-3.png",
         "/rooms/Mountain-5.png",
         "/rooms/Mountain-6.png",
       ],
@@ -138,9 +138,9 @@ export const accommodationPageData = {
     {
       id: "04",
       images: [
-        "/rooms/Premium-1.png",
-        "/rooms/Premium-2.png",
         "/rooms/Premium-3.png",
+        "/rooms/Premium-2.png",
+        "/rooms/Premium-1.png",
         "/rooms/Premium-4.png",
         "/rooms/Premium-5.png",
       ],
