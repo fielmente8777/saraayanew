@@ -12,7 +12,7 @@ import { WebProvider } from "@/context-api/WebContext";
 import Image from "next/image";
 import PopUpButton from "@/components/pop-up/PopUpButton";
 import PopUpInfo from "@/components/pop-up/PopUpInfo";
-import localFont from 'next/font/local'
+import localFont from "next/font/local";
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",
@@ -27,28 +27,28 @@ const playfairDisplay = Playfair_Display({
 const minion = localFont({
   src: [
     {
-      path: './font/MinionPro-Regular.otf',
-      weight: '400',
-      style: 'normal',
+      path: "./font/MinionPro-Regular.otf",
+      weight: "400",
+      style: "normal",
     },
     {
-      path: './font/MinionPro-It.otf',
-      weight: '400',
-      style: 'italic',
+      path: "./font/MinionPro-It.otf",
+      weight: "400",
+      style: "italic",
     },
     {
-      path: './font/MinionPro-Bold.otf',
-      weight: '700',
-      style: 'normal',
+      path: "./font/MinionPro-Bold.otf",
+      weight: "700",
+      style: "normal",
     },
     {
-      path: './font/MinionPro-BoldIt.otf',
-      weight: '700',
-      style: 'italic',
+      path: "./font/MinionPro-BoldIt.otf",
+      weight: "700",
+      style: "italic",
     },
   ],
   variable: "--font-minion",
-})
+});
 
 const inter = Inter({
   variable: "--font-inter",
@@ -133,6 +133,21 @@ export default function RootLayout({
         </noscript>
         {/* <!-- End Meta Pixel Code --> */}
         {/* <!-- Google tag (gtag.js) --> */}
+
+        {/* <!-- Google tag (gtag.js) --> */}
+        <Script
+          id="google-tag-manager"
+          async
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-J2HMM3JFSZ"
+        ></Script>
+        <Script id="google-analytics" strategy="afterInteractive">
+          {` window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-J2HMM3JFSZ');`}
+        </Script>
         <Script
           async
           id="google-tag-manager"
