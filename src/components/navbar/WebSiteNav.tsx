@@ -87,7 +87,7 @@ const WebSiteNav = () => {
           </Link>
 
           <LinkButton
-            href={contact.WhatsappCta}
+            href="whatsapp"
             label="reserve"
             target="_blank"
             rel="noopener noreferrer"

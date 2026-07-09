@@ -175,7 +175,7 @@ export default function RootLayout({
         />
         {/* <!-- End Google Tag Manager --> */}
       </head>
-      <body className="">
+      <body className="" suppressHydrationWarning={true} >
         {/* <!-- Google Tag Manager (noscript) --> */}
         <noscript>
           <iframe

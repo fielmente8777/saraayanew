@@ -13,7 +13,9 @@ export const contact = {
     linkedin: "",
   },
   callCta: `tel:+918988334372`,
+  whatsappNumber: "+918988334372",
   WhatsappCta: `https://wa.me/+918988334372?text=${enCodeText}`,
+
   formDomain: "saraayaglamps",
   // formDomain: "testmulti", //for testing
   formHid:"",

@@ -49,7 +49,8 @@ export const accommodationPageData = {
   accommodations: [
     {
       id: "01",
-      title: 'DEVDAR "THE KEEPER"',
+      // title: 'DEVDAR "THE KEEPER"',
+      title: 'Devdar "The Keeper"',
       images: [
         "/rooms/Mountain-4.png",
         "/rooms/Mountain-2.png",
@@ -116,7 +117,7 @@ export const accommodationPageData = {
         "/rooms/Mountain-5.png",
         "/rooms/Mountain-6.png",
       ],
-      title: 'BURANSH "THE NURTURER"',
+      title: 'Buransh "The Nurturer"',
       description:
         `Inspired by the vibrant Buransh (Rhododendron), the beloved flowering tree of the Himalayas, Buransh "The Nurturer" symbolizes warmth, renewal, and the vibrant spirit of mountain life. Surrounded by breathtaking Himalayan views and lush forests, this Ultra-Luxury Safari Tent offers a peaceful retreat designed to refresh both body and mind. Thoughtfully furnished with a plush king-size bed, premium bedding, elegant interiors, and a private attached bathroom with modern amenities and 24/7 hot water, it blends safari-style charm with boutique luxury. With year-round comfort and nature all around, Buransh "The Nurturer" promises a truly relaxing mountain escape.`,
       amenities: [

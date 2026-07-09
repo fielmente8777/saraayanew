@@ -1,4 +1,5 @@
 "use client";
+import { contact } from "@/utils/constent";
 import { createContext, useContext, useState } from "react";
 
 interface WebContextProps {
@@ -10,6 +11,8 @@ interface WebContextProps {
   setIsOpenNavBar: React.Dispatch<React.SetStateAction<boolean>>;
   openInfoPopup: boolean;
   setOpenInfoPopup: React.Dispatch<React.SetStateAction<boolean>>;
+  WhatsAppClick: () => Promise<void>;
+
 }
 
 export const WebContext = createContext<WebContextProps>({
@@ -21,6 +24,7 @@ export const WebContext = createContext<WebContextProps>({
   setIsOpenNavBar: () => {},
   openInfoPopup: false,
   setOpenInfoPopup: () => {},
+  WhatsAppClick: () => Promise.resolve(),
 });
 
 interface WebProviderProps {
@@ -31,8 +35,43 @@ export const WebProvider: React.FC<WebProviderProps> = ({ children }) => {
   const [openInfoPopup, setOpenInfoPopup] = useState(false);
   const [total, setTotal] = useState(0);
   const [current, setCurrent] = useState(1);
+  const WhatsAppClick = async () => {
+    const enCodedText =
+    "Hello Saraaya Team I’m interested to know more about Saraaya.";
+    try {
+      const payload = {
+        widget: "whatsapp",
+        ndid: "e50d8dc6-4cfc-4c87-b6c0-145ccdeb4121",
+        hid: "56369483",
+        pageUrl: window.location.href,
+        websiteName: window.location.hostname,
+        phoneNumber: contact.whatsappNumber,
+        message: enCodedText,
+      };
 
+      const response = await fetch(
+        "https://gian-1eve.onrender.com/api/v1/widget/click",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
+
+      const data = await response.json();
+      const whatsappUrl = data?.result?.doc?.whatsappUrl;
+
+      if (whatsappUrl) {
+        window.open(whatsappUrl, "_blank");
+      }
+    } catch (error) {
+      console.error("WhatsApp Click Error:", error);
+    }
+  };
   const value = {
+    WhatsAppClick,
     total,
     setTotal,
     current,
