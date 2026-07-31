@@ -248,7 +248,7 @@ export const blogsData = [
         "Escape Together: The Perfect Private Getaway for Friends, Reunions & Bachelorette Celebrations in Himachal Pradesh",
       description:
         "Looking for the perfect private getaway for friends, reunions, bachelorette parties, or young families? Discover exclusive luxury glamping in Himachal Pradesh with Saraaya. Book the entire property for your group.",
-      keywords: [
+      keyWords: [
         "Friends getaway Himachal Pradesh",
         "Group stay near Dharamshala",
         "Bachelor party Himachal Pradesh",
@@ -464,6 +464,307 @@ export const blogsData = [
     </p>
 
    
+  </div>
+  `,
+  },
+  {
+  meta: {
+    title:
+      "Find Your Creative Flow: A Monsoon Artist Retreat in the Himalayas | Luxury Glamping Near Dharamshala",
+    description:
+      "Escape creative burnout with a peaceful monsoon retreat near Dharamshala. Saraaya Luxury Glamps offers luxury glamping for writers, artists, musicians, photographers, filmmakers, and digital nomads seeking inspiration in the Himalayas.",
+    keyWords: [
+      "Artist retreat Himachal Pradesh",
+      "Writing retreat India",
+      "Creative retreat Dharamshala",
+      "Monsoon getaway Himachal",
+      "Luxury glamping for artists",
+      "Long stay Himachal Pradesh",
+      "Workcation in the mountains",
+      "Writer's retreat India",
+      "Music retreat Himalayas",
+      "Artist residency India",
+      "Nature retreat for creatives",
+      "Peaceful stay near Dharamshala",
+      "Luxury glamping Himachal",
+      "Off-season stay Himachal",
+      "Creative workcation India",
+    ],
+  },
+  url: "",
+  title:
+    "Find Your Creative Flow: A Monsoon Artist Retreat in the Himalayas",
+  slug: "monsoon-artist-retreat-himalayas-dharamshala",
+  description:
+    "Every artist knows the feeling of creative burnout. Hidden in the forests near Dharamshala, Saraaya Luxury Glamps offers a peaceful mountain retreat where writers, musicians, painters, photographers, filmmakers, designers, poets and creative thinkers can slow down, reconnect with nature, and rediscover their creative flow.",
+  data: `
+  <div>
+
+    <p>
+      Some places inspire you.
+    </p>
+
+    <p>
+      Others transform the way you create.
+    </p>
+
+    <p>
+      Every artist knows the feeling of creative burnout. Endless notifications, city noise, deadlines and routines slowly drown out inspiration. Sometimes, the best way to create something meaningful is to step away from everything familiar.
+    </p>
+
+    <p>
+      Hidden in the forests near Dharamshala, Saraaya Luxury Glamps offers exactly that—a peaceful mountain retreat where writers, musicians, painters, photographers, filmmakers, designers, poets and creative thinkers can slow down and reconnect with their craft.
+    </p>
+
+    <h2>Why the Monsoon Is the Most Creative Season</h2>
+
+    <p>
+      While many travellers avoid the mountains during the monsoon, artists have long sought them out.
+    </p>
+
+    <p>
+      From 15th July to 20th August, the forests surrounding Saraaya come alive with mist, gentle rain, flowing streams and deep shades of green. Clouds drift through the deodar trees, birds sing throughout the day, and the mountains disappear and reappear with every passing hour.
+    </p>
+
+    <p>
+      There are no crowds.
+    </p>
+
+    <p>
+      No tourist rush.
+    </p>
+
+    <p>
+      No pressure to tick places off an itinerary.
+    </p>
+
+    <p>
+      Only time, silence and inspiration.
+    </p>
+
+    <h2>A Place Designed for Deep Work</h2>
+
+    <p>
+      Whether you're writing your first novel, composing your next album, sketching landscapes, editing photographs or simply trying to rediscover your creative voice, Saraaya offers the kind of environment that's becoming increasingly difficult to find.
+    </p>
+
+    <p>
+      Wake up with the sunrise.
+    </p>
+
+    <p>
+      Spend your mornings writing on your private deck.
+    </p>
+
+    <p>
+      Take a walk through the forest when ideas slow down.
+    </p>
+
+    <p>
+      Read beside the sound of the nearby stream.
+    </p>
+
+    <p>
+      Return to your work refreshed.
+    </p>
+
+    <p>
+      End your evenings around a warm bonfire as rain falls gently across the mountains.
+    </p>
+
+    <p>
+      Sometimes the best ideas arrive when you finally stop chasing them.
+    </p>
+
+    <h2>Stay Longer, Create More</h2>
+
+    <p>
+      Creativity rarely follows a weekend schedule.
+    </p>
+
+    <p>
+      That's why we encourage extended stays during the monsoon season.
+    </p>
+
+    <p>
+      Many writers need uninterrupted days to finish a manuscript.
+    </p>
+
+    <p>
+      Musicians need quiet mornings to compose.
+    </p>
+
+    <p>
+      Artists need time to observe changing light, shifting clouds and landscapes that reveal something new every day.
+    </p>
+
+    <p>
+      Instead of rushing through a two-night holiday, imagine spending one, two or even three weeks immersed in nature, working at your own pace.
+    </p>
+
+    <p>
+      Your accommodation becomes your studio.
+    </p>
+
+    <p>
+      The mountains become your inspiration.
+    </p>
+
+    <h2>Perfect for Creative Professionals</h2>
+
+    <p>
+      Saraaya welcomes independent creators looking for a peaceful place to work, including:
+    </p>
+
+    <ul>
+      <li>Authors and novelists</li>
+      <li>Screenwriters</li>
+      <li>Journalists</li>
+      <li>Musicians and composers</li>
+      <li>Singers and songwriters</li>
+      <li>Painters and illustrators</li>
+      <li>Photographers</li>
+      <li>Filmmakers</li>
+      <li>Architects and designers</li>
+      <li>Content creators</li>
+      <li>Podcasters</li>
+      <li>Digital nomads seeking creative focus</li>
+    </ul>
+
+    <p>
+      Whether your canvas is paper, music, a camera or a laptop, you'll find room to think here.
+    </p>
+
+    <h2>Luxury Without Distractions</h2>
+
+    <p>
+      Luxury isn't always about grand hotels and busy resorts.
+    </p>
+
+    <p>
+      Sometimes it's waking up to birdsong instead of traffic.
+    </p>
+
+    <p>
+      It's drinking your morning coffee surrounded by forest.
+    </p>
+
+    <p>
+      It's having uninterrupted hours to write without meetings, emails or endless notifications.
+    </p>
+
+    <p>
+      Our luxury safari tents provide modern comforts while allowing you to stay immersed in nature, making them ideal for creators seeking both comfort and solitude.
+    </p>
+
+    <h2>Disconnect to Reconnect</h2>
+
+    <p>
+      One of the greatest gifts the mountains offer is space—not just physical space, but mental space.
+    </p>
+
+    <p>
+      When you step away from constant distractions, your thoughts become clearer.
+    </p>
+
+    <p>
+      Ideas flow naturally.
+    </p>
+
+    <p>
+      Stories begin writing themselves.
+    </p>
+
+    <p>
+      Melodies appear unexpectedly.
+    </p>
+
+    <p>
+      Paintings become more honest.
+    </p>
+
+    <p>
+      The silence doesn't interrupt your creativity.
+    </p>
+
+    <p>
+      It invites it.
+    </p>
+
+    <h2>Monsoon Long-Stay Experience</h2>
+
+    <p>
+      If you've been waiting for the perfect opportunity to finish a project, begin a new one or simply slow down, our monsoon season offers the ideal setting.
+    </p>
+
+    <p>
+      Guests staying for longer durations enjoy the chance to settle into a rhythm rather than follow a holiday schedule.
+    </p>
+
+    <p>
+      Create by day.
+    </p>
+
+    <p>
+      Read by evening.
+    </p>
+
+    <p>
+      Listen to the rain.
+    </p>
+
+    <p>
+      Sleep deeply.
+    </p>
+
+    <p>
+      Wake inspired.
+    </p>
+
+    <h2>Come for the Mountains. Leave With Something You've Created.</h2>
+
+    <p>
+      The world celebrates finished work.
+    </p>
+
+    <p>
+      But every masterpiece begins with quiet moments that nobody sees.
+    </p>
+
+    <p>
+      If you're searching for an artist retreat in Himachal Pradesh, a writing retreat near Dharamshala, a creative getaway in the Himalayas, or a peaceful place for a long stay during the monsoon, Saraaya invites you to make the mountains your temporary studio.
+    </p>
+
+    <p>
+      Bring your notebook.
+    </p>
+
+    <p>
+      Bring your guitar.
+    </p>
+
+    <p>
+      Bring your camera.
+    </p>
+
+    <p>
+      Bring your unfinished ideas.
+    </p>
+
+    <p>
+      We'll provide the silence, the forests, and the space to let them grow.
+    </p>
+
+    <h2>Long Stay Offer for Creatives</h2>
+
+    <p>
+      <strong>Available from 15th July to 20th August</strong>
+    </p>
+
+    <p>
+      We welcome extended stays for artists, writers, musicians, photographers and creative professionals looking to spend a week or longer immersed in nature. If you're planning a long-term creative escape, get in touch with us for customised stay packages.
+    </p>
+
   </div>
   `,
   },
