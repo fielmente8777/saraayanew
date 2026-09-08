@@ -1,6 +1,6 @@
 "use client";
 
-import { UpArrowIcon} from "@/utils/icons";
+import { UpArrowIcon } from "@/utils/icons";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -90,8 +90,7 @@ const Popup = () => {
               className="h-auto w-[70px] rotate-180 object-contain"
             />
           </div>
-          
-       
+
           <div className="text-center">
             <h2 className="font-ivy md:text-4xl text-2xl  text-[#263D25] ">
               Escape <span className="">THE ORDINARY.</span>
@@ -104,7 +103,6 @@ const Popup = () => {
 
           {/* OFFERS */}
           <div className="mt-5 grid grid-cols-1 md:grid-cols-3 py-2  md:py-0 md:divide-x divide-[#C9C5B5]">
-        
             <div className="flex items-center justify-center gap-3 py-4 md:py-0 px-2 md:pr-10">
               <Image
                 src="/home/offer.png"
@@ -120,7 +118,10 @@ const Popup = () => {
                 </p>
 
                 <p className="whitespace-nowrap font-montserrat text-xl font-bold text-[#263D25] md:text-2xl">
-                  ₹11,999*
+                  ₹14,499*{" "}
+                  <span className="text-[9px] font-normal md:text-[10px]">
+                    Inclusive of GST
+                  </span>
                 </p>
 
                 <p className="font-montserrat text-[9px] text-[#20251E] md:text-sm">
@@ -129,7 +130,6 @@ const Popup = () => {
               </div>
             </div>
 
-         
             <div className="flex items-center justify-center gap-3 py-4 px-4 md:py-0 md:px-6">
               <Image
                 src="/home/discount.png"
@@ -153,7 +153,6 @@ const Popup = () => {
                 </p>
               </div>
             </div>
-
 
             <div className="flex items-center justify-center gap-3 py-4 md:py-0 px-2 md:pl-8">
               <Image
@@ -198,11 +197,9 @@ const Popup = () => {
           <p className="mt-3 text-center text-[8px] font-montserrat text-[#22251F] md:text-[10px]">
             Offer Valid for a Limited Time. T&Cs apply. Direct bookings only.
           </p>
-
         </div>
       </div>
     </div>
-    
   );
 };
 
