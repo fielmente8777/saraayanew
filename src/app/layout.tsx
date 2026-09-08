@@ -19,10 +19,10 @@ const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
 });
 
-// const montserrat = Montserrat({
-//   variable: "--font-montserrat",
-//   subsets: ["latin"],
-// });
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+});
 
 const minion = localFont({
   src: [
@@ -99,7 +99,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfairDisplay.variable} ${inter.variable} ${minion.variable} h-full antialiased`}
+      className={`${playfairDisplay.variable} ${inter.variable} ${minion.variable} ${montserrat.variable} h-full antialiased`}
     >
       <head>
         <script type="text/javascript" id="clarity">
