@@ -13,6 +13,7 @@ import Image from "next/image";
 import PopUpButton from "@/components/pop-up/PopUpButton";
 import PopUpInfo from "@/components/pop-up/PopUpInfo";
 import localFont from "next/font/local";
+import Popup from "@/components/Popup";
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",
@@ -175,7 +176,7 @@ export default function RootLayout({
         />
         {/* <!-- End Google Tag Manager --> */}
       </head>
-      <body className="" suppressHydrationWarning={true} >
+      <body className="" suppressHydrationWarning={true}>
         {/* <!-- Google Tag Manager (noscript) --> */}
         <noscript>
           <iframe
@@ -188,6 +189,7 @@ export default function RootLayout({
         {/* <!-- End Google Tag Manager (noscript) --> */}
 
         <WebProvider>
+          <Popup />
           <NavBar />
           {children}
           <Footer />
