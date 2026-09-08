@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Ivy Ora";
+  src: url("/fonts/Ivy-Ora-Display.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #FFF9E1;
   --primary: #283619;
@@ -14,6 +22,8 @@
   --color-light: var(--light);
   --font-body: var(--font-inter);
   --font-primary: var(--font-minion);
+  --font-ivy: "Ivy Ora", serif;
+  --font-montserrat: var(--font-montserrat), sans-serif;
 }
 
 
