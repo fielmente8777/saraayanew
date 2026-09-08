@@ -52,7 +52,7 @@ const Popup = () => {
           type="button"
           onClick={handleClose}
           aria-label="Close popup"
-          className="absolute right-3 top-3 z-50 flex h-9 w-9 items-center justify-center text-3xl font-light leading-none text-white transition-transform duration-300 hover:rotate-90"
+          className="absolute right-3 top-3 z-50 flex h-9 w-9 items-center justify-center text-3xl font-light text-white transition-transform duration-300 hover:rotate-90"
         >
           ×
         </button>
@@ -76,7 +76,7 @@ const Popup = () => {
               alt=""
               width={100}
               height={115}
-              className="h-auto w-[70px] object-contain"
+              className="h-auto w-[55px] md:w-[70px] object-contain"
             />
           </div>
 
@@ -87,7 +87,7 @@ const Popup = () => {
               alt=""
               width={100}
               height={115}
-              className="h-auto w-[70px] rotate-180 object-contain"
+              className="h-auto w-[55px] md:w-[70px] rotate-180 object-contain"
             />
           </div>
 
@@ -103,13 +103,13 @@ const Popup = () => {
 
           {/* OFFERS */}
           <div className="mt-5 grid grid-cols-1 md:grid-cols-3 py-2  md:py-0 md:divide-x divide-[#C9C5B5]">
-            <div className="flex items-center justify-center gap-3 py-4 md:py-0 px-2 md:pr-10">
+            <div className="flex w-full items-center justify-start md:justify-center gap-3 py-3 px-4 md:py-2 md:px-2 md:pr-10">
               <Image
                 src="/home/offer.png"
                 alt=""
                 width={60}
                 height={60}
-                className="h-[60px] w-[60px] shrink-0 object-contain"
+                className="h-[48px] w-[48px] shrink-0 object-contain md:h-[60px] md:w-[60px]"
               />
 
               <div className="text-left">
@@ -119,7 +119,7 @@ const Popup = () => {
 
                 <p className="whitespace-nowrap font-montserrat text-xl font-bold text-[#263D25] md:text-2xl">
                   ₹14,499*{" "}
-                  <span className="text-[9px] font-normal md:text-[10px]">
+                  <span className=" text-[9px] font-normal md:text-[10px]">
                     Inclusive of GST
                   </span>
                 </p>
@@ -130,13 +130,13 @@ const Popup = () => {
               </div>
             </div>
 
-            <div className="flex items-center justify-center gap-3 py-4 px-4 md:py-0 md:px-6">
+            <div className="flex w-full items-center justify-start md:justify-center gap-3 py-3 px-4 md:py-0 md:px-6">
               <Image
                 src="/home/discount.png"
                 alt=""
                 width={60}
                 height={60}
-                className="h-[60px] w-[60px] shrink-0 object-contain"
+                className="h-[48px] w-[48px] shrink-0 object-contain md:h-[60px] md:w-[60px]"
               />
 
               <div className="text-left">
@@ -154,13 +154,13 @@ const Popup = () => {
               </div>
             </div>
 
-            <div className="flex items-center justify-center gap-3 py-4 md:py-0 px-2 md:pl-8">
+            <div className="flex items-center justify-start md:justify-center gap-3 py-3 md:py-0 px-4 md:pl-8">
               <Image
                 src="/home/spoon.png"
                 alt=""
                 width={60}
                 height={60}
-                className="h-[60px] w-[60px] shrink-0 object-contain"
+                className="h-[48px] w-[48px] shrink-0 object-contain md:h-[60px] md:w-[60px]"
               />
 
               <div className="text-left">
@@ -180,7 +180,7 @@ const Popup = () => {
           </div>
 
           {/* CTA */}
-          <div className="md:mt-5 flex justify-center">
+          <div className="mt-0 md:mt-5 flex justify-center">
             <Link
               href="/contact-us"
               onClick={handleClose}
