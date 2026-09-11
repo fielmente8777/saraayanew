@@ -44,7 +44,7 @@ const Popup = () => {
       onClick={handleClose}
     >
       <div
-        className="relative w-auto max-w-6xl overflow-hidden bg-[#F8F7ED] shadow-2xl"
+        className="relative w-auto max-w-[780px] overflow-hidden bg-[#F8F7ED] shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         {/* CLOSE BUTTON */}
