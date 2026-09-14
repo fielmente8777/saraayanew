@@ -1,9 +1,8 @@
 "use client";
 
-import { UpArrowIcon } from "@/utils/icons";
-import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useState } from "react";
+import Image from "next/image";
+import { BedIcon, SpoonIcon } from "@/utils/icons";
 
 const Popup = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,163 +39,324 @@ const Popup = () => {
 
   return (
     <div
-      className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 px-4 py-6 backdrop-blur-[2px]"
+      className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/65 px-3 py-4 backdrop-blur-[2px]"
       onClick={handleClose}
     >
       <div
-        className="relative w-auto max-w-[780px] overflow-hidden bg-[#F8F7ED] shadow-2xl"
+        className="relative w-full md:max-w-[580px] max-w-[380px] overflow-hidden aspect-[1161/1249] "
         onClick={(e) => e.stopPropagation()}
       >
+        {/* BACKGROUND IMAGE */}
+        <Image
+          src="/popup1.jpg"
+          alt="Saraaya September Couple Offer"
+          fill
+          priority
+          className="object-cover"
+        />
+
         {/* CLOSE BUTTON */}
         <button
           type="button"
           onClick={handleClose}
           aria-label="Close popup"
-          className="absolute right-3 top-3 z-50 flex h-9 w-9 items-center justify-center text-3xl font-light text-white transition-transform duration-300 hover:rotate-90"
+          className="
+            absolute
+            right-[3.5%]
+            top-[3.5%]
+            z-50
+            flex
+            h-[30px]
+            w-[30px]
+            md:h-[42px]
+            md:w-[42px]
+            items-center
+            justify-center
+            rounded-full
+            bg-[#263D25]
+            md:text-[28px]
+            text-[20px]
+            font-light
+            text-white
+            transition-all
+            duration-300
+            hover:rotate-90
+            hover:scale-105
+          "
         >
           ×
         </button>
 
-        {/* IMAGE */}
-        <div className="relative aspect-[595/330] w-full">
-          <Image
-            src="/popup.jpg"
-            alt="Luxury retreat"
-            fill
-            priority
-            className="object-cover"
-          />
-        </div>
-
         {/* CONTENT */}
-        <div className="relative bg-[#F8F7ED] px-5 pb-4 pt-5 sm:px-7 sm:pb-5 sm:pt-6">
-          <div className="absolute bottom-0 left-0 z-10">
-            <Image
-              src="/home/design.png"
-              alt=""
-              width={100}
-              height={115}
-              className="h-auto w-[55px] md:w-[70px] object-contain"
-            />
-          </div>
+        <div className="absolute inset-0 z-10">
+          {/* ================= LOGO ================= */}
+          <div className="absolute left-1/2 md:top-[5.5%] -translate-x-1/2 text-center">
+            <div className="mx-auto h-[16px] w-[45px]" />
 
-          {/* TOP RIGHT DECORATION */}
-          <div className="absolute right-0 top-0 z-10">
-            <Image
-              src="/home/design.png"
-              alt=""
-              width={100}
-              height={115}
-              className="h-auto w-[55px] md:w-[70px] rotate-180 object-contain"
-            />
-          </div>
+            <h1
+              className="
+                whitespace-nowrap
+                font-serif
+                text-[20px]
+                md:text-[27px]
+                font-normal
+                text-[#263D25]
+              "
+            >
+              SARAAYA
+            </h1>
 
-          <div className="text-center">
-            <h2 className="font-ivy md:text-4xl text-2xl  text-[#263D25] ">
-              Escape <span className="">THE ORDINARY.</span>
-            </h2>
-
-            <p className="mt-1 md:text-2xl text-lg font-light uppercase text-[#C77B32]">
-              YOUR PRIVATE RETREAT AWAITS
+            <p
+              className="
+                whitespace-nowrap
+                text-[7px]
+                md:text-[10px]
+                font-medium
+                text-[#263D25]
+              "
+            >
+              GLAMPS IN NATURE
             </p>
           </div>
 
-          {/* OFFERS */}
-          <div className="mt-5 grid grid-cols-1 md:grid-cols-3 py-2  md:py-0 md:divide-x divide-[#C9C5B5]">
-            <div className="flex w-full items-center justify-start md:justify-center gap-3 py-3 px-4 md:py-2 md:px-2 md:pr-10">
-              <Image
-                src="/home/offer.png"
-                alt=""
-                width={60}
-                height={60}
-                className="h-[48px] w-[48px] shrink-0 object-contain md:h-[60px] md:w-[60px]"
-              />
+          {/* ================= TITLE ================= */}
+          <div
+            className="
+              absolute
+              left-1/2
+              top-[16.8%]
+              w-[94%]
+              -translate-x-1/2
+              text-center
+            "
+          >
+            {/* SEPTEMBER + LINES */}
+            <div className="flex items-center justify-center md:gap-[14px]">
+              <span className="h-[1px] w-[43px] bg-[#263D25]" />
 
-              <div className="text-left">
-                <p className="whitespace-nowrap font-montserrat text-sm font-semibold uppercase leading-tight text-[#20251E] md:text-lg">
-                  PRICES STARTING
-                </p>
+              <p
+                className="
+                  whitespace-nowrap
+                  
+                  md:text-[17px]
+                  text-xs
+                  font-medium
+                  text-[#263D25]
+                "
+              >
+                SEPTEMBER
+              </p>
 
-                <p className="whitespace-nowrap font-montserrat text-xl font-bold text-[#263D25] md:text-2xl">
-                  ₹14,499*{" "}
-                  <span className=" text-[9px] font-normal md:text-[10px]">
-                    Inclusive of GST
-                  </span>
-                </p>
-
-                <p className="font-montserrat text-[9px] text-[#20251E] md:text-sm">
-                  (per night)
-                </p>
-              </div>
+              <span className="h-[1px] w-[43px] bg-[#263D25]" />
             </div>
 
-            <div className="flex w-full items-center justify-start md:justify-center gap-3 py-3 px-4 md:py-0 md:px-6">
-              <Image
-                src="/home/discount.png"
-                alt=""
-                width={60}
-                height={60}
-                className="h-[48px] w-[48px] shrink-0 object-contain md:h-[60px] md:w-[60px]"
-              />
-
-              <div className="text-left">
-                <p className="font-montserrat text-sm font-semibold uppercase leading-tight text-[#20251E] md:text-lg">
-                  GET 15%
-                </p>
-
-                <p className="font-montserrat text-xl font-bold leading-none text-[#263D25] md:text-2xl">
-                  DISCOUNT
-                </p>
-
-                <p className="mt-1 font-montserrat text-[9px] uppercase leading-tight text-[#20251E] md:text-sm">
-                  ON YOUR STAY
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-center justify-start md:justify-center gap-3 py-3 md:py-0 px-4 md:pl-8">
-              <Image
-                src="/home/spoon.png"
-                alt=""
-                width={60}
-                height={60}
-                className="h-[48px] w-[48px] shrink-0 object-contain md:h-[60px] md:w-[60px]"
-              />
-
-              <div className="text-left">
-                <p className="font-montserrat text-sm font-semibold uppercase leading-tight text-[#20251E] md:text-lg">
-                  COMPLIMENTARY
-                </p>
-
-                <p className="font-montserrat text-xl font-bold leading-none text-[#263D25] md:text-2xl">
-                  BREAKFAST
-                </p>
-
-                <p className="mt-1 font-montserrat text-[9px] uppercase leading-tight text-[#20251E] md:text-sm">
-                  FOR ALL GUESTS
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* CTA */}
-          <div className="mt-0 md:mt-5 flex justify-center">
-            <Link
-              href="/contact-us"
-              onClick={handleClose}
-              className="w-full max-w-[450px] rounded-[3px] bg-[#C87528] px-5 py-2.5 text-center text-xs md:text-base font-montserrat uppercase tracking-wide text-white transition-colors duration-300 hover:bg-[#A95F1D] sm:py-3"
+            {/* COUPLE OFFER */}
+            <h2
+              className="
+                mt-[7px]
+                whitespace-nowrap
+                font-serif
+                text-xl
+                md:text-[38px]
+                font-semibold
+                uppercase
+                text-[#7A471B]
+              "
             >
-              <span className="flex items-center justify-center gap-2">
-                PLAN YOUR GLAMPING ADVENTURE NOW
-                <UpArrowIcon />
-              </span>
-            </Link>
+              COUPLE OFFER
+            </h2>
+
+            {/* SUBTITLE */}
+            <p
+              className="
+                mt-[10px]
+                whitespace-nowrap
+                md:text-base
+                text-sm
+                font-medium
+                uppercase
+                text-[#263D25]
+              "
+            >
+              SLOWER DAYS. CLOSER MOMENTS.
+            </p>
           </div>
 
-          {/* DISCLAIMER */}
-          <p className="mt-3 text-center text-[8px] font-montserrat text-[#22251F] md:text-[10px]">
-            Offer Valid for a Limited Time. T&Cs apply. Direct bookings only.
-          </p>
+          {/* ================= OFFER CARDS ================= */}
+          <div
+            className="
+              absolute
+              left-1/2
+              md:top-[35.2%]
+              top-[40%]
+              flex
+              w-[72%]
+              -translate-x-1/2
+              md:gap-[10px]
+              gap-[6px]
+            "
+          >
+            {/* CARD 1 */}
+            <div
+              className="
+                flex
+                min-w-0
+                flex-1
+                flex-col
+                items-center
+                rounded-[9px]
+                bg-[#F8F6E9]/95
+                max-md:h-[138px]
+                px-[10px]
+                py-[13px]
+                text-center
+              "
+            >
+              {/* BED ICON */}
+              <div className=" items-center justify-center">
+                <BedIcon />
+              </div>
+
+              <p
+                className="
+                  whitespace-nowrap
+                  font-serif
+                  text-sm
+                  md:text-[16px]
+                  text-[#263D25]
+                "
+              >
+                Stay for two
+              </p>
+
+              <p
+                className="
+                  mt-[5px]
+                  whitespace-nowrap
+                  font-serif
+                  md:text-[29px]
+                  text-lg
+                  font-bold
+                  text-[#7A471B]
+                "
+              >
+                ₹10,500
+              </p>
+
+              <div className="my-[8px] h-[1px] w-[88%] bg-[#BDB8A7]" />
+
+              <p
+                className="
+                  whitespace-nowrap
+                  md:text-xs
+                  text-[10px]
+                  font-medium
+                  text-[#263D25]
+                "
+              >
+                Inclusive of breakfast.
+              </p>
+            </div>
+
+            {/* CARD 2 */}
+            <div
+              className="
+                flex
+                min-w-0
+                flex-1
+                flex-col
+                items-center
+                rounded-[9px]
+                bg-[#F8F6E9]/95
+                 max-md:h-[138px]
+                px-[8px]
+                py-[13px]
+                text-center
+              "
+            >
+              {/* FOOD ICON */}
+              <div className=" items-center justify-center text-[#263D25]">
+                <SpoonIcon />
+              </div>
+
+              <p
+                className="
+mt-2
+                  whitespace-nowrap
+                  font-serif
+                  text-sm
+                  md:text-[16px]
+                  text-[#263D25]
+                "
+              >
+                Stay with meals
+              </p>
+
+              <p
+                className="
+                  mt-[5px]
+                  whitespace-nowrap
+                  font-serif
+                  text-lg
+                  md:text-[29px]
+                  font-bold
+                  text-[#7A471B]
+                "
+              >
+                ₹12,500
+              </p>
+
+              <div className="my-[8px] h-[1px] w-[88%] bg-[#BDB8A7]" />
+
+              <p
+                className="
+                text-[10px]
+                  md:text-xs
+                  font-medium
+                  text-[#263D25]
+                "
+              >
+                Inclusive of breakfast and
+                <br />
+                simple, home-style
+                <br />
+                vegetarian meals.
+              </p>
+            </div>
+          </div>
+
+          {/* ================= VALIDITY ================= */}
+          <div
+            className="
+    absolute
+    left-1/2
+    top-[75%]
+    md:top-[72%]
+    flex
+    -translate-x-1/2
+    items-center
+    gap-[7px]
+    whitespace-nowrap
+"
+          >
+            {/* CALENDAR */}
+            <div className="relative h-[14px] w-[14px] border-[1.5px] border-white">
+              <span className="absolute left-[3px] top-[-4px] h-[5px] w-[1.5px] bg-white" />
+              <span className="absolute right-[3px] top-[-4px] h-[5px] w-[1.5px] bg-white" />
+              <span className="absolute left-0 top-[3px] w-full border-t border-white" />
+            </div>
+
+            <p
+              className="
+      font-serif
+      md:text-sm
+      text-[10px]
+      text-white
+    "
+            >
+              Valid for stays throughout September.
+            </p>
+          </div>
         </div>
       </div>
     </div>
