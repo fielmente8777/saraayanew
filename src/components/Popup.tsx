@@ -3,20 +3,29 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { BedIcon, SpoonIcon } from "@/utils/icons";
+import { usePathname } from "next/navigation";
 
 const Popup = () => {
+  const pathname = usePathname();
+
   const [isOpen, setIsOpen] = useState(false);
   const [hasBeenDismissed, setHasBeenDismissed] = useState(false);
 
+  const isThankYouPage =
+    pathname === "/thank-you" ||
+    pathname === "/thankyou" ||
+    pathname?.includes("thank-you") ||
+    pathname?.includes("thankyou");
+
   useEffect(() => {
-    if (hasBeenDismissed) return;
+    if (hasBeenDismissed || isThankYouPage) return;
 
     const timer = setTimeout(() => {
       setIsOpen(true);
     }, 0);
 
     return () => clearTimeout(timer);
-  }, [hasBeenDismissed]);
+  }, [hasBeenDismissed, isThankYouPage]);
 
   const handleClose = () => {
     setIsOpen(false);
@@ -35,8 +44,10 @@ const Popup = () => {
     };
   }, [isOpen]);
 
-  if (!isOpen) return null;
-
+  if (isThankYouPage || !isOpen) {
+    return null;
+  }
+  
   return (
     <div
       className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/65 px-3 py-4 backdrop-blur-[2px]"
