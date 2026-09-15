@@ -13,6 +13,7 @@ const Popup = () => {
 
   const isThankYouPage =
     pathname === "/thank-you" ||
+    pathname === "/landing-page/" ||
     pathname === "/thankyou" ||
     pathname?.includes("thank-you") ||
     pathname?.includes("thankyou");
@@ -47,7 +48,7 @@ const Popup = () => {
   if (isThankYouPage || !isOpen) {
     return null;
   }
-  
+
   return (
     <div
       className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/65 px-3 py-4 backdrop-blur-[2px]"
