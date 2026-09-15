@@ -14,6 +14,7 @@ function Whatsapp({ whatsAppNumber }: { whatsAppNumber: string }) {
   if (pathName === "/thank-you/") {
     return null;
   }
+  
   return (
     <div className={`fixed bottom-24 lg:left-3 left-4 z-20 cursor-pointer`}>
       <button
