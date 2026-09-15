@@ -127,6 +127,7 @@ const Popup = () => {
                 font-serif
                 text-[20px]
                 md:text-[27px]
+                leading-none
                 font-normal
                 text-[#263D25]
               "
@@ -136,6 +137,7 @@ const Popup = () => {
 
             <p
               className="
+              
                 whitespace-nowrap
                 text-[7px]
                 md:text-[10px]

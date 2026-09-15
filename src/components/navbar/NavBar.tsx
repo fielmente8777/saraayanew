@@ -2,12 +2,13 @@
 
 import { usePathname } from "next/navigation";
 import WebSiteNav from "./WebSiteNav";
+import LandingNav from "./LandingNav";
 
 const NavBar = () => {
   const pathName = usePathname();
 
   if (pathName === "/landing-page/") {
-    return null;
+    return <LandingNav/>;
   } else if (pathName === "/thank-you/") {
     return null;
   } else {
