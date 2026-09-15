@@ -7,13 +7,17 @@ function Whatsapp({ whatsAppNumber }: { whatsAppNumber: string }) {
   const pathName = usePathname();
   const { WhatsAppClick } = useWebContext();
 
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    WhatsAppClick(event.currentTarget, "WhatsApp Button Clicked");
+  };
+
   if (pathName === "/thank-you/") {
     return null;
   }
   return (
     <div className={`fixed bottom-24 lg:left-3 left-4 z-20 cursor-pointer`}>
       <button
-        onClick={WhatsAppClick}
+        onClick={handleClick}
         // href={`https://wa.me/${whatsAppNumber.replace(/\s+/g, "")}?text=${enCodeText}`}
         // target="_blank"
         // rel="noreferrer"
