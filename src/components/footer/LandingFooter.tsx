@@ -26,7 +26,7 @@ const LandingFooter = () => {
             </div>
 
             <LinkButton
-              href={"whatsapp"}
+              href={contact.WhatsappCta}
               label={footerData.cta.label}
               target="_blank"
               rel="noopener noreferrer"

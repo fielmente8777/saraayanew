@@ -26,7 +26,7 @@ const Banner: React.FC<BannerProps> = ({ images }) => {
             />
           </div>
           <LinkButton
-            href={"whatsapp"}
+            href={contact.WhatsappCta}
             label={"Book Now"}
             target="_blank"
             rel="noopener noreferrer"

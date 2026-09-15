@@ -23,7 +23,7 @@ const Popup = () => {
 
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 0);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, [hasBeenDismissed, isThankYouPage]);
@@ -65,6 +65,22 @@ const Popup = () => {
           fill
           priority
           className="object-cover"
+        />
+        {/* IMAGE OVERLAY */}
+        <div
+          className="
+    absolute
+    inset-x-0
+    top-0
+    z-[1]
+    h-[45%]
+    bg-gradient-to-b
+    from-black/50
+    via-black/25
+    to-transparent
+    md:from-black/40
+    md:via-black/20
+  "
         />
 
         {/* CLOSE BUTTON */}
@@ -187,7 +203,8 @@ const Popup = () => {
                 text-sm
                 font-medium
                 uppercase
-                text-[#263D25]
+                text-white
+                drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]
               "
             >
               SLOWER DAYS. CLOSER MOMENTS.
@@ -199,7 +216,7 @@ const Popup = () => {
             className="
               absolute
               left-1/2
-              md:top-[35.2%]
+              md:top-[35.7%]
               top-[40%]
               flex
               w-[72%]
@@ -343,7 +360,7 @@ mt-2
     absolute
     left-1/2
     top-[75%]
-    md:top-[72%]
+    md:top-[74%]
     flex
     -translate-x-1/2
     items-center
