@@ -132,9 +132,10 @@ export const landingPageData = {
   testimonialData: {
     title: "Guest <i>Experiences</i>",
     images: [
+      "/Saraya-301.jpg",
       "/Saraya-298.jpg",
       "/Saraya-234.jpg",
-      "/Saraya-301.jpg",
+      
       "/Saraya-86.jpg",
       "/Saraya-194.jpg",
     ],
