@@ -25,7 +25,7 @@ export const landingPageData = {
     cta: { label: "Book Now", href: contact.WhatsappCta },
     therapies: [
       {
-        src: "/Saraya-309.png",
+        src: "/Saraya-309.jpg",
         icon: "/Sacred-icon.png",
         name: "Sacred",
         subTitle: "An Ancestral Connection",
@@ -33,7 +33,7 @@ export const landingPageData = {
           "Steeped in the spiritual legacy of the Lam Dal and Kareri waters, Saraaya sits on land echoing with the footsteps of pilgrims and mountain legends. Here, the air carries a different weight, a quiet, hallowed energy that invites reflection and deep inner peace.",
       },
       {
-        src: "/Saraya-319.png",
+        src: "/Saraya-319.jpg",
         icon: "/Restorative-icon.png",
         name: "Restorative",
         subTitle: "The Art of the Reset",
@@ -41,7 +41,7 @@ export const landingPageData = {
           "In a world that never stops, Saraaya is the pause button. Designed for profound silence and reconnection, we believe that slowing down isn't just a luxury, it is the entire point. Here, the Himalayan breeze does the healing, and the rhythm of the forest dictates your day.",
       },
       {
-        src: "/Saraya-159.png",
+        src: "/Saraya-159.jpg",
         icon: "/Wild-icon.png",
         name: "Wild",
         subTitle: "Untamed Elegance",
@@ -100,7 +100,7 @@ export const landingPageData = {
         alt: "Stargaze Under Zero Light Pollution",
       },
       {
-        image: "/exp-3.png",
+        image: "/Saraya-137.jpg",
         alt: "Glacier Stream Picnic",
       },
       {
@@ -132,11 +132,11 @@ export const landingPageData = {
   testimonialData: {
     title: "Guest <i>Experiences</i>",
     images: [
-      "/guest-1.png",
-      "/guest-2.png",
-      "/guest-3.png",
-      "/guest-4.png",
-      "/guest-5.png",
+      "/Saraya-298.jpg",
+      "/Saraya-234.jpg",
+      "/Saraya-301.jpg",
+      "/Saraya-86.jpg",
+      "/Saraya-194.jpg",
     ],
     testimonials: [
       {
