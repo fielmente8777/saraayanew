@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { BedIcon, SpoonIcon } from "@/utils/icons";
 import { usePathname } from "next/navigation";
+import { contact } from "@/utils/constent";
+import LinkButton from "./buttons/LinkButton";
 
 const Popup = () => {
   const pathname = usePathname();
@@ -118,7 +120,7 @@ const Popup = () => {
         {/* CONTENT */}
         <div className="absolute inset-0 z-10">
           {/* ================= LOGO ================= */}
-          <div className="absolute left-1/2 md:top-[5.5%] -translate-x-1/2 text-center">
+          <div className="absolute left-1/2 top-[5.5%] -translate-x-1/2 text-center">
             <div className="mx-auto h-[16px] w-[45px]" />
 
             <h1
@@ -190,7 +192,7 @@ const Popup = () => {
                 md:text-[38px]
                 font-semibold
                 uppercase
-                text-[#7A471B]
+                text-white
               "
             >
               COUPLE OFFER
@@ -199,7 +201,7 @@ const Popup = () => {
             {/* SUBTITLE */}
             <p
               className="
-                mt-[10px]
+                md:mt-[10px]
                 whitespace-nowrap
                 md:text-base
                 text-sm
@@ -218,13 +220,14 @@ const Popup = () => {
             className="
               absolute
               left-1/2
-              md:top-[35.7%]
-              top-[40%]
+              md:top-[38%]
+              top-[36%]
               flex
-              w-[72%]
+              md:w-[260px]
+              w-[200px]
               -translate-x-1/2
               md:gap-[10px]
-              gap-[6px]
+              
             "
           >
             {/* CARD 1 */}
@@ -237,9 +240,7 @@ const Popup = () => {
                 items-center
                 rounded-[9px]
                 bg-[#F8F6E9]/95
-                max-md:h-[138px]
-                px-[10px]
-                py-[13px]
+                py-[12px]
                 text-center
               "
             >
@@ -262,7 +263,7 @@ const Popup = () => {
 
               <p
                 className="
-                  mt-[5px]
+                  md:mt-[5px]
                   whitespace-nowrap
                   font-serif
                   md:text-[29px]
@@ -289,8 +290,7 @@ const Popup = () => {
               </p>
             </div>
 
-            {/* CARD 2 */}
-            <div
+            {/* <div
               className="
                 flex
                 min-w-0
@@ -305,7 +305,7 @@ const Popup = () => {
                 text-center
               "
             >
-              {/* FOOD ICON */}
+          
               <div className=" items-center justify-center text-[#263D25]">
                 <SpoonIcon />
               </div>
@@ -353,7 +353,7 @@ mt-2
                 <br />
                 vegetarian meals.
               </p>
-            </div>
+            </div> */}
           </div>
 
           {/* ================= VALIDITY ================= */}
@@ -361,8 +361,8 @@ mt-2
             className="
     absolute
     left-1/2
-    top-[75%]
-    md:top-[74%]
+    top-[78%]
+    md:top-[72%]
     flex
     -translate-x-1/2
     items-center
@@ -381,13 +381,52 @@ mt-2
               className="
       font-serif
       md:text-sm
-      text-[10px]
+      text-xs
       text-white
     "
             >
-              Valid for stays throughout September.
+              Validity only September.
             </p>
           </div>
+          {/* ================= BOOK NOW + VALIDITY NOTE ================= */}
+          <div
+            className="
+    absolute
+    left-1/2
+    top-[83%]
+    md:top-[76%]
+    -translate-x-1/2
+    flex
+    flex-col
+    items-center
+    gap-2
+    text-center
+  "
+          >
+            <LinkButton
+              href={contact.WhatsappCta}
+              label="BOOK NOW"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-fit text-white border-none rounded-sm uppercase bg-[#263D25] px-7 py-2.5 md:px-10 md:py-3 text-[10px] md:text-[12px] font-medium tracking-[0.2em] transition-all duration-300 hover:bg-[#7A471B] hover:scale-105"
+            />
+          </div>
+
+          <p
+            className="
+    absolute
+    bottom-[1.5%]
+    left-1/2
+    -translate-x-1/2
+    whitespace-nowrap
+    font-serif
+    text-xs
+    md:text-sm
+    text-[#263D25]
+  "
+          >
+            *Subject to availability
+          </p>
         </div>
       </div>
     </div>
