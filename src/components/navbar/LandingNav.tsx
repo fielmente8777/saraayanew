@@ -29,7 +29,7 @@ const LandingNav = () => {
           : "bg-transparent"
       }`}
     >
-      <nav className=" py-8">
+      <nav className="py-2">
         <Container className="flex w-full items-center justify-between">
           
           {/* Logo */}

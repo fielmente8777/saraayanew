@@ -8,11 +8,14 @@ import LandingAbout from "./components/LandingAbout";
 import { landingPageData } from "./components/landingPageData";
 import Rooms from "./components/Rooms";
 import SignatureTherapies from "./components/SignatureTherapies";
+import { homePageData } from "../(home)/components/pageData";
+import Video from "@/components/banners/Video";
 
 export default function LandingPage() {
   return (
     <main className="bg-background">
-      <Banner {...landingPageData.bannerData} />
+      {/* <Banner {...landingPageData.bannerData} /> */}
+      <Video {...homePageData.banner} />
       <LandingAbout {...landingPageData.about} />
       <SectionWithContainer
         defaultPadding={false}
