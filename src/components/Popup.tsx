@@ -162,7 +162,7 @@ const Popup = () => {
               text-center
             "
           >
-            {/* SEPTEMBER + LINES */}
+         
             <div className="flex items-center justify-center md:gap-[14px]">
               <span className="h-[1px] w-[43px] bg-[#263D25]" />
 
@@ -182,7 +182,7 @@ const Popup = () => {
               <span className="h-[1px] w-[43px] bg-[#263D25]" />
             </div>
 
-            {/* COUPLE OFFER */}
+          
             <h2
               className="
                 mt-[7px]
@@ -198,7 +198,7 @@ const Popup = () => {
               COUPLE OFFER
             </h2>
 
-            {/* SUBTITLE */}
+         
             <p
               className="
                 md:mt-[10px]
@@ -215,7 +215,7 @@ const Popup = () => {
             </p>
           </div>
 
-          {/* ================= OFFER CARDS ================= */}
+       
           <div
             className="
               absolute
@@ -230,7 +230,7 @@ const Popup = () => {
               
             "
           >
-            {/* CARD 1 */}
+          
             <div
               className="
                 flex
@@ -244,7 +244,7 @@ const Popup = () => {
                 text-center
               "
             >
-              {/* BED ICON */}
+             
               <div className=" items-center justify-center">
                 <BedIcon />
               </div>
@@ -356,7 +356,6 @@ mt-2
             </div> */}
           </div>
 
-          {/* ================= VALIDITY ================= */}
           <div
             className="
     absolute
@@ -388,7 +387,7 @@ mt-2
               Validity only September.
             </p>
           </div>
-          {/* ================= BOOK NOW + VALIDITY NOTE ================= */}
+        
           <div
             className="
     absolute
