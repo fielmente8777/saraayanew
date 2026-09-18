@@ -6,6 +6,7 @@ import { BedIcon, SpoonIcon } from "@/utils/icons";
 import { usePathname } from "next/navigation";
 import { contact } from "@/utils/constent";
 import LinkButton from "./buttons/LinkButton";
+import { MdClose, MdOutlineCalendarToday } from "react-icons/md";
 
 const Popup = () => {
   const pathname = usePathname();
@@ -53,11 +54,11 @@ const Popup = () => {
 
   return (
     <div
-      className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/65 px-3 py-4 backdrop-blur-[2px]"
+      className="fixed inset-0 z-9999 flex items-center justify-center bg-black/65 px-3 py-4 backdrop-blur-[2px]"
       onClick={handleClose}
     >
       <div
-        className="relative w-full md:max-w-[580px] max-w-[380px] overflow-hidden aspect-[1161/1249] "
+        className="relative w-full max-w-[580px] overflow-hidden aspect-4/6 md:aspect-4/4"
         onClick={(e) => e.stopPropagation()}
       >
         {/* BACKGROUND IMAGE */}
@@ -69,21 +70,7 @@ const Popup = () => {
           className="object-cover"
         />
         {/* IMAGE OVERLAY */}
-        <div
-          className="
-    absolute
-    inset-x-0
-    top-0
-    z-[1]
-    h-[45%]
-    bg-gradient-to-b
-    from-black/50
-    via-black/25
-    to-transparent
-    md:from-black/40
-    md:via-black/20
-  "
-        />
+        <div className="absolute inset-0 z-10 bg-linear-to-b from-black/25 via-black/25 to-black/60" />
 
         {/* CLOSE BUTTON */}
         <button
@@ -92,29 +79,23 @@ const Popup = () => {
           aria-label="Close popup"
           className="
             absolute
-            right-[3.5%]
-            top-[3.5%]
+           top-3
+            right-3
             z-50
             flex
-            h-[30px]
-            w-[30px]
-            md:h-[42px]
-            md:w-[42px]
+            h-10
+            w-10
             items-center
             justify-center
             rounded-full
             bg-[#263D25]
-            md:text-[28px]
-            text-[20px]
-            font-light
             text-white
             transition-all
             duration-300
             hover:rotate-90
-            hover:scale-105
           "
         >
-          ×
+          <MdClose />
         </button>
 
         {/* CONTENT */}
@@ -162,7 +143,6 @@ const Popup = () => {
               text-center
             "
           >
-         
             <div className="flex items-center justify-center md:gap-[14px]">
               <span className="h-[1px] w-[43px] bg-[#263D25]" />
 
@@ -182,7 +162,6 @@ const Popup = () => {
               <span className="h-[1px] w-[43px] bg-[#263D25]" />
             </div>
 
-          
             <h2
               className="
                 mt-[7px]
@@ -198,7 +177,6 @@ const Popup = () => {
               COUPLE OFFER
             </h2>
 
-         
             <p
               className="
                 md:mt-[10px]
@@ -215,7 +193,6 @@ const Popup = () => {
             </p>
           </div>
 
-       
           <div
             className="
               absolute
@@ -230,7 +207,6 @@ const Popup = () => {
               
             "
           >
-          
             <div
               className="
                 flex
@@ -244,7 +220,6 @@ const Popup = () => {
                 text-center
               "
             >
-             
               <div className=" items-center justify-center">
                 <BedIcon />
               </div>
@@ -370,12 +345,14 @@ mt-2
 "
           >
             {/* CALENDAR */}
-            <div className="relative h-[14px] w-[14px] border-[1.5px] border-white">
+            {/* <div className="relative h-[14px] w-[14px] border-[1.5px] border-white">
               <span className="absolute left-[3px] top-[-4px] h-[5px] w-[1.5px] bg-white" />
               <span className="absolute right-[3px] top-[-4px] h-[5px] w-[1.5px] bg-white" />
               <span className="absolute left-0 top-[3px] w-full border-t border-white" />
-            </div>
-
+            </div> */}
+            <span className="text-white">
+              <MdOutlineCalendarToday />
+            </span>
             <p
               className="
       font-serif
@@ -384,23 +361,12 @@ mt-2
       text-white
     "
             >
-              Validity only September.
+              Valid for stays throughout September only.
             </p>
           </div>
-        
+
           <div
-            className="
-    absolute
-    left-1/2
-    top-[83%]
-    md:top-[76%]
-    -translate-x-1/2
-    flex
-    flex-col
-    items-center
-    gap-2
-    text-center
-  "
+            className="absolute    left-1/2    top-[83%]    md:top-[76%]    -translate-x-1/2    flex    flex-col    items-center    gap-2    text-center "
           >
             <LinkButton
               href={contact.WhatsappCta}
@@ -411,20 +377,8 @@ mt-2
             />
           </div>
 
-          <p
-            className="
-    absolute
-    bottom-[1.5%]
-    left-1/2
-    -translate-x-1/2
-    whitespace-nowrap
-    font-serif
-    text-xs
-    md:text-sm
-    text-[#263D25]
-  "
-          >
-            *Subject to availability
+          <p className="absolute bottom-[1.5%] left-1/2 -translate-x-1/2 whitespace-nowrap font-semibold text-xs md:text-sm text-white">
+            *Subject to Availability
           </p>
         </div>
       </div>
