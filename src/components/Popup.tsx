@@ -120,7 +120,7 @@ const Popup = () => {
         {/* CONTENT */}
         <div className="absolute inset-0 z-10">
           {/* ================= LOGO ================= */}
-          <div className="absolute left-1/2 top-[5.5%] -translate-x-1/2 text-center">
+          <div className="absolute left-1/2 md:top-[5.5%] top-[3%] -translate-x-1/2 text-center">
             <div className="mx-auto h-[16px] w-[45px]" />
 
             <h1
@@ -151,7 +151,7 @@ const Popup = () => {
             </p>
           </div>
 
-          {/* ================= TITLE ================= */}
+     
           <div
             className="
               absolute
@@ -162,7 +162,7 @@ const Popup = () => {
               text-center
             "
           >
-            {/* SEPTEMBER + LINES */}
+          
             <div className="flex items-center justify-center md:gap-[14px]">
               <span className="h-[1px] w-[43px] bg-[#263D25]" />
 
@@ -182,7 +182,7 @@ const Popup = () => {
               <span className="h-[1px] w-[43px] bg-[#263D25]" />
             </div>
 
-            {/* COUPLE OFFER */}
+         
             <h2
               className="
                 mt-[7px]
@@ -198,7 +198,6 @@ const Popup = () => {
               COUPLE OFFER
             </h2>
 
-            {/* SUBTITLE */}
             <p
               className="
                 md:mt-[10px]
@@ -215,36 +214,35 @@ const Popup = () => {
             </p>
           </div>
 
-          {/* ================= OFFER CARDS ================= */}
+         
           <div
             className="
               absolute
               left-1/2
               md:top-[38%]
-              top-[36%]
+              top-[37%]
               flex
               md:w-[260px]
-              w-[200px]
+              w-[180px]
               -translate-x-1/2
               md:gap-[10px]
               
             "
           >
-            {/* CARD 1 */}
+         
             <div
               className="
                 flex
-                min-w-0
                 flex-1
                 flex-col
                 items-center
                 rounded-[9px]
                 bg-[#F8F6E9]/95
-                py-[12px]
+                py-[8px]
                 text-center
               "
             >
-              {/* BED ICON */}
+            
               <div className=" items-center justify-center">
                 <BedIcon />
               </div>
@@ -356,12 +354,11 @@ mt-2
             </div> */}
           </div>
 
-          {/* ================= VALIDITY ================= */}
           <div
             className="
     absolute
     left-1/2
-    top-[78%]
+    top-[82%]
     md:top-[72%]
     flex
     -translate-x-1/2
@@ -370,7 +367,7 @@ mt-2
     whitespace-nowrap
 "
           >
-            {/* CALENDAR */}
+           
             <div className="relative h-[14px] w-[14px] border-[1.5px] border-white">
               <span className="absolute left-[3px] top-[-4px] h-[5px] w-[1.5px] bg-white" />
               <span className="absolute right-[3px] top-[-4px] h-[5px] w-[1.5px] bg-white" />
@@ -388,12 +385,12 @@ mt-2
               Validity only September.
             </p>
           </div>
-          {/* ================= BOOK NOW + VALIDITY NOTE ================= */}
+
           <div
             className="
     absolute
     left-1/2
-    top-[83%]
+    top-[87%]
     md:top-[76%]
     -translate-x-1/2
     flex
@@ -408,19 +405,20 @@ mt-2
               label="BOOK NOW"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-fit text-white border-none rounded-sm uppercase bg-[#263D25] px-7 py-2.5 md:px-10 md:py-3 text-[10px] md:text-[12px] font-medium tracking-[0.2em] transition-all duration-300 hover:bg-[#7A471B] hover:scale-105"
+              className="w-fit text-white border-none rounded-sm uppercase bg-[#263D25] px-5 py-2 md:px-10 md:py-3 text-[9px] md:text-[12px] font-medium tracking-[0.2em] transition-all duration-300 hover:bg-[#7A471B] hover:scale-105"
             />
           </div>
 
           <p
             className="
     absolute
-    bottom-[1.5%]
+    bottom-[1%]
+    md:bottom-[1.5%]
     left-1/2
     -translate-x-1/2
     whitespace-nowrap
     font-serif
-    text-xs
+    text-[10px]
     md:text-sm
     text-[#263D25]
   "
