@@ -87,7 +87,7 @@ const WebSiteNav = () => {
           </Link>
 
           <LinkButton
-            href="whatsapp"
+            href={contact.bookingEngineUrl}
             label="reserve"
             target="_blank"
             rel="noopener noreferrer"

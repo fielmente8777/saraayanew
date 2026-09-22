@@ -380,7 +380,7 @@ mt-2
             className="absolute    left-1/2    top-[83%]    md:top-[79%]    -translate-x-1/2    flex    flex-col    items-center    gap-2    text-center "
           >
             <LinkButton
-              href={contact.WhatsappCta}
+              href={contact.bookingEngineUrl}
               label="BOOK NOW"
               target="_blank"
               rel="noopener noreferrer"

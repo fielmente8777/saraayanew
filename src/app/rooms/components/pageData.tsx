@@ -75,7 +75,7 @@ export const accommodationPageData = {
       ],
       price: "From ₹ 12000/-",
       ctas: [
-        { label: "RESERVE", href: contact.WhatsappCta },
+        { label: "RESERVE", href: contact.bookingEngineUrl },
         { label: "CALL NOW", href: contact.callCta },
       ],
     },
@@ -103,7 +103,7 @@ export const accommodationPageData = {
       ],
       price: "From ₹ 12000/-",
       ctas: [
-        { label: "RESERVE", href: contact.WhatsappCta },
+        { label: "RESERVE", href: contact.bookingEngineUrl },
         { label: "CALL NOW", href: contact.callCta },
       ],
     },
@@ -132,7 +132,7 @@ export const accommodationPageData = {
       ],
       price: "From ₹ 12000/-",
       ctas: [
-        { label: "RESERVE", href: contact.WhatsappCta },
+        { label: "RESERVE", href: contact.bookingEngineUrl },
         { label: "CALL NOW", href: contact.callCta },
       ],
     },
@@ -160,7 +160,7 @@ export const accommodationPageData = {
       ],
 
       ctas: [
-        { label: "RESERVE", href: contact.WhatsappCta },
+        { label: "RESERVE", href: contact.bookingEngineUrl },
         { label: "CALL NOW", href: contact.callCta },
       ],
     },

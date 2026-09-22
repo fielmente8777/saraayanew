@@ -16,6 +16,8 @@ export const contact = {
   whatsappNumber: "+918988334372",
   WhatsappCta: `https://wa.me/+918988334372?text=${enCodeText}`,
 
+  bookingEngineUrl:"https://letsbook.me/booking/saraayaglampsdharmshala?checkin=2026-09-21&checkout=2026-09-22&adults=2&children=0",
+  
   formDomain: "saraayaglamps",
   // formDomain: "testmulti", //for testing
   formHid:"",
