@@ -189,7 +189,7 @@ export default function RootLayout({
         {/* <!-- End Google Tag Manager (noscript) --> */}
 
         <WebProvider>
-          <Popup />
+          {/* <Popup /> */}
           <NavBar />
           {children}
           <Footer />
