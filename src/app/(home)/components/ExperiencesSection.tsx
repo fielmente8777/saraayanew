@@ -55,7 +55,7 @@ const ExperiencesSection: React.FC<Props> = ({
               </div>
               <div className="flex  items-center justify-between">
                 <p className="text-white text-2xl font-primary">{item.title}</p>
-                <p className="text-white text-sm uppercase">{item.price}</p>
+                {/* <p className="text-white text-sm uppercase">{item.price}</p> */}
               </div>
               <p className="text-white lg:text-lg max-md:text-sm max-md:text-center">
                 {item.description}

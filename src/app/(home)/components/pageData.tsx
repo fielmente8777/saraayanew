@@ -102,8 +102,7 @@ export const homePageData = {
         image: "/home/exp-1.png",
         title: "Bonfire",
         timing: "Dusk · Daily",
-        price: "",
-        // price: "₹2,500 onwards",
+        price: "₹2,500 onwards",
         description:
           "Private outdoor movie setup with cozy bonfire ambience under the stars.",
       },
@@ -111,8 +110,7 @@ export const homePageData = {
         image: "/home/exp-2.png",
         title: "Star Gazing Session",
         timing: "Sunrise · In-tent",
-        // price: "₹1,500 onwards",
-         price: "",
+        price: "₹1,500 onwards",
         description:
           "Guided star gazing experience in the peaceful Himalayan night sky.",
       },
@@ -120,8 +118,7 @@ export const homePageData = {
         image: "/home/exp-3.png",
         title: "Sun Downer Setup",
         timing: "Dusk · Daily",
-        // price: "₹3,500 onwards",
-         price: "",
+        price: "₹3,500 onwards",
         description:
           "Beautiful sunset setup at a scenic spot perfect for couples and small groups.",
       },
@@ -129,8 +126,7 @@ export const homePageData = {
         image: "/home/exp-4.png",
         title: "Picnic Setup",
         timing: "Sunrise · In-tent",
-        // price: "₹3,000 onwards",
-         price: "",
+        price: "₹3,000 onwards",
         description:
           "Curated outdoor picnic setup surrounded by nature for a relaxed experience.",
       },
