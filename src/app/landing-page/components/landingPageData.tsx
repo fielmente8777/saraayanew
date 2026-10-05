@@ -7,14 +7,13 @@ export const landingPageData = {
   },
   about: {
     title:
-      "A Glamping Retreat <br/><span class='text-secondary italic'>in the  <i>Himalayas</i></span>",
+      "A Private Luxury Glamping <br/><span class='text-secondary italic'> Experience in the  <i>Himalayas</i></span>",
     description: [
-      "<b>Saraaya</b> is more than a retreat, it is a sanctuary for the soul. Perched beside a crystalline glacier stream born from sacred alpine peaks, we have harmonized the untamed spirit of the Himalayas with the sophisticated comforts of a premier estate. With only four exclusive glamp suites, your stay is a private communion with the wilderness.",
-      "Escape the Noise. Rediscover Your Center.",
-      "Leave the city lights behind for a canopy of a billion stars. ",
+      
+      "Four private safari suites. A quiet Himalayan valley. A mountain stream. Expansive Himalayan views.<br> <b>Saraaya</b>  is a private luxury glamping experience in the Kangra Valley, created for those looking to step away from the pace of city life and reconnect with nature.<br> Surrounded by Deodar cedar, native oak and rhododendron, SARAAYA offers an intimate mountain stay where space, privacy and silence take precedence.",
     ],
     location: {
-      label: "Nauhali near Dharamshala, Himachal Pradesh",
+      label: "SARAAYA GLAMPS DHARAMSHALA",
       icon: <FillLocationIcon />,
       href: contact.addressLink,
     },

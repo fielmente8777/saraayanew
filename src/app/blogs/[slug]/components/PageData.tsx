@@ -468,35 +468,36 @@ export const blogsData = [
   `,
   },
   {
-    meta: {
-      title:
-        "Find Your Creative Flow: A Monsoon Artist Retreat in the Himalayas | Luxury Glamping Near Dharamshala",
-      description:
-        "Escape creative burnout with a peaceful monsoon retreat near Dharamshala. Saraaya Luxury Glamps offers luxury glamping for writers, artists, musicians, photographers, filmmakers, and digital nomads seeking inspiration in the Himalayas.",
-      keyWords: [
-        "Artist retreat Himachal Pradesh",
-        "Writing retreat India",
-        "Creative retreat Dharamshala",
-        "Monsoon getaway Himachal",
-        "Luxury glamping for artists",
-        "Long stay Himachal Pradesh",
-        "Workcation in the mountains",
-        "Writer's retreat India",
-        "Music retreat Himalayas",
-        "Artist residency India",
-        "Nature retreat for creatives",
-        "Peaceful stay near Dharamshala",
-        "Luxury glamping Himachal",
-        "Off-season stay Himachal",
-        "Creative workcation India",
-      ],
-    },
-    url: "",
-    title: "Find Your Creative Flow: A Monsoon Artist Retreat in the Himalayas",
-    slug: "monsoon-artist-retreat-himalayas-dharamshala",
+  meta: {
+    title:
+      "Find Your Creative Flow: A Monsoon Artist Retreat in the Himalayas | Luxury Glamping Near Dharamshala",
     description:
-      "Every artist knows the feeling of creative burnout. Hidden in the forests near Dharamshala, Saraaya Luxury Glamps offers a peaceful mountain retreat where writers, musicians, painters, photographers, filmmakers, designers, poets and creative thinkers can slow down, reconnect with nature, and rediscover their creative flow.",
-    data: `
+      "Escape creative burnout with a peaceful monsoon retreat near Dharamshala. Saraaya Luxury Glamps offers luxury glamping for writers, artists, musicians, photographers, filmmakers, and digital nomads seeking inspiration in the Himalayas.",
+    keyWords: [
+      "Artist retreat Himachal Pradesh",
+      "Writing retreat India",
+      "Creative retreat Dharamshala",
+      "Monsoon getaway Himachal",
+      "Luxury glamping for artists",
+      "Long stay Himachal Pradesh",
+      "Workcation in the mountains",
+      "Writer's retreat India",
+      "Music retreat Himalayas",
+      "Artist residency India",
+      "Nature retreat for creatives",
+      "Peaceful stay near Dharamshala",
+      "Luxury glamping Himachal",
+      "Off-season stay Himachal",
+      "Creative workcation India",
+    ],
+  },
+  url: "",
+  title:
+    "Find Your Creative Flow: A Monsoon Artist Retreat in the Himalayas",
+  slug: "monsoon-artist-retreat-himalayas-dharamshala",
+  description:
+    "Every artist knows the feeling of creative burnout. Hidden in the forests near Dharamshala, Saraaya Luxury Glamps offers a peaceful mountain retreat where writers, musicians, painters, photographers, filmmakers, designers, poets and creative thinkers can slow down, reconnect with nature, and rediscover their creative flow.",
+  data: `
   <div>
 
     <p>
@@ -768,40 +769,41 @@ export const blogsData = [
   `,
   },
   {
-    meta: {
-      title:
-        "Why Luxury Travelers Are Choosing Glamping Over Five-Star Hotels | Saraaya Luxury Glamps",
-      description:
-        "Discover why executives, HNIs, celebrities, entrepreneurs, and discerning travelers are choosing luxury glamping over traditional five-star hotels for privacy, nature, exclusivity, and meaningful experiences.",
-      keyWords: [
-        "Luxury glamping Dharamshala",
-        "Luxury glamping Himachal Pradesh",
-        "Luxury glamping India",
-        "Glamping near Dharamshala",
-        "Luxury retreat Himachal Pradesh",
-        "Boutique luxury stays India",
-        "Luxury safari tents Himachal",
-        "Luxury travel Himachal Pradesh",
-        "Private luxury retreat India",
-        "Luxury nature retreat Dharamshala",
-        "Luxury stay near Dharamshala",
-        "Exclusive glamping Himachal",
-        "Luxury retreat for executives",
-        "Luxury travel India",
-        "Five star hotel alternative India",
-      ],
-    },
-
-    url: "",
-
-    title: "Why Luxury Travelers Are Choosing Glamping Over Five-Star Hotels",
-
-    slug: "why-luxury-travelers-choosing-glamping-over-five-star-hotels",
-
+  meta: {
+    title:
+      "Why Luxury Travelers Are Choosing Glamping Over Five-Star Hotels | Saraaya Luxury Glamps",
     description:
-      "For executives, entrepreneurs, celebrities, creators, and high-net-worth individuals, luxury is no longer simply about five-star hotels. Saraaya Luxury Glamps offers privacy, nature, exclusivity, personalized hospitality, and meaningful mountain experiences.",
+      "Discover why executives, HNIs, celebrities, entrepreneurs, and discerning travelers are choosing luxury glamping over traditional five-star hotels for privacy, nature, exclusivity, and meaningful experiences.",
+    keyWords: [
+      "Luxury glamping Dharamshala",
+      "Luxury glamping Himachal Pradesh",
+      "Luxury glamping India",
+      "Glamping near Dharamshala",
+      "Luxury retreat Himachal Pradesh",
+      "Boutique luxury stays India",
+      "Luxury safari tents Himachal",
+      "Luxury travel Himachal Pradesh",
+      "Private luxury retreat India",
+      "Luxury nature retreat Dharamshala",
+      "Luxury stay near Dharamshala",
+      "Exclusive glamping Himachal",
+      "Luxury retreat for executives",
+      "Luxury travel India",
+      "Five star hotel alternative India",
+    ],
+  },
 
-    data: `
+  url: "",
+
+  title:
+    "Why Luxury Travelers Are Choosing Glamping Over Five-Star Hotels",
+
+  slug: "why-luxury-travelers-choosing-glamping-over-five-star-hotels",
+
+  description:
+    "For executives, entrepreneurs, celebrities, creators, and high-net-worth individuals, luxury is no longer simply about five-star hotels. Saraaya Luxury Glamps offers privacy, nature, exclusivity, personalized hospitality, and meaningful mountain experiences.",
+
+  data: `
 <p>
   For decades, luxury was measured by marble lobbies, grand chandeliers, infinity pools, and five-star service. Today, however, a new generation of discerning travelers is redefining what luxury truly means.
 </p>
@@ -1113,5 +1115,5 @@ export const blogsData = [
   It’s about needing less—and experiencing more.
 </p>
 `,
-  },
+}
 ];
