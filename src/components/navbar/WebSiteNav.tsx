@@ -9,6 +9,7 @@ import LinkButton from "../buttons/LinkButton";
 import NavMenu from "./NavMenu";
 import { contact } from "@/utils/constent";
 import Link from "next/link";
+import { CalendarIcon } from "@/utils/formIcons";
 
 const WebSiteNav = () => {
   const pathname = usePathname();
@@ -70,12 +71,12 @@ const WebSiteNav = () => {
       `}
       >
         {/* Top Navbar */}
-        <nav className="max_width flex max-lg:flex-row-reverse items-center justify-between py-4">
+        <nav className="max_width flex lg:flex-row-reverse items-center justify-between py-4">
           <MenuButton color={isTransparent ? "white" : "primary"} />
 
           <Link
             href="/"
-            className="relative block aspect-[4/.89] w-full max-w-40 lg:ml-20 "
+            className="relative block aspect-[2/.89] md:aspect-[4/.79] lg:aspect-[4/.89] w-full max-w-40 lg:ml-20 "
           >
             <Image
               src={isTransparent ? "/logo-white.png" : "/logo-green.png"}
@@ -102,6 +103,31 @@ const WebSiteNav = () => {
             }
             `}
           />
+          <div className="lg:hidden md:hidden">
+          <Link
+  href={contact.bookingEngineUrl}
+  target="_blank"
+  rel="noopener noreferrer"
+  className={`
+    flex items-center gap-2
+    rounded-lg
+    px-2 md:px-6
+    py-2 md:py-3
+    uppercase
+    ${
+      isTransparent
+        ? "bg-transparent text-white"
+        : "text-primary border border-primary"
+    }
+  `}
+>
+  <CalendarIcon />
+
+  {/* <span className=" text-base tracking-widest">
+    reserve
+  </span> */}
+</Link>
+</div>
         </nav>
 
         <NavMenu />
