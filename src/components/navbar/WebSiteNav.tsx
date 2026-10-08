@@ -71,7 +71,7 @@ const WebSiteNav = () => {
       `}
       >
         {/* Top Navbar */}
-        <nav className="max_width flex lg:flex-row-reverse items-center justify-between py-4">
+        <nav className="max_width flex md:max-lg:flex-row-reverse items-center justify-between py-4">
           <MenuButton color={isTransparent ? "white" : "primary"} />
 
           <Link
