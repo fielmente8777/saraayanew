@@ -10,6 +10,9 @@ import Rooms from "./components/Rooms";
 import SignatureTherapies from "./components/SignatureTherapies";
 import { homePageData } from "../(home)/components/pageData";
 import Video from "@/components/banners/Video";
+import CorePillars from "./components/CorePillars";
+import ReelFeature from "./components/ReelFeature";
+import QuieterSide from "./components/QuieterSide";
 
 export default function LandingPage() {
   return (
@@ -30,6 +33,9 @@ export default function LandingPage() {
       <Rooms {...landingPageData.rooms} />
       <SlidingTitle items={landingPageData.titles} />
       <Experiences {...landingPageData.experiences} />
+      <CorePillars {...landingPageData.corePillars} />
+      <ReelFeature items={landingPageData.reelFeatures} />
+      <QuieterSide {...landingPageData.quieterSide} />
       <Testimonial {...landingPageData.testimonialData} />
     </main>
   );

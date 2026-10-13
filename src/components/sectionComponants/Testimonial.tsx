@@ -13,7 +13,7 @@ const Testimonial: React.FC<TestimonialType> = ({
   images,
 }) => {
   return (
-    <Section defaultPadding={false} className="relative border-y border-primary">
+    <Section defaultPadding={false} className="relative border-y border-secondary">
       <div className="grid lg:grid-cols-2 grid-cols-1 justify-center items-center">
         <div className=" lg:block hidden">
           <ImageSlider images={images} />
@@ -31,7 +31,7 @@ const Testimonial: React.FC<TestimonialType> = ({
               label={cta.label}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-fit text-secondary uppercase rounded-full flex justify-center"
+              className="w-fit rounded-full border-secondary bg-secondary text-white uppercase flex justify-center"
             />
             <div className="flex items-center gap-4">
               <button className="testimonials-prev text-primary border px-5 py-2 rounded-full hover:bg-white active:scale-95">

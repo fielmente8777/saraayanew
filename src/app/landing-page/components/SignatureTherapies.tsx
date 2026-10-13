@@ -74,7 +74,7 @@ const SignatureTherapies: React.FC<SignatureTherapiesDataType> = ({
                     label={cta.label}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-fit text-primary rounded-full uppercase"
+                    className="w-fit rounded-full border-secondary bg-secondary text-white uppercase"
                   />
                   <div className="flex items-center gap-4">
                     <button className="therapies-prev text-primary border px-5 py-2 rounded-full hover:bg-white active:scale-95">

@@ -129,6 +129,33 @@
       }
     }
   }
+
+  .center {
+    h1,
+    h2,
+    h3,
+    h4 {
+      i {
+        position: relative;
+        overflow-y: auto;
+        padding-bottom: 0.6rem;
+        font-style: italic;
+        &::before {
+          content: "";
+          position: absolute;
+          // border: 1px solid black;
+          bottom: -3px;
+          inset-inline: 0;
+          height: 12px;
+          background: url("/Vector.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+
+          z-index: 1;
+        }
+      }
+    }
+  }
   .hide-scroll::-webkit-scrollbar {
     display: none;
   }

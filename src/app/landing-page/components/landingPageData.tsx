@@ -89,15 +89,16 @@ export const landingPageData = {
   ],
 
   experiences: {
-    title: "Signature Himalayan <i>Experiences!</i>",
+    label: "Experiences",
+    title: "Explore<i>. Wander. Or Sim</i>ply Be.",
     cards: [
       {
         image: "/exp-1.png",
-        alt: "Trek to Hidden Himalayan Lakes",
+        alt: "Kareri Lake",
       },
       {
         image: "/exp-2.png",
-        alt: "Stargaze Under Zero Light Pollution",
+        alt: "Stargazing & Moonlit Evenings",
       },
       {
         image: "/Saraya-137.jpg",
@@ -105,11 +106,11 @@ export const landingPageData = {
       },
       {
         image: "/exp-4.png",
-        alt: "Cultural night",
+        alt: "Cultural Night",
       },
       {
         image: "/exp-7.png",
-        alt: "Movie under the stars",
+        alt: "Movie under the Stars",
       },
       {
         image: "/exp-8.png",
@@ -117,11 +118,11 @@ export const landingPageData = {
       },
       {
         image: "/exp-5.png",
-        alt: "Private dining by the river",
+        alt: "Riverside Moments",
       },
       {
         image: "/exp-6.png",
-        alt: "Village tour",
+        alt: "Village Experiences",
       },
     ],
     cta: {
@@ -135,7 +136,7 @@ export const landingPageData = {
       "/Saraya-301.jpg",
       "/Saraya-298.jpg",
       "/Saraya-234.jpg",
-      
+
       "/Saraya-86.jpg",
       "/Saraya-194.jpg",
     ],
@@ -162,5 +163,61 @@ export const landingPageData = {
       label: "Book Now",
       href: contact.WhatsappCta,
     },
+  },
+  corePillars: {
+    label: "Core Pillars",
+    title: "Fou<i>r Suites. By Des</i>ign.",
+    description:
+      "We could have built more. We chose not to. SARAAYA is intentionally limited to four private safari suites. With fewer guests and generous space around you, the landscape remains the experience. No crowded resort. No rows of rooms. Just your private space, the forest, the mountains and the sound of the stream. Less built. More left for you.",
+  },
+
+  reelFeatures: [
+    {
+      label: "THE ART OF THE RESET",
+      title: "A Mountain Stay Shaped by <i>Stillness</i>",
+      description: [
+        {
+          text: "Wake without an alarm. Take your coffee onto the veranda. Walk through the forest. Sit beside the stream. Watch the changing Himalayan light.",
+        },
+        { text: "There is no pressure to fill the day.", italic: true },
+        {
+          text: "SARAAYA is a place to slow down, breathe deeper and let the mountains set the pace.",
+        },
+      ],
+      cta: { label: "Book Now", href: contact.WhatsappCta },
+      reel: { src: "/video/saraayareel.mp4", poster: "/Saraya-319.jpg" },
+    },
+    {
+      label: "Close to Nature, Further from the Noise",
+      title: "Nat<i>ure Uninterrup</i>ted",
+      description: [
+        {
+          text: "SARAAYA is surrounded by Deodar cedar, native oak and rhododendron, with a mountain stream flowing nearby.",
+        },
+        {
+          text: "From your private safari suite, the landscape is never far away.",
+          italic: true,
+        },
+        {
+          text: "Spend your day exploring the Kangra Valley, discover nearby villages and mountain trails, or simply stay close to your suite and enjoy the quiet.",
+        },
+      ],
+      cta: { label: "Book Now", href: contact.WhatsappCta },
+      reel: { src: "/video/saraayareel2.mp4", poster: "/Saraya-159.jpg" },
+    },
+  ],
+
+  quieterSide: {
+    image: "/quiter.jpg",
+    label: "Serenity in Wilderness",
+    title: "The Qui<i>eter Side of Dhar</i>amshala",
+    description: [
+      {
+        text: "Located in Nauhali, Kangra Valley, SARAAYA offers a secluded alternative to the busy Dharamshala stay. Away from the busy tourist centres, the setting places you between forests, villages, mountain trails and the natural landscape of Himachal Pradesh.",
+      },
+      { text: "Come for the mountains. Stay for the stillness." },
+      { text: "Four private safari suites. One quiet Himalayan valley." },
+    ],
+    cta: { label: "Book Now", href: contact.WhatsappCta },
   },
 };

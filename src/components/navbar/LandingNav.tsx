@@ -49,7 +49,7 @@ const LandingNav = () => {
             label="Book Now"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-fit rounded-full border-none bg-white uppercase text-secondary"
+            className="w-fit rounded-full uppercase border-secondary bg-secondary text-white"
           />
 
         </Container>

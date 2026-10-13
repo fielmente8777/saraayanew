@@ -21,7 +21,7 @@ const Rooms: React.FC<RoomsType> = ({ title, cards, cta }) => {
           label={cta.label}
           target="_blank"
           rel="noopener noreferrer"
-          className="md:w-fit mx-auto text-secondary uppercase rounded-full w-full flex justify-center"
+          className="md:w-fit mx-auto rounded-full border-secondary bg-secondary text-white uppercase w-full flex justify-center"
         />
       </Container>
     </Section>

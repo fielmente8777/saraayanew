@@ -5,11 +5,26 @@ import { SectionHeading } from "@/components/typography";
 import ExperiencesSliders from "./sliders/ExperiencesSliders";
 import LinkButton from "@/components/buttons/LinkButton";
 
-const Experiences: React.FC<ExperiencesProps> = ({ title, cards, cta }) => {
+const Experiences: React.FC<ExperiencesProps> = ({
+  label,
+  title,
+  cards,
+  cta,
+}) => {
   return (
-    <SectionWithContainer>
+    <SectionWithContainer containerClassName="line2">
       <div className="md:space-y-14 space-y-8">
-        <SectionHeading title={title} fontPrimary textCenter />
+        <div className="space-y-2 items-center text-center ">
+          <p className="text-secondary text-sm md:text-[15px] lg:text-lg">
+            {label}
+          </p>
+
+          <h2
+            className="line2 font-primary text-primary text-2xl md:text-2xl lg:text-[40px] mb-5 lg:mb-10"
+            dangerouslySetInnerHTML={{ __html: title }}
+          />
+          {/* <SectionHeading title={title} textCenter /> */}
+        </div>
         {/* <div className="lg:grid hidden grid-cols-3 gap-8">
           {cards.map((card, index) => (
             <ExperiencesCard key={index} {...card} />
@@ -21,7 +36,7 @@ const Experiences: React.FC<ExperiencesProps> = ({ title, cards, cta }) => {
           label={cta.label}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-fit text-secondary mx-auto rounded-full uppercase"
+          className="w-fit rounded-full border-secondary bg-secondary text-white mx-auto uppercase"
         />
       </div>
     </SectionWithContainer>

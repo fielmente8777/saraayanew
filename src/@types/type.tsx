@@ -29,6 +29,7 @@ export interface SignatureTherapiesDataType {
 }
 
 export interface ExperiencesProps {
+  label?: string;
   title: string;
   cards: {
     image: string;
