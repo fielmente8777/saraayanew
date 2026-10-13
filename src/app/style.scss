@@ -81,7 +81,7 @@
     h2,
     h3,
     h4 {
-      i {
+      i{
         position: relative;
         overflow-y: auto;
         padding-bottom: 0.6rem;
@@ -103,12 +103,13 @@
       }
     }
   }
- .line2 {
+  .line2 {
     h1,
     h2,
     h3,
     h4 {
-      i {
+      i,
+      span {
         position: relative;
         overflow-y: auto;
         padding-bottom: 0.6rem;
@@ -130,29 +131,24 @@
     }
   }
 
-  .center {
-    h1,
-    h2,
-    h3,
-    h4 {
-      i {
-        position: relative;
-        overflow-y: auto;
-        padding-bottom: 0.6rem;
-        font-style: italic;
-        &::before {
-          content: "";
-          position: absolute;
-          // border: 1px solid black;
-          bottom: -3px;
-          inset-inline: 0;
-          height: 12px;
-          background: url("/Vector.png");
-          background-size: cover;
-          background-repeat: no-repeat;
+  .light {
+    i {
+      position: relative;
+      overflow-y: auto;
+      padding-bottom: 0.6rem;
+      font-style: italic;
+      &::before {
+        content: "";
+        position: absolute;
+        // border: 1px solid black;
+        bottom: -3px;
+        inset-inline: 0;
+        height: 12px;
+        background: url("/Vector.png");
+        background-size: cover;
+        background-repeat: no-repeat;
 
-          z-index: 1;
-        }
+        z-index: 1;
       }
     }
   }
@@ -258,7 +254,6 @@
   }
 }
 
-
 .sticky-section {
   position: sticky;
   top: 0;
@@ -267,7 +262,6 @@
     position: relative;
   }
 }
-
 
 .room-card {
   .swiper-button-next,
@@ -282,7 +276,7 @@
     align-items: center;
     cursor: pointer;
     svg {
-      color: #BE6D28;
+      color: #be6d28;
       width: 20px;
       height: 20px;
     }
@@ -296,7 +290,6 @@
     }
   }
 }
-
 
 /* ---------- Blog data ---------- */
 
@@ -562,7 +555,12 @@
     margin: 2rem 0;
     border: none;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--color-background2), transparent);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--color-background2),
+      transparent
+    );
   }
 
   /* Code & Preformatted text */
