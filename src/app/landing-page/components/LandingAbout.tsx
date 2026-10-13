@@ -19,7 +19,7 @@ const LandingAbout: React.FC<LandingAboutProps> = ({
   return (
     <SectionWithContainer
       sectionClassName="bg-background"
-      containerClassName="grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-10"
+      containerClassName="grid md:grid-cols-[1.2fr_1fr] grid-cols-1 md:gap-4 gap-10"
     >
       <div className="line">
         <Link
