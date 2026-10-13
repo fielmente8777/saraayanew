@@ -1115,7 +1115,6 @@ export const blogsData = [
   It’s about needing less—and experiencing more.
 </p>
 `,
-<<<<<<< HEAD
   },
   {
     meta: {
@@ -4217,7 +4216,4 @@ export const blogsData = [
 <p>Serenity in Wilderness</p>
 `,
   },
-=======
-}
->>>>>>> d7799b1a3bdf4f9464b755c8ded18eede5602a1f
 ];
