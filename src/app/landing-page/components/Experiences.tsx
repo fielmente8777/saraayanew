@@ -12,7 +12,7 @@ const Experiences: React.FC<ExperiencesProps> = ({
   cta,
 }) => {
   return (
-    <SectionWithContainer containerClassName="line2">
+    <SectionWithContainer containerClassName="curve">
       <div className="md:space-y-14 space-y-8">
         <div className="space-y-2 items-center text-center ">
           <p className="text-secondary text-sm md:text-[15px] lg:text-lg">
@@ -20,7 +20,7 @@ const Experiences: React.FC<ExperiencesProps> = ({
           </p>
 
           <h2
-            className="line2 font-primary text-primary text-2xl md:text-2xl lg:text-[40px] mb-5 lg:mb-10"
+            className=" font-primary text-primary text-2xl md:text-2xl lg:text-[40px] mb-5 lg:mb-10"
             dangerouslySetInnerHTML={{ __html: title }}
           />
           {/* <SectionHeading title={title} textCenter /> */}

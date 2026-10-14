@@ -9,7 +9,6 @@ export const landingPageData = {
     title:
       "A Private Luxury Glamping <br/><span class='text-secondary italic'> Experience in the  <i>Himalayas</i></span>",
     description: [
-      
       "Four private safari suites. A quiet Himalayan valley. A mountain stream. Expansive Himalayan views.<br> <b>Saraaya</b>  is a private luxury glamping experience in the Kangra Valley, created for those looking to step away from the pace of city life and reconnect with nature.<br> Surrounded by Deodar cedar, native oak and rhododendron, SARAAYA offers an intimate mountain stay where space, privacy and silence take precedence.",
     ],
     location: {
@@ -94,42 +93,42 @@ export const landingPageData = {
       {
         image: "/exp-1.png",
         alt: "Kareri Lake",
-        desc:"Explore one of the region’s celebrated Himalayan trails.",
+        desc: "Explore one of the region’s celebrated Himalayan trails.",
       },
       {
         image: "/exp-2.png",
         alt: "Stargazing & Moonlit Evenings",
-         desc:"Leave the city lights behind and experience the mountain night sky.",
+        desc: "Leave the city lights behind and experience the mountain night sky.",
       },
       {
         image: "/Saraya-137.jpg",
         alt: "Glacier Stream Picnic",
-         desc:"Slow, unhurried afternoons laid out beside clear alpine waters.",
+        desc: "Slow, unhurried afternoons laid out beside clear alpine waters.",
       },
       {
         image: "/exp-4.png",
         alt: "Cultural Night",
-         desc:"Evenings spent discovering local mountain traditions and valley stories with our team.",
+        desc: "Evenings spent discovering local mountain traditions and valley stories with our team.",
       },
       {
         image: "/exp-7.png",
         alt: "Movie under the Stars",
-         desc:"An intimate open-air screening framed by pine canopies and the night sky.",
+        desc: "An intimate open-air screening framed by pine canopies and the night sky.",
       },
       {
         image: "/exp-8.png",
         alt: "Bonfire",
-         desc:"Warm embers and cold mountain air beneath an open sky.",
+        desc: "Warm embers and cold mountain air beneath an open sky.",
       },
       {
         image: "/exp-5.png",
         alt: "Riverside Moments",
-         desc:"Slow down beside the mountain stream and let the valley unfold around you.",
+        desc: "Slow down beside the mountain stream and let the valley unfold around you.",
       },
       {
-        image: "/exp-6.png",
+        image: "/Copy of Saraya-203.jpg",
         alt: "Forest & Village Experiences",
-         desc:"Discover the surrounding landscape and local mountain life.",
+        desc: "Discover the surrounding landscape and local mountain life.",
       },
     ],
     cta: {

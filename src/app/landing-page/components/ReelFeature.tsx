@@ -45,7 +45,7 @@ const ReelFeature: React.FC<ReelFeatureProps> = ({ items }) => {
         <SectionWithContainer
           key={label}
           sectionClassName="bg-background border-t border-primary"
-          containerClassName="line2 grid md:grid-cols-2 items-stretch gap-6 md:gap-16"
+          containerClassName="curve grid md:grid-cols-2 items-stretch gap-6 md:gap-16"
         >
           <div className="box-shadow flex h-full flex-col items-center justify-center gap-4 rounded-2xl border border-primary/40 p-6 text-center md:p-10">
             <div className="line-center flex flex-col items-center gap-2">
