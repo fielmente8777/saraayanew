@@ -5,13 +5,13 @@ export default function SlidingTitle({ items }: { items: string[] }) {
   const titles = [...items, ...items];
 
   return (
-    <div className="relative overflow-hidden py-5 text-white max_screen_width bg-primary">
+    <div className="relative overflow-hidden py-3 md:py-5 text-white max_screen_width bg-primary">
       <div className="marquee-wrapper">
         <div className="marquee-track">
           {titles.map((t, i) => (
             <span
               key={i}
-              className="marquee-item font-primary md:text-xl text-2xl"
+              className="marquee-item font-primary md:text-xl text-lg"
             >
               <span>{t}</span>
               <span className="separator">

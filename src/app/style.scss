@@ -81,7 +81,7 @@
     h2,
     h3,
     h4 {
-      i{
+      i {
         position: relative;
         overflow-y: auto;
         padding-bottom: 0.6rem;
@@ -132,7 +132,8 @@
   }
 
   .light {
-    i {
+    i,
+    span {
       position: relative;
       overflow-y: auto;
       padding-bottom: 0.6rem;

@@ -34,6 +34,7 @@ export interface ExperiencesProps {
   cards: {
     image: string;
     alt: string;
+    desc?: string;
   }[];
   cta: {
     label: string;

@@ -4,6 +4,7 @@ import Image from "next/image";
 const ExperiencesCard: React.FC<ExperiencesProps["cards"][0]> = ({
   image,
   alt,
+  desc,
 }) => {
   return (
     <div className="w-full flex flex-col gap-4">
@@ -17,6 +18,7 @@ const ExperiencesCard: React.FC<ExperiencesProps["cards"][0]> = ({
         />
       </div>
       <p className="text-center font-medium font-primary md:text-2xl text-xl">{alt}</p>
+      <p className="font-primary text-center justify center text-sm md:text-lg"> {desc}</p>
     </div>
   );
 };

@@ -29,12 +29,13 @@ export default function LandingPage() {
           <Form2 />
         </div>
       </SectionWithContainer>
-      <SignatureTherapies {...landingPageData.signatureTherapiesData} />
+      {/* <SignatureTherapies {...landingPageData.signatureTherapiesData} /> */}
+      <CorePillars {...landingPageData.corePillars} />
+      <ReelFeature items={landingPageData.reelFeatures} />
       <Rooms {...landingPageData.rooms} />
       <SlidingTitle items={landingPageData.titles} />
       <Experiences {...landingPageData.experiences} />
-      <CorePillars {...landingPageData.corePillars} />
-      <ReelFeature items={landingPageData.reelFeatures} />
+
       <QuieterSide {...landingPageData.quieterSide} />
       <Testimonial {...landingPageData.testimonialData} />
     </main>

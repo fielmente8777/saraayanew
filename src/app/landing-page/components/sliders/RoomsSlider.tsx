@@ -3,7 +3,7 @@ import { RoomsType } from "@/@types/type";
 import SwiperCarousel from "@/components/sliders/SwiperCarousel";
 import { BtnNext, BtnPrevIcon } from "@/utils/icons";
 import Image from "next/image";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 
 const RoomsSlider: React.FC<RoomsType["cards"][0] & { index: number }> = ({
   images,
@@ -16,11 +16,12 @@ const RoomsSlider: React.FC<RoomsType["cards"][0] & { index: number }> = ({
         data={images}
         slidesPerView={1}
         spaceBetween={0}
-        modules={[Navigation]}
+        modules={[Navigation , Autoplay]}
         navigation={{
           nextEl: ".rooms-next" + index,
           prevEl: ".rooms-prev" + index,
         }}
+        autoplay={{ delay: 2500 }}
         loop={true}
         speed={800}
         renderSlide={(image) => (

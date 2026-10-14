@@ -13,7 +13,7 @@ const CorePillars: React.FC<CorePillarsProps> = ({
 }) => {
   return (
     <SectionWithContainer
-      sectionClassName="bg-white border-t border-primary"
+      sectionClassName=" border-t border-primary"
       containerClassName="line2 flex flex-col items-center gap-3 text-center"
     >
       <p className="text-secondary text-sm md:text-[15px] lg:text-lg">{label}</p>
