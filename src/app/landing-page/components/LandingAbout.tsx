@@ -26,7 +26,7 @@ const LandingAbout: React.FC<LandingAboutProps> = ({
           href={location.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center md:text-lg gap-1.5"
+          className="flex items-center justify-center md:justify-start md:text-lg gap-1.5"
         >
           <span className="text-secondary">
             {location.icon}

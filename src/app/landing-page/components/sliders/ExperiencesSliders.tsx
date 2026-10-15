@@ -15,7 +15,7 @@ const ExperiencesSliders: React.FC<{
         data={cards}
         slidesPerView={1}
         spaceBetween={16}
-        modules={[Navigation , Autoplay]}
+        modules={[Navigation, Autoplay]}
         navigation={{
           nextEl: ".experiences-next",
           prevEl: ".experiences-prev",
@@ -40,24 +40,23 @@ const ExperiencesSliders: React.FC<{
       {/* Navigation */}
       <div
         className="
-          z-10 flex items-center gap-4
+    z-10 flex items-center gap-4
 
-          /* Mobile */
-          absolute
-          max-md:inset-x-[-12px]
-          max-md:top-1/2
-          max-md:-translate-y-1/2
-          max-md:justify-between
+    /* Mobile */
+    absolute
+    max-md:inset-x-[-12px]
+    max-md:top-[42%]
+    max-md:-translate-y-1/2
+    max-md:justify-between
 
-          /* md and above */
-          md:relative
-          md:inset-x-auto
-          md:top-auto
-          md:translate-y-0
-          md:justify-center
-          md:mt-8
-         
-        "
+    /* md and above */
+    md:relative
+    md:inset-x-auto
+    md:top-auto
+    md:translate-y-0
+    md:justify-center
+    md:mt-8
+  "
       >
         <button
           className="

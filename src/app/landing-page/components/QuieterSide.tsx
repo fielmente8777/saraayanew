@@ -27,7 +27,7 @@ const QuieterSide: React.FC<QuieterSideProps> = ({
       <div className="absolute z-20 inset-0 flex items-center justify-center  md:relative lg:absolute">
         <Container className="py-10 md:py-20">
           <div className=" mx-auto flex max-w-3xl flex-col items-center gap-4 rounded-2xl border border-white/60 bg-white/10 p-6 text-center text-white backdrop-blur-xs md:p-10">
-            <p className="text-sm md:text-[15px] lg:text-lg ">{label}</p>
+            <p className="text-base lg:text-lg ">{label}</p>
             <h2
               className="design font-primary text-2xl md:text-2xl lg:text-[40px] mb-5 lg:mb-10"
               dangerouslySetInnerHTML={{ __html: title }}

@@ -49,7 +49,7 @@ const ReelFeature: React.FC<ReelFeatureProps> = ({ items }) => {
         >
           <div className="box-shadow flex h-full flex-col items-center justify-center gap-4 rounded-2xl border border-primary/40 p-6 text-center md:p-10">
             <div className="line-center flex flex-col items-center gap-2">
-              <p className="text-secondary text-sm md:text-[15px] lg:text-lg ">
+              <p className="text-secondary text-base lg:text-lg ">
                 {label}
               </p>
               <h2

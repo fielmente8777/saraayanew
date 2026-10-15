@@ -15,7 +15,7 @@ const Experiences: React.FC<ExperiencesProps> = ({
     <SectionWithContainer containerClassName="curve">
       <div className="md:space-y-14 space-y-8">
         <div className="space-y-2 items-center text-center ">
-          <p className="text-secondary text-sm md:text-[15px] lg:text-lg">
+          <p className="text-secondary text-base lg:text-lg">
             {label}
           </p>
 
