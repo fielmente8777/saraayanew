@@ -20,7 +20,7 @@ export const landingPageData = {
 
   signatureTherapiesData: {
     title: "Hidden within the Folds of the <i>Mountains!</i>",
-    cta: { label: "Book Now", href: "#form" },
+    cta: { label: "Book Now", href: contact.bookingEngineUrl },
     therapies: [
       {
         src: "/Saraya-309.jpg",
@@ -50,7 +50,7 @@ export const landingPageData = {
   },
 
   rooms: {
-    title: "Luxury Stays by <i>Himalayan Lakes!</i>",
+    title: "Stay Amid the <i>Himalayan</i>",
     cards: [
       {
         title: "Mountain View Tents",
@@ -76,7 +76,7 @@ export const landingPageData = {
     ],
     cta: {
       label: "Book Now",
-      href: "#form",
+      href: contact.bookingEngineUrl,
     },
   },
 
@@ -102,7 +102,7 @@ export const landingPageData = {
       },
       {
         image: "/Saraya-137.jpg",
-        alt: "Glacier Stream Picnic",
+        alt: "Riverside Picnic",
         desc: "Slow, unhurried afternoons laid out beside clear alpine waters.",
       },
       {
@@ -133,7 +133,7 @@ export const landingPageData = {
     ],
     cta: {
       label: "Book Now",
-      href: "#form",
+      href: contact.bookingEngineUrl,
     },
   },
   testimonialData: {
@@ -148,26 +148,34 @@ export const landingPageData = {
     ],
     testimonials: [
       {
-        text: "We didn’t just “reach” Saraaya you actually walk the last stretch, and that changes the whole experience. By the time you arrive, it already feels like you’ve left everything behind. No traffic, no noise just silence and space. The tents are beautifully done, but what really stays with you is the feeling of being completely cut off (in a good way). Mornings here feel unreal. Definitely not for people looking for an easy, hotel like stay. But if you want something different, this place delivers.",
-        name: "Rajneesh Thakur",
+        text: "A beautifully curated glamp-style property set amidst serene surroundings and a lovely stream nearby. Offering understated luxury and a tranquil atmosphere perfect for unwinding and reconnecting with nature. We had a truly memorable stay and would love to return.",
+        name: "Sadhvi Arora",
       },
       {
-        text: "Staying at Saraaya was nothing short of magical. Tucked away in the serene beauty it offers the perfect blend of untouched nature and refined luxury, something you rarely come across . hat stood out the most was how effortlessly the property combines comfort with wilderness. What truly makes this place special is that it delivers luxury that feels rare and unexpected in such a remote setting. You get the best of both worlds complete serenity and privacy without compromising on comfort. If you’re looking to disconnect from the chaos and reconnect with nature without giving up on the finer things this place is an absolute must visit",
-        name: "Ronak Panchal",
+        text: "The property was serene and beautiful, perfect for nature lovers looking for offbeat places to visit and explore the unexplored areas of Dharamshala. It is so secluded and peaceful that we didn't want to leave after a day. Regarding the property, Sabhay was very helpful before the booking, answering the hundreds of auestions we asked about the stay, the property, and the area.As soon as we reached the location, Sabhay was there to welcome us: because the road to the property was muddy and accessible only by 4x4, he picked us up and dropped us off when we checked out. The cottage was clean and beautiful, with all the amenities, including Wi-Fi, which was a great feature for such a remote place.The Kareri River was barely 50 meters away from our cottage, and the view. the vibe. and everything else made it so mesmerizing that we spent the whole afternoon there. Please visit this",
+        name: "Tushar Agarwal",
       },
       {
-        text: "Beautiful property in midst of mountains and greenery Such a scenic and calm place to visit ottages are 5 star with amazing bed and bathrooms are so well done Each aspect of the property has a thoughtful insight. Rooms are well heated in winters The host and service staff are delightful amd happy to serve u in a best way possible le We were 2 couple with children hey've a stay a truly memorable experience. Must visit when in dharmsala",
-        name: "Payal Razzaq",
+        text: "The place was so hidden and so beautifully designed next to the river stream and the couple who owns it are so hands on over the place personally in every detail which made our stay blissful.. Me my wife and 10 yr old daughter had great time.....lucky, the caretaker was exceptional in his own way to perform his work to the core.....",
+        name: "Hemant Chebrolu",
       },
       {
-        text: "Awesome place, loved it !!",
-        name: "rishi malhotra",
+        text: "We had a wonderful stay at Saraya Glamps Dharamshala! Nestled amidst breathtaking mountain views and lush greenery, this place offers the perfect blend of luxury and nature. The glamping tents were beautifully designed, spacious, impeccably clean, and equipped with all the comforts needed for a relaxing getaway.The hospitality was exceptional. The staff was incredibly friendly, attentive, and always willing to go the extra mile to make our stay comfortable. The food was fresh, delicious, and thoughtfully prepared, making every meal a delight.The peaceful ambience, stunning surroundings, and well-maintained property make it an ideal destination for anyone looking to unwind and reconnect with nature without compromising on comfort. Whether you’re planning a romantic getaway, a family vacation, or simply a break from city life, Saraya Glamps Dharamshala is a fantastic choice.Highly recommended! We can’t wait to visit again.",
+        name: "Saurabh Dharmawat",
+      },
+      {
+        text: "It was one of the most breathtaking views I’ve ever seen, coupled with excellent and personalised experiences curated by them. The host as well as the staff were constantly available in case we needed something. One of the best parts, the ingredients were locally sourced and cooked expertly. It’s the kind of place one should visit when the world has worn us out. Mr. Lucky was exceptional and always a call away for anything. Shoutout to Marshall, tiger and Bhalu for accompanying us on our walk and making it 100 times more fun. Definitely would recommend. (P.S. expect a bit of uneven terrain, and the occasional horse)",
+        name: "Manasvi Kanaparthy",
+      },
+      {
+        text: "Absolutely beautiful property. The cottages are well-appointed. The food is great. The view from the rooms is great. So secluded from the world that your cars get parked about a kilometre away. Then their 4x4 vehicle takes you ahead and after a point you have to walk through the fields, cross a bridge, and you finally reach the place. The staff is very courteous. You’ll only get BSNL network. Wifi can also be slightly unpredictable at times. They have a beautiful setup for movie night + bonfire. There’s also a river nearby and they can organise a picnic by the river or you can just go and dip your feet in the water by yourselves. It’s absolutely serene. I had gone with 3 of my girlfriends. Take a big bunch of friends or make it a romantic getaway - either way you won’t be disappointed :)",
+        name: "Simran Bansal",
       },
     ],
 
     cta: {
       label: "Book Now",
-      href: "#form",
+      href: contact.bookingEngineUrl,
     },
   },
   corePillars: {
@@ -190,7 +198,7 @@ export const landingPageData = {
           text: "SARAAYA is a place to slow down, breathe deeper and let the mountains set the pace.",
         },
       ],
-      cta: { label: "Book Now", href: "#form" },
+      cta: { label: "Book Now", href: contact.bookingEngineUrl },
       reel: { src: "/video/saraayareel.mp4", poster: "/Saraya-319.jpg" },
     },
     {
@@ -208,7 +216,7 @@ export const landingPageData = {
           text: "Spend your day exploring the Kangra Valley, discover nearby villages and mountain trails, or simply stay close to your suite and enjoy the quiet.",
         },
       ],
-      cta: { label: "Book Now", href: "#form" },
+      cta: { label: "Book Now", href: contact.bookingEngineUrl },
       reel: { src: "/video/saraayareel2.mp4", poster: "/Saraya-159.jpg" },
     },
   ],
@@ -224,6 +232,6 @@ export const landingPageData = {
       { text: "Come for the mountains. Stay for the stillness." },
       { text: "Four private safari suites. One quiet Himalayan valley." },
     ],
-    cta: { label: "Book Now", href: "#form" },
+    cta: { label: "Book Now", href: contact.bookingEngineUrl },
   },
 };

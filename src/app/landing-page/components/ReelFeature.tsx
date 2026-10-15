@@ -58,7 +58,6 @@ const ReelFeature: React.FC<ReelFeatureProps> = ({ items }) => {
               />
             </div>
 
-
             <Reel reel={reel} className="md:hidden" />
 
             <div className="flex flex-col items-center gap-3 text-light">
@@ -72,10 +71,11 @@ const ReelFeature: React.FC<ReelFeatureProps> = ({ items }) => {
             <LinkButton
               href={cta.href}
               label={cta.label}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full border-secondary bg-secondary text-white"
             />
           </div>
-
 
           <div
             className={`items-center max-md:hidden md:flex ${index % 2 === 1 ? "md:order-first" : ""}`}

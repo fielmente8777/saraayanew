@@ -42,10 +42,10 @@ const LandingNav = () => {
 
           {/* Book Now */}
           <LinkButton
-            href="#form"
+            href= {contact.bookingEngineUrl}
             label="Book Now"
-            // target="_blank"
-            // rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-fit rounded-full uppercase border-secondary bg-secondary text-white"
           />
         </Container>

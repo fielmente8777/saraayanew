@@ -26,10 +26,10 @@ const LandingFooter = () => {
             </div>
 
             <LinkButton
-              href="#form"
+              href= {contact.bookingEngineUrl}
               label={footerData.cta.label}
-              // target="_blank"
-              // rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
               className=" w-full flex justify-center text-secondary uppercase rounded-full max-md:mx-auto border-secondary"
             />
           </div>

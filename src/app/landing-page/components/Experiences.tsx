@@ -34,6 +34,8 @@ const Experiences: React.FC<ExperiencesProps> = ({
         <LinkButton
           href={cta.href}
           label={cta.label}
+          target="_blank"
+          rel="noopener noreferrer"
           className="w-fit rounded-full border-secondary bg-secondary text-white mx-auto uppercase"
         />
       </div>

@@ -13,7 +13,10 @@ const Testimonial: React.FC<TestimonialType> = ({
   images,
 }) => {
   return (
-    <Section defaultPadding={false} className="relative border-y border-secondary">
+    <Section
+      defaultPadding={false}
+      className="relative border-y border-secondary"
+    >
       <div className="grid lg:grid-cols-2 grid-cols-1 justify-center items-center">
         <div className=" lg:block hidden">
           <ImageSlider images={images} />

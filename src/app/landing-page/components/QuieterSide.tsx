@@ -42,7 +42,8 @@ const QuieterSide: React.FC<QuieterSideProps> = ({
             <LinkButton
               href={cta.href}
               label={cta.label}
-
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full border-secondary bg-secondary text-white"
             />
           </div>
