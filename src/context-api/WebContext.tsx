@@ -3,6 +3,8 @@ import { contact } from "@/utils/constent";
 import { createContext, useContext, useState } from "react";
 
 interface WebContextProps {
+  isOpenFormPopUp: boolean;
+  setIsOpenFormPopUp: (open: boolean) => void;
   current: number;
   total: number;
   isOpenNavBar: boolean;
@@ -27,6 +29,8 @@ export const WebContext = createContext<WebContextProps>({
   openInfoPopup: false,
   setOpenInfoPopup: () => {},
   WhatsAppClick: () => Promise.resolve(),
+  isOpenFormPopUp: false,
+  setIsOpenFormPopUp: () => {},
 });
 
 interface WebProviderProps {
@@ -35,6 +39,8 @@ interface WebProviderProps {
 export const WebProvider: React.FC<WebProviderProps> = ({ children }) => {
   const [isOpenNavBar, setIsOpenNavBar] = useState(false);
   const [openInfoPopup, setOpenInfoPopup] = useState(false);
+
+  const [isOpenFormPopUp, setIsOpenFormPopUp] = useState(false);
   const [total, setTotal] = useState(0);
   const [current, setCurrent] = useState(1);
   const WhatsAppClick = async (
@@ -111,6 +117,9 @@ export const WebProvider: React.FC<WebProviderProps> = ({ children }) => {
     }
   };
   const value = {
+    isOpenFormPopUp,
+    setIsOpenFormPopUp,
+
     WhatsAppClick,
     total,
     setTotal,

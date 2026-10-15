@@ -14,7 +14,8 @@ import PopUpButton from "@/components/pop-up/PopUpButton";
 import PopUpInfo from "@/components/pop-up/PopUpInfo";
 import localFont from "next/font/local";
 import Popup from "@/components/Popup";
-
+import ConditionalContactButtons from "@/components/ContactButton/ConditionalContactButtons";
+import PopUpForm from "@/components/pop-up/PopUpForm";
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",
   subsets: ["latin"],
@@ -193,8 +194,8 @@ export default function RootLayout({
           <NavBar />
           {children}
           <Footer />
-          <Whatsapp whatsAppNumber={contact.phone[1]} />
-          <Call callNumber={contact.phone[1]} />
+          <ConditionalContactButtons />
+          <PopUpForm />
           <PopUpButton />
           <PopUpInfo />
         </WebProvider>

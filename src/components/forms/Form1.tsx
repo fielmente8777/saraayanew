@@ -4,7 +4,9 @@ import useBookingForm from "@/hooks/useBookingForm";
 import { countries } from "@/utils/constent";
 import { ArrowUpIcons, FromDropDown } from "@/utils/icons";
 import React from "react";
-
+interface Props {
+  gridView?: boolean;
+}
 const Form1 = () => {
   const {
     isSubmitting,

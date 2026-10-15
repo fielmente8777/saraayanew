@@ -24,14 +24,11 @@ const LandingNav = () => {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 w-full transition-all duration-300 max_screen_width ${
-        scrolled
-          ? "bg-primary backdrop-blur-md"
-          : "bg-transparent"
+        scrolled ? "bg-primary backdrop-blur-md" : "bg-transparent"
       }`}
     >
       <nav className="py-2">
         <Container className="flex w-full items-center justify-between">
-          
           {/* Logo */}
           <div className="relative aspect-[4/2] w-30 md:w-40.25">
             <Image
@@ -45,13 +42,12 @@ const LandingNav = () => {
 
           {/* Book Now */}
           <LinkButton
-            href={contact.WhatsappCta}
+            href="#form"
             label="Book Now"
-            target="_blank"
-            rel="noopener noreferrer"
+            // target="_blank"
+            // rel="noopener noreferrer"
             className="w-fit rounded-full uppercase border-secondary bg-secondary text-white"
           />
-
         </Container>
       </nav>
     </header>

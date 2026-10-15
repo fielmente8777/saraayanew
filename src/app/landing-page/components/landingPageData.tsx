@@ -7,9 +7,9 @@ export const landingPageData = {
   },
   about: {
     title:
-      "A Private Luxury Glamping <br/><span class='text-secondary italic'> Experience in the  <i>Himalayas</i></span>",
+      "A Private Glamping <br/><span class='text-secondary italic'> Experience in the  <i>Himalayas</i></span>",
     description: [
-      "Four private safari suites. A quiet Himalayan valley. A mountain stream. Expansive Himalayan views.<br> <b>Saraaya</b>  is a private luxury glamping experience in the Kangra Valley, created for those looking to step away from the pace of city life and reconnect with nature.<br> Surrounded by Deodar cedar, native oak and rhododendron, SARAAYA offers an intimate mountain stay where space, privacy and silence take precedence.",
+      "Four private safari suites. A quiet Himalayan valley. A mountain stream. Expansive Himalayan views.<br> <b>Saraaya</b>  is a private  glamping experience in the Kangra Valley, created for those looking to step away from the pace of city life and reconnect with nature.<br> Surrounded by Deodar cedar, native oak and rhododendron, SARAAYA offers an intimate mountain stay where space, privacy and silence take precedence.",
     ],
     location: {
       label: "SARAAYA GLAMPS DHARAMSHALA",
@@ -20,7 +20,7 @@ export const landingPageData = {
 
   signatureTherapiesData: {
     title: "Hidden within the Folds of the <i>Mountains!</i>",
-    cta: { label: "Book Now", href: contact.WhatsappCta },
+    cta: { label: "Book Now", href: "#form" },
     therapies: [
       {
         src: "/Saraya-309.jpg",
@@ -76,7 +76,7 @@ export const landingPageData = {
     ],
     cta: {
       label: "Book Now",
-      href: contact.WhatsappCta,
+      href: "#form",
     },
   },
 
@@ -133,7 +133,7 @@ export const landingPageData = {
     ],
     cta: {
       label: "Book Now",
-      href: contact.WhatsappCta,
+      href: "#form",
     },
   },
   testimonialData: {
@@ -167,7 +167,7 @@ export const landingPageData = {
 
     cta: {
       label: "Book Now",
-      href: contact.WhatsappCta,
+      href: "#form",
     },
   },
   corePillars: {
@@ -190,7 +190,7 @@ export const landingPageData = {
           text: "SARAAYA is a place to slow down, breathe deeper and let the mountains set the pace.",
         },
       ],
-      cta: { label: "Book Now", href: contact.WhatsappCta },
+      cta: { label: "Book Now", href: "#form" },
       reel: { src: "/video/saraayareel.mp4", poster: "/Saraya-319.jpg" },
     },
     {
@@ -208,7 +208,7 @@ export const landingPageData = {
           text: "Spend your day exploring the Kangra Valley, discover nearby villages and mountain trails, or simply stay close to your suite and enjoy the quiet.",
         },
       ],
-      cta: { label: "Book Now", href: contact.WhatsappCta },
+      cta: { label: "Book Now", href: "#form" },
       reel: { src: "/video/saraayareel2.mp4", poster: "/Saraya-159.jpg" },
     },
   ],
@@ -224,6 +224,6 @@ export const landingPageData = {
       { text: "Come for the mountains. Stay for the stillness." },
       { text: "Four private safari suites. One quiet Himalayan valley." },
     ],
-    cta: { label: "Book Now", href: contact.WhatsappCta },
+    cta: { label: "Book Now", href: "#form" },
   },
 };

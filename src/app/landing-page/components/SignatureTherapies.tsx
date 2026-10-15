@@ -72,8 +72,6 @@ const SignatureTherapies: React.FC<SignatureTherapiesDataType> = ({
                   <LinkButton
                     href={cta.href}
                     label={cta.label}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="w-fit rounded-full border-secondary bg-secondary text-white uppercase"
                   />
                   <div className="flex items-center gap-4">
