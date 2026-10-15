@@ -2,7 +2,7 @@
 import "./sliding.title.scss";
 
 export default function SlidingTitle({ items }: { items: string[] }) {
-  const titles = [...items, ...items];
+  const titles = [...items, ...items, ...items];
 
   return (
     <div className="relative overflow-hidden py-3 md:py-5 text-white max_screen_width bg-primary">
