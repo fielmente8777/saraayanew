@@ -7,12 +7,12 @@ export const landingPageData = {
   },
   about: {
     title:
-      "A Mountain Glamping <br/><span class='text-secondary italic'>Experience Shaped by <i>Stillness</i></span>",
+      "A Private Glamping <br/><span class='text-secondary italic'> Experience in the  <i>Himalayas</i></span>",
     description: [
-      "Where the Landscape Sets the Pace.<br/><br/>Set among native deodar, oak, pine and rhododendron forests in a secluded mountain valley near Dharamshala, SARAAYA is a private Himalayan glamping experience created around space, nature and quiet.<br/><br/>Four private Safari Suites sit within the landscape, surrounded by forest, mountain ridges and a glacier-fed stream whose waters originate from the Kareri Lake region. Created for those who value privacy and nature over crowded hill destinations, SARAAYA offers a slower way to experience the Kangra Valley.",
+      "Four private safari suites. A quiet Himalayan valley. A mountain stream. Expansive Himalayan views.<br> <b>Saraaya</b>  is a private  glamping experience in the Kangra Valley, created for those looking to step away from the pace of city life and reconnect with nature.<br> Surrounded by Deodar cedar, native oak and rhododendron, SARAAYA offers an intimate mountain stay where space, privacy and silence take precedence.",
     ],
     location: {
-      label: "VILLAGE NAUHALI, NEAR DHARAMSHALA",
+      label: "SARAAYA GLAMPS DHARAMSHALA",
       icon: <FillLocationIcon />,
       href: contact.addressLink,
     },
@@ -91,34 +91,44 @@ export const landingPageData = {
     title: "Explore<span>. Wander. Or Sim</span>ply Be.",
     cards: [
       {
-        image: "/Saraya-137.jpg",
-        alt: "Riverside Picnic",
-        desc: "Midday beside the stream. A thoughtfully arranged outdoor setting beside glacier-fed mountain waters for an unhurried lunch.",
-      },
-      {
         image: "/exp-1.png",
-        alt: "Guided Hikes & Nature Trails",
-        desc: "Through pine, oak and mountain paths. Explore the surrounding landscape at an easy pace with local guidance.",
-      },
-      {
-        image: "/Copy of Saraya-203.jpg",
-        alt: "Village Walk",
-        desc: "The rhythm of the valley. Walk through the neighbouring mountain settlement and experience everyday Himalayan life.",
-      },
-      {
-        image: "/home/exp-3.png",
-        alt: "Sundowner",
-        desc: "As the mountain light changes. A private outdoor setup to watch the evening light move across the surrounding ridges.",
-      },
-      {
-        image: "/exp-7.png",
-        alt: "Bonfire & Open-Air Cinema",
-        desc: "Warm fire. Cold mountain air. A private outdoor movie setup beneath the open sky, accompanied by a bonfire.",
+        alt: "Kareri Lake",
+        desc: "Explore one of the region’s celebrated Himalayan trails.",
       },
       {
         image: "/exp-2.png",
-        alt: "Stargazing & Moon Gazing",
-        desc: "Look up. Slow down. Spend an evening beneath the Himalayan night sky, away from the bright lights of the city.",
+        alt: "Stargazing & Moonlit Evenings",
+        desc: "Leave the city lights behind and experience the mountain night sky.",
+      },
+      {
+        image: "/Saraya-137.jpg",
+        alt: "Riverside Picnic",
+        desc: "Slow, unhurried afternoons laid out beside clear alpine waters.",
+      },
+      {
+        image: "/exp-4.png",
+        alt: "Cultural Night",
+        desc: "Evenings spent discovering local mountain traditions and valley stories with our team.",
+      },
+      {
+        image: "/exp-7.png",
+        alt: "Movie under the Stars",
+        desc: "An intimate open-air screening framed by pine canopies and the night sky.",
+      },
+      {
+        image: "/exp-8.png",
+        alt: "Bonfire",
+        desc: "Warm embers and cold mountain air beneath an open sky.",
+      },
+      {
+        image: "/exp-5.png",
+        alt: "Riverside Moments",
+        desc: "Slow down beside the mountain stream and let the valley unfold around you.",
+      },
+      {
+        image: "/Copy of Saraya-203.jpg",
+        alt: "Forest & Village Experiences",
+        desc: "Discover the surrounding landscape and local mountain life.",
       },
     ],
     cta: {
@@ -170,9 +180,9 @@ export const landingPageData = {
   },
   corePillars: {
     label: "Core Pillars",
-    title: "Fou<span>r Safari Suites. By Des</span>ign.",
+    title: "Fou<span>r Suites. By Des</span>ign.",
     description:
-      "We could have built more. We chose not to. SARAAYA is shaped around four distinct Safari Suites, each designed to provide privacy, comfort and a close connection with the surrounding landscape. Mornings begin with mountain light and forest air. Evenings settle into the sounds of the stream, wind through the trees and the Himalayan night.",
+      "We could have built more. We chose not to. SARAAYA is intentionally limited to four private safari suites. With fewer guests and generous space around you, the landscape remains the experience. No crowded resort. No rows of rooms. Just your private space, the forest, the mountains and the sound of the stream. Less built. More left for you.",
   },
 
   reelFeatures: [
@@ -213,19 +223,14 @@ export const landingPageData = {
 
   quieterSide: {
     image: "/quiter.jpg",
-    label: "GETTING HERE",
-    title: "A Qui<span>eter Side of Dhar</span>amshala",
+    label: "Serenity in Wilderness",
+    title: "The Qui<span>eter Side of Dhar</span>amshala",
     description: [
       {
-        text: "The Journey Becomes Part of the Arrival. SARAAYA is located in Village Nauhali in the Kangra Valley, near Dharamshala, Himachal Pradesh. Kareri Lake lies beyond the property, and the glacier-fed waters flowing near SARAAYA originate from the surrounding high mountain region.",
+        text: "Located in Nauhali, Kangra Valley, SARAAYA offers a secluded alternative to the busy Dharamshala stay. Away from the busy tourist centres, the setting places you between forests, villages, mountain trails and the natural landscape of Himachal Pradesh.",
       },
-      {
-        text: "Away from the more crowded tourist circuits of Dharamshala, Nauhali offers a quieter mountain setting surrounded by forest, valleys and Himalayan landscapes.",
-      },
-      {
-        text: "Come for the mountains. Stay for the slower pace.",
-        italic: true,
-      },
+      { text: "Come for the mountains. Stay for the stillness." },
+      { text: "Four private safari suites. One quiet Himalayan valley." },
     ],
     cta: { label: "Book Now", href: contact.bookingEngineUrl },
   },
