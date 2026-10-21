@@ -9,6 +9,7 @@ type VisitData = {
     normal: string;
     highlighted: string;
   };
+  description?: string[];
   links: {
     label: string;
     href: string;
@@ -45,6 +46,14 @@ export default function ContactInfo({ visitData, reservationsData }: Props) {
           {visitData.title.highlighted}
         </span>
       </h2>
+
+      {visitData.description && (
+        <div className="flex flex-col gap-1 text-primary text-base">
+          {visitData.description.map((line, idx) => (
+            <p key={idx}>{line}</p>
+          ))}
+        </div>
+      )}
 
       {/* Contact Links */}
       <ul className="flex flex-col gap-4">

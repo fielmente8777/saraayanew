@@ -22,21 +22,18 @@ export const accommodationPageData = {
     title: "Himalayan Glamping Escapes!",
   },
   about: {
-    subtitle: "Built for those who prefer hidden places over popular ones.",
+    subtitle: "We could have built more. We chose not to.",
     logo: "/home/Vector-1.png",
     title: {
-      normal1: "Four Luxury ",
-      highlight1: "Tents",
-      normal2: ". Endless ",
-      highlight2: "Mountains",
-      normal3: ". Complete ",
-      highlight3: "Silence",
+      normal1: "Four Safari ",
+      highlight1: "Suites",
+      normal2: ". By ",
+      highlight2: "Design",
       normal4: ".",
     },
     description: [
-      "Designed for people seeking privacy, stillness, and nature without compromising comfort. Where mornings begin with mist and evenings end under a billion stars.",
-
-      "Saraaya was created for people who no longer seek crowded luxury, but meaningful stillness.",
+      "SARAAYA is shaped around four distinct Safari Suites, each designed to provide privacy, comfort and a close connection with the surrounding landscape.",
+      "Mornings begin with mountain light and forest air. Evenings settle into the sounds of the stream, wind through the trees and the Himalayan night.",
     ],
   },
   titles: [
@@ -49,8 +46,7 @@ export const accommodationPageData = {
   accommodations: [
     {
       id: "01",
-      // title: 'DEVDAR "THE KEEPER"',
-      title: 'Devdar "The Keeper"',
+      title: "DEVdar — The Keeper",
       images: [
         "/rooms/Mountain-4.png",
         "/rooms/Mountain-2.png",
@@ -59,23 +55,27 @@ export const accommodationPageData = {
         "/rooms/Mountain-5.png",
         "/rooms/Mountain-6.png",
       ],
+      description: `Named after the Himalayan Cedar (Cedrus deodara).
+A warm and intimate Safari Suite framed by mature cedar trees and mountain views.
 
-      description:
-        'Named after the sacred Deodar cedar, known as the "Wood of the Gods," Devdar "The Keeper" symbolizes strength, protection, resilience, and timeless wisdom. Like the majestic Himalayan tree that has sheltered generations, it offers a peaceful sanctuary where guests can slow down, reconnect, and embrace nature. Experience the perfect blend of luxury, comfort, and wilderness in our fully furnished Ultra-Luxury Safari Tent. Spacious interiors open to breathtaking Himalayan mountain and forest views, creating a serene retreat. Thoughtfully designed with a plush king-size bed, premium bedding, wardrobe, study table, ambient lighting, cozy blankets, and secure lockable doors, every detail ensures privacy and relaxation. The private attached bathroom features modern fittings, a spacious shower, running water, and 24/7 hot water. With heaters, coolers, and fans for year-round comfort, Devdar "The Keeper" combines safari-inspired charm with boutique luxury for an unforgettable mountain escape.',
+The Space: A generous interior featuring a plush king-size bed, quality linens, warm winter bedding, a comfortable seating corner and writing desk.
+Ensuite Bathroom: Private attached bathroom with modern fittings, walk-in shower and 24/7 hot water.
+Outdoor Veranda: Private timber deck opening towards the surrounding forest.
+Comfort: Heating for colder months, seasonal ventilation and secure lockable doors.`,
 
       amenities: [
-        { title: "Spacious luxury tents", icon: <SpaciousLuxuryIcon /> },
+        { title: "Raised timber platforms", icon: <SpaciousLuxuryIcon /> },
         {
           title: "Attached modern bathrooms",
           icon: <AttachedModernBathroomsIcon />,
         },
-        { title: "Premium linens & amenities", icon: <PremiumLinensIcon /> },
-        { title: "Heaters & fans all seasons", icon: <HeatersIcon /> },
-        { title: "Private decks", icon: <PrivateDeckIcon /> },
+        { title: "King-size bed & quality linens", icon: <PremiumLinensIcon /> },
+        { title: "Heating for colder months", icon: <HeatersIcon /> },
+        { title: "Private timber veranda", icon: <PrivateDeckIcon /> },
       ],
       price: "From ₹ 12000/-",
       ctas: [
-        { label: "RESERVE", href: contact.bookingEngineUrl },
+        { label: "ENQUIRE ABOUT YOUR STAY", href: contact.WhatsappCta },
         { label: "CALL NOW", href: contact.callCta },
       ],
     },
@@ -88,22 +88,27 @@ export const accommodationPageData = {
         "/rooms/Premium-4.png",
         "/rooms/Premium-5.png",
       ],
-      title: 'Rai "The Watcher"',
-      description:
-        `Named after the resilient Himalayan Oak (Rai), a tree that stands watch over mountain forests through changing seasons, Rai "The Watcher" symbolizes awareness, stability, and quiet strength. Rooted in nature, it invites you to slow down, observe, and experience the mountains at their most peaceful. Wake up to panoramic Himalayan views, the soothing sounds of the nearby stream, and crisp mountain air from your elegantly designed Ultra-Luxury Safari Tent. Thoughtfully crafted to blend modern comfort with the charm of glamping, it features a plush king-size bed with premium linens, cozy blankets, a spacious wardrobe, study desk, warm ambient lighting, bedside lamps, and secure lockable doors. The private attached bathroom includes modern fittings, a spacious shower, running water, and 24/7 hot water. Whether watching the sunrise over mist-covered peaks or relaxing beneath a sky full of stars, Rai "The Watcher" offers an unforgettable luxury retreat immersed in nature.`,
+      title: "RAI — The Watcher",
+      description: `Named after the Himalayan Oak (Quercus leucotrichophora).
+Surrounded by native oak forest, Rai is designed for guests who enjoy quieter mornings, reading and simply watching the landscape unfold.
+
+The Space: King-size bed, premium bedding, handloom throws, wardrobe storage, bedside lamps and a comfortable desk.
+Ensuite Bathroom: Private attached bathroom with modern fittings, walk-in shower and 24/7 hot water.
+Outdoor Veranda: Private timber deck overlooking the surrounding forest and valley.
+Comfort: Heating for colder months, seasonal ventilation and secure lockable doors.`,
       amenities: [
-        { title: "Spacious luxury tents", icon: <SpaciousLuxuryIcon /> },
+        { title: "Raised timber platforms", icon: <SpaciousLuxuryIcon /> },
         {
           title: "Attached modern bathrooms",
           icon: <AttachedModernBathroomsIcon />,
         },
-        { title: "Premium linens & amenities", icon: <PremiumLinensIcon /> },
-        { title: "Heaters & fans all seasons", icon: <HeatersIcon /> },
-        { title: "Private decks", icon: <PrivateDeckIcon /> },
+        { title: "King-size bed & handloom throws", icon: <PremiumLinensIcon /> },
+        { title: "Heating for colder months", icon: <HeatersIcon /> },
+        { title: "Private timber veranda", icon: <PrivateDeckIcon /> },
       ],
       price: "From ₹ 12000/-",
       ctas: [
-        { label: "RESERVE", href: contact.bookingEngineUrl },
+        { label: "ENQUIRE ABOUT YOUR STAY", href: contact.WhatsappCta },
         { label: "CALL NOW", href: contact.callCta },
       ],
     },
@@ -117,22 +122,27 @@ export const accommodationPageData = {
         "/rooms/Mountain-5.png",
         "/rooms/Mountain-6.png",
       ],
-      title: 'Buransh "The Nurturer"',
-      description:
-        `Inspired by the vibrant Buransh (Rhododendron), the beloved flowering tree of the Himalayas, Buransh "The Nurturer" symbolizes warmth, renewal, and the vibrant spirit of mountain life. Surrounded by breathtaking Himalayan views and lush forests, this Ultra-Luxury Safari Tent offers a peaceful retreat designed to refresh both body and mind. Thoughtfully furnished with a plush king-size bed, premium bedding, elegant interiors, and a private attached bathroom with modern amenities and 24/7 hot water, it blends safari-style charm with boutique luxury. With year-round comfort and nature all around, Buransh "The Nurturer" promises a truly relaxing mountain escape.`,
+      title: "BURANSH — The Nurturer",
+      description: `Named after the Himalayan Rhododendron (Rhododendron arboreum).
+Positioned to receive soft mountain light through the surrounding trees, Buransh combines the character of Safari-style glamping with a comfortable, restful interior.
+
+The Space: King-size bed, premium bedding, woollen blankets, comfortable seating and warm ambient lighting.
+Ensuite Bathroom: Private attached bathroom with modern fittings, walk-in shower and 24/7 hot water.
+Outdoor Veranda: Private timber deck surrounded by native woodland.
+Comfort: Heating for colder months, seasonal ventilation and secure lockable entry.`,
       amenities: [
-        { title: "Spacious luxury tents", icon: <SpaciousLuxuryIcon /> },
+        { title: "Raised timber platforms", icon: <SpaciousLuxuryIcon /> },
         {
           title: "Attached modern bathrooms",
           icon: <AttachedModernBathroomsIcon />,
         },
-        { title: "Premium linens & amenities", icon: <PremiumLinensIcon /> },
-        { title: "Heaters & fans all seasons", icon: <HeatersIcon /> },
-        { title: "Private decks", icon: <PrivateDeckIcon /> },
+        { title: "King-size bed & woollen blankets", icon: <PremiumLinensIcon /> },
+        { title: "Heating for colder months", icon: <HeatersIcon /> },
+        { title: "Private timber veranda", icon: <PrivateDeckIcon /> },
       ],
       price: "From ₹ 12000/-",
       ctas: [
-        { label: "RESERVE", href: contact.bookingEngineUrl },
+        { label: "ENQUIRE ABOUT YOUR STAY", href: contact.WhatsappCta },
         { label: "CALL NOW", href: contact.callCta },
       ],
     },
@@ -145,22 +155,26 @@ export const accommodationPageData = {
         "/rooms/Premium-4.png",
         "/rooms/Premium-5.png",
       ],
-      title: 'Kail "The Wanderer"',
-      description:
-        `Named after the graceful Himalayan Blue Pine (Kail), Kail "The Wanderer" celebrates curiosity, exploration, and the spirit of adventure. Surrounded by breathtaking Himalayan views and the soothing sounds of a nearby glacier stream, this Ultra-Luxury Safari Tent offers the perfect balance of wilderness and refined comfort. Featuring a plush king-size bed, premium furnishings, elegant interiors, and a private attached bathroom with modern amenities and 24/7 hot water, every detail is designed for a luxurious stay. With year-round comfort and stunning natural surroundings, Kail "The Wanderer" is the ideal retreat for unforgettable mountain escapes.`,
+      title: "KAIL — The Wanderer",
+      description: `Named after the Himalayan Blue Pine (Pinus wallichiana).
+Set closest to the glacier-fed stream, Kail brings you closest to the sound of flowing mountain water and the surrounding landscape.
+
+The Space: A generous interior with king-size bed, crisp linens, warm winter bedding, study nook and ambient lighting.
+Ensuite Bathroom: Private attached bathroom with modern fittings, walk-in shower and 24/7 hot water.
+Outdoor Veranda: An expansive timber deck facing the stream and surrounding mountain landscape.
+Comfort: Heating for colder months, seasonal ventilation and secure lockable doors.`,
       amenities: [
-        { title: "Spacious luxury tents", icon: <SpaciousLuxuryIcon /> },
+        { title: "Raised timber platforms", icon: <SpaciousLuxuryIcon /> },
         {
           title: "Attached modern bathrooms",
           icon: <AttachedModernBathroomsIcon />,
         },
-        { title: "Premium linens & amenities", icon: <PremiumLinensIcon /> },
-        { title: "Heaters & fans all seasons", icon: <HeatersIcon /> },
-        { title: "Private decks", icon: <PrivateDeckIcon /> },
+        { title: "King-size bed & crisp linens", icon: <PremiumLinensIcon /> },
+        { title: "Heating for colder months", icon: <HeatersIcon /> },
+        { title: "Private timber veranda facing stream", icon: <PrivateDeckIcon /> },
       ],
-
       ctas: [
-        { label: "RESERVE", href: contact.bookingEngineUrl },
+        { label: "ENQUIRE ABOUT YOUR STAY", href: contact.WhatsappCta },
         { label: "CALL NOW", href: contact.callCta },
       ],
     },
@@ -172,7 +186,7 @@ export const accommodationPageData = {
     heading:
       "Mornings Wrapped in Mist. Evenings Lit by Fire. Nights Filled with Stars.",
     cta: {
-      label: "PLAN YOUR EXCAPE",
+      label: "PLAN YOUR JOURNEY",
       href: contact.WhatsappCta,
     },
   },
@@ -188,23 +202,23 @@ export const accommodationPageData = {
   title: [
     {
       icon: <RoomTentIcon />,
-      title: "SPACIOUS LUXURY TENTS",
+      title: "PRIVATE SAFARI SUITES ON RAISED TIMBER PLATFORMS",
     },
     {
       icon: <TapeIcon />,
-      title: "ATTACHED MODERN BATHROOMS",
+      title: "PRIVATE ENSUITE BATHROOMS WITH 24/7 HOT WATER",
     },
     {
       icon: <AmenintiesIcon />,
-      title: "PREMIUM LINENS & AMENITIES",
+      title: "KING-SIZE BEDS WITH QUALITY BEDDING & TEXTILES",
     },
     {
       icon: <FanIcon />,
-      title: "HEATERS & FANS ALL SEASONS",
+      title: "HEATING DURING COLDER MONTHS & VENTILATION",
     },
     {
       icon: <DeckIcon />,
-      title: "PRIVATE DECKS",
+      title: "PRIVATE OUTDOOR TIMBER VERANDAS WITH VIEWS",
     },
   ],
 };

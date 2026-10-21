@@ -5,12 +5,18 @@ import { EmailIcon, LocationIcon, PhoneIcon } from "@/utils/icons";
 // import { CallIcon, LocationIcon,MailIcon } from "@/utils/icons";
 export const contactPageData = {
   visitData: {
-    sectionLabel: "Contact",
+    sectionLabel: "Enquire",
 
     title: {
-      normal: "Get In ",
-      highlighted: "TOUCH",
+      normal: "Come Away to ",
+      highlighted: "SARAAYA",
     },
+    description: [
+      "Four private Safari Suites.",
+      "A secluded mountain setting.",
+      "The Kangra Valley beyond the crowds.",
+      "Tell us when you would like to arrive, and let us help you plan your stay.",
+    ],
     links: [
       {
         icon: PhoneIcon,
@@ -27,7 +33,7 @@ export const contactPageData = {
       {
         icon: LocationIcon,
         label: "Village Nauhali, Dharamshala 176217",
-        href: "#",
+        href: contact.addressLink,
       },
     ],
   },
@@ -35,20 +41,21 @@ export const contactPageData = {
   reservationsData: {
     title: "RESERVATIONS & ENQUIRIES",
     items: [
-      "Room Bookings",
-      "Restaurant Bookings",
-      "Private Events",
-      "On-site Parking Available",
+      "Four Private Safari Suites",
+      "Secluded Mountain Valley Setting",
+      "Glacier-Fed Stream & Forest Trails",
+      "Private Group Buyouts & Celebrations",
     ],
   },
 
   enquiryForm: {
-    title: "ENQUIRE NOW ",
+    title: "ENQUIRE NOW",
     subtitle: {
-      normal: "Let's Plan your Stay at",
+      normal: "Come Away to",
       highlighted: "Saraaya",
     },
-    privacyNote: "We respect your privacy. Your information is never shared.",
+    privacyNote:
+      "Tell us when you would like to arrive, and let us help you plan your stay. We respect your privacy.",
   },
 
   img: {

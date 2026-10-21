@@ -10,9 +10,9 @@ interface Props {
     highlight1: string;
     normal2: string;
     highlight2: string;
-    normal3:string,
-    highlight3:string,
-    normal4:string,
+    normal3?: string;
+    highlight3?: string;
+    normal4?: string;
   };
   description: string[];
 }

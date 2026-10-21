@@ -26,62 +26,64 @@ export const homePageData = {
   about: {
     image: "/home/about-img.png",
     logo: "/home/Vector-1.png",
-    title: "A LUXURY GLAMPING Retreat",
+    title: "A MOUNTAIN GLAMPING EXPERIENCE SHAPED BY STILLNESS",
     heading:
-      'Where The <span class = "italic text-secondary font-primary">Mountains</span> Learn To Whisper',
+      'Where The <span class = "italic text-secondary font-primary">Landscape</span>  Sets the Pace',
     description: [
       `<span class="float-left text-4xl md:text-6xl leading-[0.85] mr-3 font-primary">
         S
-      </span>araaya is more than a retreat, it is a sanctuary for the soul. Perched beside a crystalline glacier stream born from sacred alpine peaks, we have harmonized the untamed spirit of the Himalayas with the sophisticated comforts of a premier estate. With only four exclusive glamp suites, your stay is a private communion with the wilderness.,Escape the Noise. Rediscover Your Center.,Leave the city lights behind for a canopy of a billion stars.`,
+      </span>et among native deodar, oak, pine and rhododendron forests in a secluded mountain valley near Dharamshala, SARAAYA is a private Himalayan glamping experience created around space, nature and quiet.`,
 
-      "Saraaya was created for people who no longer seek crowded luxury, but meaningful stillness.",
+      "Four private Safari Suites sit within the landscape, surrounded by forest, mountain ridges and a glacier-fed stream whose waters originate from the Kareri Lake region.",
+      "Created for those who value privacy and nature over crowded hill destinations, SARAAYA offers a slower way to experience the Kangra Valley.",
+      "Wake to shifting mountain light, spend afternoons beside the stream, explore the surrounding forest, or simply stay on your private deck as the valley changes around you.",
     ],
-    hostedText: "Hosted by the Saraaya family, since 2019",
+    hostedText: "Thoughtfully hosted in the Kangra Valley since 2019.",
   },
 
   escapeSection: {
     image: "/home/escape.jpg",
-    title: "FAR AWAY FROM DUTY, CROWDS, AND CHAOS.",
-    heading: `Experience slow luxury in the heart of nature, with panoramic mountain views, nearby rivers, & endless trails to explore.`,
+    title: "A PRIVATE GLAMP IN THE MOUNTAINS",
+    heading: `Leave the momentum of modern life behind. Surrounded by native Himalayan forests, mountain air and flowing glacier-fed waters, SARAAYA gives you the freedom to shape your days at your own pace.`,
     cta: {
-      label: "PLAN YOUR EXCAPE",
+      label: "PLAN YOUR JOURNEY",
       href: contact.WhatsappCta,
     },
   },
 
   glampsSection: {
-    title: "THE GLAMPS",
+    title: "A PRIVATE GLAMP IN THE MOUNTAINS",
     heading: {
-      normal: "Four Suites. One forest. Endless ways to",
-      highlight: "Disappear.",
+      normal: "Four Safari Suites. By",
+      highlight: "Design.",
     },
     // description:
     //   "Each glamp is hand-built from cedar, canvas and stone, a private kingdom of one suite, one view, one fireplace.",
     accommodations: [
       {
         id: "01",
-        title: 'Devdar "The Keeper" ',
+        title: "DEVdar — The Keeper",
         image: "/rooms/Mountain-1.png",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
         cta: { label: "know more", href: "/rooms" },
       },
       {
         id: "02",
-        title: 'Rai "The Watcher"',
+        title: "RAI — The Watcher",
         image: "/rooms/Mountain-2.png",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
         cta: { label: "know more", href: "/rooms" },
       },
       {
         id: "03",
-        title: 'Buransh  "The Nurturer" ',
+        title: "BURANSH — The Nurturer",
         image: "/rooms/Mountain-3.png",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
         cta: { label: "know more", href: "/rooms" },
       },
       {
         id: "04",
-        title: 'Kail " The Wanderer" ',
+        title: "KAIL — The Wanderer",
         image: "/rooms/Mountain-4.png",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
         cta: { label: "know more", href: "/rooms" },
@@ -90,63 +92,62 @@ export const homePageData = {
   },
 
   experiencesSection: {
-    title: "The Saraaya EXPERIENCES",
+    title: "The SARAAYA Experiences",
     heading:
-      'Days arranged like <span class="italic text-secondary "> Stories! </span>',
+      'An Unhurried <span class="italic text-secondary ">Mountain Experience</span>',
     description:
-      "Curated rituals designed by our hosts, none of them on a schedule, all of them on the slow side of time.",
+      "Some days, the best plan is no plan. SARAAYA is intentionally unstructured. There are no fixed programmes or timetables. Spend the day on your deck, explore the surrounding landscape, sit beside the stream or choose an experience arranged by our team.",
     footerNote:
-      "**Food and beverages are chargeable separately for all setups and experiences.",
+      "Experiences are arranged in advance and remain subject to weather, season and availability. Experiences, setups and food & beverage arrangements are chargeable separately. Trekking is not included in the stay.",
     experiences: [
       {
-        image: "/home/exp-1.png",
-        title: "Bonfire",
-        timing: "Dusk · Daily",
-        price: "₹2,500 onwards",
-        description:
-          "Private outdoor movie setup with cozy bonfire ambience under the stars.",
-      },
-      {
-        image: "/home/exp-2.png",
-        title: "Star Gazing Session",
-        timing: "Sunrise · In-tent",
-        price: "₹1,500 onwards",
-        description:
-          "Guided star gazing experience in the peaceful Himalayan night sky.",
-      },
-      {
-        image: "/home/exp-3.png",
-        title: "Sun Downer Setup",
-        timing: "Dusk · Daily",
-        price: "₹3,500 onwards",
-        description:
-          "Beautiful sunset setup at a scenic spot perfect for couples and small groups.",
-      },
-      {
         image: "/home/exp-4.png",
-        title: "Picnic Setup",
-        timing: "Sunrise · In-tent",
-        price: "₹3,000 onwards",
+        title: "Riverside Picnic",
+        timing: "Midday beside the stream",
+        price: "",
         description:
-          "Curated outdoor picnic setup surrounded by nature for a relaxed experience.",
+          "A thoughtfully arranged outdoor setting beside glacier-fed mountain waters for an unhurried lunch and long conversations.",
+      },
+      {
+        image: "/exp-1.png",
+        title: "Guided Hikes & Nature Trails",
+        timing: "Through pine, oak and mountain paths",
+        price: "",
+        description:
+          "Explore the surrounding landscape at an easy pace with local guidance.",
       },
       {
         image: "/exp-6.png",
-        alt: "Village tour",
-        title: "Village Tour",
-        timing: "Morning · Daily",
+        alt: "Village Walk",
+        title: "Village Walk",
+        timing: "The rhythm of the valley",
         price: "",
         description:
-          "Guided village tour of the surrounding village with a local guide.",
+          "Walk through the neighbouring mountain settlement with a local team member and experience a quieter side of everyday Himalayan life.",
       },
       {
-        image: "/exp-4.png",
-        alt: "Cultural night",
-        title: "Cultural Night",
-        timing: "Evening · Daily",
+        image: "/home/exp-3.png",
+        title: "Sundowner",
+        timing: "As the mountain light changes",
         price: "",
         description:
-          "A cultural night with a local guide to explore the culture of the village.",
+          "A private outdoor setup to watch the evening light move across the surrounding ridges.",
+      },
+      {
+        image: "/home/exp-1.png",
+        title: "Bonfire & Open-Air Cinema",
+        timing: "Warm fire. Cold mountain air.",
+        price: "",
+        description:
+          "A private outdoor movie setup beneath the open sky, accompanied by a bonfire.",
+      },
+      {
+        image: "/home/exp-2.png",
+        title: "Stargazing & Moon Gazing",
+        timing: "Look up. Slow down.",
+        price: "",
+        description:
+          "Spend an evening beneath the Himalayan night sky, away from the bright lights of the city.",
       },
     ],
   },

@@ -1,16 +1,22 @@
 export const galleryPageData = {
   bannerData: {
     title:
-      'Explore our <span class = "italic text-secondary">Himalayan</span> Resort',
-    description: ["A glimpse into luxury and experiences."],
+      'SARAAYA, Through <span class = "italic text-secondary">Your Eyes</span>',
+    description: [
+      "The forest. The mountains. The stream. The Safari Suites. The little moments in between.",
+    ],
+    cta: {
+      label: "PLAN YOUR STAY",
+      href: "/contact-us",
+    },
     images: ["/images/gallery/banner.jpg"],
   },
 
   gallerySection: {
-    title: "Stay above the clouds",
+    title: "SARAAYA, Through Your Eyes",
     link: {
-      label: "Check Availability",
-      href: "#",
+      label: "PLAN YOUR STAY",
+      href: "/contact-us",
     },
 
     galleryImages: [

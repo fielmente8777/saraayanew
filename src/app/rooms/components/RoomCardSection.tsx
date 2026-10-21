@@ -29,7 +29,7 @@ const RoomCardSection: React.FC<{ cards: Props[] }> = ({ cards }) => {
               >
                 <ImageSlider images={card.images} />
               </div>
-              <p className="text-primary lg:text-lg">{card.description}</p>
+              <p className="text-primary lg:text-lg whitespace-pre-line">{card.description}</p>
               {/* <ul className="flex flex-wrap items-center justify-between border-y-[0.5px] border-[#cacaca]">
                 {card.amenities.map((amenity, index) => (
                   <li key={index} className="flex items-center gap-2 py-2">
