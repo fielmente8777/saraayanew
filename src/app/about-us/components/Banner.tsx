@@ -28,7 +28,7 @@ const Banner: React.FC<BannerProps> = ({
           <div className="w-full relative lg:aspect-4/2.25 aspect-4/3">
             <Image
               src={image}
-              alt="Image"
+              alt={title || "About SARAAYA Himalayan Glamping"}
               fill
               className="object-cover"
               sizes="100%"

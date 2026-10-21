@@ -68,7 +68,7 @@ const GlampsSection: React.FC<Props> = ({
             <div className="w-full relative aspect-4/2.75">
               <Image
                 src={filtered[0].image}
-                alt="Image"
+                alt={filtered[0].title || "SARAAYA Safari Suite"}
                 fill
                 className="object-cover"
               />
@@ -100,7 +100,7 @@ const GlampsSection: React.FC<Props> = ({
                 <div className="w-full relative aspect-4/2.75">
                   <Image
                     src={acc.image}
-                    alt="Image"
+                    alt={acc.title || "SARAAYA Safari Suite"}
                     fill
                     className="object-cover"
                   />

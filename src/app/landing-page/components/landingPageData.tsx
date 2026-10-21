@@ -171,6 +171,22 @@ export const landingPageData = {
         text: "Absolutely beautiful property. The cottages are well-appointed. The food is great. The view from the rooms is great. So secluded from the world that your cars get parked about a kilometre away. Then their 4x4 vehicle takes you ahead and after a point you have to walk through the fields, cross a bridge, and you finally reach the place. The staff is very courteous. You’ll only get BSNL network. Wifi can also be slightly unpredictable at times. They have a beautiful setup for movie night + bonfire. There’s also a river nearby and they can organise a picnic by the river or you can just go and dip your feet in the water by yourselves. It’s absolutely serene. I had gone with 3 of my girlfriends. Take a big bunch of friends or make it a romantic getaway - either way you won’t be disappointed :)",
         name: "Simran Bansal",
       },
+      {
+        text: "We had a wonderful stay at Saraaya Glamps Dharamshala. The Swiss tent experience by the riverside was absolutely amazing and gave us the perfect blend of luxury and nature. The sound of the flowing river, fresh mountain air, and peaceful surroundings made the stay truly refreshing. The Swiss tents were clean, spacious, comfortable, and very well-maintained. Everything was thoughtfully arranged to make the stay cozy and relaxing. The location is perfect for anyone wanting to enjoy nature and escape the busy city life. A special thanks to Mr. Thakur for being such a fantastic host. He was incredibly polite, attentive, and always ready to help. His warm hospitality made us feel at home throughout the stay. Highly recommended for couples, families, and nature lovers looking for a unique and memorable glamping experience in Dharamshala!",
+        name: "Aman",
+      },
+      {
+        text: "Amazing mountain stay! The property is peaceful, scenic, and away from the crowds. The food was delicious, and the hospitality was exceptional. Everyone was warm, friendly, and made us feel at home. Great value for money and highly recommended for family and friends looking for a relaxing getaway.",
+        name: "Tavleen",
+      },
+      {
+        text: "The property was very neat and clean and the food was amazing specially the view and the way to the property was also a little adventurous.",
+        name: "Abhimanyu",
+      },
+      // {
+      //   text: "The property was very neat and clean and the food was amazing specially the view and the way to the property was also a little adventurous.",
+      //   name: "Abhimanyu",
+      // },
     ],
 
     cta: {

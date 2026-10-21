@@ -18,7 +18,7 @@ export default function SlidingTitle2 ({ items, colorChange }: TitleSectionProps
     <div className={`relative overflow-hidden py-4  max_screen_width ${colorChange ? "bg-background" : "bg-primary"}`}>
       <Image
         src={"/Layer-2-2.png"}
-        alt="Layer-2"
+        alt="Himalayan texture pattern"
         fill
         className="object-cover object-center"
       />

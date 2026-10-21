@@ -27,7 +27,7 @@ const RoomCardSection: React.FC<{ cards: Props[] }> = ({ cards }) => {
               <div
                 className={`w-full lg:col-span-4 lg:hidden relative aspect-4/3 `}
               >
-                <ImageSlider images={card.images} />
+                <ImageSlider images={card.images} alt={card.title} />
               </div>
               <p className="text-primary lg:text-lg whitespace-pre-line">{card.description}</p>
               {/* <ul className="flex flex-wrap items-center justify-between border-y-[0.5px] border-[#cacaca]">
@@ -63,7 +63,7 @@ const RoomCardSection: React.FC<{ cards: Props[] }> = ({ cards }) => {
             <div
               className={`w-full lg:col-span-4 lg:block hidden relative aspect-4/3 ${index % 2 === 0 ? "lg:order-last" : "lg:order-first"}`}
             >
-              <ImageSlider images={card.images} />
+              <ImageSlider images={card.images} alt={card.title} />
             </div>
           </div>
         </SectionWithContainer>

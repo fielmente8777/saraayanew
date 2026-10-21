@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+import { seoMetadata } from "@/utils/metadata";
 import VideoBanner from "@/components/banners/VideoBanner";
 import { homePageData } from "./components/pageData";
 import About from "./components/About";
@@ -7,6 +9,8 @@ import GlampsSection from "./components/GlampsSection";
 import ExperiencesSection from "./components/ExperiencesSection";
 import TitleSection from "@/components/TitleSection";
 // import ImageSlide from "@/components/banners/ImageSlide";
+
+export const metadata: Metadata = seoMetadata.home;
 
 const page = () => {
   return (

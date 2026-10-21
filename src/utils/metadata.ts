@@ -1,149 +1,208 @@
-export const seoMetadata = {
+import { Metadata } from "next";
+
+export const siteUrl = "https://saraayaglamps.com";
+
+export const seoMetadata: Record<string, Metadata> = {
   home: {
-    title: "Arkaya Mukteshwar | Boutique Himalayan Retreat",
+    title: "SARAAYA | Luxury Glamping & Mountain Retreat in Dharamshala, Kangra Valley",
     description:
-      "Arkaya Mukteshwar is a boutique Himalayan retreat offering luxury residences, panoramic mountain views, curated experiences, and elevated dining in the heart of Uttarakhand.",
+      "Experience SARAAYA, an exclusive mountain glamping retreat near Dharamshala. Four private safari suites surrounded by native deodar forests and a glacier-fed stream.",
     keywords: [
-      "Arkaya Mukteshwar",
-      "luxury resort Mukteshwar",
-      "boutique hotel Mukteshwar",
-      "Himalayan retreat Uttarakhand",
-      "mountain resort Mukteshwar",
-      "luxury stay Mukteshwar"
+      "Saraaya Glamping",
+      "Glamping Dharamshala",
+      "Luxury camping Himachal Pradesh",
+      "Kangra Valley retreat",
+      "Safari suites Dharamshala",
+      "Private mountain glamping",
+      "Kareri Lake stay",
+      "Boutique retreat Himalayas",
     ],
-    canonical: "https://arkaya.com/",
-    ogImage: "/seo/home.webp"
+    alternates: {
+      canonical: `${siteUrl}/`,
+    },
+    openGraph: {
+      title: "SARAAYA | Luxury Glamping & Mountain Retreat in Dharamshala",
+      description:
+        "Four private Safari Suites set among native deodar and pine forests beside a glacier-fed stream near Dharamshala.",
+      url: `${siteUrl}/`,
+      siteName: "SARAAYA Glamping Retreat",
+      locale: "en_IN",
+      type: "website",
+      images: [
+        {
+          url: "/logo-1.png",
+          width: 800,
+          height: 600,
+          alt: "SARAAYA Glamping Retreat",
+        },
+      ],
+    },
   },
 
   about: {
-    title: "About Arkaya Mukteshwar | A Boutique Himalayan Retreat",
+    title: "Our Story | SARAAYA Himalayan Glamping Retreat Dharamshala",
     description:
-      "Discover Arkaya Mukteshwar, where quiet strength, timeless grace, and Himalayan beauty shape every moment of your stay.",
+      "Discover the story of SARAAYA. Founded in 2019 in Village Nauhali, created around space, nature, and stillness in the Himalayas with only four private safari suites.",
     keywords: [
-      "about Arkaya Mukteshwar",
-      "boutique Himalayan retreat",
-      "Mukteshwar luxury stay",
-      "Arkaya resort Mukteshwar",
-      "Himalayan boutique hotel"
+      "About Saraaya",
+      "Story of Saraaya",
+      "Village Nauhali retreat",
+      "Kangra Valley glamping history",
+      "Himalayan nature stay",
+      "Dharamshala boutique glamping",
     ],
-    canonical: "https://arkaya.com/about",
-    ogImage: "/seo/about.webp"
+    alternates: {
+      canonical: `${siteUrl}/about-us/`,
+    },
+    openGraph: {
+      title: "Our Story | SARAAYA Himalayan Glamping Retreat Dharamshala",
+      description:
+        "The story behind SARAAYA — a secluded sanctuary in the Kangra Valley created around space, nature, and stillness.",
+      url: `${siteUrl}/about-us/`,
+      siteName: "SARAAYA Glamping Retreat",
+      locale: "en_IN",
+      type: "website",
+    },
   },
 
-  accommodation: {
-    title: "Luxury Rooms & Suites in Mukteshwar | Arkaya Mukteshwar",
+  rooms: {
+    title: "Safari Suites & Accommodations | SARAAYA Glamping Dharamshala",
     description:
-      "Explore luxury Himalayan rooms and suites at Arkaya Mukteshwar featuring panoramic mountain views, private balconies, and serene comfort.",
+      "Explore our four private Safari Suites: DEVdar, RAI, BURANSH, and KAIL. Fitted with ensuite bathrooms, 24/7 hot and normal water, and comfort for summer & winter stays.",
     keywords: [
-      "luxury rooms Mukteshwar",
-      "Himalayan view rooms",
-      "Mukteshwar boutique hotel rooms",
-      "Arkaya accommodation",
-      "best stay Mukteshwar"
+      "Safari Suites Dharamshala",
+      "Glamping tents Himachal",
+      "Devdar suite",
+      "Rai suite",
+      "Buransh suite",
+      "Kail suite",
+      "Luxury tents with private deck",
+      "Heated glamping tents Dharamshala",
     ],
-    canonical: "https://arkaya.com/accommodation",
-    ogImage: "/seo/accommodation.webp"
-  },
-
-  roomDetails: {
-    title: "Himalayan Vista Room | Arkaya Mukteshwar",
-    description:
-      "Stay in the Himalayan Vista Room at Arkaya Mukteshwar offering elegant interiors, mountain views, and refined comfort in the Himalayas.",
-    keywords: [
-      "Himalayan vista room",
-      "luxury room Mukteshwar",
-      "mountain view hotel room",
-      "Arkaya Mukteshwar rooms"
-    ],
-    canonical: "https://arkaya.com/rooms/himalayan-vista-room",
-    ogImage: "/seo/himalayan-vista.webp"
-  },
-
-  nearby: {
-    title: "Nearby Places in Mukteshwar | Experiences Around Arkaya",
-    description:
-      "Explore Mukteshwar's nearby experiences including Mukteshwar Temple, Chauli Ki Jali, Bhimtal, waterfalls, village walks, and Himalayan viewpoints.",
-    keywords: [
-      "Mukteshwar nearby places",
-      "things to do Mukteshwar",
-      "Mukteshwar temple",
-      "Chauli Ki Jali",
-      "Bhimtal lake",
-      "Mukteshwar sightseeing"
-    ],
-    canonical: "https://arkaya.com/nearby-places",
-    ogImage: "/seo/nearby.webp"
-  },
-
-  restobar: {
-    title: "180° Restobar | Dining at Arkaya Mukteshwar",
-    description:
-      "Enjoy dining at 180° Restobar at Arkaya Mukteshwar with panoramic Himalayan views, crafted cocktails, and unforgettable culinary experiences.",
-    keywords: [
-      "180 restobar Mukteshwar",
-      "restaurant Mukteshwar",
-      "Himalayan view dining",
-      "Arkaya restobar",
-      "Mukteshwar restaurant"
-    ],
-    canonical: "https://arkaya.com/restobar",
-    ogImage: "/seo/restobar.webp"
+    alternates: {
+      canonical: `${siteUrl}/rooms/`,
+    },
+    openGraph: {
+      title: "Safari Suites & Accommodations | SARAAYA Glamping Dharamshala",
+      description:
+        "Four distinct Safari Suites framed by cedar forests, mountain ridges, and flowing glacier-fed waters.",
+      url: `${siteUrl}/rooms/`,
+      siteName: "SARAAYA Glamping Retreat",
+      locale: "en_IN",
+      type: "website",
+    },
   },
 
   gallery: {
-    title: "Arkaya Mukteshwar Gallery | Himalayan Views & Experiences",
+    title: "Gallery | SARAAYA Through Your Eyes — Himalayan Retreat Photos",
     description:
-      "Explore the gallery of Arkaya Mukteshwar showcasing luxurious rooms, Himalayan views, the property, dining, and unique mountain experiences.",
+      "Take a visual journey through SARAAYA. Browse photos of our private safari suites, mountain streams, riverside picnics, bonfire nights, and native pine forests.",
     keywords: [
-      "Arkaya gallery",
-      "Mukteshwar resort photos",
-      "Himalayan resort images",
-      "Arkaya Mukteshwar photos"
+      "Saraaya photos",
+      "Glamping gallery Dharamshala",
+      "Himalayan retreat pictures",
+      "Safari suite images",
+      "Riverside dining gallery",
     ],
-    canonical: "https://arkaya.com/gallery",
-    ogImage: "/seo/gallery.webp"
-  },
-
-  events: {
-    title: "Meetings & Events at Arkaya Mukteshwar | Corporate Retreats & Weddings",
-    description:
-      "Host corporate retreats, team offsites, and intimate weddings at Arkaya Mukteshwar surrounded by breathtaking Himalayan views.",
-    keywords: [
-      "Mukteshwar corporate retreat",
-      "destination wedding Mukteshwar",
-      "Himalayan wedding venue",
-      "Arkaya events",
-      "team offsite Uttarakhand"
-    ],
-    canonical: "https://arkaya.com/meetings-events",
-    ogImage: "/seo/events.webp"
-  },
-
-  petWelcoming: {
-    title: "Pet Friendly Stay in Mukteshwar | Arkaya Mukteshwar",
-    description:
-      "Arkaya Mukteshwar welcomes well-behaved pets with pet-friendly rooms, outdoor walking spaces, and specially curated pet dining options.",
-    keywords: [
-      "pet friendly hotel Mukteshwar",
-      "pet friendly resort Uttarakhand",
-      "stay with pets Mukteshwar",
-      "Arkaya pet friendly stay"
-    ],
-    canonical: "https://arkaya.com/pet-welcoming",
-    ogImage: "/seo/pet.webp"
+    alternates: {
+      canonical: `${siteUrl}/gallery/`,
+    },
+    openGraph: {
+      title: "Gallery | SARAAYA Through Your Eyes — Himalayan Retreat Photos",
+      description:
+        "A visual glimpse into private safari suites, pristine streams, and unforgettable mountain moments at SARAAYA.",
+      url: `${siteUrl}/gallery/`,
+      siteName: "SARAAYA Glamping Retreat",
+      locale: "en_IN",
+      type: "website",
+    },
   },
 
   contact: {
-    title: "Contact Arkaya Mukteshwar | Plan Your Stay",
+    title: "Contact & Enquiries | Plan Your Stay at SARAAYA Dharamshala",
     description:
-      "Contact Arkaya Mukteshwar to reserve rooms, dine at 180° Restobar, or plan corporate events and celebrations in the Himalayas.",
+      "Get in touch with SARAAYA to plan your private glamping stay, family getaway, or romantic retreat in Village Nauhali, Dharamshala. Check availability and reserve.",
     keywords: [
-      "contact Arkaya Mukteshwar",
-      "Mukteshwar resort contact",
-      "book hotel Mukteshwar",
-      "Arkaya reservations"
+      "Contact Saraaya",
+      "Saraaya booking enquiry",
+      "Dharamshala glamping reservation",
+      "Village Nauhali directions",
+      "Saraaya phone number",
+      "Saraaya address",
     ],
-    canonical: "https://arkaya.com/contact",
-    ogImage: "/seo/contact.webp"
-  }
+    alternates: {
+      canonical: `${siteUrl}/contact-us/`,
+    },
+    openGraph: {
+      title: "Contact & Enquiries | Plan Your Stay at SARAAYA Dharamshala",
+      description:
+        "Come away to SARAAYA. Tell us when you would like to arrive and let us help you plan your Himalayan stay.",
+      url: `${siteUrl}/contact-us/`,
+      siteName: "SARAAYA Glamping Retreat",
+      locale: "en_IN",
+      type: "website",
+    },
+  },
+
+  landingPage: {
+    title: "Experience SARAAYA | Private Mountain Glamping in the Himalayas",
+    description:
+      "Book your stay at SARAAYA Glamping Dharamshala. Four luxury safari suites, river picnics, star-gazing sessions, and unhurried stillness in Kangra Valley.",
+    keywords: [
+      "Saraaya landing page",
+      "Book luxury glamping Dharamshala",
+      "Private glamping Himachal",
+      "Safari tents booking Kangra",
+    ],
+    alternates: {
+      canonical: `${siteUrl}/landing-page/`,
+    },
+    openGraph: {
+      title: "Experience SARAAYA | Private Mountain Glamping in the Himalayas",
+      description:
+        "Four private Safari Suites. A secluded mountain setting. The Kangra Valley beyond the crowds.",
+      url: `${siteUrl}/landing-page/`,
+      siteName: "SARAAYA Glamping Retreat",
+      locale: "en_IN",
+      type: "website",
+    },
+  },
+
+  blogs: {
+    title: "Travel & Mountain Living Blogs | SARAAYA Glamps Dharamshala",
+    description:
+      "Read stories, travel guides, and inspiration for romantic getaways, spiritual journeys, and experiential glamping in Himachal Pradesh from the SARAAYA team.",
+    keywords: [
+      "Saraaya blogs",
+      "Himachal Pradesh travel blog",
+      "Glamping guide India",
+      "Dharamshala travel tips",
+      "Romantic getaways blog",
+    ],
+    alternates: {
+      canonical: `${siteUrl}/blogs/`,
+    },
+    openGraph: {
+      title: "Travel & Mountain Living Blogs | SARAAYA Glamps Dharamshala",
+      description:
+        "Travel inspiration, mountain living reflections, and glamping guides from SARAAYA in the Himalayas.",
+      url: `${siteUrl}/blogs/`,
+      siteName: "SARAAYA Glamping Retreat",
+      locale: "en_IN",
+      type: "website",
+    },
+  },
+
+  thankYou: {
+    title: "Thank You | SARAAYA Glamping Dharamshala",
+    description:
+      "Thank you for your enquiry. The SARAAYA reservations team will get in touch with you shortly to assist with your mountain journey.",
+    robots: {
+      index: false,
+      follow: false,
+    },
+    alternates: {
+      canonical: `${siteUrl}/thank-you/`,
+    },
+  },
 };

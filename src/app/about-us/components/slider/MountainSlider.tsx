@@ -18,7 +18,7 @@ const MountainSlider: React.FC<{ images: string[] }> = ({ images }) => {
             <div className="w-full relative aspect-square">
                 <Image
                     src={src}
-                    alt="Image"
+                    alt="Himalayan mountain landscape at SARAAYA"
                     fill
                     className="object-cover"
                     sizes="100%"

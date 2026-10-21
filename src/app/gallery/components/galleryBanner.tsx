@@ -23,7 +23,7 @@ export default function GalleryBanner({ title }: Props) {
           </p>
           <span className="h-px w-10 bg-current" />
         </div>
-        <h2
+        <h1
           className="text-4xl md:text-5xl font-medium font-primary"
           dangerouslySetInnerHTML={{ __html: title }}
         />

@@ -1,16 +1,11 @@
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { blogsData } from "./[slug]/components/PageData";
 import { Metadata } from "next";
+import { seoMetadata } from "@/utils/metadata";
 import Image from "next/image";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Blogs | Saraaya Luxury Glamps",
-  description: "Blogs | Saraaya Luxury Glamps",
-  alternates: {
-    canonical: "https://saraayaglamps.com/blogs",
-  },
-};
+export const metadata: Metadata = seoMetadata.blogs;
 
 export default function BlogPage() {
   const cards = blogsData.map((blog) => ({

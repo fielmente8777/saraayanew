@@ -33,7 +33,7 @@ const LandingNav = () => {
           <div className="relative aspect-[4/2] w-30 md:w-40.25">
             <Image
               src="/logo-1.png"
-              alt="Logo"
+              alt="SARAAYA Himalayan Glamping Logo"
               fill
               priority
               className="rounded-md object-cover"

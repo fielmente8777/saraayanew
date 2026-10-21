@@ -1,8 +1,12 @@
+import { Metadata } from "next";
+import { seoMetadata } from "@/utils/metadata";
 import { galleryPageData } from "./components/pageData";
 import GalleryBanner from "./components/galleryBanner";
 import Gallery from "./components/gallery";
 import { homePageData } from "../(home)/components/pageData";
 import TitleSection from "@/components/TitleSection";
+
+export const metadata: Metadata = seoMetadata.gallery;
 
 export default function Page() {
   return (

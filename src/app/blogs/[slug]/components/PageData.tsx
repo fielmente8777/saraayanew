@@ -771,9 +771,9 @@ export const blogsData = [
   {
   meta: {
     title:
-      "Why Luxury Travelers Are Choosing Glamping Over Five-Star Hotels | Saraaya Luxury Glamps",
+      "Why Discerning Travelers Are Choosing Glamping Over Five-Star Hotels | Saraaya Glamps",
     description:
-      "Discover why executives, HNIs, celebrities, entrepreneurs, and discerning travelers are choosing luxury glamping over traditional five-star hotels for privacy, nature, exclusivity, and meaningful experiences.",
+      "Discover why executives, HNIs, celebrities, entrepreneurs, and discerning travelers are choosing boutique glamping over traditional five-star hotels for privacy, nature, exclusivity, and meaningful experiences.",
     keyWords: [
       "Luxury glamping Dharamshala",
       "Luxury glamping Himachal Pradesh",
@@ -796,12 +796,12 @@ export const blogsData = [
   url: "",
 
   title:
-    "Why Luxury Travelers Are Choosing Glamping Over Five-Star Hotels",
+    "Why Discerning Travelers Are Choosing Glamping Over Five-Star Hotels",
 
   slug: "why-luxury-travelers-choosing-glamping-over-five-star-hotels",
 
   description:
-    "For executives, entrepreneurs, celebrities, creators, and high-net-worth individuals, luxury is no longer simply about five-star hotels. Saraaya Luxury Glamps offers privacy, nature, exclusivity, personalized hospitality, and meaningful mountain experiences.",
+    "For executives, entrepreneurs, celebrities, creators, and high-net-worth individuals, true luxury is no longer simply about five-star hotels. Saraaya Glamps offers privacy, nature, exclusivity, personalized hospitality, and meaningful mountain experiences.",
 
   data: `
 <p>

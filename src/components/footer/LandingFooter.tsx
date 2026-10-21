@@ -18,7 +18,7 @@ const LandingFooter = () => {
             >
               <Image
                 src={footerData.logo}
-                alt="logo"
+                alt="SARAAYA Himalayan Glamping Logo"
                 fill
                 sizes="100%"
                 className="object-contain"

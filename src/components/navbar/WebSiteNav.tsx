@@ -80,7 +80,7 @@ const WebSiteNav = () => {
           >
             <Image
               src={isTransparent ? "/logo-white.png" : "/logo-green.png"}
-              alt="Logo"
+              alt="SARAAYA Himalayan Glamping Logo"
               fill
               priority
               className="object-contain"

@@ -39,7 +39,7 @@ const RoomAbout: React.FC<Props> = ({ logo, title, description, subtitle }) => {
       <div className="flex items-center justify-center w-full gap-10">
         <div className="w-full h-px bg-secondary" />
         <div className="w-[300px] aspect-4/2 relative ">
-          <Image src={logo} alt="Image" fill className="object-cover" />
+          <Image src={logo} alt="SARAAYA emblem" fill className="object-cover" />
         </div>
         <div className="w-full h-px bg-secondary" />
       </div>

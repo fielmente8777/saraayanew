@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Autoplay, Navigation } from "swiper/modules";
 import SwiperCarousel from "./SwiperCarousel";
 
-const ImageSlider: React.FC<{ images: string[] }> = ({ images }) => {
+const ImageSlider: React.FC<{ images: string[]; alt?: string }> = ({ images, alt }) => {
   return (
     <div className="room-card">
       <SwiperCarousel
@@ -16,9 +16,14 @@ const ImageSlider: React.FC<{ images: string[] }> = ({ images }) => {
         speed={800}
         autoplay={{ delay: 3500, disableOnInteraction: false }}
         className="w-full"
-        renderSlide={(src) => (
+        renderSlide={(src, index) => (
           <div className="w-full relative md:aspect-4/3 aspect-4/3.5">
-            <Image src={src} alt="Image" fill className="object-cover" />
+            <Image
+              src={src}
+              alt={alt ? `${alt} - View ${(index ?? 0) + 1}` : `SARAAYA Safari Suite - View ${(index ?? 0) + 1}`}
+              fill
+              className="object-cover"
+            />
           </div>
         )}
       />

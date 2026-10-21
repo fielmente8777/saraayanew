@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+import { seoMetadata } from "@/utils/metadata";
 import Form2 from "@/components/forms/Form2";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import Testimonial from "@/components/sectionComponants/Testimonial";
@@ -13,6 +15,8 @@ import Video from "@/components/banners/Video";
 import CorePillars from "./components/CorePillars";
 import ReelFeature from "./components/ReelFeature";
 import QuieterSide from "./components/QuieterSide";
+
+export const metadata: Metadata = seoMetadata.landingPage;
 
 export default function LandingPage() {
   return (

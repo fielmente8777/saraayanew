@@ -24,7 +24,7 @@ const ExperiencesSection: React.FC<Props> = ({
 }) => {
   return (
     <Section defaultPadding={false} className="relative bg-primary">
-      <Image src="/home/exp-bg.png" alt="Image" fill className="object-cover" />
+      <Image src="/home/exp-bg.png" alt="Experiences background texture" fill className="object-cover" />
       <SectionWithContainer containerClassName="lg:space-y-12 space-y-8">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-8  lg:gap-x-30">
           <div className="">
@@ -48,7 +48,7 @@ const ExperiencesSection: React.FC<Props> = ({
               >
                 <Image
                   src={item.image}
-                  alt="Image"
+                  alt={item.title || "SARAAYA Himalayan Experience"}
                   fill
                   className="object-cover"
                 />

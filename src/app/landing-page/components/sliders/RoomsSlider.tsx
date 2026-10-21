@@ -26,7 +26,12 @@ const RoomsSlider: React.FC<RoomsType["cards"][0] & { index: number }> = ({
         speed={800}
         renderSlide={(image) => (
           <div className="relative w-full aspect-4/3.5 md:rounded-3xl rounded-2xl overflow-hidden">
-            <Image src={image} alt="Image" className="object-cover" fill />
+            <Image
+              src={image}
+              alt={title ? `${title} suite view` : "SARAAYA Safari Suite"}
+              className="object-cover"
+              fill
+            />
           </div>
         )}
       />

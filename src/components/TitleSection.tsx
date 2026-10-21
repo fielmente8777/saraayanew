@@ -20,7 +20,7 @@ const TitleSection = ({ titles, colorChange }: TitleSectionProps) => {
       >
         <Image
           src={"/Layer-2-2.png"}
-          alt="Layer-2"
+          alt="Himalayan texture pattern"
           fill
           className="object-cover object-center"
         />

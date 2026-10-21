@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+import { seoMetadata } from "@/utils/metadata";
 import { Section, SectionWithContainer } from "@/components/sectionComponants";
 import ContactInfo from "./component/contactInfo";
 import { contactPageData } from "./component/pageData";
@@ -7,6 +9,8 @@ import Image from "next/image";
 import { contact } from "@/utils/constent";
 import TitleSection from "@/components/TitleSection";
 import { homePageData } from "../(home)/components/pageData";
+
+export const metadata: Metadata = seoMetadata.contact;
 
 export default function ContainerPage() {
   return (

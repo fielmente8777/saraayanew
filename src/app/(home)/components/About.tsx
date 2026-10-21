@@ -28,7 +28,7 @@ const About: React.FC<AboutProps> = ({
             <span className="w-10 bg-secondary h-px" />
             {title}
           </p>
-          <SectionHeading title={heading} titleClassName="lg:text-[5rem]/[5rem]" />
+          <SectionHeading level={1} title={heading} titleClassName="lg:text-[5rem]/[5rem]" />
           <div className="relative aspect-square w-full lg:hidden">
             <div className="absolute z-10 aspect-square w-26 border-t border-l border-secondary -top-2 -left-2" />
             <div className="absolute z-10 aspect-square w-26 border-r border-b border-secondary -bottom-2 -right-2" />
@@ -36,7 +36,7 @@ const About: React.FC<AboutProps> = ({
             <LazyLoadedVideo src="/video/Saraya-Room-Reel.mp4" poster="/video/Saraya-Room-Reel.png" controls={false} muted autoPlay />
           </div>
           <div className="w-[153px] aspect-4/2 relative ">
-            <Image src={logo} alt="Image" fill className="object-cover" />
+            <Image src={logo} alt="SARAAYA emblem" fill className="object-cover" />
           </div>
           {description.map((item, index) => (
             <p

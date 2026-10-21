@@ -40,12 +40,12 @@ export default function ContactInfo({ visitData, reservationsData }: Props) {
         </p>
       </div>
 
-      <h2 className="font-primary text-[48px] font-medium text-primary">
+      <h1 className="font-primary text-[48px] font-medium text-primary">
         {visitData.title.normal}{" "}
         <span className="font-primary italic font-normal text-secondary">
           {visitData.title.highlighted}
         </span>
-      </h2>
+      </h1>
 
       {visitData.description && (
         <div className="flex flex-col gap-1 text-primary text-base">

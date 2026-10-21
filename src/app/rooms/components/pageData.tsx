@@ -33,7 +33,7 @@ export const accommodationPageData = {
     },
     description: [
       "SARAAYA is shaped around four distinct Safari Suites, each designed to provide privacy, comfort and a close connection with the surrounding landscape.",
-      "Mornings begin with mountain light and forest air. Evenings settle into the sounds of the stream, wind through the trees and the Himalayan night.",
+      " Mornings begin with mountain light and forest air. Evenings settle into the sounds of the stream, wind through the trees and the Himalayan night.",
     ],
   },
   titles: [
@@ -59,18 +59,18 @@ export const accommodationPageData = {
 A warm and intimate Safari Suite framed by mature cedar trees and mountain views.
 
 The Space: A generous interior featuring a plush king-size bed, quality linens, warm winter bedding, a comfortable seating corner and writing desk.
-Ensuite Bathroom: Private attached bathroom with modern fittings, walk-in shower and 24/7 hot water.
+Ensuite Bathroom: Private attached bathroom with modern fittings, walk-in shower, and 24/7 hot and normal water facilities.
 Outdoor Veranda: Private timber deck opening towards the surrounding forest.
-Comfort: Heating for colder months, seasonal ventilation and secure lockable doors.`,
+Comfort: Comfortable for both summer and winter stays, with heating for colder months, seasonal ventilation and secure lockable doors.`,
 
       amenities: [
         { title: "Raised timber platforms", icon: <SpaciousLuxuryIcon /> },
         {
-          title: "Attached modern bathrooms",
+          title: "Hot & normal water facilities",
           icon: <AttachedModernBathroomsIcon />,
         },
         { title: "King-size bed & quality linens", icon: <PremiumLinensIcon /> },
-        { title: "Heating for colder months", icon: <HeatersIcon /> },
+        { title: "Summer & winter comfort", icon: <HeatersIcon /> },
         { title: "Private timber veranda", icon: <PrivateDeckIcon /> },
       ],
       price: "From ₹ 12000/-",
@@ -93,17 +93,17 @@ Comfort: Heating for colder months, seasonal ventilation and secure lockable doo
 Surrounded by native oak forest, Rai is designed for guests who enjoy quieter mornings, reading and simply watching the landscape unfold.
 
 The Space: King-size bed, premium bedding, handloom throws, wardrobe storage, bedside lamps and a comfortable desk.
-Ensuite Bathroom: Private attached bathroom with modern fittings, walk-in shower and 24/7 hot water.
+Ensuite Bathroom: Private attached bathroom with modern fittings, walk-in shower, and 24/7 hot and normal water facilities.
 Outdoor Veranda: Private timber deck overlooking the surrounding forest and valley.
-Comfort: Heating for colder months, seasonal ventilation and secure lockable doors.`,
+Comfort: Comfortable for both summer and winter stays, with heating for colder months, seasonal ventilation and secure lockable doors.`,
       amenities: [
         { title: "Raised timber platforms", icon: <SpaciousLuxuryIcon /> },
         {
-          title: "Attached modern bathrooms",
+          title: "Hot & normal water facilities",
           icon: <AttachedModernBathroomsIcon />,
         },
         { title: "King-size bed & handloom throws", icon: <PremiumLinensIcon /> },
-        { title: "Heating for colder months", icon: <HeatersIcon /> },
+        { title: "Summer & winter comfort", icon: <HeatersIcon /> },
         { title: "Private timber veranda", icon: <PrivateDeckIcon /> },
       ],
       price: "From ₹ 12000/-",
@@ -127,17 +127,17 @@ Comfort: Heating for colder months, seasonal ventilation and secure lockable doo
 Positioned to receive soft mountain light through the surrounding trees, Buransh combines the character of Safari-style glamping with a comfortable, restful interior.
 
 The Space: King-size bed, premium bedding, woollen blankets, comfortable seating and warm ambient lighting.
-Ensuite Bathroom: Private attached bathroom with modern fittings, walk-in shower and 24/7 hot water.
+Ensuite Bathroom: Private attached bathroom with modern fittings, walk-in shower, and 24/7 hot and normal water facilities.
 Outdoor Veranda: Private timber deck surrounded by native woodland.
-Comfort: Heating for colder months, seasonal ventilation and secure lockable entry.`,
+Comfort: Comfortable for both summer and winter stays, with heating for colder months, seasonal ventilation and secure lockable entry.`,
       amenities: [
         { title: "Raised timber platforms", icon: <SpaciousLuxuryIcon /> },
         {
-          title: "Attached modern bathrooms",
+          title: "Hot & normal water facilities",
           icon: <AttachedModernBathroomsIcon />,
         },
         { title: "King-size bed & woollen blankets", icon: <PremiumLinensIcon /> },
-        { title: "Heating for colder months", icon: <HeatersIcon /> },
+        { title: "Summer & winter comfort", icon: <HeatersIcon /> },
         { title: "Private timber veranda", icon: <PrivateDeckIcon /> },
       ],
       price: "From ₹ 12000/-",
@@ -160,17 +160,17 @@ Comfort: Heating for colder months, seasonal ventilation and secure lockable ent
 Set closest to the glacier-fed stream, Kail brings you closest to the sound of flowing mountain water and the surrounding landscape.
 
 The Space: A generous interior with king-size bed, crisp linens, warm winter bedding, study nook and ambient lighting.
-Ensuite Bathroom: Private attached bathroom with modern fittings, walk-in shower and 24/7 hot water.
+Ensuite Bathroom: Private attached bathroom with modern fittings, walk-in shower, and 24/7 hot and normal water facilities.
 Outdoor Veranda: An expansive timber deck facing the stream and surrounding mountain landscape.
-Comfort: Heating for colder months, seasonal ventilation and secure lockable doors.`,
+Comfort: Comfortable for both summer and winter stays, with heating for colder months, seasonal ventilation and secure lockable doors.`,
       amenities: [
         { title: "Raised timber platforms", icon: <SpaciousLuxuryIcon /> },
         {
-          title: "Attached modern bathrooms",
+          title: "Hot & normal water facilities",
           icon: <AttachedModernBathroomsIcon />,
         },
         { title: "King-size bed & crisp linens", icon: <PremiumLinensIcon /> },
-        { title: "Heating for colder months", icon: <HeatersIcon /> },
+        { title: "Summer & winter comfort", icon: <HeatersIcon /> },
         { title: "Private timber veranda facing stream", icon: <PrivateDeckIcon /> },
       ],
       ctas: [
@@ -206,7 +206,7 @@ Comfort: Heating for colder months, seasonal ventilation and secure lockable doo
     },
     {
       icon: <TapeIcon />,
-      title: "PRIVATE ENSUITE BATHROOMS WITH 24/7 HOT WATER",
+      title: "ATTACHED MODERN BATHROOMS WITH 24/7 HOT & NORMAL WATER",
     },
     {
       icon: <AmenintiesIcon />,
@@ -214,7 +214,7 @@ Comfort: Heating for colder months, seasonal ventilation and secure lockable doo
     },
     {
       icon: <FanIcon />,
-      title: "HEATING DURING COLDER MONTHS & VENTILATION",
+      title: "COMFORTABLE FOR BOTH SUMMER & WINTER STAYS",
     },
     {
       icon: <DeckIcon />,

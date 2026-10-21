@@ -1,14 +1,19 @@
 "use client";
 import { TestimonialType } from "@/@types/type";
 import SwiperCarousel from "@/components/sliders/SwiperCarousel";
-import { useWebContext } from "@/context-api/WebContext";
 import { FC, useState } from "react";
 import { Autoplay, Navigation } from "swiper/modules";
 interface TestimonialsSliderProps {
   cards: TestimonialType["testimonials"];
+  onSwiper?: (swiper: any) => void;
+  onSlideChange?: (swiper: any) => void;
 }
-const ReviewsSlider: FC<TestimonialsSliderProps> = ({ cards }) => {
-  const { setCurrent, setTotal } = useWebContext();
+
+const ReviewsSlider: FC<TestimonialsSliderProps> = ({
+  cards,
+  onSwiper,
+  onSlideChange,
+}) => {
   const [readMore, setReadMore] = useState(false);
 
   return (
@@ -20,22 +25,30 @@ const ReviewsSlider: FC<TestimonialsSliderProps> = ({ cards }) => {
         loop
         modules={[Autoplay, Navigation]}
         navigation={{
-          nextEl: ".testimonials-next",
-          prevEl: ".testimonials-prev",
+          prevEl: "#reviews-prev",
+          nextEl: "#reviews-next",
         }}
-        onSlideChange={(swiper) => setCurrent(swiper.realIndex + 1)}
-        onSwiper={(swiper) => setTotal(swiper.slides.length)}
-        autoplay={{ delay: 2500 }}
-        speed={1000}
+        onSlideChange={onSlideChange}
+        onSwiper={onSwiper}
+        autoplay={{ delay: 3500, disableOnInteraction: false }}
+        speed={800}
+        allowTouchMove={true}
         className="w-full"
         renderSlide={(card) => (
-          <div className=" text-white space-y-4">
-            <p className="text-xl md:block hidden">{card.text}</p>
-            <p className="text-xl md:hidden">
-              {card.text.slice(0, readMore ? card.text.length : 100)}
-              {card.text.length > 100 && <span className="" onClick={() => setReadMore(!readMore)}>  ...read more</span>}
+          <div className="text-white space-y-4">
+            <p className="text-xl md:block hidden leading-relaxed">{card.text}</p>
+            <p className="text-xl md:hidden leading-relaxed">
+              {card.text.slice(0, readMore ? card.text.length : 120)}
+              {card.text.length > 120 && (
+                <span
+                  className="text-secondary cursor-pointer font-medium ml-1 inline-block"
+                  onClick={() => setReadMore(!readMore)}
+                >
+                  {readMore ? " ...show less" : " ...read more"}
+                </span>
+              )}
             </p>
-            <p className="capitalize">{card.name}</p>
+            <p className="capitalize font-medium text-white/90">{card.name}</p>
           </div>
         )}
       />

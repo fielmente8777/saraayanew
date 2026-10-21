@@ -3,6 +3,7 @@ import { blogsData } from "./components/PageData";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import { getBlogPostingJsonLd } from "@/utils/structuredData";
 
 interface Params {
   params: Promise<{ slug: string }>;
@@ -31,9 +32,9 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       description: post.meta.description,
       keywords: post.meta.keyWords,
       alternates: {
-        canonical: `https://saraayaglamps.com/blogs/${post.slug}`,
+        canonical: `https://saraayaglamps.com/blogs/${post.slug}/`,
         languages: {
-          "en-US": `https://saraayaglamps.com/blogs/${post.slug}`,
+          "en-US": `https://saraayaglamps.com/blogs/${post.slug}/`,
         },
       },
       openGraph: {
@@ -60,6 +61,20 @@ export default async function Page({ params }: Params) {
   if (!pageData) return notFound();
   return (
     <main className="">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            getBlogPostingJsonLd({
+              title: pageData.title,
+              slug: pageData.slug,
+              meta: pageData.meta,
+              image: pageData.url,
+              date: pageData.date,
+            })
+          ),
+        }}
+      />
       <SectionWithContainer>
         <h1 className="font-semibold font-primary text-2xl md:text-5xl text-primary">
           {pageData?.title || ""}

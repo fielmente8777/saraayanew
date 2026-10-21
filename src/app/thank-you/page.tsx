@@ -1,6 +1,10 @@
+import { Metadata } from "next";
+import { seoMetadata } from "@/utils/metadata";
 import LinkButton from "@/components/buttons/LinkButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import Image from "next/image";
+
+export const metadata: Metadata = seoMetadata.thankYou;
 
 export default function ThankYou() {
   return (
@@ -10,7 +14,7 @@ export default function ThankYou() {
           <div className="max-w-sm w-full relative aspect-4/2 bg-primary rounded-md">
             <Image
               src="/logo.png"
-              alt="Image"
+              alt="SARAAYA Himalayan Glamping Logo"
               fill
               className="object-cover p-2"
             />

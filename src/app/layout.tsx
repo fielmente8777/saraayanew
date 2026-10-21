@@ -16,6 +16,7 @@ import localFont from "next/font/local";
 import Popup from "@/components/Popup";
 import ConditionalContactButtons from "@/components/ContactButton/ConditionalContactButtons";
 import PopUpForm from "@/components/pop-up/PopUpForm";
+import { lodgingBusinessJsonLd, websiteJsonLd } from "@/utils/structuredData";
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",
   subsets: ["latin"],
@@ -58,6 +59,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://saraayaglamps.com"),
+  alternates: {
+    canonical: "https://saraayaglamps.com/",
+  },
   title: "Saraaya Glamping Retreat | Luxury Stay in Dharamshala Himalayas",
   description:
     "Saraaya is a luxury glamping retreat in Dharamshala, Himachal Pradesh. Stay beside a pristine glacier stream with Himalayan views, forest surroundings, and exclusive tent experiences. Only four tents available per night.",
@@ -104,6 +109,18 @@ export default function RootLayout({
       className={`${playfairDisplay.variable} ${inter.variable} ${minion.variable} ${montserrat.variable} h-full antialiased`}
     >
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(lodgingBusinessJsonLd),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteJsonLd),
+          }}
+        />
         <script type="text/javascript" id="clarity">
           {`(function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};

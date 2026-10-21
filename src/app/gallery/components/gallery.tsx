@@ -17,17 +17,35 @@ type Props = {
 export default function Gallery({ galleryImages }: Props) {
   const [selected, setSelected] = useState<string>("All");
 
-  // 🔹 categories generate from data
-  const categories = useMemo<string[]>(
-    () => ["All", ...new Set(galleryImages.map((img) => img.alt))],
-    [galleryImages]
-  );
+  // 🔹 categories generate from data with preferred order
+  const categories = useMemo<string[]>(() => {
+    const preferredOrder = [
+      "All",
+      "forest",
+      "mountains",
+      "stream",
+      "Safari Suites",
+      "little moments",
+    ];
+    const dataCategories = new Set(
+      galleryImages.map((img) => img.alt.replace(/\.+$/, "").trim())
+    );
+    const ordered = preferredOrder.filter(
+      (cat) => cat === "All" || dataCategories.has(cat)
+    );
+    dataCategories.forEach((cat) => {
+      if (!ordered.includes(cat)) ordered.push(cat);
+    });
+    return ordered;
+  }, [galleryImages]);
 
   // 🔹 filtering logic
   const filtered: GalleryImage[] =
     selected === "All"
       ? galleryImages
-      : galleryImages.filter((img) => img.alt === selected);
+      : galleryImages.filter(
+          (img) => img.alt.replace(/\.+$/, "").trim() === selected
+        );
 
   return (
     <SectionWithContainer
@@ -42,13 +60,12 @@ export default function Gallery({ galleryImages }: Props) {
           <button
             key={index}
             onClick={() => setSelected(cat)}
-            className={`border-b transition-all text-nowrap duration-300 font-body text-sm uppercase ${
-              selected === cat
+            className={`border-b transition-all text-nowrap duration-300 font-body text-sm uppercase ${selected === cat
                 ? "border-secondary text-secondary"
                 : "border-transparent text-light"
-            }`}
+              }`}
           >
-            {cat}
+            {cat.replace(/\.+$/, "")}
           </button>
         ))}
       </div>

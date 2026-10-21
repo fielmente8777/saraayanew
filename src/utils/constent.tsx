@@ -17,10 +17,19 @@ export const contact = {
   whatsappNumber: "+918988334372",
   WhatsappCta: `https://wa.me/+918988334372?text=${enCodeText}`,
 
-  // bookingEngineUrl:"https://letsbook.me/booking/saraayaglampsdharmshala?checkin=2026-09-21&checkout=2026-09-22&adults=2&children=0",
+  get bookingEngineUrl(): string {
+    const checkin = new Date();
+    const checkout = new Date();
+    checkout.setDate(checkin.getDate() + 1);
 
-  bookingEngineUrl:
-    "https://letsbook.me/booking/saraayaglampsdharmshala?checkin=2026-10-15&checkout=2026-10-16&adults=2&children=0",
+    const pad = (n: number) => String(n).padStart(2, "0");
+    const formatDate = (d: Date) =>
+      `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+
+    return `https://letsbook.me/booking/saraayaglampsdharmshala?checkin=${formatDate(
+      checkin
+    )}&checkout=${formatDate(checkout)}&adults=2&children=0`;
+  },
 
   formDomain: "saraayaglamps",
   // formDomain: "testmulti", //for testing

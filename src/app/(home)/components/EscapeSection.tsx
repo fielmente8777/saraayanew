@@ -27,7 +27,7 @@ const EscapeSection: React.FC<EscapeSectionProps> = ({
         <div className="absolute inset-0 bg-black/40 z-10" />
         <Image
           src={image}
-          alt="Image"
+          alt={title || "Himalayan forest and mountain sanctuary"}
           fill
           className="object-cover"
           sizes="100%"

@@ -23,7 +23,7 @@ const BannerSlider = ({ images }: { images: string[] }) => {
           <div className="w-full relative md:aspect-[4/1.9] aspect-4/4.5">
             <Image
               src={src}
-              alt="Image"
+              alt={`SARAAYA Himalayan Glamping - Slide ${(index ?? 0) + 1}`}
               fill
               className="object-cover"
               loading={index === 0 ? "eager" : "lazy"}

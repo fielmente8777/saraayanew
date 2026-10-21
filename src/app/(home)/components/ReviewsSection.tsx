@@ -1,7 +1,7 @@
 "use client";
 import { LazyLoadedVideo } from "@/components/Video";
 import { Container, Section } from "@/components/sectionComponants";
-import { useWebContext } from "@/context-api/WebContext";
+import { useRef, useState } from "react";
 import Image from "next/image";
 import ReviewsSlider from "./slider/ReviewsSlider";
 
@@ -13,18 +13,39 @@ interface ReviewsSectionProps {
   }[];
 }
 const ReviewsSection: React.FC<ReviewsSectionProps> = ({ title, reviews }) => {
-  const { current, total } = useWebContext();
+  const swiperRef = useRef<any>(null);
+  const [swiper, setSwiper] = useState<any>(null);
+  const [current, setCurrent] = useState(1);
+  const total = reviews?.length || 0;
+
+  const handlePrev = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const s = swiperRef.current || swiper;
+    if (s) {
+      s.slidePrev();
+    }
+  };
+
+  const handleNext = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const s = swiperRef.current || swiper;
+    if (s) {
+      s.slideNext();
+    }
+  };
 
   return (
     <Section className="relative" defaultPadding={false}>
       <div className="relative reviews-bg bg-[#1F2D2A]">
         <Image
           src="/home/reviews-bg.png"
-          alt="Image"
+          alt="Guest reviews background pattern"
           fill
           className="object-cover"
         />
-        <div className="md:py-20 py-10">
+        <div className="md:py-20 py-10 relative z-10">
           <Container className="grid lg:grid-cols-2 grid-cols-1 gap-16 h-full items-center ">
             <div className="relative aspect-square w-full lg:block hidden">
               <LazyLoadedVideo
@@ -54,17 +75,39 @@ const ReviewsSection: React.FC<ReviewsSectionProps> = ({ title, reviews }) => {
                   <span className="block">
                     <Foo />
                   </span>
-                  <ReviewsSlider cards={reviews} />
+                  <ReviewsSlider
+                    cards={reviews}
+                    onSwiper={(s) => {
+                      swiperRef.current = s;
+                      setSwiper(s);
+                      setCurrent(s.realIndex + 1);
+                    }}
+                    onSlideChange={(s) => {
+                      setCurrent(s.realIndex + 1);
+                    }}
+                  />
                 </div>
-                <div className="flex items-center gap-6">
-                  <button className="text-white border flex items-center justify-center gap-2 testimonials-prev px-5 py-5 active:scale-95 pointer-events-auto">
+                <div className="flex items-center gap-6 relative z-20">
+                  <button
+                    type="button"
+                    id="reviews-prev"
+                    onClick={handlePrev}
+                    aria-label="Previous testimonial"
+                    className="text-white border border-white/60 flex items-center justify-center p-4 hover:border-white hover:bg-white/10 active:scale-95 transition-all cursor-pointer select-none"
+                  >
                     <PrevIcon />
                     <span className="sr-only">Previous</span>
                   </button>
-                  <span className="text-white">
-                    0{current} - 0{total}
+                  <span className="text-white font-medium tracking-widest min-w-[70px] text-center select-none">
+                    {String(current).padStart(2, "0")} - {String(total).padStart(2, "0")}
                   </span>
-                  <button className="text-white border flex items-center justify-center gap-2 testimonials-next px-5 py-5 active:scale-95 pointer-events-auto">
+                  <button
+                    type="button"
+                    id="reviews-next"
+                    onClick={handleNext}
+                    aria-label="Next testimonial"
+                    className="text-white border border-white/60 flex items-center justify-center p-4 hover:border-white hover:bg-white/10 active:scale-95 transition-all cursor-pointer select-none"
+                  >
                     <span className="sr-only">Next</span>
                     <NextIcon />
                   </button>

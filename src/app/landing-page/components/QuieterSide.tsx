@@ -22,7 +22,7 @@ const QuieterSide: React.FC<QuieterSideProps> = ({
       defaultPadding={false}
       className="relative aspect-[1.75/3] md:aspect-auto lg:aspect-[16/9] xl:aspect-[16/7] 2xl:aspect-[16/6] w-full overflow-hidden border-t border-primary"
     >
-      <Image src={image} alt="" fill sizes="100vw" className="object-cover" />
+      <Image src={image} alt={label || "The Quieter Side of Dharamshala"} fill sizes="100vw" className="object-cover" />
       <div className="absolute z-10 inset-0 bg-primary/30" />
       <div className="absolute z-20 inset-0 flex items-center justify-center  md:relative lg:absolute">
         <Container className="py-10 md:py-20">

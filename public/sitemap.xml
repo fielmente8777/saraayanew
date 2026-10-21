@@ -4,34 +4,76 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
 
 <url>
   <loc>https://saraayaglamps.com/</loc>
-  <lastmod>2026-06-12T05:56:49+00:00</lastmod>
+  <lastmod>2026-10-21T00:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://saraayaglamps.com/about-us/</loc>
-  <lastmod>2026-06-12T05:56:49+00:00</lastmod>
+  <lastmod>2026-10-21T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://saraayaglamps.com/rooms/</loc>
-  <lastmod>2026-06-12T05:56:49+00:00</lastmod>
+  <lastmod>2026-10-21T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://saraayaglamps.com/gallery/</loc>
-  <lastmod>2026-06-12T05:56:49+00:00</lastmod>
+  <lastmod>2026-10-21T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://saraayaglamps.com/contact-us/</loc>
-  <lastmod>2026-06-12T05:56:49+00:00</lastmod>
+  <lastmod>2026-10-21T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
+<url>
+  <loc>https://saraayaglamps.com/blogs/</loc>
+  <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://saraayaglamps.com/blogs/romantic-getaways-himachal-pradesh-luxury-glamping/</loc>
+  <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://saraayaglamps.com/blogs/private-getaway-friends-reunions-bachelorette-himachal-pradesh/</loc>
+  <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://saraayaglamps.com/blogs/monsoon-artist-retreat-himalayas-dharamshala/</loc>
+  <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://saraayaglamps.com/blogs/why-luxury-travelers-choosing-glamping-over-five-star-hotels/</loc>
+  <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://saraayaglamps.com/blogs/the-story-of-saraaya-a-dream-built-in-the-himalayas/</loc>
+  <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://saraayaglamps.com/blogs/devi-darshan-himachal-pradesh-kangra/</loc>
+  <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://saraayaglamps.com/blogs/my-favourite-things-to-do-around-saraaya/</loc>
+  <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://saraayaglamps.com/blogs/how-saraaya-was-built/</loc>
+  <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
 
 </urlset>
