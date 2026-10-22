@@ -90,7 +90,8 @@ export default async function Page({ params }: Params) {
               alt={pageData?.title || ""}
               fill
               className="object-cover"
-              sizes="100%"
+              sizes="(max-width: 1024px) 100vw, 1200px"
+              priority
             />
           </div>
         )}

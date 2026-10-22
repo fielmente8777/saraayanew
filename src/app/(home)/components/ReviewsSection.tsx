@@ -44,6 +44,7 @@ const ReviewsSection: React.FC<ReviewsSectionProps> = ({ title, reviews }) => {
           alt="Guest reviews background pattern"
           fill
           className="object-cover"
+          sizes="100vw"
         />
         <div className="md:py-20 py-10 relative z-10">
           <Container className="grid lg:grid-cols-2 grid-cols-1 gap-16 h-full items-center ">

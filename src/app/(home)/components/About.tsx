@@ -36,7 +36,13 @@ const About: React.FC<AboutProps> = ({
             <LazyLoadedVideo src="/video/Saraya-Room-Reel.mp4" poster="/video/Saraya-Room-Reel.png" controls={false} muted autoPlay />
           </div>
           <div className="w-[153px] aspect-4/2 relative ">
-            <Image src={logo} alt="SARAAYA emblem" fill className="object-cover" />
+            <Image
+              src={logo}
+              alt="SARAAYA emblem"
+              fill
+              className="object-cover"
+              sizes="153px"
+            />
           </div>
           {description.map((item, index) => (
             <p

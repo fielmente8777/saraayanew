@@ -3,28 +3,26 @@ import { Playfair_Display, Montserrat, Inter } from "next/font/google";
 import "./globals.css";
 import "./style.scss";
 import Footer from "@/components/footer/Footer";
-import Call from "@/components/ContactButton/Call";
-import { contact } from "@/utils/constent";
-import Whatsapp from "@/components/ContactButton/WhatsApp";
 import Script from "next/script";
 import NavBar from "@/components/navbar/NavBar";
 import { WebProvider } from "@/context-api/WebContext";
-import Image from "next/image";
 import PopUpButton from "@/components/pop-up/PopUpButton";
-import PopUpInfo from "@/components/pop-up/PopUpInfo";
 import localFont from "next/font/local";
-import Popup from "@/components/Popup";
 import ConditionalContactButtons from "@/components/ContactButton/ConditionalContactButtons";
-import PopUpForm from "@/components/pop-up/PopUpForm";
 import { lodgingBusinessJsonLd, websiteJsonLd } from "@/utils/structuredData";
+import PopUpForm from "@/components/pop-up/PopUpForm";
+import PopUpInfo from "@/components/pop-up/PopUpInfo";
+
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const minion = localFont({
@@ -51,11 +49,13 @@ const minion = localFont({
     },
   ],
   variable: "--font-minion",
+  display: "swap",
 });
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -109,6 +109,21 @@ export default function RootLayout({
       className={`${playfairDisplay.variable} ${inter.variable} ${minion.variable} ${montserrat.variable} h-full antialiased`}
     >
       <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link
+          rel="preconnect"
+          href="https://connect.facebook.net"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preconnect"
+          href="https://www.clarity.ms"
+          crossOrigin="anonymous"
+        />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://connect.facebook.net" />
+        <link rel="dns-prefetch" href="https://www.clarity.ms" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -121,15 +136,15 @@ export default function RootLayout({
             __html: JSON.stringify(websiteJsonLd),
           }}
         />
-        <script type="text/javascript" id="clarity">
+        <Script id="ms-clarity" strategy="lazyOnload">
           {`(function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
             t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         })(window, document, "clarity", "script", "wit1af7fpf");`}
-        </script>
+        </Script>
         {/* <!-- Meta Pixel Code --> */}
-        <script>
+        <Script id="fb-pixel" strategy="lazyOnload">
           {`!function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
             n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -140,9 +155,10 @@ export default function RootLayout({
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '1297264175884694');
             fbq('track', 'PageView');`}
-        </script>
+        </Script>
         <noscript>
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             height="1"
             width="1"
             alt="fb-pixel"
@@ -151,16 +167,14 @@ export default function RootLayout({
           />
         </noscript>
         {/* <!-- End Meta Pixel Code --> */}
-        {/* <!-- Google tag (gtag.js) --> */}
 
         {/* <!-- Google tag (gtag.js) --> */}
         <Script
-          id="google-tag-manager"
-          async
-          strategy="afterInteractive"
+          id="gtag-j2-lib"
+          strategy="lazyOnload"
           src="https://www.googletagmanager.com/gtag/js?id=G-J2HMM3JFSZ"
-        ></Script>
-        <Script id="google-analytics" strategy="afterInteractive">
+        />
+        <Script id="gtag-j2-init" strategy="lazyOnload">
           {` window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -168,12 +182,11 @@ export default function RootLayout({
             gtag('config', 'G-J2HMM3JFSZ');`}
         </Script>
         <Script
-          async
-          id="google-tag-manager"
-          strategy="afterInteractive"
+          id="gtag-pv-lib"
+          strategy="lazyOnload"
           src="https://www.googletagmanager.com/gtag/js?id=G-PVZG7NGGMG"
-        ></Script>
-        <Script id="google-analytics" strategy="afterInteractive">
+        />
+        <Script id="gtag-pv-init" strategy="lazyOnload">
           {` window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -182,8 +195,8 @@ export default function RootLayout({
         </Script>
         {/* <!-- Google Tag Manager --> */}
         <Script
-          id="google-tag-manager"
-          strategy="afterInteractive"
+          id="gtm-container-init"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -218,7 +231,7 @@ export default function RootLayout({
         </WebProvider>
 
         {/* <!-- Eazbot Script (Next.js) --> */}
-        <Script id="chatbot-config" strategy="afterInteractive">
+        <Script id="chatbot-config" strategy="lazyOnload">
           {`
             window.eazbotConfig = {
               ndid: "48efe4a5-80fe-4f2a-9615-9e4f98dc57a3",
@@ -227,8 +240,9 @@ export default function RootLayout({
           `}
         </Script>
         <Script
+          id="chatbot-widget"
           src="https://cb-script.dyq28lyxrazm2.amplifyapp.com/widget/lead-chatbot.js"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
       </body>
     </html>

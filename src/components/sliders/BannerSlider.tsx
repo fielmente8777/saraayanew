@@ -27,7 +27,7 @@ const BannerSlider = ({ images }: { images: string[] }) => {
               fill
               className="object-cover"
               loading={index === 0 ? "eager" : "lazy"}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              sizes="100vw"
               priority={index === 0 ? true : false}
             />
           </div>

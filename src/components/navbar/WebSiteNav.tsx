@@ -84,6 +84,7 @@ const WebSiteNav = () => {
               fill
               priority
               className="object-contain"
+              sizes="(max-width: 768px) 160px, 160px"
             />
           </Link>
 

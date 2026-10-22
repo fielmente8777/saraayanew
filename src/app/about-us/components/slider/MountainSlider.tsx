@@ -21,7 +21,7 @@ const MountainSlider: React.FC<{ images: string[] }> = ({ images }) => {
                     alt="Himalayan mountain landscape at SARAAYA"
                     fill
                     className="object-cover"
-                    sizes="100%"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                 />
             </div>
         )}

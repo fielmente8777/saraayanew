@@ -18,7 +18,8 @@ const ImgBanner: React.FC<ImgBannerProps> = ({ image, subtitle, title }) => {
           alt={title || "SARAAYA Safari Suites"}
           fill
           className="object-cover"
-          sizes="100%"
+          sizes="100vw"
+          priority
         />
         <div className="absolute inset-0 bg-black opacity-30" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 text-center text-white px-4">

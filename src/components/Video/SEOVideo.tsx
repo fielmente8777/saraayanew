@@ -76,7 +76,7 @@ const SEOVideo: React.FC<SEOVideoProps> = ({
         loop={loop}
         controls={controls}
         playsInline
-        preload="metadata"
+        preload="none"
         controlsList="nodownload"
         className="w-full h-full object-cover"
       />

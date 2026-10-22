@@ -31,7 +31,8 @@ const Banner: React.FC<BannerProps> = ({
               alt={title || "About SARAAYA Himalayan Glamping"}
               fill
               className="object-cover"
-              sizes="100%"
+              sizes="(max-width: 1024px) 100vw, 1200px"
+              priority
             />
           </div>
           <div className="space-y-4">

@@ -8,7 +8,13 @@ const WebSiteFooter = () => {
     <footer className="max_screen_width bg-background">
       <div className="w-full h-20" />
       <div className="relative w-full aspect-[16/1.79]">
-        <Image src="/footer.png" alt="Himalayan mountain ridge illustration" fill className="object-contain" />
+        <Image
+          src="/footer.png"
+          alt="Himalayan mountain ridge illustration"
+          fill
+          className="object-contain"
+          sizes="100vw"
+        />
       </div>
       <div className="w-full bg-primary py-10 lg:py-18 mt-[-0.8px] border-b border-white">
         <Container className="grid lg:grid-cols-[auto_1fr_auto] grid-cols-1 gap-4 text-sm">
@@ -32,6 +38,7 @@ const WebSiteFooter = () => {
                 alt="SARAAYA Himalayan Glamping Logo"
                 fill
                 className="object-contain"
+                sizes="260px"
               />
             </Link>
             <div className="lg:absolute lg:-bottom-16 lg:left-[65%] lg:translate-x-[-65%]">
@@ -41,6 +48,7 @@ const WebSiteFooter = () => {
                   alt="SARAAYA decorative pattern"
                   fill
                   className="object-cover"
+                  sizes="340px"
                 />
               </div>
             </div>

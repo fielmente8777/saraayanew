@@ -71,6 +71,7 @@ const GlampsSection: React.FC<Props> = ({
                 alt={filtered[0].title || "SARAAYA Safari Suite"}
                 fill
                 className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 55vw"
               />
             </div>
             <div className="flex items-center justify-between">
@@ -88,7 +89,7 @@ const GlampsSection: React.FC<Props> = ({
           </div>
 
           <div className="lg:hidden space-y-10">
-            {accommodations.map((acc) => (
+            {accommodations.map((acc, idx) => (
               <div
                 className="flex flex-col gap-4 sticky top-0  bg-background"
                 key={acc.id}
@@ -103,6 +104,8 @@ const GlampsSection: React.FC<Props> = ({
                     alt={acc.title || "SARAAYA Safari Suite"}
                     fill
                     className="object-cover"
+                    sizes="100vw"
+                    loading={idx === 0 ? "eager" : "lazy"}
                   />
                 </div>
                 <div className="flex items-center justify-between">

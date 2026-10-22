@@ -14,7 +14,7 @@ const ExperiencesCard: React.FC<ExperiencesProps["cards"][0]> = ({
           alt={alt}
           fill
           className="object-cover rounded-3xl"
-          sizes="100%"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
       <p className="text-center font-medium font-primary md:text-2xl text-xl">{alt}</p>

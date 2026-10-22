@@ -77,7 +77,15 @@ export default function Gallery({ galleryImages }: Props) {
             key={index}
             className="relative w-full aspect-7/6 overflow-hidden"
           >
-            <Image src={img.src} alt={img.alt} fill className="object-cover" />
+            <Image
+              src={img.src}
+              alt={img.alt}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              loading={index < 3 ? "eager" : "lazy"}
+              priority={index < 2}
+            />
           </div>
         ))}
       </div>

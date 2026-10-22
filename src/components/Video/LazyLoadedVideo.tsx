@@ -1,13 +1,6 @@
 "use client";
-import dynamic from "next/dynamic";
-import Image from "next/image";
+import SEOVideo from "./SEOVideo";
 
-
-const LazyLoadedVideo = dynamic(() => import("./SEOVideo"), {
-  ssr: false,
-  loading: () => (
-    <Image src="/bnr.jpg" alt="SARAAYA video preview poster" fill className="object-cover" />
-  ),
-});
+const LazyLoadedVideo = SEOVideo;
 
 export default LazyLoadedVideo;

@@ -30,7 +30,7 @@ const EscapeSection: React.FC<EscapeSectionProps> = ({
           alt={title || "Himalayan forest and mountain sanctuary"}
           fill
           className="object-cover"
-          sizes="100%"
+          sizes="100vw"
         />
       </div>
       <div className="absolute inset-0 flex  items-center justify-center gap-4 z-10">
