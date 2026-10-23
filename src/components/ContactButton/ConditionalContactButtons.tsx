@@ -1,4 +1,3 @@
-
 "use client";
 
 import { usePathname } from "next/navigation";
@@ -13,7 +12,7 @@ export default function ConditionalContactButtons() {
 
   return (
     <>
-      {!isLandingPage && <Whatsapp whatsAppNumber={contact.phone[1]} />}
+      <Whatsapp whatsAppNumber={contact.phone[1]} />
 
       <Call callNumber={contact.phone[1]} />
     </>

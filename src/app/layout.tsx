@@ -194,13 +194,15 @@ export default function RootLayout({
           <NavBar />
           {children}
           <Footer />
-          <ConditionalContactButtons />
+          <Whatsapp whatsAppNumber={contact.phone[1]} />
+
+          <Call callNumber={contact.phone[1]} />
           <PopUpForm />
           <PopUpButton />
           <PopUpInfo />
         </WebProvider>
 
-        {/* <!-- Eazbot Script (Next.js) --> */}
+        {/* <!-- Eazbot Script (Next.js) -->
         <Script id="chatbot-config" strategy="afterInteractive">
           {`
             window.eazbotConfig = {
@@ -212,7 +214,7 @@ export default function RootLayout({
         <Script
           src="https://cb-script.dyq28lyxrazm2.amplifyapp.com/widget/lead-chatbot.js"
           strategy="afterInteractive"
-        />
+        /> */}
       </body>
     </html>
   );

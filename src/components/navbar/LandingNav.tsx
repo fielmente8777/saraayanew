@@ -42,7 +42,7 @@ const LandingNav = () => {
 
           {/* Book Now */}
           <LinkButton
-            href= {contact.bookingEngineUrl}
+            href={contact.WhatsappCta}
             label="Book Now"
             target="_blank"
             rel="noopener noreferrer"

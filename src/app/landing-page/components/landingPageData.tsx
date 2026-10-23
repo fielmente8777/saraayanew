@@ -20,7 +20,7 @@ export const landingPageData = {
 
   signatureTherapiesData: {
     title: "Hidden within the Folds of the <i>Mountains!</i>",
-    cta: { label: "Book Now", href: contact.bookingEngineUrl },
+    cta: { label: "Book Now", href: contact.WhatsappCta },
     therapies: [
       {
         src: "/Saraya-309.jpg",
@@ -76,7 +76,7 @@ export const landingPageData = {
     ],
     cta: {
       label: "Book Now",
-      href: contact.bookingEngineUrl,
+      href: contact.WhatsappCta,
     },
   },
 
@@ -133,7 +133,7 @@ export const landingPageData = {
     ],
     cta: {
       label: "Book Now",
-      href: contact.bookingEngineUrl,
+      href: contact.WhatsappCta,
     },
   },
   testimonialData: {
@@ -175,7 +175,7 @@ export const landingPageData = {
 
     cta: {
       label: "Book Now",
-      href: contact.bookingEngineUrl,
+      href: contact.WhatsappCta,
     },
   },
   corePillars: {
@@ -198,7 +198,7 @@ export const landingPageData = {
           text: "SARAAYA is a place to slow down, breathe deeper and let the mountains set the pace.",
         },
       ],
-      cta: { label: "Book Now", href: contact.bookingEngineUrl },
+      cta: { label: "Book Now", href: contact.WhatsappCta },
       reel: { src: "/video/saraayareel.mp4", poster: "/Saraya-319.jpg" },
     },
     {
@@ -216,7 +216,7 @@ export const landingPageData = {
           text: "Spend your day exploring the Kangra Valley, discover nearby villages and mountain trails, or simply stay close to your suite and enjoy the quiet.",
         },
       ],
-      cta: { label: "Book Now", href: contact.bookingEngineUrl },
+      cta: { label: "Book Now", href: contact.WhatsappCta },
       reel: { src: "/video/saraayareel2.mp4", poster: "/Saraya-159.jpg" },
     },
   ],
@@ -232,6 +232,6 @@ export const landingPageData = {
       { text: "Come for the mountains. Stay for the stillness." },
       { text: "Four private safari suites. One quiet Himalayan valley." },
     ],
-    cta: { label: "Book Now", href: contact.bookingEngineUrl },
+    cta: { label: "Book Now", href: contact.WhatsappCta },
   },
 };
