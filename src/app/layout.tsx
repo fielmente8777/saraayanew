@@ -194,16 +194,14 @@ export default function RootLayout({
           <NavBar />
           {children}
           <Footer />
-          <Whatsapp whatsAppNumber={contact.phone[1]} />
-
-          <Call callNumber={contact.phone[1]} />
+          <ConditionalContactButtons />
           <PopUpForm />
           <PopUpButton />
           <PopUpInfo />
         </WebProvider>
 
-        {/* <!-- Eazbot Script (Next.js) -->
-        <Script id="chatbot-config" strategy="afterInteractive">
+        {/* <!-- Eazbot Script (Next.js) --> */}
+        {/* <Script id="chatbot-config" strategy="afterInteractive">
           {`
             window.eazbotConfig = {
               ndid: "48efe4a5-80fe-4f2a-9615-9e4f98dc57a3",
