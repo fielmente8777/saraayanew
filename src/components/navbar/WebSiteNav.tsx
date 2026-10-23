@@ -14,8 +14,23 @@ import { CalendarIcon } from "@/utils/formIcons";
 const WebSiteNav = () => {
   const pathname = usePathname();
 
-  const paths = ["/", "/rooms/"];
+  const paths = [
+    "/",
+    "/rooms",
+    "/rooms/",
+    "/experiences",
+    "/experiences/",
+    "/getting-here",
+    "/getting-here/",
+    "/couples-and-private-groups",
+    "/couples-and-private-groups/",
+    "/couples",
+    "/couples/",
+  ];
   const isTransparent = paths.includes(pathname);
+
+
+
 
   const [visible, setVisible] = useState(true);
   const [scrolled, setScrolled] = useState(false);

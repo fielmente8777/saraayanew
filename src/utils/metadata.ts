@@ -144,6 +144,111 @@ export const seoMetadata: Record<string, Metadata> = {
     },
   },
 
+  experiences: {
+    title: "The SARAAYA Experiences | Unhurried Mountain Glamping in Dharamshala",
+    description:
+      "Curated rituals and unhurried mountain experiences at SARAAYA. Himalayan breakfasts, riverside picnics, bonfire nights, guided trails, and stargazing in Kangra Valley.",
+    keywords: [
+      "Saraaya experiences",
+      "Things to do in Dharamshala glamping",
+      "Himalayan outdoor breakfast",
+      "Riverside picnic Dharamshala",
+      "Stargazing Kangra Valley",
+      "Bonfire glamping Himalayas",
+      "Village walk Dharamshala",
+    ],
+    alternates: {
+      canonical: `${siteUrl}/experiences/`,
+    },
+    openGraph: {
+      title: "The SARAAYA Experiences | Unhurried Mountain Glamping in Dharamshala",
+      description:
+        "Curated rituals designed on the slow side of time. Bonfires, Himalayan breakfasts, riverside picnics and mountain trails.",
+      url: `${siteUrl}/experiences/`,
+      siteName: "SARAAYA Glamping Retreat",
+      locale: "en_IN",
+      type: "website",
+      images: [
+        {
+          url: "/experiences/hero-banner.webp",
+          width: 1200,
+          height: 800,
+          alt: "The SARAAYA Experiences",
+        },
+      ],
+    },
+  },
+
+  gettingHere: {
+    title: "Getting Here | Directions & Mountain Arrival — SARAAYA Dharamshala",
+    description:
+      "Plan your journey to SARAAYA in Village Nauhali, Dharamshala. Information on road access, meeting point, mountain transfers, connectivity, and what to expect upon arrival.",
+    keywords: [
+      "Getting to Saraaya",
+      "How to reach Saraaya Dharamshala",
+      "Village Nauhali directions",
+      "Kangra Valley retreat location",
+      "Saraaya mountain transfer",
+      "Directions to Saraaya Glamping",
+    ],
+    alternates: {
+      canonical: `${siteUrl}/getting-here/`,
+    },
+    openGraph: {
+      title: "Getting Here | Directions & Mountain Arrival — SARAAYA Dharamshala",
+      description:
+        "The journey becomes part of the arrival. How to reach SARAAYA in Village Nauhali near Dharamshala.",
+      url: `${siteUrl}/getting-here/`,
+      siteName: "SARAAYA Glamping Retreat",
+      locale: "en_IN",
+      type: "website",
+      images: [
+        {
+          url: "/getting-here/banner1.jpg",
+          width: 1200,
+          height: 800,
+          alt: "Getting to SARAAYA Glamping",
+        },
+      ],
+    },
+  },
+
+  couplesAndGroups: {
+    title: "Couples & Private Groups | SARAAYA Himalayan Glamping Dharamshala",
+    description:
+      "Time and space to be together away from the crowd. Romantic getaways for couples and exclusive private glamping buyouts for families and small groups at SARAAYA.",
+    keywords: [
+      "Saraaya couples getaway",
+      "Romantic glamping Dharamshala",
+      "Private group buyout glamping",
+      "Honeymoon Himachal Pradesh",
+      "Exclusive mountain retreat Dharamshala",
+      "Kangra Valley private stay",
+    ],
+    alternates: {
+      canonical: `${siteUrl}/couples-and-private-groups/`,
+    },
+    openGraph: {
+      title: "Couples & Private Groups | SARAAYA Himalayan Glamping",
+      description:
+        "Time and space to be together. Away from the crowd, shaped around you.",
+      url: `${siteUrl}/couples-and-private-groups/`,
+      siteName: "SARAAYA Glamping Retreat",
+      locale: "en_IN",
+      type: "website",
+      images: [
+        {
+          url: "/couples/banner.jpg",
+          width: 1200,
+          height: 800,
+          alt: "Couples & Private Groups at SARAAYA",
+        },
+      ],
+    },
+  },
+
+
+
   landingPage: {
     title: "Experience SARAAYA | Private Mountain Glamping in the Himalayas",
     description:
