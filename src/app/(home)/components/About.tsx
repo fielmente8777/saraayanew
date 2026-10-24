@@ -14,7 +14,6 @@ interface AboutProps {
 
 const About: React.FC<AboutProps> = ({
   logo,
-  image,
   title,
   heading,
   description,
@@ -28,12 +27,22 @@ const About: React.FC<AboutProps> = ({
             <span className="w-10 bg-secondary h-px" />
             {title}
           </p>
-          <SectionHeading title={heading} titleClassName="lg:text-[5rem]/[5rem]" />
+          <SectionHeading
+            title={heading}
+            level={1}
+            titleClassName="lg:text-[5rem]/[5rem]"
+          />
           <div className="relative aspect-square w-full lg:hidden">
             <div className="absolute z-10 aspect-square w-26 border-t border-l border-secondary -top-2 -left-2" />
             <div className="absolute z-10 aspect-square w-26 border-r border-b border-secondary -bottom-2 -right-2" />
             {/* <Image src={image} alt="Image" fill className="object-cover" /> */}
-            <LazyLoadedVideo src="/video/Saraya-Room-Reel.mp4" poster="/video/Saraya-Room-Reel.png" controls={false} muted autoPlay />
+            <LazyLoadedVideo
+              src="/video/Saraya-Room-Reel.mp4"
+              poster="/video/Saraya-Room-Reel.png"
+              controls={false}
+              muted
+              autoPlay
+            />
           </div>
           <div className="w-[153px] aspect-4/2 relative ">
             <Image src={logo} alt="Image" fill className="object-cover" />
@@ -54,7 +63,13 @@ const About: React.FC<AboutProps> = ({
           <div className="absolute z-10 aspect-square w-26 border-t border-l border-secondary -top-2 -left-2" />
           <div className="absolute z-10 aspect-square w-26 border-r border-b border-secondary -bottom-2 -right-2" />
           {/* <Image src={image} alt="Image" fill className="object-cover" /> */}
-          <LazyLoadedVideo src="/video/Saraya-Room-Reel.mp4" poster="/video/Saraya-Room-Reel.png" controls={false} muted autoPlay />
+          <LazyLoadedVideo
+            src="/video/Saraya-Room-Reel.mp4"
+            poster="/video/Saraya-Room-Reel.png"
+            controls={false}
+            muted
+            autoPlay
+          />
         </div>
       </div>
     </SectionWithContainer>

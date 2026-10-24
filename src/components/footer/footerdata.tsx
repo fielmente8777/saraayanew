@@ -48,10 +48,12 @@ interface WebsiteFooterData {
 
 export const socialMedia = [
   {
+    label: "Saraaya on Facebook",
     icon: <FbIcon />,
     href: contact.socialMedia.facebook,
   },
   {
+    label: "Saraaya on Instagram",
     icon: <IgIcon />,
     href: contact.socialMedia.instagram,
   },

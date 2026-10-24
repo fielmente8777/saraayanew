@@ -1,3 +1,4 @@
+import { createPageMetadata } from "@/utils/metadata";
 import type { Metadata } from "next";
 import Form2 from "@/components/forms/Form2";
 import { SectionWithContainer } from "@/components/sectionComponants";
@@ -15,20 +16,13 @@ import { winterPageData } from "./components/winterPageData";
 import WinterRooms from "./components/WinterRooms";
 
 export const metadata: Metadata = {
-  title: "Heated Glamping Tents in Dharamshala | Saraaya Winter Stays",
-  description:
-    "Winter glamping near Dharamshala in heated, insulated safari tents. Escape the city smog for clear Himalayan air, bonfires and starry skies. Only four tents per night.",
-  openGraph: {
-    title: "Heated Glamping Tents in Dharamshala | Saraaya Winter Stays",
-    description:
-      "Four heated, insulated safari tents beside a glacier-fed stream near Dharamshala. Escape the smog this winter.",
-    images: [
-      {
-        url: "/winter/hero-night-suite.webp",
-        alt: "A Saraaya tent glowing warm at blue hour",
-      },
-    ],
-  },
+  ...createPageMetadata(
+    "/winter-landing-page/",
+    "Heated Winter Tents near Dharamshala | Saraaya",
+    "Plan a cosy winter escape at Saraaya near Dharamshala. Four private heated tents, mountain views and thoughtful comforts. Enquire for your dates.",
+    "/winter/hero-night-suite.webp"
+  ),
+  robots: { index: false, follow: true },
 };
 
 export default function WinterLandingPage() {
@@ -44,7 +38,7 @@ export default function WinterLandingPage() {
       >
         <div className="border border-primary md:rounded-3xl">
           <div className="md:rounded-3xl md:py-3 py-6 bg-primary px-0">
-            <Form2 />
+            <Form2 submitLabel="Get Winter Quote" />
           </div>
         </div>
         <p className="text-light text-center text-sm! md:text-base!">

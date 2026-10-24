@@ -24,9 +24,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
 }) => {
   const { WhatsAppClick, setIsOpenFormPopUp } = useWebContext();
 
-  const handleWhatsAppClick = (
-    event: React.MouseEvent<HTMLButtonElement>
-  ) => {
+  const handleWhatsAppClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     WhatsAppClick(event.currentTarget, label);
   };
 
@@ -34,6 +32,15 @@ const LinkButton: React.FC<LinkButtonProps> = ({
     if (href === "#form") {
       event.preventDefault();
       setIsOpenFormPopUp(true);
+    }
+    if (href.startsWith("https://wa.me/")) {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "whatsapp_click",
+        button_text: label,
+        page_path: window.location.pathname,
+        whatsapp_url: href,
+      });
     }
   };
 

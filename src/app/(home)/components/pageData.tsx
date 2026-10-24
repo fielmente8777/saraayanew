@@ -11,9 +11,9 @@ import {
 export const homePageData = {
   titles: [
     { title: "Nauhali NEAR Dharamshala", icon: <OutlineLOcationIcon /> },
-    { title: "32.2190° N 76.3234° E", icon: <GpsIcon /> },
-    { title: "Misty · 14°6", icon: <CloudIcon /> },
-    { title: "6 km/h", icon: <WindIcon /> },
+    { title: "FOUR PRIVATE SAFARI TENTS", icon: <GpsIcon /> },
+    { title: "HEATERS & PRIVATE BATHROOMS", icon: <CloudIcon /> },
+    { title: "HOSTED BY THE SARAAYA FAMILY", icon: <WindIcon /> },
   ],
 
   banner: {
@@ -27,14 +27,10 @@ export const homePageData = {
     image: "/home/about-img.png",
     logo: "/home/Vector-1.png",
     title: "A LUXURY GLAMPING Retreat",
-    heading:
-      'Where The <span class = "italic text-secondary font-primary">Mountains</span> Learn To Whisper',
+    heading: "Luxury Glamping in <i>Dharamshala</i>",
     description: [
-      `<span class="float-left text-4xl md:text-6xl leading-[0.85] mr-3 font-primary">
-        S
-      </span>araaya is more than a retreat, it is a sanctuary for the soul. Perched beside a crystalline glacier stream born from sacred alpine peaks, we have harmonized the untamed spirit of the Himalayas with the sophisticated comforts of a premier estate. With only four exclusive glamp suites, your stay is a private communion with the wilderness.,Escape the Noise. Rediscover Your Center.,Leave the city lights behind for a canopy of a billion stars.`,
-
-      "Saraaya was created for people who no longer seek crowded luxury, but meaningful stillness.",
+      "Saraaya is a luxury glamping retreat in Nauhali near Dharamshala, Himachal Pradesh. Four private safari tents bring together Himalayan views, forest surroundings and the comforts of a thoughtfully furnished stay.",
+      "Unwind on your private deck, settle into a king-size bed and enjoy a quieter pace in the Kangra Valley. With attached bathrooms, heaters and personal attention from our hosts, this is a mountain escape for couples, families and small groups.",
     ],
     hostedText: "Hosted by the Saraaya family, since 2019",
   },
@@ -63,28 +59,28 @@ export const homePageData = {
         title: 'Devdar "The Keeper" ',
         image: "/rooms/Mountain-1.png",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
-        cta: { label: "know more", href: "/rooms" },
+        cta: { label: "Explore Devdar tent", href: "/rooms/#devdar" },
       },
       {
         id: "02",
         title: 'Rai "The Watcher"',
         image: "/rooms/Mountain-2.png",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
-        cta: { label: "know more", href: "/rooms" },
+        cta: { label: "Explore Rai tent", href: "/rooms/#rai" },
       },
       {
         id: "03",
         title: 'Buransh  "The Nurturer" ',
         image: "/rooms/Mountain-3.png",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
-        cta: { label: "know more", href: "/rooms" },
+        cta: { label: "Explore Buransh tent", href: "/rooms/#buransh" },
       },
       {
         id: "04",
         title: 'Kail " The Wanderer" ',
         image: "/rooms/Mountain-4.png",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
-        cta: { label: "know more", href: "/rooms" },
+        cta: { label: "Explore Kail tent", href: "/rooms/#kail" },
       },
     ],
   },

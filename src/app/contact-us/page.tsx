@@ -1,3 +1,4 @@
+import { createPageMetadata } from "@/utils/metadata";
 import { Section, SectionWithContainer } from "@/components/sectionComponants";
 import ContactInfo from "./component/contactInfo";
 import { contactPageData } from "./component/pageData";
@@ -7,6 +8,12 @@ import Image from "next/image";
 import { contact } from "@/utils/constent";
 import TitleSection from "@/components/TitleSection";
 import { homePageData } from "../(home)/components/pageData";
+
+export const metadata = createPageMetadata(
+  "/contact-us/",
+  "Contact Saraaya Glamps | Dharamshala Reservations",
+  "Contact Saraaya Glamps in Nauhali near Dharamshala for availability, tent options and arrival assistance. Call, email or send your stay enquiry."
+);
 
 export default function ContainerPage() {
   return (

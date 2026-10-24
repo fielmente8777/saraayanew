@@ -11,14 +11,19 @@ interface TitleSectionProps {
   colorChange?: boolean;
 }
 
-export default function SlidingTitle2 ({ items, colorChange }: TitleSectionProps) {
+export default function SlidingTitle2({
+  items,
+  colorChange,
+}: TitleSectionProps) {
   const titles = [...items, ...items];
 
   return (
-    <div className={`relative overflow-hidden py-4  max_screen_width ${colorChange ? "bg-background" : "bg-primary"}`}>
+    <div
+      className={`relative overflow-hidden py-4  max_screen_width ${colorChange ? "bg-background" : "bg-primary"}`}
+    >
       <Image
         src={"/Layer-2-2.png"}
-        alt="Layer-2"
+        alt=""
         fill
         className="object-cover object-center"
       />
@@ -26,7 +31,9 @@ export default function SlidingTitle2 ({ items, colorChange }: TitleSectionProps
         <div className="marquee-track">
           {titles.map((t, i) => (
             <span key={i} className="marquee-item ">
-              <span className={`flex items-center gap-2 ${colorChange ? "text-primary" : "text-white"}`}>
+              <span
+                className={`flex items-center gap-2 ${colorChange ? "text-primary" : "text-white"}`}
+              >
                 <span>{t.icon}</span>
                 <span className="md:text-sm text-xs text-nowrap uppercase">
                   {t.title}

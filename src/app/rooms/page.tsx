@@ -1,3 +1,4 @@
+import { createPageMetadata } from "@/utils/metadata";
 import TitleSection from "@/components/TitleSection";
 import ImgBanner from "@/components/banners/ImgBanner";
 import ReviewsSection from "../(home)/components/ReviewsSection";
@@ -5,6 +6,12 @@ import { homePageData } from "../(home)/components/pageData";
 import RoomAbout from "./components/RoomAbout";
 import RoomCardSection from "./components/RoomCardSection";
 import { accommodationPageData } from "./components/pageData";
+
+export const metadata = createPageMetadata(
+  "/rooms/",
+  "Luxury Glamping Tents in Dharamshala | Saraaya",
+  "Explore Saraaya’s four private safari tents near Dharamshala, with king-size beds, heaters, attached bathrooms and private decks. Enquire for your dates."
+);
 
 const page = () => {
   return (

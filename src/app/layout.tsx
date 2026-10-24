@@ -1,11 +1,11 @@
+import StructuredData from "@/components/seo/StructuredData";
+import { createPageMetadata, siteUrl } from "@/utils/metadata";
 import type { Metadata } from "next";
 import { Playfair_Display, Montserrat, Inter } from "next/font/google";
 import "./globals.css";
 import "./style.scss";
 import Footer from "@/components/footer/Footer";
-import Call from "@/components/ContactButton/Call";
 import { contact } from "@/utils/constent";
-import Whatsapp from "@/components/ContactButton/WhatsApp";
 import Script from "next/script";
 import NavBar from "@/components/navbar/NavBar";
 import { WebProvider } from "@/context-api/WebContext";
@@ -13,7 +13,6 @@ import Image from "next/image";
 import PopUpButton from "@/components/pop-up/PopUpButton";
 import PopUpInfo from "@/components/pop-up/PopUpInfo";
 import localFont from "next/font/local";
-import Popup from "@/components/Popup";
 import ConditionalContactButtons from "@/components/ContactButton/ConditionalContactButtons";
 import PopUpForm from "@/components/pop-up/PopUpForm";
 const playfairDisplay = Playfair_Display({
@@ -58,38 +57,20 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Saraaya Glamping Retreat | Luxury Stay in Dharamshala Himalayas",
-  description:
-    "Saraaya is a luxury glamping retreat in Dharamshala, Himachal Pradesh. Stay beside a pristine glacier stream with Himalayan views, forest surroundings, and exclusive tent experiences. Only four tents available per night.",
-  keywords:
-    "Saraaya, glamping Dharamshala, luxury tents Himachal Pradesh, Himalayan retreat, glamping India, Kareri Lake stay, Lam Dal trek stay, luxury camping Himalayas, boutique retreat Dharamshala",
-  openGraph: {
-    title: "Saraaya Glamping Retreat | Luxury Stay in Dharamshala Himalayas",
-    description:
-      "Saraaya is a luxury glamping retreat in Dharamshala, Himachal Pradesh. Stay beside a pristine glacier stream with Himalayan views, forest surroundings, and exclusive tent experiences. Only four tents available per night.",
-    images: [
-      {
-        url: "/logo-1.png",
-        width: 800,
-        height: 600,
-        alt: "Saraaya Glamping Retreat",
-      },
-    ],
-    siteName: "Saraaya Glamping Retreat",
-    locale: "en_IN",
-    type: "website",
+  metadataBase: new URL(siteUrl),
+  ...createPageMetadata(
+    "/",
+    "Saraaya Glamps | Luxury Glamping in Dharamshala",
+    "Discover Saraaya near Dharamshala: four private luxury tents, mountain views, heaters and thoughtful comforts. Plan your Himalayan escape with our hosts."
+  ),
+  icons: {
+    icon: "/favicon.ico",
+    apple: [{ url: "/apple-icon", sizes: "180x180", type: "image/png" }],
   },
   robots: {
     index: true,
     follow: true,
-    nocache: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
+    googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
 };
 
@@ -104,13 +85,13 @@ export default function RootLayout({
       className={`${playfairDisplay.variable} ${inter.variable} ${minion.variable} ${montserrat.variable} h-full antialiased`}
     >
       <head>
-        <script type="text/javascript" id="clarity">
+        <Script id="microsoft-clarity" strategy="afterInteractive">
           {`(function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
             t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         })(window, document, "clarity", "script", "wit1af7fpf");`}
-        </script>
+        </Script>
         {/* <!-- Meta Pixel Code --> */}
         <script>
           {`!function(f,b,e,v,n,t,s)
@@ -138,12 +119,12 @@ export default function RootLayout({
 
         {/* <!-- Google tag (gtag.js) --> */}
         <Script
-          id="google-tag-manager"
+          id="ga4-primary-loader"
           async
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-J2HMM3JFSZ"
         ></Script>
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="ga4-primary-config" strategy="afterInteractive">
           {` window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -152,11 +133,11 @@ export default function RootLayout({
         </Script>
         <Script
           async
-          id="google-tag-manager"
+          id="ga4-secondary-loader"
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-PVZG7NGGMG"
         ></Script>
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="ga4-secondary-config" strategy="afterInteractive">
           {` window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -165,7 +146,7 @@ export default function RootLayout({
         </Script>
         {/* <!-- Google Tag Manager --> */}
         <Script
-          id="google-tag-manager"
+          id="gtm-container"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -189,6 +170,57 @@ export default function RootLayout({
         </noscript>
         {/* <!-- End Google Tag Manager (noscript) --> */}
 
+        <StructuredData
+          data={{
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebSite",
+                "@id": siteUrl + "/#website",
+                url: siteUrl + "/",
+                name: "Saraaya Glamps",
+                inLanguage: "en-IN",
+              },
+              {
+                "@type": "LodgingBusiness",
+                "@id": siteUrl + "/#lodging",
+                name: "Saraaya Glamps",
+                url: siteUrl + "/",
+                telephone: "+918988334372",
+                email: contact.email,
+                image: siteUrl + "/rooms/Mountain-1.png",
+                logo: siteUrl + "/logo-1.png",
+                description:
+                  "A family-hosted glamping retreat with four private safari tents in Nauhali near Dharamshala.",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "Village Nauhali",
+                  addressLocality: "Dharamshala",
+                  addressRegion: "Himachal Pradesh",
+                  postalCode: "176217",
+                  addressCountry: "IN",
+                },
+                hasMap: contact.addressLink,
+                sameAs: [
+                  contact.socialMedia.instagram,
+                  contact.socialMedia.facebook,
+                ],
+                amenityFeature: [
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    name: "Heaters in tents",
+                    value: true,
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    name: "Private attached bathrooms",
+                    value: true,
+                  },
+                ],
+              },
+            ],
+          }}
+        />
         <WebProvider>
           {/* <Popup /> */}
           <NavBar />

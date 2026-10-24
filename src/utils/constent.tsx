@@ -15,12 +15,11 @@ export const contact = {
   },
   callCta: `tel:+918988334372`,
   whatsappNumber: "+918988334372",
-  WhatsappCta: `https://wa.me/+918988334372?text=${enCodeText}`,
+  WhatsappCta: `https://wa.me/918988334372?text=${enCodeText}`,
 
   // bookingEngineUrl:"https://letsbook.me/booking/saraayaglampsdharmshala?checkin=2026-09-21&checkout=2026-09-22&adults=2&children=0",
 
-  bookingEngineUrl:
-    "https://letsbook.me/booking/saraayaglampsdharmshala?checkin=2026-10-15&checkout=2026-10-16&adults=2&children=0",
+  bookingEngineUrl: "https://letsbook.me/booking/saraayaglampsdharmshala",
 
   formDomain: "saraayaglamps",
   // formDomain: "testmulti", //for testing

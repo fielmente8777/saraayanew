@@ -5,8 +5,11 @@ import { Container } from "../sectionComponants";
 import LinkButton from "../buttons/LinkButton";
 import { contact } from "@/utils/constent";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { winterWhatsappCta } from "@/app/winter-landing-page/components/winterCtas";
 
 const LandingNav = () => {
+  const isWinter = usePathname().startsWith("/winter-landing-page");
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -33,17 +36,18 @@ const LandingNav = () => {
           <div className="relative aspect-[4/2] w-30 md:w-40.25">
             <Image
               src="/logo-1.png"
-              alt="Logo"
+              alt="Saraaya Glamps Dharamshala"
               fill
               priority
+              sizes="(min-width: 768px) 161px, 120px"
               className="rounded-md object-cover"
             />
           </div>
 
           {/* Book Now */}
           <LinkButton
-            href={contact.WhatsappCta}
-            label="Book Now"
+            href={isWinter ? winterWhatsappCta : contact.WhatsappCta}
+            label="Enquire Now"
             target="_blank"
             rel="noopener noreferrer"
             className="w-fit rounded-full uppercase border-secondary bg-secondary text-white"

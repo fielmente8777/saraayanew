@@ -80,7 +80,7 @@ const WebSiteNav = () => {
           >
             <Image
               src={isTransparent ? "/logo-white.png" : "/logo-green.png"}
-              alt="Logo"
+              alt="Saraaya Glamps home"
               fill
               priority
               className="object-contain"
@@ -104,11 +104,11 @@ const WebSiteNav = () => {
             `}
           />
           <div className="lg:hidden md:hidden">
-          <Link
-  href={contact.bookingEngineUrl}
-  target="_blank"
-  rel="noopener noreferrer"
-  className={`
+            <Link
+              href={contact.bookingEngineUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`
     flex items-center gap-2
     rounded-lg
     px-2 md:px-6
@@ -120,14 +120,15 @@ const WebSiteNav = () => {
         : "text-primary border border-primary"
     }
   `}
->
-  <CalendarIcon />
+            >
+              <span className="sr-only">Reserve a tent at Saraaya</span>
+              <CalendarIcon />
 
-  {/* <span className=" text-base tracking-widest">
+              {/* <span className=" text-base tracking-widest">
     reserve
   </span> */}
-</Link>
-</div>
+            </Link>
+          </div>
         </nav>
 
         <NavMenu />

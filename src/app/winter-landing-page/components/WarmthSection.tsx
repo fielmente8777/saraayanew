@@ -9,11 +9,10 @@ interface WarmthSectionProps {
   description: string;
   features: { icon: string; title: string; text: string }[];
   images: { src: string; alt: string }[];
-  power: {
+  planning: {
     title: string;
     text: string;
-    outside: { label: string; value: string };
-    inside: { label: string; value: string };
+    highlights: { label: string; value: string }[];
   };
 }
 
@@ -69,7 +68,7 @@ const WarmthSection: React.FC<WarmthSectionProps> = ({
   description,
   features,
   images,
-  power,
+  planning,
 }) => {
   return (
     <SectionWithContainer
@@ -120,21 +119,22 @@ const WarmthSection: React.FC<WarmthSectionProps> = ({
       <div className="flex flex-col gap-6 rounded-2xl bg-primary p-6 text-white md:flex-row md:items-center md:gap-10 md:rounded-3xl md:p-10">
         <div className="flex flex-1 flex-col gap-3">
           <h3 className="font-primary text-2xl lg:text-[34px]">
-            {power.title}
+            {planning.title}
           </h3>
-          <p className="text-white/85">{power.text}</p>
+          <p className="text-white/85">{planning.text}</p>
         </div>
-        <div className="grid flex-1 grid-cols-2 gap-4">
-          <div className="rounded-2xl border border-white/30 p-5">
-            <p className="text-sm! text-white/80">{power.outside.label}</p>
-            <p className="font-primary mt-1 text-4xl">{power.outside.value}</p>
-          </div>
-          <div className="rounded-2xl border border-white/30 bg-white/5 p-5">
-            <p className="text-sm! text-white/80">{power.inside.label}</p>
-            <p className="font-primary mt-1 text-4xl text-[#E9A766]">
-              {power.inside.value}
-            </p>
-          </div>
+        <div className="grid flex-1 grid-cols-1 gap-4 sm:grid-cols-2">
+          {planning.highlights.map((item) => (
+            <div
+              key={item.label}
+              className="rounded-2xl border border-white/30 bg-white/5 p-5"
+            >
+              <p className="text-sm! text-white/80">{item.label}</p>
+              <p className="font-primary mt-1 text-2xl text-[#E9A766]">
+                {item.value}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </SectionWithContainer>

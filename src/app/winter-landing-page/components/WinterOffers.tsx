@@ -50,10 +50,12 @@ const WinterOffers: React.FC<WinterOffersProps> = ({ warmUp, takeover }) => {
         <div className="mt-2 flex flex-wrap items-end justify-between gap-5">
           <div>
             <p className="text-light text-sm!">{warmUp.priceLabel}</p>
-            <p className="font-primary text-primary text-5xl leading-tight">
+            <p className="font-primary text-primary text-3xl leading-tight md:text-4xl">
               {warmUp.price}
             </p>
-            <p className="text-light text-sm!">{warmUp.priceNote}</p>
+            <p className="mt-2 max-w-lg text-light text-sm!">
+              {warmUp.priceNote}
+            </p>
           </div>
           <LinkButton
             href={warmUp.cta.href}
@@ -76,7 +78,9 @@ const WinterOffers: React.FC<WinterOffersProps> = ({ warmUp, takeover }) => {
         <div className="absolute inset-0 bg-linear-to-b from-[#121a0c]/10 to-[#121a0c]/85" />
         <div className="relative z-10 flex flex-col gap-3">
           <p className="text-sm! uppercase tracking-wide">{takeover.label}</p>
-          <h3 className="font-primary text-3xl lg:text-4xl">{takeover.title}</h3>
+          <h3 className="font-primary text-3xl lg:text-4xl">
+            {takeover.title}
+          </h3>
           <p className="text-white/90">{takeover.description}</p>
           <LinkButton
             href={takeover.cta.href}

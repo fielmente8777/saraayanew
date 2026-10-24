@@ -1,279 +1,277 @@
 import { landingPageData } from "@/app/landing-page/components/landingPageData";
+import {
+  winterWhatsappCta,
+  warmUpWhatsappCta,
+  takeoverWhatsappCta,
+} from "./winterCtas";
 
-const winterWhatsappText = encodeURIComponent(
-  "Hello Saraaya Team\nI'd like to check winter dates for your heated tents."
-);
-const warmUpWhatsappText = encodeURIComponent(
-  "Hello Saraaya Team\nI'm interested in the Winter Warm-Up package."
-);
-const takeoverWhatsappText = encodeURIComponent(
-  "Hello Saraaya Team\nWe'd like to book all four tents this winter."
-);
-
-export const winterWhatsappCta = `https://wa.me/+918988334372?text=${winterWhatsappText}`;
-const warmUpWhatsappCta = `https://wa.me/+918988334372?text=${warmUpWhatsappText}`;
-const takeoverWhatsappCta = `https://wa.me/+918988334372?text=${takeoverWhatsappText}`;
-
-// Items in [square brackets] are still to be confirmed with the property before going live.
+// Amenities and arrival information follow Saraaya's published accommodation
+// and contact pages. Date-specific rates and inclusions are quoted by the team.
 export const winterPageData = {
   hero: {
     image: "/winter/hero-night-suite.webp",
-    alt: "A Saraaya tent glowing warm at blue hour under the Himalayan night sky",
-    location: "Saraaya Glamps Dharamshala · Winter 2026–27",
-    title: "Heated Tents for a Himalayan <i>Winter</i>",
+    alt: "Saraaya's luxury tents illuminated on a Himalayan evening",
+    location: "Nauhali, near Dharamshala · Winter 2026–27",
+    title: "Heated Tents. <i>Cosy Himalayan Winters.</i>",
     description:
-      "Leave the city smog for single-digit Himalayan air, cedar breeze and skies full of stars. Four heated, insulated safari tents beside a glacier-fed stream — warm inside, however cold the night.",
-    note: "Only four tents a night · Christmas & New Year fill first",
-    cta: { label: "Check Winter Dates", href: winterWhatsappCta },
+      "Trade the city rush for slow mountain mornings and cosy nights. Discover four private safari tents with heaters, king-size beds and attached bathrooms — your winter hideaway near Dharamshala.",
+    note: "Just four tents · Couples, families & small groups",
+    cta: { label: "Check Winter Availability", href: winterWhatsappCta },
   },
 
   formNote:
-    "No payment to ask. Share your dates and we'll reply with availability and your winter rate.",
+    "Request availability and a quote for your dates. An enquiry does not confirm a booking or require payment.",
 
   titles: [
-    "HEATED TENTS",
-    "ESCAPE THE SMOG",
-    "ONLY FOUR TENTS AVAILABLE PER NIGHT",
-    "CHRISTMAS & NEW YEAR",
+    "HEATED SAFARI TENTS",
+    "A QUIETER WINTER ESCAPE",
+    "JUST FOUR PRIVATE TENTS",
+    "PLAN CHRISTMAS & NEW YEAR",
   ],
 
   smog: {
-    label: "SWAP THE AQI FOR ALTITUDE",
-    title: "Escape the Smog. Skip the <i>Crowds.</i>",
+    label: "A CHANGE OF PACE, A CHANGE OF SCENERY",
+    title: "Less City Rush. <i>More Mountain Time.</i>",
     description:
-      "From November the plains fill with smog, and the popular hill towns fill with holiday traffic. Saraaya sits in a quiet fold of the Kangra Valley, beyond both.",
+      "Make room for an unhurried winter break. Tucked away in Nauhali in the Kangra Valley, Saraaya brings together forest surroundings, Himalayan views and the privacy of a small retreat.",
     points: [
       {
-        title: "Single-digit Himalayan air",
-        text: "cedar and pine breeze in place of city AQI",
+        title: "A quieter setting",
+        text: "forest surroundings away from busy town centres",
       },
       {
-        title: "No lobbies, no tour buses",
-        text: "just four tents across the valley",
+        title: "Room to slow down",
+        text: "just four tents for a more intimate stay",
       },
       {
-        title: "Skies you can actually see",
-        text: "180° views by day, stars by night",
+        title: "Your kind of winter",
+        text: "mountain views by day and cosy evenings together",
       },
     ],
     image: "/winter/valley-snow-peaks.webp",
-    alt: "Snow-capped Dhauladhar peaks above the forested Kangra Valley",
-    cta: { label: "Book Now", href: winterWhatsappCta },
+    alt: "The Dhauladhar mountain range above the forested Kangra Valley",
+    cta: { label: "Plan My Winter Stay", href: winterWhatsappCta },
   },
 
   warmth: {
-    label: "“Won't a tent be freezing?”",
-    title: "Built for <i>Winter</i>, Not Just Summer",
+    label: "MOUNTAIN ADVENTURE, THOUGHTFUL COMFORTS",
+    title: "Your Cosy <i>Winter Hideaway</i>",
     description:
-      "It's the first thing everyone asks. Here's exactly what keeps you warm, from the canvas to the bed.",
+      "Enjoy the character of a safari tent with the everyday comforts that make a winter break feel inviting.",
     features: [
       {
         icon: "flame",
-        title: "A heater in every tent",
-        text: "All-season climate control, with a dedicated winter heater in each tent.",
+        title: "Heaters for winter",
+        text: "Heaters in the tents help you settle in after a day in the mountain air.",
       },
       {
         icon: "home",
-        title: "Insulated & wind-proofed",
-        text: "Insulated canvas and solid timber-framed, lockable doors that keep the mountain wind outside.",
+        title: "Your own private space",
+        text: "A furnished safari tent with secure, lockable doors and a private deck.",
       },
       {
         icon: "bed",
-        title: "A bed for cold nights",
-        text: "King-size bed with layered linens and cold-weather down blankets.",
+        title: "A bed to linger in",
+        text: "A king-size bed, premium linens and cosy blankets for slow mornings.",
       },
       {
         icon: "drop",
-        title: "Hot water, round the clock",
-        text: "Private attached bathroom with a walk-in shower and hot water 24/7.",
+        title: "A private bathroom",
+        text: "An attached bathroom with a spacious shower and hot water.",
       },
     ],
     images: [
       {
         src: "/winter/interior-warm.webp",
-        alt: "Tent interior with warm lamps, canopy drapes and a made-up king bed",
+        alt: "A furnished Saraaya safari tent with a king-size bed and warm lighting",
       },
       {
         src: "/winter/interior-lamp.webp",
-        alt: "Bedside lamp glowing beside a heavy duvet",
+        alt: "Bedside lighting and soft bedding inside a Saraaya tent",
       },
     ],
-    power: {
-      title: "Warmth that doesn't depend on the weather",
-      text: "Mountain power can dip in winter storms. Saraaya runs on [generator / inverter] backup that keeps heaters, lights and hot water going through an outage.",
-      outside: { label: "Outside, a January night", value: "[Y°C]" },
-      inside: { label: "Inside your tent", value: "[X°C]" },
+    planning: {
+      title: "A little planning for a mountain winter",
+      text: "Pack warm layers and shoes with grip. Mountain weather can affect electricity and Wi-Fi, so speak with our team about current conditions and any specific comfort or access needs before travelling.",
+      highlights: [
+        { label: "Your space", value: "A private tent" },
+        { label: "Your comfort", value: "Heater & cosy bedding" },
+      ],
     },
   },
 
   rooms: {
     ...landingPageData.rooms,
-    title: "Your Winter <i>Tent</i>",
+    title: "Find Your <i>Winter Hideaway</i>",
     subtitle:
-      "Winter rates from [₹X,XXX] per night for two, home-style meals included",
-    cta: { label: "Book Now", href: winterWhatsappCta },
+      "Four private tents, two view categories. Share your dates and guest details for availability, rates and meal-plan options.",
+    cta: { label: "Ask About Tent Options", href: winterWhatsappCta },
   },
 
   offers: {
     warmUp: {
-      label: "WINTER OFFER · VALID TILL [28 FEB 2027]",
-      title: "The Winter <i>Warm-Up</i>",
+      label: "PLAN YOUR WINTER BREAK",
+      title: "Make It a <i>Cosy Escape</i>",
       description:
-        "Everything for a cold-weather escape in one price, so there's nothing left to plan.",
+        "A weekend for two or a longer mountain break? Tell us your dates and who is coming. Our team will help you choose a tent and plan your stay.",
       includes: [
-        "Heated, insulated tent",
-        "Home-style vegetarian meals",
-        "A bonfire evening under the stars",
-        "Movie night, wrapped in blankets",
-        "4x4 pickup & porter",
-        "[Stay 3 nights, pay for 2]",
+        "A private safari tent with a heater",
+        "King-size bed & cosy bedding",
+        "Attached bathroom with hot water",
+        "A private deck with mountain views",
+        "Arrival pickup & luggage assistance",
+        "Ask about meals & curated experiences",
       ],
-      priceLabel: "For two, per night",
-      price: "[₹X,XXX]",
-      priceNote: "[Taxes extra]",
-      cta: { label: "Reserve the Warm-Up", href: warmUpWhatsappCta },
+      priceLabel: "Your winter stay",
+      price: "Request a quote",
+      priceNote:
+        "Rates depend on your dates, tent and guest count. Confirm meal plans, experience charges, taxes and booking terms with our team before paying.",
+      cta: { label: "Get My Winter Quote", href: warmUpWhatsappCta },
     },
     takeover: {
       image: "/winter/lounge-blue-hour.webp",
-      label: "FOR NEW YEAR & GROUPS",
-      title: "Have the valley to yourselves",
+      label: "FAMILY REUNIONS · FRIENDS · FESTIVE BREAKS",
+      title: "Bring your favourite people",
       description:
-        "Book all four tents for a private takeover — family, friends, or a New Year with no strangers in sight.",
-      cta: { label: "Ask About a Takeover", href: takeoverWhatsappCta },
+        "Planning Christmas, New Year or a small group getaway? Ask about reserving all four tents together, subject to availability.",
+      cta: { label: "Enquire for All Four Tents", href: takeoverWhatsappCta },
     },
   },
 
   experiences: {
-    label: "Winter Experiences",
-    title: "Crisp Mornings. <i>Warm Evenings.</i>",
+    label: "Ideas for Your Winter Stay",
+    title: "Slow Mornings. <i>Memorable Evenings.</i>",
     cards: [
       {
         image: "/winter/snow-peaks.webp",
-        alt: "Snowline Views",
-        desc: "The Dhauladhar ridge turns white. Watch the light move across it from your veranda, chai in hand.",
+        alt: "Mountain Views",
+        desc: "Take in the Dhauladhar landscape from your deck. Views and snow conditions vary with the weather.",
       },
       {
         image: "/winter/bonfire.webp",
-        alt: "Bonfire Nights",
-        desc: "Cold mountain air, a crackling fire and nowhere you need to be.",
+        alt: "Bonfire Evenings",
+        desc: "Ask our hosts to arrange a bonfire for a cosy evening together, subject to weather and availability.",
       },
       {
         image: "/winter/stargazing.webp",
-        alt: "The Clearest Skies of the Year",
-        desc: "Dry winter air and no city glow for miles — stargazing at its best.",
+        alt: "Stargazing",
+        desc: "On a clear night, look up from the city lights. Ask about a guided stargazing session during your stay.",
       },
       {
         image: "/winter/riverside-grill.webp",
-        alt: "Mountain Meals",
-        desc: "Home-style vegetarian meals included; trout, mutton and chicken à la carte. Bring your own bottle.",
+        alt: "Meals at Saraaya",
+        desc: "Discuss meal plans and dietary preferences with the team. Food and beverages for experience setups are charged separately.",
       },
       {
         image: "/winter/movie-night.webp",
-        alt: "Movie Under the Stars",
-        desc: "The open-air screening by the fire, wrapped in heavy throws.",
+        alt: "Outdoor Movie Setup",
+        desc: "Make an evening of it with a private outdoor movie setup. Confirm arrangements and charges in advance.",
       },
       {
         image: "/winter/cultural-night.webp",
-        alt: "Cultural Night",
-        desc: "Folk dance and valley stories from Nauhali, home of the Gaddi shepherds.",
+        alt: "Local Culture",
+        desc: "Ask about a village tour or cultural evening to discover more of the surrounding area.",
       },
     ],
-    cta: { label: "Book Now", href: winterWhatsappCta },
+    cta: { label: "Ask About Winter Experiences", href: winterWhatsappCta },
   },
 
   hosts: {
     image: "/winter/aerial-night.webp",
-    label: "Serenity in Wilderness",
-    title: "Built by a Fam<span>ily Who Came H</span>ome",
+    label: "HOSTED BY THE SARAAYA FAMILY",
+    title: "Four Tents. <span>Thoughtful Hospitality.</span>",
     description: [
       {
-        text: "After years in corporate Dubai, Sabhay brought his family back to the Dhauladhar and built Saraaya beside the stream near Nauhali. Guests mention him by name — for answering every question before the trip, and for being at the pickup point when they arrive.",
+        text: "A small retreat makes room for personal attention. Speak with our hosts before you arrive, from choosing your tent to planning the final stretch of your journey.",
       },
       {
-        text: "“I had everything Dubai could give. But every morning I woke up thinking about the smell of deodar after rain.” — Sabhay, founder",
-        italic: true,
+        text: "Come for a quiet weekend, time together or a slower festive break. Let us know what would make your stay special.",
       },
     ],
-    cta: { label: "Book Now", href: winterWhatsappCta },
+    cta: { label: "Speak to Our Hosts", href: winterWhatsappCta },
   },
 
   gettingHere: {
     image: "/winter/tents-in-valley.webp",
     alt: "Saraaya's tents among terraced fields and forest",
     label: "Getting Here in Winter",
-    title: "We Handle the <i>Last Stretch</i>",
+    title: "A Little Adventure. <i>A Warm Welcome.</i>",
     steps: [
       {
-        title: "Fly into Kangra airport",
-        text: "about 1 hr 15 min by road, or drive in via Dharamshala.",
+        title: "Plan your journey",
+        text: "Fly into Kangra Airport or drive towards Dharamshala. Ask our team for the recommended route and pickup location.",
       },
       {
-        title: "Meet us at the pickup point",
-        text: "on the Hydro Project road, about 1 km from Morya Kareri hotel. [Roads open through winter — confirm.]",
+        title: "Check conditions before travelling",
+        text: "Mountain weather can affect road access. Confirm the latest route and arrival arrangements with us before setting off.",
       },
       {
-        title: "A 2-minute 4x4 ride",
-        text: "then a 5–10 minute walk through the fields with a porter for your bags.",
+        title: "A short 4x4 transfer",
+        text: "Our team meets you at the pickup point for an approximately 2-minute ride, followed by a 5–10 minute walk through the fields.",
       },
       {
-        title: "Your tent, already warm.",
-        text: "Check-in from 2 pm; check-out by 12 noon.",
+        title: "Help with the final stretch",
+        text: "A porter assists with your luggage. Tell us about any mobility needs in advance so we can help you assess the walk.",
       },
     ],
     pack: {
-      title: "What to pack",
-      text: "A warm jacket, thermals and a beanie; shoes with grip for the field walk; sunglasses for bright winter days. There's only a small village shop nearby, so bring anything specific you need. Mobile signal is mainly BSNL.",
+      title: "Pack for a mountain winter",
+      text: "Bring a warm jacket, layers, a beanie and shoes with grip. Carry personal essentials and medicines. Wi-Fi and mobile connectivity can vary in this remote setting.",
     },
   },
 
   testimonialData: {
     ...landingPageData.testimonialData,
-    cta: { label: "Book Now", href: winterWhatsappCta },
+    cta: { label: "Plan Your Stay", href: winterWhatsappCta },
   },
 
   faq: {
-    title: "Winter <i>Questions</i>, Answered",
+    title: "Your Winter <i>Questions</i>",
     items: [
       {
-        q: "How warm is the tent at night?",
-        a: "Each tent has its own winter heater, insulated canvas and timber-framed doors that keep the wind out, plus cold-weather down blankets on a king-size bed. With the heater on it stays around [X°C] inside when it's [Y°C] outside.",
+        q: "Are the tents heated for winter?",
+        a: "Yes. Saraaya's tents have heaters, king-size beds and cosy bedding. Bring warm clothing for outdoor time. Indoor comfort depends on the weather and power supply; our team can advise on conditions for your dates.",
+      },
+      {
+        q: "What is the winter tariff?",
+        a: "Rates vary by date, tent, guest count and meal plan. Send your preferred dates on WhatsApp or through the enquiry form for a quote with inclusions, taxes and booking terms.",
       },
       {
         q: "What happens if the power goes out?",
-        a: "Our [generator / inverter] backup takes over, so heaters, lights and hot water keep running.",
+        a: "Electricity interruptions can occur during adverse mountain weather, and Wi-Fi may also be affected. Contact the team before arrival to discuss current conditions and any essential power or comfort requirements.",
       },
       {
-        q: "Can we still get there if it snows?",
-        a: "Snow usually stays on the higher ridges, and our team meets you at the pickup point with a 4x4. [Confirm winter road access, and what happens if weather blocks it — e.g. a free date change.]",
+        q: "Can we reach Saraaya in winter?",
+        a: "Arrival includes a short 4x4 transfer and a 5–10 minute walk with luggage assistance. Road access and outdoor conditions depend on the weather. Confirm your route and pickup arrangements with our team before travelling.",
       },
       {
-        q: "What are the meals like?",
-        a: "Home-style vegetarian meals are included, made with local ingredients. Trout, mutton and chicken are available à la carte, and you're welcome to bring your own drinks.",
+        q: "Are meals and experiences included?",
+        a: "Inclusions depend on the plan you book. Ask for your meal plan and any experience charges in your quote. Food and beverages for experience setups are charged separately, and outdoor activities depend on weather and availability.",
       },
       {
-        q: "Is it comfortable for kids and older parents?",
-        a: "Yes. Tents are heated, bathrooms are private with hot water round the clock, and the walk in is short with a porter for your bags. Tell us who's coming and we'll prepare the tent for them.",
+        q: "Is the stay suitable for children and older guests?",
+        a: "The tents have private bathrooms and heaters, but reaching the property includes a walk through the fields and uneven terrain. Discuss the ages and mobility needs of your group with our hosts before booking.",
       },
       {
-        q: "What's the cancellation policy, and how do we pay?",
-        a: "You can cancel up to 48 hours before your arrival date [confirm refund terms]. Payment is by UPI.",
+        q: "What are the cancellation and payment terms?",
+        a: "Ask our team for the cancellation, refund, date-change and payment terms that apply to your dates and selected plan. Review these details in your booking confirmation before making payment.",
       },
       {
-        q: "Can we bring our pet?",
-        a: "We're sorry, pets aren't allowed at Saraaya.",
+        q: "Can we bring a pet?",
+        a: "Please check directly with our team before planning a stay with a pet. Any pet arrangements must be confirmed before booking.",
       },
     ],
   },
 
   closing: {
     image: "/winter/final-bonfire.webp",
-    label: "Limited Stays · High Demand",
-    title: "Four Tents. On<span>e Short Wi</span>nter.",
+    label: "JUST FOUR TENTS · PLAN YOUR WINTER BREAK",
+    title: "Your Cosy <span>Winter Escape Awaits.</span>",
     description: [
       {
-        text: "Send us your dates and we'll come back with availability and your winter rate. No payment needed to ask.",
+        text: "Send your dates and guest count. We'll help you find your tent, share a quote and plan the details of your winter stay.",
       },
     ],
-    cta: { label: "Check Winter Dates", href: winterWhatsappCta },
+    cta: { label: "Check Winter Availability", href: winterWhatsappCta },
   },
 };
