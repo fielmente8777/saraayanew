@@ -144,9 +144,10 @@ const Form2 = ({ gridView, submitLabel = "Enquire Now" }: Props) => {
                         <option
                           key={country.name}
                           value={country.code}
+                          aria-label={country.code + " " + country.name}
                           className="bg-primary text-white"
                         >
-                          {country.code} {country.name}
+                          {country.code}
                         </option>
                       ))}
                     </select>
@@ -156,7 +157,7 @@ const Form2 = ({ gridView, submitLabel = "Enquire Now" }: Props) => {
                     type={field.type}
                     name={field.name}
                     autoComplete={field.autoComplete}
-                    placeholder={field.label}
+                    placeholder={field.type === "tel" ? "Phone" : field.label}
                     required
                     aria-invalid={Boolean(error)}
                     aria-describedby={error ? errorId : undefined}

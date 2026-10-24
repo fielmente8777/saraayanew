@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import "./sliding.title.scss";
 import { JSX } from "react";
 
@@ -21,11 +20,10 @@ export default function SlidingTitle2({
     <div
       className={`relative overflow-hidden py-4  max_screen_width ${colorChange ? "bg-background" : "bg-primary"}`}
     >
-      <Image
-        src={"/Layer-2-2.png"}
-        alt=""
-        fill
-        className="object-cover object-center"
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url('/Layer-2-2.png')" }}
       />
       <div className="marquee-wrapper">
         <div className="marquee-track">

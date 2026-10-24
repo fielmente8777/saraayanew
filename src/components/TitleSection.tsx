@@ -1,6 +1,5 @@
 import { JSX } from "react";
 import { Container, Section } from "./sectionComponants";
-import Image from "next/image";
 import SlidingTitle2 from "./sliders/SlidingTitle2";
 
 interface TitleSectionProps {
@@ -17,11 +16,10 @@ const TitleSection = ({ titles, colorChange }: TitleSectionProps) => {
         className={`relative ${colorChange ? "bg-background" : "bg-primary"} w-full h-full aspect-auto hidden lg:block `}
         defaultPadding={false}
       >
-        <Image
-          src={"/Layer-2-2.png"}
-          alt=""
-          fill
-          className="object-cover object-center"
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/Layer-2-2.png')" }}
         />
         <Container className="flex items-center justify-between gap-4 px-4 py-4">
           {titles.map((title, index) => (

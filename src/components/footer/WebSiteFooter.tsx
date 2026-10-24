@@ -7,9 +7,11 @@ const WebSiteFooter = () => {
   return (
     <footer className="max_screen_width bg-background">
       <div className="w-full h-20" />
-      <div className="relative w-full aspect-[16/1.79]">
-        <Image src="/footer.png" alt="" fill className="object-contain" />
-      </div>
+      <div
+        aria-hidden="true"
+        className="relative w-full aspect-[16/1.79] bg-contain bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/footer.png')" }}
+      />
       <div className="w-full bg-primary py-10 lg:py-18 mt-[-0.8px] border-b border-white">
         <Container className="grid lg:grid-cols-[auto_1fr_auto] grid-cols-1 gap-4 text-sm">
           <div className="flex flex-col gap-4">
@@ -23,7 +25,7 @@ const WebSiteFooter = () => {
                   {item.href && (
                     <Link href={item.href}>
                       {item.href === "/"
-                        ? "Saraaya Glamps home"
+                        ? "Return to Saraaya"
                         : item.href === "/rooms/"
                           ? "Explore our safari tents"
                           : item.href === "/about-us/"
@@ -45,20 +47,17 @@ const WebSiteFooter = () => {
             <Link href="/" className="w-65 block relative aspect-4/2 lg:ml-50">
               <Image
                 src={websiteFooterData.logo}
-                alt="Saraaya Glamps home"
+                alt="Saraaya Glamps logo"
                 fill
                 className="object-contain"
               />
             </Link>
             <div className="lg:absolute lg:-bottom-16 lg:left-[65%] lg:translate-x-[-65%]">
-              <div className="w-85 relative aspect-[4/.8] mx-auto">
-                <Image
-                  src="/Vector-5.png"
-                  alt=""
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              <div
+                aria-hidden="true"
+                className="w-85 relative aspect-[4/.8] mx-auto bg-cover bg-center"
+                style={{ backgroundImage: "url('/Vector-5.png')" }}
+              />
             </div>
           </div>
           <div className="flex flex-col gap-4">
