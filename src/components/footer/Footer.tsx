@@ -9,6 +9,7 @@ const Footer = () => {
     case "/thank-you/":
       return null;
     case "/landing-page/":
+    case "/winter-landing-page/":
       return <LandingFooter />;
     default:
       return <WebSiteFooter />;
