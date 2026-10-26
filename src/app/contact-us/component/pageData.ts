@@ -18,6 +18,8 @@ export const contactPageData = {
         href: "tel:" + contact.phone[0],
         label2: contact.phone[1],
         href2: "tel:" + contact.phone[1],
+        label3: contact.phone[2],
+        href3: "tel:" + contact.phone[2],
       },
       {
         icon: EmailIcon,

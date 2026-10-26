@@ -4,7 +4,7 @@ export const contact = {
   email: "info@saraayaglamps.com",
   mapUrl:
     "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3206.2209332831317!2d76.263166!3d32.2817487!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b5902d5fbd759%3A0x8e6104c5e18476fc!2sSaraaya%20Glamps!5e1!3m2!1sen!2sin!4v1777890910601!5m2!1sen!2sin",
-  phone: ["+91 78766 24372", "+91 89883 34372","+91 96501 65004"],
+  phone: ["+91 78766 24372", "+91 89883 34372","+91 96503 65004"],
   address: "Village Nauhali, Dharamshala 176217",
   addressLink: "https://maps.app.goo.gl/MErrEdUx4V9K7sHs8",
   socialMedia: {
