@@ -2,50 +2,50 @@ export const blogsData = [
   {
     meta: {
       title:
-        "Romantic Getaways in Himachal Pradesh: Why Couples Are Choosing Luxury Glamping Over 5-Star Hotels",
+        "Romantic Getaways in Himachal Pradesh: Why Couples Are Choosing Private Glamping Over 5-Star Hotels",
       description:
-        "Looking for the perfect romantic getaway in Himachal Pradesh? Whether you're planning a honeymoon, celebrating an anniversary, proposing to the love of your life, or simply escaping the city together, luxury glamping is becoming the preferred choice for couples who want privacy, nature, and unforgettable experiences.",
+        "Looking for the perfect romantic getaway in Himachal Pradesh? Whether you're planning a honeymoon, celebrating an anniversary, proposing to the love of your life, or simply escaping the city together, private glamping is becoming the preferred choice for couples who want privacy, nature, and unforgettable experiences.",
       keyWords: [
         "Romantic getaway Himachal Pradesh",
         "Romantic getaway Dharamshala",
-        "Luxury glamping for couples",
+        "Private glamping for couples",
         "Honeymoon in Himachal Pradesh",
         "Proposal ideas in Himachal",
         "Anniversary trip near Dharamshala",
-        "Luxury safari suites India",
+        "Private Safari suites India",
         "Private romantic stay",
-        "Luxury glamping India",
+        "Private glamping India",
         "Couple getaway near Delhi",
-        "Luxury nature retreat",
+        "Nature stay",
         "Romantic vacation Himachal",
         "Weekend getaway for couples",
         "Romantic mountain stay",
-        "Luxury glamping Dharamshala",
+        "Private glamping Dharamshala",
       ],
     },
     url: "",
     date: "July 24, 2026",
     title:
-      "Romantic Getaways in Himachal Pradesh: Why Couples Are Choosing Luxury Glamping Over 5-Star Hotels",
+      "Romantic Getaways in Himachal Pradesh: Why Couples Are Choosing Private Glamping Over 5-Star Hotels",
     slug: "romantic-getaways-himachal-pradesh-luxury-glamping",
     description:
-      "Looking for the perfect romantic getaway in Himachal Pradesh? Whether you're planning a honeymoon, celebrating an anniversary, proposing to the love of your life, or simply escaping the city together, luxury glamping is becoming the preferred choice for couples who want privacy, nature, and unforgettable experiences. At Saraaya Luxury Glamps, nestled in the forests near Dharamshala, romance isn't just about a beautiful room—it's about creating memories under the stars.",
+      "Looking for the perfect romantic getaway in Himachal Pradesh? Whether you're planning a honeymoon, celebrating an anniversary, proposing to the love of your life, or simply escaping the city together, private glamping is becoming the preferred choice for couples who want privacy, nature, and unforgettable experiences. At Saraaya Glamps, nestled in the forests near Dharamshala, romance isn't just about a beautiful room—it's about creating memories under the stars.",
     data: `
   <div>
     <p>
-      Looking for the perfect romantic getaway in Himachal Pradesh? Whether you're planning a honeymoon, celebrating an anniversary, proposing to the love of your life, or simply escaping the city together, luxury glamping is becoming the preferred choice for couples who want privacy, nature, and unforgettable experiences.
+      Looking for the perfect romantic getaway in Himachal Pradesh? Whether you're planning a honeymoon, celebrating an anniversary, proposing to the love of your life, or simply escaping the city together, private glamping is becoming the preferred choice for couples who want privacy, nature, and unforgettable experiences.
     </p>
     <p>
-      At Saraaya Luxury Glamps, nestled in the forests near Dharamshala, romance isn't just about a beautiful room—it's about creating memories under the stars.
+      At Saraaya Glamps, nestled in the forests near Dharamshala, romance isn't just about a beautiful room—it's about creating memories under the stars.
     </p>
 
     <h2>Why Couples Are Moving Away from Traditional Hotels</h2>
 
     <p>
-      Five-star hotels offer luxury, but many couples today are searching for something more meaningful. Instead of crowded lobbies, busy restaurants, and city views, they're choosing secluded destinations where they can reconnect with each other.
+      Five-star hotels offer comfort, but many couples today are searching for something more meaningful. Instead of crowded lobbies, busy restaurants, and city views, they're choosing secluded destinations where they can reconnect with each other.
     </p>
     <p>
-      Luxury glamping combines premium comfort with the beauty of nature. Imagine waking up to birdsong, enjoying breakfast surrounded by deodar forests, and ending your day beside a private bonfire under a sky full of stars.
+      Private glamping combines premium comfort with the beauty of nature. Imagine waking up to birdsong, enjoying breakfast surrounded by deodar forests, and ending your day beside a private bonfire under a sky full of stars.
     </p>
     <p>
       That's an experience no hotel corridor can offer.
@@ -54,7 +54,7 @@ export const blogsData = [
     <h2>A Couple's Escape Designed for Romance</h2>
 
     <p>
-      Every romantic trip deserves privacy. At Saraaya, each luxury safari suite is thoughtfully placed to offer a peaceful retreat where you can disconnect from everyday life and focus on each other.
+      Every romantic trip deserves privacy. At Saraaya, each private Safari suite is thoughtfully placed to offer a peaceful retreat where you can disconnect from everyday life and focus on each other.
     </p>
     <p>
       Whether you're reading together on your private deck, enjoying handcrafted meals, or simply listening to the sounds of the forest, every moment feels intimate.
@@ -69,13 +69,13 @@ export const blogsData = [
       If you're planning your honeymoon, choosing the right destination matters.
     </p>
     <p>
-      Many newlyweds are now looking beyond conventional resorts and discovering the charm of luxury glamping in Himachal Pradesh.
+      Many newlyweds are now looking beyond conventional resorts and discovering the charm of private glamping in Himachal Pradesh.
     </p>
     <p>
       Saraaya offers:
     </p>
     <ul>
-      <li>Spacious luxury safari suites</li>
+      <li>Spacious private Safari suites</li>
       <li>Home-style gourmet meals</li>
       <li>Private bonfire evenings</li>
       <li>Romantic outdoor dining</li>
@@ -141,7 +141,7 @@ export const blogsData = [
       Whether it's your first anniversary or your twenty-fifth, the memories last much longer than gifts.
     </p>
 
-    <h2>Private Luxury Escapes for Couples</h2>
+    <h2>Private Mountain Escapes for Couples</h2>
 
     <p>
       Sometimes you don't need a reason to travel.
@@ -150,7 +150,7 @@ export const blogsData = [
       Sometimes all you need is each other.
     </p>
     <p>
-      Luxury glamping offers something modern couples rarely find—privacy.
+      Private glamping offers something modern couples rarely find—privacy.
     </p>
     <p>
       No elevators.
@@ -225,7 +225,7 @@ export const blogsData = [
       Love deserves beautiful places.
     </p>
     <p>
-      If you're searching for a romantic getaway near Dharamshala, a honeymoon destination in Himachal Pradesh, or a private luxury escape surrounded by nature, Saraaya Luxury Glamps offers an experience unlike any traditional hotel.
+      If you're searching for a romantic getaway near Dharamshala, a honeymoon destination in Himachal Pradesh, or a private mountain escape surrounded by nature, Saraaya Glamps offers an experience unlike any traditional hotel.
     </p>
     <p>
       Come together.
@@ -247,23 +247,23 @@ export const blogsData = [
       title:
         "Escape Together: The Perfect Private Getaway for Friends, Reunions & Bachelorette Celebrations in Himachal Pradesh",
       description:
-        "Looking for the perfect private getaway for friends, reunions, bachelorette parties, or young families? Discover exclusive luxury glamping in Himachal Pradesh with Saraaya. Book the entire property for your group.",
+        "Looking for the perfect private getaway for friends, reunions, bachelorette parties, or young families? Discover exclusive private glamping in Himachal Pradesh with Saraaya. Book the entire property for your group.",
       keyWords: [
         "Friends getaway Himachal Pradesh",
         "Group stay near Dharamshala",
         "Bachelor party Himachal Pradesh",
         "Bachelorette getaway India",
         "Private glampsite booking",
-        "Exclusive luxury glamping Himachal",
+        "Exclusive private glamping Himachal",
         "Reunion destination India",
         "Weekend getaway with friends",
         "Young family holiday Himachal",
-        "Luxury safari suites Dharamshala",
+        "Private Safari suites Dharamshala",
         "Private mountain retreat",
         "Entire property booking Himachal",
         "Boutique glamping India",
         "Small group retreat Himachal",
-        "Luxury nature escape",
+        "Mountain nature escape",
       ],
     },
     url: "",
@@ -271,7 +271,7 @@ export const blogsData = [
       "Escape Together: The Perfect Private Getaway for Friends, Reunions & Bachelorette Celebrations in Himachal Pradesh",
     slug: "private-getaway-friends-reunions-bachelorette-himachal-pradesh",
     description:
-      "Some trips are about sightseeing. The best ones are about the people you travel with. Whether it's a long-overdue reunion with college friends, a birthday weekend, a bachelor or bachelorette celebration, or a getaway with another young family, finding the right place makes all the difference. Instead of staying in crowded hotels filled with strangers, imagine having an entire luxury glampsite reserved exclusively for your group. At Saraaya Luxury Glamps, that's exactly what you get.",
+      "Some trips are about sightseeing. The best ones are about the people you travel with. Whether it's a long-overdue reunion with college friends, a birthday weekend, a bachelor or bachelorette celebration, or a getaway with another young family, finding the right place makes all the difference. Instead of staying in crowded hotels filled with strangers, imagine having an entire boutique glampsite reserved exclusively for your group. At Saraaya Glamps, that's exactly what you get.",
     data: `
   <div>
     <p>
@@ -284,16 +284,16 @@ export const blogsData = [
       Whether it's a long-overdue reunion with college friends, a birthday weekend, a bachelor or bachelorette celebration, or a getaway with another young family, finding the right place makes all the difference.
     </p>
     <p>
-      Instead of staying in crowded hotels filled with strangers, imagine having an entire luxury glampsite reserved exclusively for your group.
+      Instead of staying in crowded hotels filled with strangers, imagine having an entire boutique glampsite reserved exclusively for your group.
     </p>
     <p>
-      At Saraaya Luxury Glamps, that's exactly what you get.
+      At Saraaya Glamps, that's exactly what you get.
     </p>
 
     <h2>Your Own Private Mountain Retreat</h2>
 
     <p>
-      Saraaya is intentionally intimate, with only four luxury safari suites surrounded by forests and mountain views near Dharamshala.
+      Saraaya is intentionally intimate, with only four private Safari suites surrounded by forests and mountain views near Dharamshala.
     </p>
     <p>
       This means your group can book the entire property, creating a completely private experience without sharing common spaces with other guests.
@@ -354,7 +354,7 @@ export const blogsData = [
       <li>Barbecue evenings</li>
       <li>Mountain adventures</li>
       <li>Beautiful photo spots</li>
-      <li>Luxury camping under the stars</li>
+      <li>Glamping under the stars</li>
     </ul>
     <p>
       It's relaxed, exclusive, and unforgettable.
@@ -375,10 +375,10 @@ export const blogsData = [
     <h2>Privacy You Won't Find at Large Resorts</h2>
 
     <p>
-      Luxury isn't always about size.
+      A memorable stay isn't always about size.
     </p>
     <p>
-      Sometimes luxury means having an entire destination to yourselves.
+      Sometimes a special stay means having an entire destination to yourselves.
     </p>
     <p>
       With only four safari suites, your group enjoys:
@@ -424,7 +424,7 @@ export const blogsData = [
       Unlike large resorts built for hundreds of guests, Saraaya is designed for intimate gatherings.
     </p>
     <p>
-      The entire property comfortably hosts small groups, allowing everyone to stay close while still enjoying the privacy of individual luxury safari suites.
+      The entire property comfortably hosts small groups, allowing everyone to stay close while still enjoying the privacy of individual private Safari suites.
     </p>
     <p>
       It's perfect for:
@@ -445,10 +445,10 @@ export const blogsData = [
     <h2>Make the Mountains Yours</h2>
 
     <p>
-      If you're searching for a private group stay in Himachal Pradesh, a friends' getaway near Dharamshala, or an exclusive luxury glamping experience, Saraaya offers something few destinations can.
+      If you're searching for a private group stay in Himachal Pradesh, a friends' getaway near Dharamshala, or an exclusive private glamping experience, Saraaya offers something few destinations can.
     </p>
     <p>
-      Just four luxury safari suites.
+      Just four private Safari suites.
     </p>
     <p>
       One entire property.
@@ -470,15 +470,15 @@ export const blogsData = [
   {
   meta: {
     title:
-      "Find Your Creative Flow: A Monsoon Artist Retreat in the Himalayas | Luxury Glamping Near Dharamshala",
+      "Find Your Creative Flow: A Monsoon Artist Retreat in the Himalayas | Private Glamping Near Dharamshala",
     description:
-      "Escape creative burnout with a peaceful monsoon retreat near Dharamshala. Saraaya Luxury Glamps offers luxury glamping for writers, artists, musicians, photographers, filmmakers, and digital nomads seeking inspiration in the Himalayas.",
+      "Escape creative burnout with a peaceful monsoon retreat near Dharamshala. Saraaya Glamps offers private glamping for writers, artists, musicians, photographers, filmmakers, and digital nomads seeking inspiration in the Himalayas.",
     keyWords: [
       "Artist retreat Himachal Pradesh",
       "Writing retreat India",
       "Creative retreat Dharamshala",
       "Monsoon getaway Himachal",
-      "Luxury glamping for artists",
+      "Private glamping for artists",
       "Long stay Himachal Pradesh",
       "Workcation in the mountains",
       "Writer's retreat India",
@@ -486,7 +486,7 @@ export const blogsData = [
       "Artist residency India",
       "Nature retreat for creatives",
       "Peaceful stay near Dharamshala",
-      "Luxury glamping Himachal",
+      "Private glamping Himachal",
       "Off-season stay Himachal",
       "Creative workcation India",
     ],
@@ -496,7 +496,7 @@ export const blogsData = [
     "Find Your Creative Flow: A Monsoon Artist Retreat in the Himalayas",
   slug: "monsoon-artist-retreat-himalayas-dharamshala",
   description:
-    "Every artist knows the feeling of creative burnout. Hidden in the forests near Dharamshala, Saraaya Luxury Glamps offers a peaceful mountain retreat where writers, musicians, painters, photographers, filmmakers, designers, poets and creative thinkers can slow down, reconnect with nature, and rediscover their creative flow.",
+    "Every artist knows the feeling of creative burnout. Hidden in the forests near Dharamshala, Saraaya Glamps offers a peaceful mountain retreat where writers, musicians, painters, photographers, filmmakers, designers, poets and creative thinkers can slow down, reconnect with nature, and rediscover their creative flow.",
   data: `
   <div>
 
@@ -513,7 +513,7 @@ export const blogsData = [
     </p>
 
     <p>
-      Hidden in the forests near Dharamshala, Saraaya Luxury Glamps offers exactly that—a peaceful mountain retreat where writers, musicians, painters, photographers, filmmakers, designers, poets and creative thinkers can slow down and reconnect with their craft.
+      Hidden in the forests near Dharamshala, Saraaya Glamps offers exactly that—a peaceful mountain retreat where writers, musicians, painters, photographers, filmmakers, designers, poets and creative thinkers can slow down and reconnect with their craft.
     </p>
 
     <h2>Why the Monsoon Is the Most Creative Season</h2>
@@ -635,10 +635,10 @@ export const blogsData = [
       Whether your canvas is paper, music, a camera or a laptop, you'll find room to think here.
     </p>
 
-    <h2>Luxury Without Distractions</h2>
+    <h2>Comfort Without Distractions</h2>
 
     <p>
-      Luxury isn't always about grand hotels and busy resorts.
+      Comfort isn't always about grand hotels and busy resorts.
     </p>
 
     <p>
@@ -654,7 +654,7 @@ export const blogsData = [
     </p>
 
     <p>
-      Our luxury safari suites provide modern comforts while allowing you to stay immersed in nature, making them ideal for creators seeking both comfort and solitude.
+      Our private Safari suites provide modern comforts while allowing you to stay immersed in nature, making them ideal for creators seeking both comfort and solitude.
     </p>
 
     <h2>Disconnect to Reconnect</h2>
@@ -771,24 +771,24 @@ export const blogsData = [
   {
   meta: {
     title:
-      "Why Luxury Travelers Are Choosing Glamping Over Five-Star Hotels | Saraaya Luxury Glamps",
+      "Why Travellers Are Choosing Glamping Over Five-Star Hotels | Saraaya Glamps",
     description:
-      "Discover why executives, HNIs, celebrities, entrepreneurs, and discerning travelers are choosing luxury glamping over traditional five-star hotels for privacy, nature, exclusivity, and meaningful experiences.",
+      "Discover why executives, HNIs, celebrities, entrepreneurs, and discerning travelers are choosing private glamping over traditional five-star hotels for privacy, nature, exclusivity, and meaningful experiences.",
     keyWords: [
-      "Luxury glamping Dharamshala",
-      "Luxury glamping Himachal Pradesh",
-      "Luxury glamping India",
+      "Private glamping Dharamshala",
+      "Private glamping Himachal Pradesh",
+      "Private glamping India",
       "Glamping near Dharamshala",
-      "Luxury retreat Himachal Pradesh",
-      "Boutique luxury stays India",
-      "Luxury safari suites Himachal",
-      "Luxury travel Himachal Pradesh",
-      "Private luxury retreat India",
-      "Luxury nature retreat Dharamshala",
-      "Luxury stay near Dharamshala",
+      "Boutique stay Himachal Pradesh",
+      "Boutique stays India",
+      "Private Safari suites Himachal",
+      "Slow travel Himachal Pradesh",
+      "Private boutique stay India",
+      "Nature stay Dharamshala",
+      "Boutique stay near Dharamshala",
       "Exclusive glamping Himachal",
-      "Luxury retreat for executives",
-      "Luxury travel India",
+      "Boutique stay for executives",
+      "Slow travel India",
       "Five star hotel alternative India",
     ],
   },
@@ -796,30 +796,30 @@ export const blogsData = [
   url: "",
 
   title:
-    "Why Luxury Travelers Are Choosing Glamping Over Five-Star Hotels",
+    "Why Travellers Are Choosing Glamping Over Five-Star Hotels",
 
   slug: "why-luxury-travelers-choosing-glamping-over-five-star-hotels",
 
   description:
-    "For executives, entrepreneurs, celebrities, creators, and high-net-worth individuals, luxury is no longer simply about five-star hotels. Saraaya Luxury Glamps offers privacy, nature, exclusivity, personalized hospitality, and meaningful mountain experiences.",
+    "For executives, entrepreneurs, celebrities, creators, and high-net-worth individuals, comfort is no longer simply about five-star hotels. Saraaya Glamps offers privacy, nature, exclusivity, personalized hospitality, and meaningful mountain experiences.",
 
   data: `
 <p>
-  For decades, luxury was measured by marble lobbies, grand chandeliers, infinity pools, and five-star service. Today, however, a new generation of discerning travelers is redefining what luxury truly means.
+  A mountain stay can offer much more than an impressive lobby or a long list of facilities. For travellers who value privacy and time in nature, the setting and the way they spend their days can be what matters most.
 </p>
 
 <p>
-  For executives, entrepreneurs, celebrities, creators, and high-net-worth individuals (HNIs), luxury is no longer about staying where everyone else is. It is about finding places where no one else is.
+  For travellers taking a break from busy routines, a quieter setting offers room to spend time together, explore the surroundings and enjoy an unhurried stay.
 </p>
 
 <p>
-  Welcome to the world of luxury glamping.
+  Welcome to the world of private glamping.
 </p>
 
-<h2>The New Definition of Luxury</h2>
+<h2>The New Definition of Comfort</h2>
 
 <p>
-  Modern luxury is no longer about excess. It is about exclusivity, privacy, authenticity, and meaningful experiences.
+  A thoughtful mountain stay brings comfort, privacy, local character and meaningful experiences together.
 </p>
 
 <p>
@@ -827,10 +827,10 @@ export const blogsData = [
 </p>
 
 <p>
-  That is exactly why boutique luxury stays and premium glamping experiences are becoming the preferred choice.
+  That is exactly why boutique stays and premium glamping experiences are becoming the preferred choice.
 </p>
 
-<h2>Privacy Is the Ultimate Luxury</h2>
+<h2>Space for Privacy</h2>
 
 <p>
   One of the biggest reasons celebrities and business leaders avoid large hotels is privacy.
@@ -841,7 +841,7 @@ export const blogsData = [
 </p>
 
 <p>
-  Boutique luxury stays offer something hotels rarely can:
+  Boutique stays offer something hotels rarely can:
 </p>
 
 <ul>
@@ -857,13 +857,13 @@ export const blogsData = [
 </p>
 
 <p>
-  At Saraaya, there are only four luxury safari suites, ensuring every guest enjoys exceptional privacy and space. Whether celebrating an anniversary, planning a proposal, hosting close friends, or simply escaping the city, guests experience a level of exclusivity that large hotels cannot replicate.
+  At Saraaya, there are only four private Safari suites, ensuring every guest enjoys exceptional privacy and space. Whether celebrating an anniversary, planning a proposal, hosting close friends, or simply escaping the city, guests experience a level of exclusivity that large hotels cannot replicate.
 </p>
 
 <h2>Nature Is Becoming the New Wellness Destination</h2>
 
 <p>
-  Luxury travel is shifting away from shopping malls and city skylines.
+  Slow travel is shifting away from shopping malls and city skylines.
 </p>
 
 <p>
@@ -871,7 +871,7 @@ export const blogsData = [
 </p>
 
 <p>
-  Their greatest luxury isn’t another rooftop bar.
+  What they value most isn’t another rooftop bar.
 </p>
 
 <p>
@@ -894,7 +894,7 @@ export const blogsData = [
   Research consistently shows that spending time in nature can reduce stress, improve mood, and support mental well-being. For executives managing demanding schedules, this kind of environment offers something increasingly valuable: the opportunity to truly switch off.
 </p>
 
-<h2>Why Executives Choose Boutique Luxury Retreats</h2>
+<h2>Why Executives Choose Boutique Stays</h2>
 
 <p>
   Executives rarely take holidays simply to rest.
@@ -943,7 +943,7 @@ export const blogsData = [
 </p>
 
 <p>
-  Luxury glamping focuses on something entirely different.
+  Private glamping focuses on something entirely different.
 </p>
 
 <p>
@@ -1006,11 +1006,11 @@ export const blogsData = [
 <h2>Why HNIs Value Exclusivity</h2>
 
 <p>
-  For high-net-worth travelers, exclusivity often matters more than luxury itself.
+  For travellers seeking privacy, the character of a stay can matter more than its list of facilities.
 </p>
 
 <p>
-  Owning the latest luxury car or staying in another five-star hotel is no longer unique.
+  Owning the latest expensive car or staying in another five-star hotel is no longer unique.
 </p>
 
 <p>
@@ -1018,7 +1018,7 @@ export const blogsData = [
 </p>
 
 <p>
-  With only four luxury safari suites, Saraaya offers an experience that feels private, intimate, and highly personalized.
+  With only four private Safari suites, Saraaya offers an experience that feels private, intimate, and highly personalized.
 </p>
 
 <p>
@@ -1028,7 +1028,7 @@ export const blogsData = [
 <h2>A Digital Detox Without Giving Up Comfort</h2>
 
 <p>
-  Luxury glamping is not about sacrificing comfort.
+  Private glamping is not about sacrificing comfort.
 </p>
 
 <p>
@@ -1060,7 +1060,7 @@ export const blogsData = [
 </p>
 
 <p>
-  It is luxury without unnecessary distractions.
+  It is comfort without unnecessary distractions.
 </p>
 
 <h2>The Rise of Slow Travel</h2>
@@ -1078,7 +1078,7 @@ export const blogsData = [
 </p>
 
 <p>
-  Luxury today is not about rushing.
+  An unhurried stay leaves room to explore at your own pace.
 </p>
 
 <p>
@@ -1088,11 +1088,11 @@ export const blogsData = [
 <h2>Discover Saraaya</h2>
 
 <p>
-  Hidden in the mountains near Dharamshala, Saraaya is a boutique luxury glamping retreat designed for travelers who value privacy, meaningful experiences, and nature without compromising comfort.
+  Hidden in the mountains near Dharamshala, Saraaya is a boutique glamping stay designed for travelers who value privacy, meaningful experiences, and nature without compromising comfort.
 </p>
 
 <p>
-  With just four luxury safari suites, personalized hospitality, exceptional food and unforgettable mountain experiences, Saraaya offers a refreshing alternative to conventional five-star hotels.
+  With just four private Safari suites, personalized hospitality, exceptional food and unforgettable mountain experiences, Saraaya offers a refreshing alternative to conventional five-star hotels.
 </p>
 
 <p>
@@ -1100,15 +1100,15 @@ export const blogsData = [
 </p>
 
 <p>
-  Not just luxury.
+  Not just comfort.
 </p>
 
 <p>
-  The luxury of peace, privacy, and time.
+  Peace, privacy and time in nature.
 </p>
 
 <p>
-  Because true luxury isn’t about having more.
+  Because true comfort isn’t about having more.
 </p>
 
 <p>
@@ -1120,25 +1120,25 @@ export const blogsData = [
     meta: {
       title: "The Story of Saraaya: A Dream Built in the Himalayas",
       description:
-        "How I left a corporate life, found my way back to my Himachal roots and built a small luxury glamping retreat in the wilderness",
+        "How I left a corporate life, found my way back to my Himachal roots and built a small private glamping retreat in the wilderness",
       keyWords: [
         "The Story of Saraaya",
         "Saraaya Glamps",
         "Saraaya Glamps Dharamshala",
-        "Luxury glamping Himachal Pradesh",
-        "Luxury glamping Dharamshala",
-        "Luxury safari suites Himachal Pradesh",
-        "Luxury stay in Himachal Pradesh",
-        "Luxury retreat in Himachal Pradesh",
+        "Private glamping Himachal Pradesh",
+        "Private glamping Dharamshala",
+        "Private Safari suites Himachal Pradesh",
+        "Boutique stay in Himachal Pradesh",
+        "Boutique stay in Himachal Pradesh",
         "Glamping in the Himalayas",
-        "Himalayan luxury retreat",
+        "Himalayan boutique stay",
         "Nauhali Himachal Pradesh",
-        "Dharamshala luxury stay",
-        "Luxury nature retreat",
-        "Private luxury safari suites",
-        "Luxury glamping in Dharamshala",
+        "Dharamshala boutique stay",
+        "Nature stay",
+        "private Safari suites",
+        "Private glamping in Dharamshala",
         "Himachal Pradesh mountain retreat",
-        "Luxury stay in the Himalayas",
+        "Boutique stay in the Himalayas",
         "Serenity in Wilderness",
       ],
     },
@@ -1147,7 +1147,7 @@ export const blogsData = [
     title: "The Story of Saraaya: A Dream Built in the Himalayas",
     slug: "the-story-of-saraaya-a-dream-built-in-the-himalayas",
     description:
-      "How I left a corporate life, found my way back to my Himachal roots and built a small luxury glamping retreat in the wilderness",
+      "How I left a corporate life, found my way back to my Himachal roots and built a small private glamping retreat in the wilderness",
     data: `
   <div>
     <p>
@@ -1163,7 +1163,7 @@ export const blogsData = [
     </p>
 
     <p>
-      Today, when a guest arrives at Saraaya and sees four private luxury safari suites surrounded by forest and mountains, it may look as though the property simply belongs here.
+      Today, when a guest arrives at Saraaya and sees four private Safari suites surrounded by forest and mountains, it may look as though the property simply belongs here.
     </p>
 
     <p>
@@ -1545,7 +1545,7 @@ export const blogsData = [
     </p>
 
     <p>
-      It was another reminder that I wasn’t simply putting up four luxury safari suites.
+      It was another reminder that I wasn’t simply putting up four private Safari suites.
     </p>
 
     <p>
@@ -2055,7 +2055,7 @@ export const blogsData = [
     </p>
 
     <p>
-      So we built four private luxury safari suites.
+      So we built four private Safari suites.
     </p>
 
     <p>
@@ -2070,14 +2070,14 @@ export const blogsData = [
       It is part of the identity of Saraaya.
     </p>
 
-    <h2>What Luxury Means to Me</h2>
+    <h2>What a Meaningful Stay Means to Me</h2>
 
     <p>
-      Building Saraaya also changed the way I think about luxury.
+      Building Saraaya also changed the way I think about a meaningful stay.
     </p>
 
     <p>
-      I used to associate luxury more easily with things.
+      I used to associate a good stay more easily with things.
     </p>
 
     <p>
@@ -2101,7 +2101,7 @@ export const blogsData = [
     </p>
 
     <p>
-      Luxury can be:
+      Comfort can be:
     </p>
 
     <p>
@@ -2145,7 +2145,7 @@ export const blogsData = [
     </p>
 
     <p>
-      That became the kind of luxury I wanted Saraaya to offer.
+      That became the kind of stay I wanted Saraaya to offer.
     </p>
 
     <h2>We Built a Place Where You Don’t Have to Do Everything</h2>
@@ -2713,7 +2713,7 @@ export const blogsData = [
     <h2>Welcome to Saraaya</h2>
 
     <p>
-      If you visit us, I hope you don’t simply see a luxury glamping property.
+      If you visit us, I hope you don’t simply see a private glamping property.
     </p>
 
     <p>
@@ -3197,7 +3197,7 @@ export const blogsData = [
     </p>
 
     <p>
-      Saraaya has only four private luxury safari suites, giving guests an intimate Himalayan setting away from the busier tourist areas.
+      Saraaya has only four private Safari suites, giving guests an intimate Himalayan setting away from the busier tourist areas.
     </p>
 
     <p>
@@ -3311,7 +3311,7 @@ export const blogsData = [
     description:
       "A founder’s guide to exploring our corner of the Himalayas — if you are curious enough to wander",
     data: `
-<p>When we started Saraaya, we didn’t want to create a place where guests simply came to sleep in a luxury safari suite.</p>
+<p>When we started Saraaya, we didn’t want to create a place where guests simply came to sleep in a private Safari suite.</p>
 
 <p>We wanted people to experience the landscape.</p>
 
@@ -3697,15 +3697,15 @@ export const blogsData = [
         "Saraaya Glamps Dharamshala",
         "Saraaya founder story",
         "Building Saraaya",
-        "Luxury glamping Dharamshala",
-        "Luxury safari suites Himachal Pradesh",
+        "Private glamping Dharamshala",
+        "Private Safari suites Himachal Pradesh",
         "Nauhali Himachal Pradesh",
         "Saraaya Dharamshala story",
         "Building a glamping resort",
-        "Himachal luxury retreat",
+        "Himachal boutique stay",
         "Mountain resort founder story",
-        "Luxury glamping India",
-        "Saraaya luxury glamps",
+        "Private glamping India",
+        "Saraaya Glamps",
       ],
     },
     url: "",
@@ -3915,7 +3915,7 @@ export const blogsData = [
 
 <p>And I wanted the forest and mountains to remain the dominant part of the experience.</p>
 
-<p>So we built four private luxury safari suites.</p>
+<p>So we built four private Safari suites.</p>
 
 <p>Four was intentional.</p>
 
@@ -3951,9 +3951,9 @@ export const blogsData = [
 
 <p>And sometimes nothing at all.</p>
 
-<p>Because luxury, for me, isn’t only about expensive materials.</p>
+<p>Because a meaningful stay, for me, isn’t only about expensive materials.</p>
 
-<p>Sometimes luxury is:</p>
+<p>Sometimes comfort is:</p>
 
 <p>privacy.</p>
 
@@ -4189,7 +4189,7 @@ export const blogsData = [
 
 <p>It was intended for people who appreciate what happens when you remove the noise and leave space for nature.</p>
 
-<p>So when you arrive, I hope you don’t only see four luxury safari suites.</p>
+<p>So when you arrive, I hope you don’t only see four private Safari suites.</p>
 
 <p>I hope you see the story behind them.</p>
 

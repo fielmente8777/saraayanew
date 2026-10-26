@@ -2,6 +2,7 @@ import { SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
 import { LazyLoadedVideo } from "@/components/Video";
 import Image from "next/image";
+import Link from "next/link";
 
 interface AboutProps {
   logo: string;
@@ -10,6 +11,7 @@ interface AboutProps {
   heading: string;
   description: string[];
   hostedText: string;
+  story: { title: string; text: string; label: string; href: string };
 }
 
 const About: React.FC<AboutProps> = ({
@@ -18,6 +20,7 @@ const About: React.FC<AboutProps> = ({
   heading,
   description,
   hostedText,
+  story,
 }) => {
   return (
     <SectionWithContainer sectionClassName="relative bg-[#FFF9E1]">
@@ -30,7 +33,7 @@ const About: React.FC<AboutProps> = ({
           <SectionHeading
             title={heading}
             level={1}
-            titleClassName="lg:text-[5rem]/[5rem]"
+            titleClassName="lg:text-[4rem]/[1.05] xl:text-[4.5rem]/[1.05]"
           />
           <div className="relative aspect-square w-full lg:hidden">
             <div className="absolute z-10 aspect-square w-26 border-t border-l border-secondary -top-2 -left-2" />
@@ -58,6 +61,16 @@ const About: React.FC<AboutProps> = ({
             <span className="w-10 bg-secondary h-px" />
             {hostedText}
           </p>
+          <div className="space-y-3 border-t border-secondary/30 pt-6">
+            <h2 className="font-primary text-primary text-2xl">{story.title}</h2>
+            <p className="text-primary">{story.text}</p>
+            <Link
+              href={story.href}
+              className="inline-block border-b border-secondary pb-1 text-secondary"
+            >
+              {story.label} <span aria-hidden="true">↗</span>
+            </Link>
+          </div>
         </div>
         <div className="relative aspect-square w-full lg:block hidden">
           <div className="absolute z-10 aspect-square w-26 border-t border-l border-secondary -top-2 -left-2" />

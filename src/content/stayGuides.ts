@@ -8,11 +8,18 @@ export const stayGuides = {
     imageAlt: "An outdoor lounge and bonfire setup at Saraaya Glamps",
     intro:
       "Some mountain holidays are best left unhurried. At Saraaya, you can spend a morning on your private deck, explore the surroundings or ask our hosts to arrange an experience for your stay. With only four safari suites, there is space to make the visit feel personal.",
+    featuredExperience: {
+      title: "Movie under the Stars",
+      description: "An intimate open-air screening framed by pine canopies and the night sky.",
+      image: "/winter/movie-night.webp",
+      imageAlt: "Guests enjoying an open-air movie screening at Saraaya",
+      note: "Arranged on request and charged separately unless included in your confirmed package. Subject to weather and availability.",
+    },
     sections: [
       {
-        title: "Bonfire evenings and outdoor movies",
+        title: "Bonfire evenings",
         paragraphs: [
-          "Gather around a fire when the weather allows, or ask about a private outdoor movie setup. These evenings suit couples spending time together as well as friends sharing a mountain break. A relaxed evening can be as simple as a warm layer, good company and time away from the usual routine.",
+          "Gather around a fire when the weather allows. These evenings suit couples spending time together as well as friends sharing a mountain break. A relaxed evening can be as simple as a warm layer, good company and time away from the usual routine.",
           "Tell the team which experience you have in mind before arrival. Setups are arranged according to availability and outdoor conditions, and any charges should be confirmed in your quote.",
         ],
       },
@@ -124,7 +131,7 @@ export const stayGuides = {
     metaTitle: "How to Reach Saraaya Glamps | Dharamshala Travel Guide",
     description:
       "Plan your journey to Saraaya in Nauhali near Dharamshala. Find arrival advice, pickup details, the final walk, packing tips and connectivity information.",
-    image: "/winter/tents-in-valley.webp",
+    image: "/winter/property-setting.webp",
     imageAlt: "Saraaya's safari suites set among terraced fields and forest in Nauhali",
     intro:
       "Saraaya is in Village Nauhali near Dharamshala in Himachal Pradesh. Its setting is part of the experience: the property is reached with a short transfer and a walk, rather than by driving directly to a hotel entrance. Speak with our team before you travel so the arrival feels straightforward.",

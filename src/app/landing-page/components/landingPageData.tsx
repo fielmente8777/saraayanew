@@ -36,7 +36,7 @@ export const landingPageData = {
         name: "Restorative",
         subTitle: "The Art of the Reset",
         description:
-          "In a world that never stops, Saraaya is the pause button. Designed for profound silence and reconnection, we believe that slowing down isn't just a luxury, it is the entire point. Here, the Himalayan breeze does the healing, and the rhythm of the forest dictates your day.",
+          "In a world that never stops, Saraaya is the pause button. Designed for profound silence and reconnection, we believe that slowing down is the entire point. Here, the Himalayan breeze does the healing, and the rhythm of the forest dictates your day.",
       },
       {
         src: "/Saraya-159.jpg",
@@ -148,7 +148,7 @@ export const landingPageData = {
     ],
     testimonials: [
       {
-        text: "A beautifully curated glamp-style property set amidst serene surroundings and a lovely stream nearby. Offering understated luxury and a tranquil atmosphere perfect for unwinding and reconnecting with nature. We had a truly memorable stay and would love to return.",
+        text: "A beautifully curated glamp-style property set amidst serene surroundings and a lovely stream nearby. … We had a truly memorable stay and would love to return.",
         name: "Sadhvi Arora",
       },
       {

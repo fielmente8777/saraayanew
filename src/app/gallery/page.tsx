@@ -8,7 +8,7 @@ import TitleSection from "@/components/TitleSection";
 export const metadata = createPageMetadata(
   "/gallery/",
   "Saraaya Glamps Gallery | Safari Suites & Himalayan Views",
-  "See photos of Saraaya’s safari suites, private decks, mountain surroundings and guest experiences. Explore our glamping retreat near Dharamshala."
+  "See photos of Saraaya’s safari suites, private decks, mountain surroundings and guest experiences. Explore our boutique stay near Dharamshala."
 );
 
 export default function Page() {

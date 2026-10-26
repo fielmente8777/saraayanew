@@ -9,7 +9,7 @@ import { accommodationPageData } from "./components/pageData";
 
 export const metadata = createPageMetadata(
   "/rooms/",
-  "Luxury Glamping Safari Suites in Dharamshala | Saraaya",
+  "Private Safari Suites near Dharamshala | Saraaya Glamps",
   "Explore Saraaya’s four private safari suites near Dharamshala, with king-size beds, heaters, attached bathrooms and private decks. Enquire for your dates."
 );
 

@@ -60,8 +60,8 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   ...createPageMetadata(
     "/",
-    "Saraaya Glamps | Luxury Glamping in Dharamshala",
-    "Discover Saraaya near Dharamshala: four private luxury safari suites, mountain views, heaters and thoughtful comforts. Plan your Himalayan escape with our hosts."
+    "Saraaya Glamps | A Private Glamping Experience in the Himalayas",
+    "Discover Saraaya near Dharamshala: four private Safari suites, mountain views, heaters and thoughtful comforts. Plan your Himalayan stay with our hosts."
   ),
   icons: {
     icon: "/favicon.ico",
