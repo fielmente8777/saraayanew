@@ -8,7 +8,7 @@ import { homePageData } from "../(home)/components/pageData";
 export const metadata = createPageMetadata(
   "/about-us/",
   "Our Story | Saraaya Glamps near Dharamshala",
-  "Meet Saraaya, a family-hosted glamping retreat in Nauhali near Dharamshala. Discover four private tents, forest surroundings and thoughtful hospitality."
+  "Meet Saraaya, a family-hosted glamping retreat in Nauhali near Dharamshala. Discover four private safari suites, forest surroundings and thoughtful hospitality."
 );
 
 const page = () => {

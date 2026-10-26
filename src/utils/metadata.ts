@@ -59,7 +59,7 @@ export const articleTitles: Record<string, string> = {
   "my-favourite-things-to-do-around-saraaya":
     "Things to Do near Saraaya | Dharamshala Travel Guide",
   "how-saraaya-was-built":
-    "How Saraaya Was Built | Four Tents in the Himalayas",
+    "How Saraaya Was Built | Four Safari Suites in the Himalayas",
 };
 
 export function shortDescription(text: string): string {

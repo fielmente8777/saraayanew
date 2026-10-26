@@ -53,7 +53,7 @@ export const landingPageData = {
     title: "Stay Amid the <i>Himalayan</i>",
     cards: [
       {
-        title: "Mountain View Tents",
+        title: "Mountain View Safari Suites",
         images: [
           "/rooms/Mountain-1.png",
           "/rooms/Mountain-2.png",
@@ -64,7 +64,7 @@ export const landingPageData = {
         ],
       },
       {
-        title: "Premium View Tents",
+        title: "Premium View Safari Suites",
         images: [
           "/rooms/Premium-1.png",
           "/rooms/Premium-2.png",
@@ -83,7 +83,7 @@ export const landingPageData = {
   titles: [
     "LIMITED STAYS",
     "HIGH DEMAND ON",
-    "ONLY FOUR TENTS AVAILABLE PER NIGHT",
+    "ONLY FOUR SAFARI SUITES AVAILABLE PER NIGHT",
   ],
 
   experiences: {
@@ -158,10 +158,6 @@ export const landingPageData = {
       {
         text: "The place was so hidden and so beautifully designed next to the river stream and the couple who owns it are so hands on over the place personally in every detail which made our stay blissful.. Me my wife and 10 yr old daughter had great time.....lucky, the caretaker was exceptional in his own way to perform his work to the core.....",
         name: "Hemant Chebrolu",
-      },
-      {
-        text: "We had a wonderful stay at Saraya Glamps Dharamshala! Nestled amidst breathtaking mountain views and lush greenery, this place offers the perfect blend of luxury and nature. The glamping tents were beautifully designed, spacious, impeccably clean, and equipped with all the comforts needed for a relaxing getaway.The hospitality was exceptional. The staff was incredibly friendly, attentive, and always willing to go the extra mile to make our stay comfortable. The food was fresh, delicious, and thoughtfully prepared, making every meal a delight.The peaceful ambience, stunning surroundings, and well-maintained property make it an ideal destination for anyone looking to unwind and reconnect with nature without compromising on comfort. Whether you’re planning a romantic getaway, a family vacation, or simply a break from city life, Saraya Glamps Dharamshala is a fantastic choice.Highly recommended! We can’t wait to visit again.",
-        name: "Saurabh Dharmawat",
       },
       {
         text: "It was one of the most breathtaking views I’ve ever seen, coupled with excellent and personalised experiences curated by them. The host as well as the staff were constantly available in case we needed something. One of the best parts, the ingredients were locally sourced and cooked expertly. It’s the kind of place one should visit when the world has worn us out. Mr. Lucky was exceptional and always a call away for anything. Shoutout to Marshall, tiger and Bhalu for accompanying us on our walk and making it 100 times more fun. Definitely would recommend. (P.S. expect a bit of uneven terrain, and the occasional horse)",

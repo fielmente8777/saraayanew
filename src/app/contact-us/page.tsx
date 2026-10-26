@@ -12,7 +12,7 @@ import { homePageData } from "../(home)/components/pageData";
 export const metadata = createPageMetadata(
   "/contact-us/",
   "Contact Saraaya Glamps | Dharamshala Reservations",
-  "Contact Saraaya Glamps in Nauhali near Dharamshala for availability, tent options and arrival assistance. Call, email or send your stay enquiry."
+  "Contact Saraaya Glamps in Nauhali near Dharamshala for availability, safari suite options and arrival assistance. Call, email or send your stay enquiry."
 );
 
 export default function ContainerPage() {

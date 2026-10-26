@@ -11,7 +11,7 @@ import {
 export const homePageData = {
   titles: [
     { title: "Nauhali NEAR Dharamshala", icon: <OutlineLOcationIcon /> },
-    { title: "FOUR PRIVATE SAFARI TENTS", icon: <GpsIcon /> },
+    { title: "FOUR PRIVATE SAFARI SUITES", icon: <GpsIcon /> },
     { title: "HEATERS & PRIVATE BATHROOMS", icon: <CloudIcon /> },
     { title: "HOSTED BY THE SARAAYA FAMILY", icon: <WindIcon /> },
   ],
@@ -26,10 +26,10 @@ export const homePageData = {
   about: {
     image: "/home/about-img.png",
     logo: "/home/Vector-1.png",
-    title: "A LUXURY GLAMPING Retreat",
+    title: "A DISTINCTIVE BOUTIQUE STAY",
     heading: "Luxury Glamping in <i>Dharamshala</i>",
     description: [
-      "Saraaya is a luxury glamping retreat in Nauhali near Dharamshala, Himachal Pradesh. Four private safari tents bring together Himalayan views, forest surroundings and the comforts of a thoughtfully furnished stay.",
+      "Saraaya is a distinctive boutique stay in Nauhali near Dharamshala, Himachal Pradesh. Four private safari suites bring together Himalayan views, forest surroundings and the comforts of a thoughtfully furnished stay.",
       "Unwind on your private deck, settle into a king-size bed and enjoy a quieter pace in the Kangra Valley. With attached bathrooms, heaters and personal attention from our hosts, this is a mountain escape for couples, families and small groups.",
     ],
     hostedText: "Hosted by the Saraaya family, since 2019",
@@ -59,28 +59,28 @@ export const homePageData = {
         title: 'Devdar "The Keeper" ',
         image: "/rooms/Mountain-1.png",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
-        cta: { label: "Explore Devdar tent", href: "/rooms/#devdar" },
+        cta: { label: "Explore Devdar safari suite", href: "/rooms/#devdar" },
       },
       {
         id: "02",
         title: 'Rai "The Watcher"',
         image: "/rooms/Mountain-2.png",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
-        cta: { label: "Explore Rai tent", href: "/rooms/#rai" },
+        cta: { label: "Explore Rai safari suite", href: "/rooms/#rai" },
       },
       {
         id: "03",
         title: 'Buransh  "The Nurturer" ',
         image: "/rooms/Mountain-3.png",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
-        cta: { label: "Explore Buransh tent", href: "/rooms/#buransh" },
+        cta: { label: "Explore Buransh safari suite", href: "/rooms/#buransh" },
       },
       {
         id: "04",
         title: 'Kail " The Wanderer" ',
         image: "/rooms/Mountain-4.png",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
-        cta: { label: "Explore Kail tent", href: "/rooms/#kail" },
+        cta: { label: "Explore Kail safari suite", href: "/rooms/#kail" },
       },
     ],
   },
@@ -105,7 +105,7 @@ export const homePageData = {
       {
         image: "/home/exp-2.png",
         title: "Star Gazing Session",
-        timing: "Sunrise · In-tent",
+        timing: "Sunrise · In-suite",
         price: "₹1,500 onwards",
         description:
           "Guided star gazing experience in the peaceful Himalayan night sky.",
@@ -121,7 +121,7 @@ export const homePageData = {
       {
         image: "/home/exp-4.png",
         title: "Picnic Setup",
-        timing: "Sunrise · In-tent",
+        timing: "Sunrise · In-suite",
         price: "₹3,000 onwards",
         description:
           "Curated outdoor picnic setup surrounded by nature for a relaxed experience.",

@@ -13,7 +13,7 @@ import TitleSection from "@/components/TitleSection";
 export const metadata = createPageMetadata(
   "/",
   "Saraaya Glamps | Luxury Glamping in Dharamshala",
-  "Discover Saraaya near Dharamshala: four private luxury tents, mountain views, heaters and thoughtful comforts. Plan your Himalayan escape with our hosts."
+  "Discover Saraaya near Dharamshala: four private luxury safari suites, mountain views, heaters and thoughtful comforts. Plan your Himalayan escape with our hosts."
 );
 
 const page = () => {

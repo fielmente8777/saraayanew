@@ -5,7 +5,7 @@ export const storyPageData = {
     heading: 'The Story Behind Saraaya <span class="italic text-secondary"> Himalayan </span> Escape',
     description:
     [
-      'Saraaya is an intimate luxury glampsite nestled deep within the Himalayan wilderness. Hidden away from roads and noise, the retreat offers just four exclusive luxury tents, ensuring privacy, stillness, and a deeply personal connection with nature. Perched beside a crystal-clear mountain stream and surrounded by forests untouched by time, Saraaya blends the raw beauty of the Himalayas with refined comfort and thoughtful hospitality. There’s no rigid itinerary here. Days unfold gently, through open skies, riverside evenings, forest walks, bonfires, and moments that feel entirely your own.',
+      'Saraaya is an intimate luxury glampsite nestled deep within the Himalayan wilderness. Hidden away from roads and noise, the retreat offers just four exclusive luxury safari suites, ensuring privacy, stillness, and a deeply personal connection with nature. Perched beside a crystal-clear mountain stream and surrounded by forests untouched by time, Saraaya blends the raw beauty of the Himalayas with refined comfort and thoughtful hospitality. There’s no rigid itinerary here. Days unfold gently, through open skies, riverside evenings, forest walks, bonfires, and moments that feel entirely your own.',
       
       'The final stretch to Saraaya is intentionally left untouched , a short walk through the forest that marks your transition from chaos into stillness.',
     ],

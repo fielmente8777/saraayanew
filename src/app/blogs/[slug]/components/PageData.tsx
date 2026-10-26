@@ -12,7 +12,7 @@ export const blogsData = [
         "Honeymoon in Himachal Pradesh",
         "Proposal ideas in Himachal",
         "Anniversary trip near Dharamshala",
-        "Luxury safari tents India",
+        "Luxury safari suites India",
         "Private romantic stay",
         "Luxury glamping India",
         "Couple getaway near Delhi",
@@ -54,7 +54,7 @@ export const blogsData = [
     <h2>A Couple's Escape Designed for Romance</h2>
 
     <p>
-      Every romantic trip deserves privacy. At Saraaya, each luxury safari tent is thoughtfully placed to offer a peaceful retreat where you can disconnect from everyday life and focus on each other.
+      Every romantic trip deserves privacy. At Saraaya, each luxury safari suite is thoughtfully placed to offer a peaceful retreat where you can disconnect from everyday life and focus on each other.
     </p>
     <p>
       Whether you're reading together on your private deck, enjoying handcrafted meals, or simply listening to the sounds of the forest, every moment feels intimate.
@@ -75,7 +75,7 @@ export const blogsData = [
       Saraaya offers:
     </p>
     <ul>
-      <li>Spacious luxury safari tents</li>
+      <li>Spacious luxury safari suites</li>
       <li>Home-style gourmet meals</li>
       <li>Private bonfire evenings</li>
       <li>Romantic outdoor dining</li>
@@ -258,7 +258,7 @@ export const blogsData = [
         "Reunion destination India",
         "Weekend getaway with friends",
         "Young family holiday Himachal",
-        "Luxury safari tents Dharamshala",
+        "Luxury safari suites Dharamshala",
         "Private mountain retreat",
         "Entire property booking Himachal",
         "Boutique glamping India",
@@ -293,7 +293,7 @@ export const blogsData = [
     <h2>Your Own Private Mountain Retreat</h2>
 
     <p>
-      Saraaya is intentionally intimate, with only four luxury safari tents surrounded by forests and mountain views near Dharamshala.
+      Saraaya is intentionally intimate, with only four luxury safari suites surrounded by forests and mountain views near Dharamshala.
     </p>
     <p>
       This means your group can book the entire property, creating a completely private experience without sharing common spaces with other guests.
@@ -381,7 +381,7 @@ export const blogsData = [
       Sometimes luxury means having an entire destination to yourselves.
     </p>
     <p>
-      With only four safari tents, your group enjoys:
+      With only four safari suites, your group enjoys:
     </p>
     <ul>
       <li>Complete privacy</li>
@@ -424,7 +424,7 @@ export const blogsData = [
       Unlike large resorts built for hundreds of guests, Saraaya is designed for intimate gatherings.
     </p>
     <p>
-      The entire property comfortably hosts small groups, allowing everyone to stay close while still enjoying the privacy of individual luxury tents.
+      The entire property comfortably hosts small groups, allowing everyone to stay close while still enjoying the privacy of individual luxury safari suites.
     </p>
     <p>
       It's perfect for:
@@ -448,7 +448,7 @@ export const blogsData = [
       If you're searching for a private group stay in Himachal Pradesh, a friends' getaway near Dharamshala, or an exclusive luxury glamping experience, Saraaya offers something few destinations can.
     </p>
     <p>
-      Just four luxury tents.
+      Just four luxury safari suites.
     </p>
     <p>
       One entire property.
@@ -654,7 +654,7 @@ export const blogsData = [
     </p>
 
     <p>
-      Our luxury safari tents provide modern comforts while allowing you to stay immersed in nature, making them ideal for creators seeking both comfort and solitude.
+      Our luxury safari suites provide modern comforts while allowing you to stay immersed in nature, making them ideal for creators seeking both comfort and solitude.
     </p>
 
     <h2>Disconnect to Reconnect</h2>
@@ -781,7 +781,7 @@ export const blogsData = [
       "Glamping near Dharamshala",
       "Luxury retreat Himachal Pradesh",
       "Boutique luxury stays India",
-      "Luxury safari tents Himachal",
+      "Luxury safari suites Himachal",
       "Luxury travel Himachal Pradesh",
       "Private luxury retreat India",
       "Luxury nature retreat Dharamshala",
@@ -857,7 +857,7 @@ export const blogsData = [
 </p>
 
 <p>
-  At Saraaya, there are only four luxury safari tents, ensuring every guest enjoys exceptional privacy and space. Whether celebrating an anniversary, planning a proposal, hosting close friends, or simply escaping the city, guests experience a level of exclusivity that large hotels cannot replicate.
+  At Saraaya, there are only four luxury safari suites, ensuring every guest enjoys exceptional privacy and space. Whether celebrating an anniversary, planning a proposal, hosting close friends, or simply escaping the city, guests experience a level of exclusivity that large hotels cannot replicate.
 </p>
 
 <h2>Nature Is Becoming the New Wellness Destination</h2>
@@ -1018,11 +1018,11 @@ export const blogsData = [
 </p>
 
 <p>
-  With only four luxury tents, Saraaya offers an experience that feels private, intimate, and highly personalized.
+  With only four luxury safari suites, Saraaya offers an experience that feels private, intimate, and highly personalized.
 </p>
 
 <p>
-  Many guests choose to reserve all four tents for family holidays, executive retreats, friends’ reunions, milestone birthdays, or intimate celebrations, transforming the property into their own exclusive mountain escape.
+  Many guests choose to reserve all four safari suites for family holidays, executive retreats, friends’ reunions, milestone birthdays, or intimate celebrations, transforming the property into their own exclusive mountain escape.
 </p>
 
 <h2>A Digital Detox Without Giving Up Comfort</h2>
@@ -1092,7 +1092,7 @@ export const blogsData = [
 </p>
 
 <p>
-  With just four luxury safari tents, personalized hospitality, exceptional food and unforgettable mountain experiences, Saraaya offers a refreshing alternative to conventional five-star hotels.
+  With just four luxury safari suites, personalized hospitality, exceptional food and unforgettable mountain experiences, Saraaya offers a refreshing alternative to conventional five-star hotels.
 </p>
 
 <p>
@@ -1127,7 +1127,7 @@ export const blogsData = [
         "Saraaya Glamps Dharamshala",
         "Luxury glamping Himachal Pradesh",
         "Luxury glamping Dharamshala",
-        "Luxury safari tents Himachal Pradesh",
+        "Luxury safari suites Himachal Pradesh",
         "Luxury stay in Himachal Pradesh",
         "Luxury retreat in Himachal Pradesh",
         "Glamping in the Himalayas",
@@ -1545,7 +1545,7 @@ export const blogsData = [
     </p>
 
     <p>
-      It was another reminder that I wasn’t simply putting up four luxury tents.
+      It was another reminder that I wasn’t simply putting up four luxury safari suites.
     </p>
 
     <p>
@@ -1557,7 +1557,7 @@ export const blogsData = [
     </p>
 
     <p>
-      They should simply be able to switch on a light, sit comfortably in their tent and enjoy the evening.
+      They should simply be able to switch on a light, sit comfortably in their safari suite and enjoy the evening.
     </p>
 
     <p>
@@ -1833,7 +1833,7 @@ export const blogsData = [
     </p>
 
     <p>
-      The elements that make the tents feel warm rather than simply functional.
+      The elements that make the safari suites feel warm rather than simply functional.
     </p>
 
     <p>
@@ -1889,7 +1889,7 @@ export const blogsData = [
     </p>
 
     <p>
-      Because building a property isn’t only about putting four tents on a piece of land.
+      Because building a property isn’t only about putting four safari suites on a piece of land.
     </p>
 
     <p>
@@ -2051,7 +2051,7 @@ export const blogsData = [
     </p>
 
     <p>
-      I wanted people to look out from their tent and see trees and mountains rather than another building.
+      I wanted people to look out from their safari suite and see trees and mountains rather than another building.
     </p>
 
     <p>
@@ -3311,7 +3311,7 @@ export const blogsData = [
     description:
       "A founder’s guide to exploring our corner of the Himalayas — if you are curious enough to wander",
     data: `
-<p>When we started Saraaya, we didn’t want to create a place where guests simply came to sleep in a luxury tent.</p>
+<p>When we started Saraaya, we didn’t want to create a place where guests simply came to sleep in a luxury safari suite.</p>
 
 <p>We wanted people to experience the landscape.</p>
 
@@ -3698,7 +3698,7 @@ export const blogsData = [
         "Saraaya founder story",
         "Building Saraaya",
         "Luxury glamping Dharamshala",
-        "Luxury safari tents Himachal Pradesh",
+        "Luxury safari suites Himachal Pradesh",
         "Nauhali Himachal Pradesh",
         "Saraaya Dharamshala story",
         "Building a glamping resort",
@@ -3831,7 +3831,7 @@ export const blogsData = [
 
 <p>But getting that infrastructure established in a remote mountain location required planning, permissions, equipment and a lot of persistence.</p>
 
-<p>It was another reminder that I wasn’t simply building tents.</p>
+<p>It was another reminder that I wasn’t simply building safari suites.</p>
 
 <p>I was building the infrastructure needed to make the dream possible.</p>
 
@@ -3909,7 +3909,7 @@ export const blogsData = [
 
 <p>I wanted privacy.</p>
 
-<p>I wanted the tents to have space around them.</p>
+<p>I wanted the safari suites to have space around them.</p>
 
 <p>I wanted guests to be able to sit outside without feeling like they were sitting next to another room.</p>
 
@@ -3925,7 +3925,7 @@ export const blogsData = [
 
 <h2>Building the Experience, Not Just the Accommodation</h2>
 
-<p>The tents were only one part of the vision.</p>
+<p>The safari suites were only one part of the vision.</p>
 
 <p>I wanted guests to have reasons to slow down.</p>
 
@@ -4143,7 +4143,7 @@ export const blogsData = [
 
 <p>The mountains.</p>
 
-<p>The tents.</p>
+<p>The safari suites.</p>
 
 <p>The lights in the evening.</p>
 
@@ -4167,7 +4167,7 @@ export const blogsData = [
 
 <p>The sacrifices.</p>
 
-<p>And I realise that the most important thing we built wasn’t the tents.</p>
+<p>And I realise that the most important thing we built wasn’t the safari suites.</p>
 
 <p>We built a place where the feeling that brought me to the mountains could be shared with other people.</p>
 
@@ -4189,7 +4189,7 @@ export const blogsData = [
 
 <p>It was intended for people who appreciate what happens when you remove the noise and leave space for nature.</p>
 
-<p>So when you arrive, I hope you don’t only see four luxury safari tents.</p>
+<p>So when you arrive, I hope you don’t only see four luxury safari suites.</p>
 
 <p>I hope you see the story behind them.</p>
 

@@ -10,12 +10,12 @@ export const guideLinks = [
   {
     href: "/winter-stays/",
     title: "A cosy winter stay",
-    text: "Explore heated tents, thoughtful comforts and advice for a mountain winter.",
+    text: "Explore heated safari suites, thoughtful comforts and advice for a mountain winter.",
   },
   {
     href: "/group-stays/",
     title: "Bring your favourite people",
-    text: "Ask about four-tent stays for family reunions and a break with friends.",
+    text: "Ask about four-suite stays for family reunions and a break with friends.",
   },
   {
     href: "/getting-here/",

@@ -1,277 +1,122 @@
-import { landingPageData } from "@/app/landing-page/components/landingPageData";
-import {
-  winterWhatsappCta,
-  warmUpWhatsappCta,
-  takeoverWhatsappCta,
-} from "./winterCtas";
+import { winterWhatsappCta, warmUpWhatsappCta } from "./winterCtas";
 
-// Amenities and arrival information follow Saraaya's published accommodation
-// and contact pages. Date-specific rates and inclusions are quoted by the team.
 export const winterPageData = {
   hero: {
     image: "/winter/hero-night-suite.webp",
-    alt: "Saraaya's luxury tents illuminated on a Himalayan evening",
-    location: "Nauhali, near Dharamshala · Winter 2026–27",
-    title: "Heated Tents. <i>Cosy Himalayan Winters.</i>",
-    description:
-      "Trade the city rush for slow mountain mornings and cosy nights. Discover four private safari tents with heaters, king-size beds and attached bathrooms — your winter hideaway near Dharamshala.",
-    note: "Just four tents · Couples, families & small groups",
-    cta: { label: "Check Winter Availability", href: winterWhatsappCta },
+    alt: "Saraaya's four private safari suites lit up on a Himalayan evening",
+    location: "Nauhali · Kangra Valley · Near Dharamshala",
+    title: "A Rare Find in the Himalayas",
+    supportingHeadline: "Discover a Different Way to Experience Dharamshala.",
+    description: [
+      "Tucked away in the beautiful Kangra Valley, Saraaya Glamps is a distinctive boutique stay featuring just four private safari suites, surrounded by forest, mountain views and the tranquillity of nature.",
+      "From cosy winter stays and riverside picnics to village walks, stargazing and evenings around a bonfire, experience a side of Dharamshala that goes beyond the conventional hotel stay.",
+    ],
+    cta: { label: "Discover Saraaya", href: "#discover-saraaya" },
+    secondaryCta: {
+      label: "Explore Winter Packages",
+      href: "#winter-packages",
+    },
   },
-
-  formNote:
-    "Request availability and a quote for your dates. An enquiry does not confirm a booking or require payment.",
-
-  titles: [
-    "HEATED SAFARI TENTS",
-    "A QUIETER WINTER ESCAPE",
-    "JUST FOUR PRIVATE TENTS",
-    "PLAN CHRISTMAS & NEW YEAR",
+  introduction: [
+    "Not every memorable mountain escape needs to be in the heart of a busy tourist destination.",
+    "Located in Nauhali, approximately 75 minutes from Dharamshala, Saraaya Glamps offers a different way to experience the Himalayas. With just four private safari suites, thoughtfully designed comforts and immersive outdoor experiences, our intimate boutique stay brings you closer to the natural beauty and local character of the Kangra Valley.",
+    "Wake up to mountain views, explore village trails, enjoy a picnic beside a mountain stream or spend an evening beneath the stars.",
+    "Saraaya is for travellers who value distinctive stays, meaningful experiences and the opportunity to discover somewhere a little different.",
   ],
-
-  smog: {
-    label: "A CHANGE OF PACE, A CHANGE OF SCENERY",
-    title: "Less City Rush. <i>More Mountain Time.</i>",
-    description:
-      "Make room for an unhurried winter break. Tucked away in Nauhali in the Kangra Valley, Saraaya brings together forest surroundings, Himalayan views and the privacy of a small retreat.",
-    points: [
-      {
-        title: "A quieter setting",
-        text: "forest surroundings away from busy town centres",
-      },
-      {
-        title: "Room to slow down",
-        text: "just four tents for a more intimate stay",
-      },
-      {
-        title: "Your kind of winter",
-        text: "mountain views by day and cosy evenings together",
-      },
-    ],
-    image: "/winter/valley-snow-peaks.webp",
-    alt: "The Dhauladhar mountain range above the forested Kangra Valley",
-    cta: { label: "Plan My Winter Stay", href: winterWhatsappCta },
-  },
-
-  warmth: {
-    label: "MOUNTAIN ADVENTURE, THOUGHTFUL COMFORTS",
-    title: "Your Cosy <i>Winter Hideaway</i>",
-    description:
-      "Enjoy the character of a safari tent with the everyday comforts that make a winter break feel inviting.",
-    features: [
-      {
-        icon: "flame",
-        title: "Heaters for winter",
-        text: "Heaters in the tents help you settle in after a day in the mountain air.",
-      },
-      {
-        icon: "home",
-        title: "Your own private space",
-        text: "A furnished safari tent with secure, lockable doors and a private deck.",
-      },
-      {
-        icon: "bed",
-        title: "A bed to linger in",
-        text: "A king-size bed, premium linens and cosy blankets for slow mornings.",
-      },
-      {
-        icon: "drop",
-        title: "A private bathroom",
-        text: "An attached bathroom with a spacious shower and hot water.",
-      },
-    ],
-    images: [
-      {
-        src: "/winter/interior-warm.webp",
-        alt: "A furnished Saraaya safari tent with a king-size bed and warm lighting",
-      },
-      {
-        src: "/winter/interior-lamp.webp",
-        alt: "Bedside lighting and soft bedding inside a Saraaya tent",
-      },
-    ],
-    planning: {
-      title: "A little planning for a mountain winter",
-      text: "Pack warm layers and shoes with grip. Mountain weather can affect electricity and Wi-Fi, so speak with our team about current conditions and any specific comfort or access needs before travelling.",
-      highlights: [
-        { label: "Your space", value: "A private tent" },
-        { label: "Your comfort", value: "Heater & cosy bedding" },
-      ],
+  accommodation: [
+    "Experience the charm of a distinctive mountain stay without giving up the comforts that matter.",
+    "Our four private safari suites feature king-size beds, cosy bedding, heaters and attached bathrooms with hot water. Designed for an intimate stay amid nature, each suite offers a comfortable space to unwind after a day exploring the surrounding landscape.",
+    "Whether you are travelling as a couple, with family or with friends, Saraaya offers a more personal and distinctive alternative to a conventional hotel.",
+  ],
+  experiences: [
+    {
+      title: "Riverside Picnics",
+      image: "/winter/riverside-grill.webp",
+      text: "Spend an afternoon beside a mountain stream with a thoughtfully arranged picnic surrounded by nature.",
+      status:
+        "Setup: confirm in your package · Food and beverages charged separately",
     },
-  },
-
-  rooms: {
-    ...landingPageData.rooms,
-    title: "Find Your <i>Winter Hideaway</i>",
-    subtitle:
-      "Four private tents, two view categories. Share your dates and guest details for availability, rates and meal-plan options.",
-    cta: { label: "Ask About Tent Options", href: winterWhatsappCta },
-  },
-
-  offers: {
-    warmUp: {
-      label: "PLAN YOUR WINTER BREAK",
-      title: "Make It a <i>Cosy Escape</i>",
-      description:
-        "A weekend for two or a longer mountain break? Tell us your dates and who is coming. Our team will help you choose a tent and plan your stay.",
-      includes: [
-        "A private safari tent with a heater",
-        "King-size bed & cosy bedding",
-        "Attached bathroom with hot water",
-        "A private deck with mountain views",
-        "Arrival pickup & luggage assistance",
-        "Ask about meals & curated experiences",
-      ],
-      priceLabel: "Your winter stay",
-      price: "Request a quote",
-      priceNote:
-        "Rates depend on your dates, tent and guest count. Confirm meal plans, experience charges, taxes and booking terms with our team before paying.",
-      cta: { label: "Get My Winter Quote", href: warmUpWhatsappCta },
+    {
+      title: "Bonfire Evenings",
+      image: "/winter/bonfire.webp",
+      text: "Enjoy unhurried evenings around a bonfire, sharing conversations beneath the mountain sky.",
+      status:
+        "Package-dependent · Any setup or fuel charge confirmed in your quote",
     },
-    takeover: {
-      image: "/winter/lounge-blue-hour.webp",
-      label: "FAMILY REUNIONS · FRIENDS · FESTIVE BREAKS",
-      title: "Bring your favourite people",
-      description:
-        "Planning Christmas, New Year or a small group getaway? Ask about reserving all four tents together, subject to availability.",
-      cta: { label: "Enquire for All Four Tents", href: takeoverWhatsappCta },
+    {
+      title: "Stargazing",
+      image: "/winter/stargazing.webp",
+      text: "Discover the night sky away from the bright lights and bustle of the city.",
+      status: "Guided session, if requested: confirm inclusion and charges",
     },
-  },
-
-  experiences: {
-    label: "Ideas for Your Winter Stay",
-    title: "Slow Mornings. <i>Memorable Evenings.</i>",
-    cards: [
-      {
-        image: "/winter/snow-peaks.webp",
-        alt: "Mountain Views",
-        desc: "Take in the Dhauladhar landscape from your deck. Views and snow conditions vary with the weather.",
-      },
-      {
-        image: "/winter/bonfire.webp",
-        alt: "Bonfire Evenings",
-        desc: "Ask our hosts to arrange a bonfire for a cosy evening together, subject to weather and availability.",
-      },
-      {
-        image: "/winter/stargazing.webp",
-        alt: "Stargazing",
-        desc: "On a clear night, look up from the city lights. Ask about a guided stargazing session during your stay.",
-      },
-      {
-        image: "/winter/riverside-grill.webp",
-        alt: "Meals at Saraaya",
-        desc: "Discuss meal plans and dietary preferences with the team. Food and beverages for experience setups are charged separately.",
-      },
-      {
-        image: "/winter/movie-night.webp",
-        alt: "Outdoor Movie Setup",
-        desc: "Make an evening of it with a private outdoor movie setup. Confirm arrangements and charges in advance.",
-      },
-      {
-        image: "/winter/cultural-night.webp",
-        alt: "Local Culture",
-        desc: "Ask about a village tour or cultural evening to discover more of the surrounding area.",
-      },
-    ],
-    cta: { label: "Ask About Winter Experiences", href: winterWhatsappCta },
-  },
-
-  hosts: {
-    image: "/winter/aerial-night.webp",
-    label: "HOSTED BY THE SARAAYA FAMILY",
-    title: "Four Tents. <span>Thoughtful Hospitality.</span>",
-    description: [
-      {
-        text: "A small retreat makes room for personal attention. Speak with our hosts before you arrive, from choosing your tent to planning the final stretch of your journey.",
-      },
-      {
-        text: "Come for a quiet weekend, time together or a slower festive break. Let us know what would make your stay special.",
-      },
-    ],
-    cta: { label: "Speak to Our Hosts", href: winterWhatsappCta },
-  },
-
-  gettingHere: {
-    image: "/winter/tents-in-valley.webp",
-    alt: "Saraaya's tents among terraced fields and forest",
-    label: "Getting Here in Winter",
-    title: "A Little Adventure. <i>A Warm Welcome.</i>",
-    steps: [
-      {
-        title: "Plan your journey",
-        text: "Fly into Kangra Airport or drive towards Dharamshala. Ask our team for the recommended route and pickup location.",
-      },
-      {
-        title: "Check conditions before travelling",
-        text: "Mountain weather can affect road access. Confirm the latest route and arrival arrangements with us before setting off.",
-      },
-      {
-        title: "A short 4x4 transfer",
-        text: "Our team meets you at the pickup point for an approximately 2-minute ride, followed by a 5–10 minute walk through the fields.",
-      },
-      {
-        title: "Help with the final stretch",
-        text: "A porter assists with your luggage. Tell us about any mobility needs in advance so we can help you assess the walk.",
-      },
-    ],
-    pack: {
-      title: "Pack for a mountain winter",
-      text: "Bring a warm jacket, layers, a beanie and shoes with grip. Carry personal essentials and medicines. Wi-Fi and mobile connectivity can vary in this remote setting.",
+    {
+      title: "Open-Air Movie Nights",
+      image: "/winter/movie-night.webp",
+      text: "Enjoy a movie under the open sky in a setting unlike a conventional hotel.",
+      status: "Private setup: confirm inclusion and charges in your quote",
     },
+    {
+      title: "Guided Village Walks",
+      image: "/winter/cultural-night.webp",
+      text: "Explore the surrounding village, discover local life and experience the character of the Kangra Valley.",
+      status: "Guided experience: confirm inclusion and charges",
+    },
+    {
+      title: "Guided Forest Hikes",
+      image: "/winter/valley-snow-peaks.webp",
+      text: "Explore the surrounding landscape on guided walks suited to your group’s ability and prevailing conditions.",
+      status: "Guide and route: confirm availability, inclusion and charges",
+    },
+    {
+      title: "Forest Bathing and Slow Living",
+      image: "/winter/tents-in-valley.webp",
+      text: "Take time to reconnect with nature, breathe in the mountain air and enjoy a slower pace of life.",
+      status: "Enjoy at your own pace · Ask separately about hosted sessions",
+    },
+  ],
+  positioning: [
+    "Saraaya is not another conventional hotel in Dharamshala. It is a distinctive boutique stay for travellers looking to experience the mountains differently.",
+    "With only four private safari suites, natural surroundings and experiences that encourage you to explore beyond your accommodation, Saraaya brings together privacy, comfort and a closer connection with nature.",
+    "Spend your days exploring village trails, enjoying riverside picnics or discovering the surrounding forests. Return to your suite for a relaxing evening, gather around a bonfire or simply take in the mountain views.",
+    "For couples, families and small groups, Saraaya offers a memorable alternative to the usual tourist itinerary.",
+  ],
+  winter: [
+    "Winter offers a different perspective on the mountains, with crisp air, beautiful views and evenings made for slowing down.",
+    "At Saraaya, enjoy the warmth of your private safari suite, cosy bedding and thoughtfully provided comforts. Spend your days exploring the surrounding landscape and your evenings enjoying bonfires, stargazing and quality time together.",
+    "Whether you are planning a romantic winter getaway or a few days away with family, Saraaya offers a distinctive way to enjoy the season.",
+  ],
+  location: [
+    "Located in Nauhali in the Kangra Valley, Saraaya Glamps is approximately 75 minutes by road from Dharamshala.",
+    "Away from the bustle of the main tourist areas, our location offers a quieter setting surrounded by forest and mountain scenery.",
+    "The final approach involves a 4x4 transfer from the designated drop-off point, followed by a short walk to the property. Our team coordinates arrivals and assists with luggage.",
+    "We recommend contacting our team before travelling for route guidance and arrival arrangements.",
+  ],
+  booking: [
+    "Looking for a romantic getaway, a distinctive family holiday or a boutique stay that offers something beyond the ordinary?",
+    "Discover Saraaya’s winter packages and find the experience that suits your plans.",
+    "With four private safari suites, personalised hospitality and a selection of outdoor experiences, Saraaya offers an intimate way to discover the Himalayas.",
+  ],
+  packageCta: { label: "Explore Winter Packages", href: warmUpWhatsappCta },
+  availabilityCta: {
+    label: "Check Availability on WhatsApp",
+    href: winterWhatsappCta,
   },
-
-  testimonialData: {
-    ...landingPageData.testimonialData,
-    cta: { label: "Plan Your Stay", href: winterWhatsappCta },
-  },
-
-  faq: {
-    title: "Your Winter <i>Questions</i>",
-    items: [
-      {
-        q: "Are the tents heated for winter?",
-        a: "Yes. Saraaya's tents have heaters, king-size beds and cosy bedding. Bring warm clothing for outdoor time. Indoor comfort depends on the weather and power supply; our team can advise on conditions for your dates.",
-      },
-      {
-        q: "What is the winter tariff?",
-        a: "Rates vary by date, tent, guest count and meal plan. Send your preferred dates on WhatsApp or through the enquiry form for a quote with inclusions, taxes and booking terms.",
-      },
-      {
-        q: "What happens if the power goes out?",
-        a: "Electricity interruptions can occur during adverse mountain weather, and Wi-Fi may also be affected. Contact the team before arrival to discuss current conditions and any essential power or comfort requirements.",
-      },
-      {
-        q: "Can we reach Saraaya in winter?",
-        a: "Arrival includes a short 4x4 transfer and a 5–10 minute walk with luggage assistance. Road access and outdoor conditions depend on the weather. Confirm your route and pickup arrangements with our team before travelling.",
-      },
-      {
-        q: "Are meals and experiences included?",
-        a: "Inclusions depend on the plan you book. Ask for your meal plan and any experience charges in your quote. Food and beverages for experience setups are charged separately, and outdoor activities depend on weather and availability.",
-      },
-      {
-        q: "Is the stay suitable for children and older guests?",
-        a: "The tents have private bathrooms and heaters, but reaching the property includes a walk through the fields and uneven terrain. Discuss the ages and mobility needs of your group with our hosts before booking.",
-      },
-      {
-        q: "What are the cancellation and payment terms?",
-        a: "Ask our team for the cancellation, refund, date-change and payment terms that apply to your dates and selected plan. Review these details in your booking confirmation before making payment.",
-      },
-      {
-        q: "Can we bring a pet?",
-        a: "Please check directly with our team before planning a stay with a pet. Any pet arrangements must be confirmed before booking.",
-      },
-    ],
-  },
-
-  closing: {
-    image: "/winter/final-bonfire.webp",
-    label: "JUST FOUR TENTS · PLAN YOUR WINTER BREAK",
-    title: "Your Cosy <span>Winter Escape Awaits.</span>",
-    description: [
-      {
-        text: "Send your dates and guest count. We'll help you find your tent, share a quote and plan the details of your winter stay.",
-      },
-    ],
-    cta: { label: "Check Winter Availability", href: winterWhatsappCta },
-  },
+  disclaimers: [
+    {
+      title: "Electricity, heating and hot water",
+      text: "Electricity interruptions can occur in this mountain setting. Heaters and hot-water availability may be affected during interruptions. Confirm current arrangements with our team before travelling, especially if you have essential power or comfort needs.",
+    },
+    {
+      title: "Wi-Fi and mobile connectivity",
+      text: "Wi-Fi and mobile reception can be intermittent and vary by network, weather and power supply. Please check with our hosts if reliable connectivity is essential to your stay.",
+    },
+    {
+      title: "Weather and outdoor experiences",
+      text: "All activities are subject to weather conditions and availability. Guided routes are chosen for your group’s ability and prevailing conditions; views and clear skies cannot be guaranteed.",
+    },
+    {
+      title: "Final approach and arrival assistance",
+      text: "Arrival includes an approximately 2-minute 4x4 transfer followed by a 5–10 minute walk through fields and uneven terrain. Our team assists with luggage. Discuss mobility needs and confirm route guidance, the drop-off point and arrival arrangements before setting off. Travel times are approximate and depend on road and weather conditions.",
+    },
+  ],
 };

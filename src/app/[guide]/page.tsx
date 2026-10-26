@@ -117,7 +117,7 @@ export default async function Page({ params }: Params) {
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-light">
           Share your dates, guest count and the details that matter to you. Our
-          hosts will help with tent options, rates and arrangements for your
+          hosts will help with safari suite options, rates and arrangements for your
           stay.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-4">
@@ -130,7 +130,7 @@ export default async function Page({ params }: Params) {
           />
           <LinkButton
             href="/rooms/"
-            label="Explore Our Tents"
+            label="Explore Our Safari Suites"
             className="rounded-full border-primary text-primary"
           />
         </div>

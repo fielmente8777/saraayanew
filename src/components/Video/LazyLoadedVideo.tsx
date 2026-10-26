@@ -7,7 +7,7 @@ const LazyLoadedVideo = dynamic(() => import("./SEOVideo"), {
   loading: () => (
     <Image
       src="/rooms/Mountain-1.png"
-      alt="Saraaya luxury safari tent"
+      alt="Saraaya luxury safari suite"
       fill
       sizes="100vw"
       className="object-cover"

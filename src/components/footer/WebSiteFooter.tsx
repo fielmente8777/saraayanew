@@ -27,7 +27,7 @@ const WebSiteFooter = () => {
                       {item.href === "/"
                         ? "Return to Saraaya"
                         : item.href === "/rooms/"
-                          ? "Explore our safari tents"
+                          ? "Explore our safari suites"
                           : item.href === "/about-us/"
                             ? "Meet the Saraaya family"
                             : item.href === "/contact-us/"
