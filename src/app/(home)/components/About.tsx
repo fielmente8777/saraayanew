@@ -10,7 +10,6 @@ interface AboutProps {
   title: string;
   heading: string;
   description: string[];
-  hostedText: string;
   story: { title: string; text: string; label: string; href: string };
 }
 
@@ -19,7 +18,6 @@ const About: React.FC<AboutProps> = ({
   title,
   heading,
   description,
-  hostedText,
   story,
 }) => {
   return (
@@ -57,10 +55,6 @@ const About: React.FC<AboutProps> = ({
               dangerouslySetInnerHTML={{ __html: item }}
             />
           ))}
-          <p className="uppercase text-secondary flex items-center gap-2">
-            <span className="w-10 bg-secondary h-px" />
-            {hostedText}
-          </p>
           <div className="space-y-3 border-t border-secondary/30 pt-6">
             <h2 className="font-primary text-primary text-2xl">{story.title}</h2>
             <p className="text-primary">{story.text}</p>

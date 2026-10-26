@@ -5,7 +5,6 @@ import {
   GpsIcon,
   OutlineLOcationIcon,
   SleepsIcon,
-  WindIcon,
 } from "@/utils/webSiteIcon";
 
 export const homePageData = {
@@ -13,7 +12,6 @@ export const homePageData = {
     { title: "Nauhali NEAR Dharamshala", icon: <OutlineLOcationIcon /> },
     { title: "FOUR PRIVATE SAFARI SUITES", icon: <GpsIcon /> },
     { title: "HEATERS & PRIVATE BATHROOMS", icon: <CloudIcon /> },
-    { title: "HOSTED BY THE SARAAYA FAMILY", icon: <WindIcon /> },
   ],
 
   banner: {
@@ -32,7 +30,6 @@ export const homePageData = {
       "Saraaya is a distinctive boutique stay in Nauhali near Dharamshala, Himachal Pradesh. Four private safari suites bring together Himalayan views, forest surroundings and the comforts of a thoughtfully furnished stay.",
       "Unwind on your private deck, settle into a king-size bed and enjoy a quieter pace in the Kangra Valley. With attached bathrooms, heaters and personal attention from our hosts, this is a mountain escape for couples, families and small groups.",
     ],
-    hostedText: "Hosted by the Saraaya family, since 2019",
     story: {
       title: "Our Story",
       text: "An idea that began in 2014 became four private Safari suites in Nauhali. Discover the vision that brought Saraaya to life: a closer connection with nature and opportunities for the local community.",
