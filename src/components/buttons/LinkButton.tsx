@@ -7,6 +7,8 @@ interface LinkButtonProps {
   href: string;
   label: string;
   className?: string;
+  trackingEvent?: string;
+  trackingLocation?: string;
   whatsAppIcon?: boolean;
   arrowIcon?: boolean;
   getDirectionIcon?: boolean;
@@ -20,6 +22,8 @@ const LinkButton: React.FC<LinkButtonProps> = ({
   label,
   className = "",
   arrowIcon = true,
+  trackingEvent,
+  trackingLocation,
   ...props
 }) => {
   const { WhatsAppClick, setIsOpenFormPopUp } = useWebContext();
@@ -29,6 +33,16 @@ const LinkButton: React.FC<LinkButtonProps> = ({
   };
 
   const handleFormClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    if (trackingEvent) {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: trackingEvent,
+        button_text: label,
+        section: trackingLocation,
+        page_path: window.location.pathname,
+        link_url: href,
+      });
+    }
     if (href === "#form") {
       event.preventDefault();
       setIsOpenFormPopUp(true);
@@ -38,6 +52,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
       window.dataLayer.push({
         event: "whatsapp_click",
         button_text: label,
+        section: trackingLocation,
         page_path: window.location.pathname,
         whatsapp_url: href,
       });

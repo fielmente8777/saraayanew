@@ -1,13 +1,13 @@
 const whatsappBase = "https://wa.me/918988334372";
+export const winterEnquiryMessage =
+  "Hello Saraaya Glamps, I would like to enquire about a winter stay. My preferred dates are [dates], and we are [number of adults] adults and [number of children] children. Please share the available packages and prices.";
 const whatsappLink = (message: string) =>
   `${whatsappBase}?text=${encodeURIComponent(message)}`;
-
-export const winterWhatsappCta = whatsappLink(
-  "Hello Saraaya Team, I'd like to check availability for a winter stay in your private safari suites.\nDates:\nGuests:"
-);
-export const warmUpWhatsappCta = whatsappLink(
-  "Hello Saraaya Team, please share your winter packages, with prices, meal inclusions, occupancy limits, taxes, additional charges and booking terms.\nDates:\nGuests:"
-);
+export const winterWhatsappCta = whatsappLink(winterEnquiryMessage);
+export const warmUpWhatsappCta = winterWhatsappCta;
 export const takeoverWhatsappCta = whatsappLink(
-  "Hello Saraaya Team, we'd like to enquire about reserving all four safari suites for a winter group stay.\nDates:\nAdults and children:"
+  "Hello Saraaya Glamps, I would like to enquire about a private group stay. My preferred dates are [dates], and we are [number of adults] adults and [number of children] children. Please share availability for multiple Safari suites or a property buyout, packages, prices and inclusions."
+);
+export const arrivalWhatsappCta = whatsappLink(
+  "Hello Saraaya Glamps, please help me with directions, the designated pickup point, 4x4 transfer, luggage assistance and any applicable arrival charges for my stay on [dates]."
 );

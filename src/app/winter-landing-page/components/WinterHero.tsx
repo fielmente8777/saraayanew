@@ -1,67 +1,68 @@
 import LinkButton from "@/components/buttons/LinkButton";
 import { Container } from "@/components/sectionComponants";
-import { FillLocationIcon } from "@/utils/icons";
 import Image from "next/image";
-
-interface WinterHeroProps {
+interface Props {
   image: string;
   alt: string;
   location: string;
+  eyebrow: string;
   title: string;
-  supportingHeadline: string;
-  description: string[];
+  description: string;
   cta: { label: string; href: string };
   secondaryCta: { label: string; href: string };
 }
-
 export default function WinterHero({
   image,
   alt,
   location,
+  eyebrow,
   title,
-  supportingHeadline,
   description,
   cta,
   secondaryCta,
-}: WinterHeroProps) {
+}: Props) {
   return (
-    <section className="max_screen_width relative flex min-h-[760px] items-end overflow-hidden md:min-h-[880px]">
+    <section
+      className="max_screen_width relative flex min-h-[660px] items-end overflow-hidden md:min-h-[740px]"
+      aria-label="Discover Saraaya"
+    >
       <Image
         src={image}
         alt={alt}
         fill
         priority
+        fetchPriority="high"
         sizes="100vw"
-        className="object-cover object-[center_60%]"
+        className="object-cover object-[58%_center]"
       />
-      <div className="absolute inset-0 z-10 bg-linear-to-b from-[#121a0c]/50 via-[#121a0c]/45 to-[#121a0c]/95" />
-      <Container className="relative z-20 pb-12 pt-36 md:pb-20 md:pt-44">
-        <div className="line flex max-w-4xl flex-col gap-5 text-white">
-          <p className="flex items-center gap-1.5 text-sm! uppercase tracking-wide md:text-base!">
-            <span className="text-secondary" aria-hidden="true">
-              <FillLocationIcon />
-            </span>
+      <div className="absolute inset-0 bg-linear-to-b from-[#121a0c]/35 via-[#121a0c]/25 to-[#121a0c]/95" />
+      <Container className="relative z-10 pb-24 pt-32 md:pb-20 md:pt-40">
+        <div className="flex max-w-3xl flex-col gap-4 text-white md:gap-5">
+          <p className="text-xs! uppercase tracking-widest md:text-sm!">
             {location}
           </p>
-          <h1 className="font-primary text-4xl/tight md:text-6xl/tight lg:text-7xl/tight">
+          <p className="font-primary text-xl! text-[#F1C192] md:text-2xl!">
+            {eyebrow}
+          </p>
+          <h1 className="font-primary text-[34px]/tight sm:text-5xl/tight lg:text-6xl/tight">
             {title}
           </h1>
-          <p className="font-primary text-2xl! md:text-3xl!">
-            {supportingHeadline}
+          <p className="max-w-xl text-base! text-white/95 md:text-lg!">
+            {description}
           </p>
-          <div className="flex max-w-3xl flex-col gap-3 text-white/95">
-            {description.map((text) => (
-              <p key={text}>{text}</p>
-            ))}
-          </div>
-          <div className="mt-2 flex flex-wrap gap-3">
+          <div className="mt-2 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <LinkButton
               {...cta}
-              className="rounded-full border-secondary bg-secondary text-white"
+              trackingEvent="winter_package_click"
+              trackingLocation="hero"
+              className="min-h-12 w-full! justify-center rounded-full border-secondary bg-secondary px-5! text-sm! text-white sm:w-fit!"
             />
             <LinkButton
               {...secondaryCta}
-              className="rounded-full border-white/80 bg-primary/40 text-white"
+              trackingLocation="hero"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="min-h-12 w-full! justify-center rounded-full border-white/75 bg-primary/50 px-5! text-sm! text-white sm:w-fit!"
             />
           </div>
         </div>
