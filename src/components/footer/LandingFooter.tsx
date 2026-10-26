@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { winterWhatsappCta } from "@/app/winter-landing-page/components/winterCtas";
 import { Container } from "../sectionComponants";
 import Image from "next/image";
 import { footerData } from "./footerdata";
@@ -6,7 +7,7 @@ import LazyLoadedMap from "../map/LazyLoadedMap";
 import LinkButton from "../buttons/LinkButton";
 import { contact } from "@/utils/constent";
 
-const LandingFooter = () => {
+const LandingFooter = ({ winter = false }: { winter?: boolean }) => {
   return (
     <footer className="max_screen_width bg-primary">
       <Container>
@@ -26,7 +27,7 @@ const LandingFooter = () => {
             </div>
 
             <LinkButton
-              href={contact.WhatsappCta}
+              href={winter ? winterWhatsappCta : contact.WhatsappCta}
               label="Enquire on WhatsApp"
               target="_blank"
               rel="noopener noreferrer"

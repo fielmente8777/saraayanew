@@ -11,3 +11,5 @@ These dataLayer events require matching GTM/GA4 tags and testing in the connecte
 Release inputs still required: property-approved package rates, effective dates, per-couple/occupancy basis, meals, included activities, additional guest/bed charges, taxes and cancellation terms. Package cards describe enquiries rather than claiming confirmed fixed-price bundles.
 
 Google score 5.0/5 (55 reviews) was observed on the matching live Google Travel profile on 26 October 2026. Airbnb score 5.0/5 (6 listing reviews) was re-fetched on that date. Booking.com profile identity is verified but a current score/count could not be confirmed; the page links to the live platform without copying a cached number. Refresh rating snapshots before production release. No unverified guest photographs, heater close-ups or pickup-point photographs were added.
+
+`/winter-mobile-preview.html` is a noindex layout-review harness for the preview. Its iframe runs the actual page at 360/390/430 CSS pixels; this checks responsive layout, not real-device speed or touch hardware. Remove this review harness before production promotion.

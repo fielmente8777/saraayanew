@@ -394,7 +394,7 @@ export default function WinterLandingPage() {
                 label={
                   index === 2
                     ? "Enquire About a Group Stay"
-                    : "Ask About This Stay"
+                    : `Ask About ${option.title}`
                 }
                 href={index === 2 ? takeoverWhatsappCta : winterWhatsappCta}
                 trackingEvent="winter_package_click"
