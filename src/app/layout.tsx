@@ -60,8 +60,8 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   ...createPageMetadata(
     "/",
-    "Saraaya Glamps | Luxury Glamping in Dharamshala",
-    "Discover Saraaya near Dharamshala: four private luxury tents, mountain views, heaters and thoughtful comforts. Plan your Himalayan escape with our hosts."
+    "Saraaya Glamps | A Private Glamping Experience in the Himalayas",
+    "Discover Saraaya near Dharamshala: four private Safari suites, mountain views, heaters and thoughtful comforts. Plan your Himalayan stay with our hosts."
   ),
   icons: {
     icon: "/favicon.ico",
@@ -191,7 +191,7 @@ export default function RootLayout({
                 image: siteUrl + "/rooms/Mountain-1.png",
                 logo: siteUrl + "/logo-1.png",
                 description:
-                  "A family-hosted glamping retreat with four private safari tents in Nauhali near Dharamshala.",
+                  "A family-hosted boutique stay with four private safari suites in Nauhali near Dharamshala.",
                 address: {
                   "@type": "PostalAddress",
                   streetAddress: "Village Nauhali",
@@ -208,7 +208,7 @@ export default function RootLayout({
                 amenityFeature: [
                   {
                     "@type": "LocationFeatureSpecification",
-                    name: "Heaters in tents",
+                    name: "Heaters in safari suites",
                     value: true,
                   },
                   {

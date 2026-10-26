@@ -20,6 +20,16 @@ function Whatsapp({ whatsAppNumber }: { whatsAppNumber: string }) {
             ? winterWhatsappCta
             : `https://wa.me/${whatsAppNumber.replace(/[^0-9]/g, "")}?text=${enCodeText}`
         }
+        onClick={() => {
+          if (!pathName.startsWith("/winter-landing-page")) return;
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: "whatsapp_click",
+            button_text: "Floating WhatsApp",
+            section: "floating",
+            page_path: pathName,
+          });
+        }}
         target="_blank"
         rel="noreferrer"
         className="w-12 h-12 rounded-full flex items-center justify-center bg-green-500 hover:bg-green-600 transition-all hover:shadow-2xl"

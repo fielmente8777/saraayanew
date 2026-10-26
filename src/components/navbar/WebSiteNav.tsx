@@ -121,7 +121,7 @@ const WebSiteNav = () => {
     }
   `}
             >
-              <span className="sr-only">Reserve a tent at Saraaya</span>
+              <span className="sr-only">Reserve a safari suite at Saraaya</span>
               <CalendarIcon />
 
               {/* <span className=" text-base tracking-widest">

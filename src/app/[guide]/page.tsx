@@ -35,6 +35,7 @@ export default async function Page({ params }: Params) {
   const { guide } = await params;
   const data = getGuide(guide);
   if (!data) notFound();
+  const featured = guide === "experiences" ? stayGuides.experiences.featuredExperience : undefined;
   return (
     <main className="bg-background">
       <StructuredData
@@ -94,6 +95,37 @@ export default async function Page({ params }: Params) {
           </div>
         </div>
       </SectionWithContainer>
+      {featured && (
+        <SectionWithContainer
+          sectionId="movie-under-the-stars"
+          sectionClassName="scroll-mt-28 border-t border-primary/20"
+          containerClassName="grid items-center gap-8 lg:grid-cols-2 lg:gap-14"
+        >
+          <div className="relative aspect-4/3 overflow-hidden rounded-2xl">
+            <Image
+              src={featured.image}
+              alt={featured.imageAlt}
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
+          <div className="space-y-5">
+            <p className="text-secondary text-sm! uppercase tracking-widest">
+              Experiences at Saraaya
+            </p>
+            <h2 className="font-primary text-primary text-3xl md:text-4xl">
+              {featured.title}
+            </h2>
+            <p className="text-light leading-relaxed">
+              {featured.description}
+            </p>
+            <p className="border-t border-primary/20 pt-4 text-light text-sm!">
+              {featured.note}
+            </p>
+          </div>
+        </SectionWithContainer>
+      )}
       <SectionWithContainer
         sectionClassName="border-y border-primary/20"
         containerClassName="grid gap-10 lg:grid-cols-2 lg:gap-14"
@@ -117,7 +149,7 @@ export default async function Page({ params }: Params) {
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-light">
           Share your dates, guest count and the details that matter to you. Our
-          hosts will help with tent options, rates and arrangements for your
+          hosts will help with safari suite options, rates and arrangements for your
           stay.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-4">
@@ -130,7 +162,7 @@ export default async function Page({ params }: Params) {
           />
           <LinkButton
             href="/rooms/"
-            label="Explore Our Tents"
+            label="Explore Our Safari Suites"
             className="rounded-full border-primary text-primary"
           />
         </div>

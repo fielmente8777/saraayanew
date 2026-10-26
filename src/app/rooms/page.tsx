@@ -9,8 +9,8 @@ import { accommodationPageData } from "./components/pageData";
 
 export const metadata = createPageMetadata(
   "/rooms/",
-  "Luxury Glamping Tents in Dharamshala | Saraaya",
-  "Explore Saraaya’s four private safari tents near Dharamshala, with king-size beds, heaters, attached bathrooms and private decks. Enquire for your dates."
+  "Private Safari Suites near Dharamshala | Saraaya Glamps",
+  "Explore Saraaya’s four private safari suites near Dharamshala, with king-size beds, heaters, attached bathrooms and private decks. Enquire for your dates."
 );
 
 const page = () => {

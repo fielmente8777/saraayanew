@@ -5,15 +5,13 @@ import {
   GpsIcon,
   OutlineLOcationIcon,
   SleepsIcon,
-  WindIcon,
 } from "@/utils/webSiteIcon";
 
 export const homePageData = {
   titles: [
     { title: "Nauhali NEAR Dharamshala", icon: <OutlineLOcationIcon /> },
-    { title: "FOUR PRIVATE SAFARI TENTS", icon: <GpsIcon /> },
+    { title: "FOUR PRIVATE SAFARI SUITES", icon: <GpsIcon /> },
     { title: "HEATERS & PRIVATE BATHROOMS", icon: <CloudIcon /> },
-    { title: "HOSTED BY THE SARAAYA FAMILY", icon: <WindIcon /> },
   ],
 
   banner: {
@@ -26,19 +24,24 @@ export const homePageData = {
   about: {
     image: "/home/about-img.png",
     logo: "/home/Vector-1.png",
-    title: "A LUXURY GLAMPING Retreat",
-    heading: "Luxury Glamping in <i>Dharamshala</i>",
+    title: "A DISTINCTIVE BOUTIQUE STAY",
+    heading: "A Private Glamping<br/><i>Experience in the Himalayas</i>",
     description: [
-      "Saraaya is a luxury glamping retreat in Nauhali near Dharamshala, Himachal Pradesh. Four private safari tents bring together Himalayan views, forest surroundings and the comforts of a thoughtfully furnished stay.",
+      "Saraaya is a distinctive boutique stay in Nauhali near Dharamshala, Himachal Pradesh. Four private safari suites bring together Himalayan views, forest surroundings and the comforts of a thoughtfully furnished stay.",
       "Unwind on your private deck, settle into a king-size bed and enjoy a quieter pace in the Kangra Valley. With attached bathrooms, heaters and personal attention from our hosts, this is a mountain escape for couples, families and small groups.",
     ],
-    hostedText: "Hosted by the Saraaya family, since 2019",
+    story: {
+      title: "Our Story",
+      text: "An idea that began in 2014 became four private Safari suites in Nauhali. Discover the vision that brought Saraaya to life: a closer connection with nature and opportunities for the local community.",
+      label: "Read Our Story",
+      href: "/about-us/",
+    },
   },
 
   escapeSection: {
     image: "/home/escape.jpg",
     title: "FAR AWAY FROM DUTY, CROWDS, AND CHAOS.",
-    heading: `Experience slow luxury in the heart of nature, with panoramic mountain views, nearby rivers, & endless trails to explore.`,
+    heading: "Experience an unhurried stay in the heart of nature, with panoramic mountain views, a glacier stream nearby, and forest trails to explore.",
     cta: {
       label: "PLAN YOUR EXCAPE",
       href: contact.WhatsappCta,
@@ -59,28 +62,28 @@ export const homePageData = {
         title: 'Devdar "The Keeper" ',
         image: "/rooms/Mountain-1.png",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
-        cta: { label: "Explore Devdar tent", href: "/rooms/#devdar" },
+        cta: { label: "Explore Devdar safari suite", href: "/rooms/#devdar" },
       },
       {
         id: "02",
         title: 'Rai "The Watcher"',
         image: "/rooms/Mountain-2.png",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
-        cta: { label: "Explore Rai tent", href: "/rooms/#rai" },
+        cta: { label: "Explore Rai safari suite", href: "/rooms/#rai" },
       },
       {
         id: "03",
         title: 'Buransh  "The Nurturer" ',
         image: "/rooms/Mountain-3.png",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
-        cta: { label: "Explore Buransh tent", href: "/rooms/#buransh" },
+        cta: { label: "Explore Buransh safari suite", href: "/rooms/#buransh" },
       },
       {
         id: "04",
         title: 'Kail " The Wanderer" ',
         image: "/rooms/Mountain-4.png",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
-        cta: { label: "Explore Kail tent", href: "/rooms/#kail" },
+        cta: { label: "Explore Kail safari suite", href: "/rooms/#kail" },
       },
     ],
   },
@@ -92,7 +95,7 @@ export const homePageData = {
     description:
       "Curated rituals designed by our hosts, none of them on a schedule, all of them on the slow side of time.",
     footerNote:
-      "**Food and beverages are chargeable separately for all setups and experiences.",
+      "Food and beverages are chargeable separately for all setups and experiences. Confirm activity inclusions and charges with our hosts. Outdoor experiences depend on weather and availability.",
     experiences: [
       {
         image: "/home/exp-1.png",
@@ -100,12 +103,21 @@ export const homePageData = {
         timing: "Dusk · Daily",
         price: "₹2,500 onwards",
         description:
-          "Private outdoor movie setup with cozy bonfire ambience under the stars.",
+          "Gather around a bonfire for unhurried conversations beneath the mountain sky.",
+      },
+      {
+        image: "/winter/movie-night.webp",
+        alt: "Guests enjoying an open-air movie screening at Saraaya",
+        title: "Movie under the Stars",
+        timing: "Evening · On request",
+        price: "",
+        description:
+          "An intimate open-air screening framed by pine canopies and the night sky.",
       },
       {
         image: "/home/exp-2.png",
         title: "Star Gazing Session",
-        timing: "Sunrise · In-tent",
+        timing: "Sunrise · In-suite",
         price: "₹1,500 onwards",
         description:
           "Guided star gazing experience in the peaceful Himalayan night sky.",
@@ -121,7 +133,7 @@ export const homePageData = {
       {
         image: "/home/exp-4.png",
         title: "Picnic Setup",
-        timing: "Sunrise · In-tent",
+        timing: "Sunrise · In-suite",
         price: "₹3,000 onwards",
         description:
           "Curated outdoor picnic setup surrounded by nature for a relaxed experience.",

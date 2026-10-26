@@ -2,7 +2,7 @@ export const galleryPageData = {
   bannerData: {
     title:
       'Explore our <span class = "italic text-secondary">Himalayan</span> Resort',
-    description: ["A glimpse into luxury and experiences."],
+    description: ["A glimpse into private Safari suites, nature and experiences at Saraaya."],
     images: ["/images/gallery/banner.jpg"],
   },
 

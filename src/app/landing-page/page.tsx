@@ -17,7 +17,7 @@ export const metadata = {
   ...createPageMetadata(
     "/landing-page/",
     "Plan Your Glamping Escape | Saraaya Dharamshala",
-    "Discover private safari tents near Dharamshala. Share your dates with Saraaya for availability, rates and a thoughtfully planned mountain escape."
+    "Discover private safari suites near Dharamshala. Share your dates with Saraaya for availability, rates and a thoughtfully planned mountain escape."
   ),
   robots: { index: false, follow: true },
 };

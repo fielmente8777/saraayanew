@@ -7,12 +7,19 @@ export const stayGuides = {
     image: "/winter/bonfire.webp",
     imageAlt: "An outdoor lounge and bonfire setup at Saraaya Glamps",
     intro:
-      "Some mountain holidays are best left unhurried. At Saraaya, you can spend a morning on your private deck, explore the surroundings or ask our hosts to arrange an experience for your stay. With only four tents, there is space to make the visit feel personal.",
+      "Some mountain holidays are best left unhurried. At Saraaya, you can spend a morning on your private deck, explore the surroundings or ask our hosts to arrange an experience for your stay. With only four safari suites, there is space to make the visit feel personal.",
+    featuredExperience: {
+      title: "Movie under the Stars",
+      description: "An intimate open-air screening framed by pine canopies and the night sky.",
+      image: "/winter/movie-night.webp",
+      imageAlt: "Guests enjoying an open-air movie screening at Saraaya",
+      note: "Arranged on request and charged separately unless included in your confirmed package. Subject to weather and availability.",
+    },
     sections: [
       {
-        title: "Bonfire evenings and outdoor movies",
+        title: "Bonfire evenings",
         paragraphs: [
-          "Gather around a fire when the weather allows, or ask about a private outdoor movie setup. These evenings suit couples spending time together as well as friends sharing a mountain break. A relaxed evening can be as simple as a warm layer, good company and time away from the usual routine.",
+          "Gather around a fire when the weather allows. These evenings suit couples spending time together as well as friends sharing a mountain break. A relaxed evening can be as simple as a warm layer, good company and time away from the usual routine.",
           "Tell the team which experience you have in mind before arrival. Setups are arranged according to availability and outdoor conditions, and any charges should be confirmed in your quote.",
         ],
       },
@@ -34,25 +41,25 @@ export const stayGuides = {
         title: "Plan meals and personal touches",
         paragraphs: [
           "Ask about a sundowner or picnic setup if you want to mark an occasion. Food and beverages for setups and experiences are charged separately. Dietary preferences, meal plans and any special requests should be discussed before the booking is finalised.",
-          "You do not need to schedule every hour. Leave time to enjoy the views, your private tent and the quiet setting. Our hosts can help you choose one or two experiences that fit the kind of holiday you want.",
+          "You do not need to schedule every hour. Leave time to enjoy the views, your private safari suite and the quiet setting. Our hosts can help you choose one or two experiences that fit the kind of holiday you want.",
         ],
       },
     ],
   },
   "winter-stays": {
     title: "Winter Glamping near Dharamshala",
-    metaTitle: "Winter Glamping in Dharamshala | Saraaya Heated Tents",
+    metaTitle: "Winter Glamping in Dharamshala | Saraaya Heated Safari Suites",
     description:
-      "Plan a winter stay in Saraaya’s heated safari tents near Dharamshala. Explore comforts, packing advice, arrival arrangements and seasonal experiences.",
+      "Plan a winter stay in Saraaya’s heated safari suites near Dharamshala. Explore comforts, packing advice, arrival arrangements and seasonal experiences.",
     image: "/winter/hero-night-suite.webp",
-    imageAlt: "Saraaya's safari tents illuminated on a mountain evening",
+    imageAlt: "Saraaya's safari suites illuminated on a mountain evening",
     intro:
-      "A winter break at Saraaya brings the character of a safari tent together with thoughtful indoor comforts. The retreat is in Nauhali near Dharamshala, away from the pace of a town-centre hotel. Choose it for time together, mountain surroundings and a slower holiday.",
+      "A winter break at Saraaya brings the character of a safari suite together with thoughtful indoor comforts. The retreat is in Nauhali near Dharamshala, away from the pace of a town-centre hotel. Choose it for time together, mountain surroundings and a slower holiday.",
     sections: [
       {
-        title: "What is inside a winter tent?",
+        title: "What is inside a winter safari suite?",
         paragraphs: [
-          "Saraaya's accommodation includes heaters, king-size beds, cosy bedding, private decks and attached bathrooms with hot water. The tents offer a furnished place to return to after spending time outdoors, without losing the feeling of being close to the landscape.",
+          "Saraaya's accommodation includes heaters, king-size beds, cosy bedding, private decks and attached bathrooms with hot water. The safari suites offer a furnished place to return to after spending time outdoors, without losing the feeling of being close to the landscape.",
           "Winter conditions vary, so pack proper layers for mornings and evenings. Contact the hosts about current conditions and specific comfort needs. Mountain weather can affect the electricity supply; a fixed indoor temperature or uninterrupted power should not be assumed.",
         ],
       },
@@ -73,7 +80,7 @@ export const stayGuides = {
       {
         title: "Request a quote for your dates",
         paragraphs: [
-          "Winter rates depend on dates, tent choice, guest count and the plan you select. For Christmas, New Year or a longer break, send your preferred dates early so the team can check availability across the four tents.",
+          "Winter rates depend on dates, safari suite choice, guest count and the plan you select. For Christmas, New Year or a longer break, send your preferred dates early so the team can check availability across the four safari suites.",
           "Ask for a quote that clearly states meals, taxes, experience charges and booking terms. Review payment, cancellation and date-change conditions before confirming. Couples, families and small groups can all discuss their requirements directly with our hosts.",
         ],
       },
@@ -83,17 +90,17 @@ export const stayGuides = {
     title: "Private Group Stays near Dharamshala",
     metaTitle: "Private Group Stays in Dharamshala | Saraaya Glamps",
     description:
-      "Plan a small group getaway at Saraaya near Dharamshala. Enquire about four private tents for family reunions, friends and relaxed mountain breaks.",
+      "Plan a small group getaway at Saraaya near Dharamshala. Enquire about four private safari suites for family reunions, friends and relaxed mountain breaks.",
     image: "/winter/lounge-blue-hour.webp",
     imageAlt: "Saraaya's outdoor seating area prepared for a relaxed evening",
     intro:
-      "Bring the people you want to spend more time with. Saraaya's four private safari tents offer a small setting for a friends' reunion, family holiday or shared mountain escape. The emphasis is on personal time together, with comfortable rooms to retreat to at the end of the day.",
+      "Bring the people you want to spend more time with. Saraaya's four private safari suites offer a small setting for a friends' reunion, family holiday or shared mountain escape. The emphasis is on personal time together, with comfortable rooms to retreat to at the end of the day.",
     sections: [
       {
-        title: "Four tents for a more intimate getaway",
+        title: "Four safari suites for a more intimate getaway",
         paragraphs: [
-          "Ask about reserving all four tents for your group, subject to availability. A full-property stay can help families and friends coordinate their holiday, with accommodation in one small retreat rather than spread across a large hotel.",
-          "Share the number of adults and children, their ages and your preferred rooming arrangement. Each tent is advertised for two guests; any extra occupancy or bedding must be confirmed with the team. Do not assume an unlimited group capacity.",
+          "Ask about reserving all four safari suites for your group, subject to availability. A full-property stay can help families and friends coordinate their holiday, with accommodation in one small retreat rather than spread across a large hotel.",
+          "Share the number of adults and children, their ages and your preferred rooming arrangement. Each safari suite is advertised for two guests; any extra occupancy or bedding must be confirmed with the team. Do not assume an unlimited group capacity.",
         ],
       },
       {
@@ -124,8 +131,8 @@ export const stayGuides = {
     metaTitle: "How to Reach Saraaya Glamps | Dharamshala Travel Guide",
     description:
       "Plan your journey to Saraaya in Nauhali near Dharamshala. Find arrival advice, pickup details, the final walk, packing tips and connectivity information.",
-    image: "/winter/tents-in-valley.webp",
-    imageAlt: "Saraaya's tents set among terraced fields and forest in Nauhali",
+    image: "/winter/property-setting.webp",
+    imageAlt: "Saraaya's safari suites set among terraced fields and forest in Nauhali",
     intro:
       "Saraaya is in Village Nauhali near Dharamshala in Himachal Pradesh. Its setting is part of the experience: the property is reached with a short transfer and a walk, rather than by driving directly to a hotel entrance. Speak with our team before you travel so the arrival feels straightforward.",
     sections: [

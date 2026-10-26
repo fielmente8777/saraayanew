@@ -1,9 +1,11 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useWebContext } from "@/context-api/WebContext";
 
 const PopUpButton = () => {
+  const pathname = usePathname();
   const { setOpenInfoPopup } = useWebContext();
 
   const [showIntro, setShowIntro] = useState(true);
@@ -18,6 +20,9 @@ const PopUpButton = () => {
 
   const handleClick = () => setOpenInfoPopup(true);
 
+  // Winter information is displayed inline near the footer; keep the hero clear.
+  if (pathname.startsWith("/winter-landing-page")) return null;
+
   return (
     <button
       onClick={handleClick}
@@ -31,11 +36,7 @@ const PopUpButton = () => {
         shadow-lg
         transition-all duration-300 ease-in-out
         active:scale-95
-        ${
-          showIntro
-            ? "w-52"
-            : "w-12 hover:w-52"
-        }
+        ${showIntro ? "w-52" : "w-12 hover:w-52"}
       `}
     >
       {/* Icon */}

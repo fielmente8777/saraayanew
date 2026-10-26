@@ -51,15 +51,15 @@ export const articleTitles: Record<string, string> = {
   "monsoon-artist-retreat-himalayas-dharamshala":
     "A Monsoon Retreat for Creatives | Saraaya Glamps",
   "why-luxury-travelers-choosing-glamping-over-five-star-hotels":
-    "Glamping or a Luxury Hotel? | Saraaya Glamps",
+    "Glamping or a Conventional Hotel? | Saraaya Glamps",
   "the-story-of-saraaya-a-dream-built-in-the-himalayas":
-    "The Story of Saraaya | A Himalayan Glamping Retreat",
+    "The Story of Saraaya | A Himalayan Boutique Stay",
   "devi-darshan-himachal-pradesh-kangra":
     "Devi Darshan in Kangra, Himachal | Saraaya Travel Guide",
   "my-favourite-things-to-do-around-saraaya":
     "Things to Do near Saraaya | Dharamshala Travel Guide",
   "how-saraaya-was-built":
-    "How Saraaya Was Built | Four Tents in the Himalayas",
+    "How Saraaya Was Built | Four Safari Suites in the Himalayas",
 };
 
 export function shortDescription(text: string): string {

@@ -10,7 +10,7 @@ const Footer = () => {
       return null;
     case "/landing-page/":
     case "/winter-landing-page/":
-      return <LandingFooter />;
+      return <LandingFooter winter={pathName === "/winter-landing-page/"} />;
     default:
       return <WebSiteFooter />;
   }

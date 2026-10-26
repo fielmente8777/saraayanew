@@ -1,3 +1,4 @@
+import WhyChooseSaraaya from "@/components/sectionComponants/WhyChooseSaraaya";
 import StayGuideLinks from "@/components/seo/StayGuideLinks";
 import { createPageMetadata } from "@/utils/metadata";
 import VideoBanner from "@/components/banners/VideoBanner";
@@ -12,8 +13,8 @@ import TitleSection from "@/components/TitleSection";
 
 export const metadata = createPageMetadata(
   "/",
-  "Saraaya Glamps | Luxury Glamping in Dharamshala",
-  "Discover Saraaya near Dharamshala: four private luxury tents, mountain views, heaters and thoughtful comforts. Plan your Himalayan escape with our hosts."
+  "Saraaya Glamps | A Private Glamping Experience in the Himalayas",
+  "Discover Saraaya near Dharamshala: four private Safari suites, mountain views, heaters and thoughtful comforts. Plan your Himalayan stay with our hosts."
 );
 
 const page = () => {
@@ -23,6 +24,7 @@ const page = () => {
       <VideoBanner {...homePageData.banner} />
       <TitleSection titles={homePageData.titles} />
       <About {...homePageData.about} />
+      <WhyChooseSaraaya />
       <EscapeSection {...homePageData.escapeSection} />
       <GlampsSection {...homePageData.glampsSection} />
       <ExperiencesSection {...homePageData.experiencesSection} />
