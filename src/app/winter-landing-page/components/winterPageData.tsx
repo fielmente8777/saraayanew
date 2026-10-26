@@ -32,8 +32,8 @@ export const winterPageData = {
     {
       title: "Experiences Beyond Your Stay",
       text: "Explore village trails, take a guided forest walk or enjoy a riverside picnic. As evening arrives, gather around a bonfire, watch an outdoor movie or gaze at the Himalayan night sky.",
-      image: "/winter/movie-night.webp",
-      alt: "An open-air movie setup at Saraaya",
+      image: "/winter/evening-experience.webp",
+      alt: "Bonfire seating and a private Safari suite at Saraaya in the evening",
     },
     {
       title: "Space to Slow Down",
@@ -92,11 +92,19 @@ export const winterPageData = {
     },
     {
       title: "Evenings Under the Stars",
-      text: "Gather around a bonfire, enjoy an open-air movie night or spend an evening stargazing beneath the Himalayan sky.",
+      text: "Gather around a bonfire or spend an evening stargazing beneath the Himalayan sky.",
       image: "/winter/stargazing.webp",
       alt: "A telescope and outdoor seating prepared for stargazing at Saraaya",
       charge:
-        "Bonfire and movie setups are arranged on request, with additional charges unless included in your plan.",
+        "Bonfire setups are arranged on request, with additional charges unless included in your plan.",
+    },
+    {
+      title: "Movie under the Stars",
+      text: "An intimate open-air screening framed by pine canopies and the night sky.",
+      image: "/winter/movie-night.webp",
+      alt: "Guests enjoying an open-air movie screening at Saraaya",
+      charge:
+        "Arranged on request and charged separately unless included in your confirmed package. Subject to weather and availability.",
     },
     {
       title: "Moments Worth Celebrating",
