@@ -260,9 +260,9 @@ export default function WinterLandingPage() {
               <div>
                 <dt className="font-semibold text-primary">Occupancy</dt>
                 <dd>
-                  Share the number of adults and children and their ages.
-                  Confirm the permitted occupancy per suite, extra bedding and
-                  any full-property group capacity before booking.
+                  Standard occupancy: two guests per suite. Share the number of
+                  adults and children and their ages; confirm extra guests,
+                  bedding and full-property group capacity before booking.
                 </dd>
               </div>
               <div>

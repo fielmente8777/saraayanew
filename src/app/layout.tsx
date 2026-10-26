@@ -191,7 +191,7 @@ export default function RootLayout({
                 image: siteUrl + "/rooms/Mountain-1.png",
                 logo: siteUrl + "/logo-1.png",
                 description:
-                  "A family-hosted glamping retreat with four private safari suites in Nauhali near Dharamshala.",
+                  "A family-hosted boutique stay with four private safari suites in Nauhali near Dharamshala.",
                 address: {
                   "@type": "PostalAddress",
                   streetAddress: "Village Nauhali",
