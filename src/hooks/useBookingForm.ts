@@ -1,7 +1,8 @@
 import axios from "axios";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import { useDebounce } from "./useDebounce";
 import { contact } from "@/utils/constent";
+import { formatLocalDate } from "@/utils/bookingDates";
 
 interface BookingFormData {
   name: string;
@@ -64,50 +65,25 @@ const useBookingForm = ({
     return re.test(phone);
   };
 
-  // Debounced Email Validation
-  useEffect(() => {
-    if (debouncedEmail && !validateEmail(debouncedEmail)) {
-      setErrors((prev) => ({
-        ...prev,
-        email: "Invalid email format",
-      }));
-    } else if (debouncedEmail && validateEmail(debouncedEmail)) {
-      setErrors((prev) => ({
-        ...prev,
-        email: undefined,
-      }));
-    }
-  }, [debouncedEmail]);
-
-  // Debounced Phone Validation
-  useEffect(() => {
-    if (debouncedPhone && !validatePhone(debouncedPhone)) {
-      setErrors((prev) => ({
-        ...prev,
-        phone: "Phone must be 10-15 digits",
-      }));
-    } else if (debouncedPhone && validatePhone(debouncedPhone)) {
-      setErrors((prev) => ({
-        ...prev,
-        phone: undefined,
-      }));
-    }
-  }, [debouncedPhone]);
-
-  // Debounced Name Validation
-  useEffect(() => {
-    if (debouncedName && !debouncedName.trim()) {
-      setErrors((prev) => ({
-        ...prev,
-        name: "Name cannot be empty",
-      }));
-    } else if (debouncedName && debouncedName.trim()) {
-      setErrors((prev) => ({
-        ...prev,
-        name: undefined,
-      }));
-    }
-  }, [debouncedName]);
+  // Derive debounced field feedback without scheduling another state update.
+  const fieldErrors: FormErrors = {
+    ...errors,
+    ...(debouncedEmail &&
+    debouncedEmail === formData.email &&
+    !validateEmail(debouncedEmail)
+      ? { email: "Invalid email format" }
+      : {}),
+    ...(debouncedPhone &&
+    debouncedPhone === formData.phone &&
+    !validatePhone(debouncedPhone)
+      ? { phone: "Phone must be 10-15 digits" }
+      : {}),
+    ...(debouncedName &&
+    debouncedName === formData.name &&
+    !debouncedName.trim()
+      ? { name: "Name cannot be empty" }
+      : {}),
+  };
 
   const validateForm = useCallback(() => {
     const newErrors: FormErrors = {};
@@ -135,6 +111,24 @@ const useBookingForm = ({
 
     if (includeCheckOut && !formData.checkOut) {
       newErrors.checkOut = "Check-out date is required";
+      isValid = false;
+    }
+
+    if (
+      includeCheckIn &&
+      formData.checkIn &&
+      formData.checkIn < formatLocalDate(new Date())
+    ) {
+      newErrors.checkIn = "Choose today or a future check-in date";
+      isValid = false;
+    }
+    if (
+      includeCheckOut &&
+      formData.checkIn &&
+      formData.checkOut &&
+      formData.checkOut <= formData.checkIn
+    ) {
+      newErrors.checkOut = "Check-out must be after check-in";
       isValid = false;
     }
 
@@ -184,6 +178,8 @@ const useBookingForm = ({
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    if (isSubmitting) return;
+
     if (!validateForm()) return;
 
     setIsSubmitting(true);
@@ -226,7 +222,13 @@ const useBookingForm = ({
         setTimeout(() => {
           setSubmitSuccess(false);
         }, 3000);
-        window.open("/thank-you/", "_blank");
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "generate_lead",
+          form_name: "stay_enquiry",
+          page_path: window.location.pathname,
+        });
+        window.location.assign("/thank-you/");
       } else {
         alert(data.message || "Something went wrong. Please try again.");
       }
@@ -241,7 +243,7 @@ const useBookingForm = ({
   return {
     formData,
     setFormData,
-    errors,
+    errors: fieldErrors,
     isSubmitting,
     setIsSubmitting,
     submitSuccess,

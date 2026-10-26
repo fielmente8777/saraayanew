@@ -4,15 +4,13 @@ import AmenitiesSlider from "@/components/sliders/AmenitiesSlider";
 import ImageSlider from "@/components/sliders/ImageSlider";
 import Link from "next/link";
 
-
-
-
 const RoomCardSection: React.FC<{ cards: Props[] }> = ({ cards }) => {
   return (
     <>
       {cards.map((card, index) => (
         <SectionWithContainer
           key={index}
+          sectionId={["devdar", "rai", "buransh", "kail"][index]}
           sectionClassName="bg-background relative"
           containerClassName={`xl:max-w-[1410px]! ${index % 2 === 0 ? "lg:mr-0!" : "lg:ml-0!"}`}
         >

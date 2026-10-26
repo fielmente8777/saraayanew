@@ -1,6 +1,16 @@
+import { createPageMetadata } from "@/utils/metadata";
 import LinkButton from "@/components/buttons/LinkButton";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import Image from "next/image";
+
+export const metadata = {
+  ...createPageMetadata(
+    "/thank-you/",
+    "Thank You for Your Enquiry | Saraaya Glamps",
+    "Thank you for contacting Saraaya Glamps. Our reservations team will be in touch about your stay enquiry."
+  ),
+  robots: { index: false, follow: true },
+};
 
 export default function ThankYou() {
   return (

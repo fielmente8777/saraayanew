@@ -7,9 +7,11 @@ const WebSiteFooter = () => {
   return (
     <footer className="max_screen_width bg-background">
       <div className="w-full h-20" />
-      <div className="relative w-full aspect-[16/1.79]">
-        <Image src="/footer.png" alt="Image" fill className="object-contain" />
-      </div>
+      <div
+        aria-hidden="true"
+        className="relative w-full aspect-[16/1.79] bg-contain bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/footer.png')" }}
+      />
       <div className="w-full bg-primary py-10 lg:py-18 mt-[-0.8px] border-b border-white">
         <Container className="grid lg:grid-cols-[auto_1fr_auto] grid-cols-1 gap-4 text-sm">
           <div className="flex flex-col gap-4">
@@ -20,7 +22,23 @@ const WebSiteFooter = () => {
             <ul className="space-y-2">
               {websiteFooterData.lists[0].links.map((item, index) => (
                 <li className="text-white" key={index}>
-                  {item.href && <Link href={item.href}>{item.label}</Link>}
+                  {item.href && (
+                    <Link href={item.href}>
+                      {item.href === "/"
+                        ? "Return to Saraaya"
+                        : item.href === "/rooms/"
+                          ? "Explore our safari tents"
+                          : item.href === "/about-us/"
+                            ? "Meet the Saraaya family"
+                            : item.href === "/contact-us/"
+                              ? "Contact our reservations team"
+                              : item.href === "/gallery/"
+                                ? "View the Saraaya photo gallery"
+                                : item.href === "/blogs/"
+                                  ? "Read our travel journal"
+                                  : "Explore " + item.label.toLowerCase()}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -29,20 +47,17 @@ const WebSiteFooter = () => {
             <Link href="/" className="w-65 block relative aspect-4/2 lg:ml-50">
               <Image
                 src={websiteFooterData.logo}
-                alt="Image"
+                alt="Saraaya Glamps logo"
                 fill
                 className="object-contain"
               />
             </Link>
             <div className="lg:absolute lg:-bottom-16 lg:left-[65%] lg:translate-x-[-65%]">
-              <div className="w-85 relative aspect-[4/.8] mx-auto">
-                <Image
-                  src="/Vector-5.png"
-                  alt="Image"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              <div
+                aria-hidden="true"
+                className="w-85 relative aspect-[4/.8] mx-auto bg-cover bg-center"
+                style={{ backgroundImage: "url('/Vector-5.png')" }}
+              />
             </div>
           </div>
           <div className="flex flex-col gap-4">
@@ -91,6 +106,7 @@ const WebSiteFooter = () => {
                 <li key={i}>
                   <Link
                     href={item.href}
+                    aria-label={item.label}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center border border-white rounded-md w-10 h-10 justify-center"

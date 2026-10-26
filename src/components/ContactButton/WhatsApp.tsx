@@ -1,18 +1,12 @@
 "use client";
-import { useWebContext } from "@/context-api/WebContext";
 import { usePathname } from "next/navigation";
 import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
+import { winterWhatsappCta } from "@/app/winter-landing-page/components/winterCtas";
 import { enCodeText } from "@/utils/constent";
 
 function Whatsapp({ whatsAppNumber }: { whatsAppNumber: string }) {
   const pathName = usePathname();
-  const { WhatsAppClick } = useWebContext();
-
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    WhatsAppClick(event.currentTarget, "WhatsApp Button Clicked");
-  };
-
   if (pathName === "/thank-you/") {
     return null;
   }
@@ -21,8 +15,11 @@ function Whatsapp({ whatsAppNumber }: { whatsAppNumber: string }) {
     <div className={`fixed bottom-10 lg:right-3 right-4 z-20 cursor-pointer`}>
       {" "}
       <Link
-        // onClick={handleClick}
-        href={`https://wa.me/${whatsAppNumber.replace(/\s+/g, "")}?text=${enCodeText}`}
+        href={
+          pathName.startsWith("/winter-landing-page")
+            ? winterWhatsappCta
+            : `https://wa.me/${whatsAppNumber.replace(/[^0-9]/g, "")}?text=${enCodeText}`
+        }
         target="_blank"
         rel="noreferrer"
         className="w-12 h-12 rounded-full flex items-center justify-center bg-green-500 hover:bg-green-600 transition-all hover:shadow-2xl"

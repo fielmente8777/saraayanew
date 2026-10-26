@@ -68,7 +68,7 @@ const GlampsSection: React.FC<Props> = ({
             <div className="w-full relative aspect-4/2.75">
               <Image
                 src={filtered[0].image}
-                alt="Image"
+                alt={filtered[0].title}
                 fill
                 className="object-cover"
               />
@@ -82,7 +82,7 @@ const GlampsSection: React.FC<Props> = ({
                 href={filtered[0].cta.href}
                 className="uppercase text-secondary flex gap-2.5 items-center border-b border-secondary"
               >
-                {filtered[0].cta.label}
+                View {filtered[0].title} details
               </Link>
             </div>
           </div>
@@ -100,7 +100,7 @@ const GlampsSection: React.FC<Props> = ({
                 <div className="w-full relative aspect-4/2.75">
                   <Image
                     src={acc.image}
-                    alt="Image"
+                    alt={acc.title}
                     fill
                     className="object-cover"
                   />

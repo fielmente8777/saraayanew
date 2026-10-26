@@ -1,8 +1,10 @@
+import { formatLocalDate } from "@/utils/bookingDates";
+
 export function getDateInputLimits(options: {
   showPast?: boolean;
   showFuture?: boolean;
 }) {
-  const today = new Date().toISOString().split("T")[0]; // 'YYYY-MM-DD'
+  const today = formatLocalDate(new Date());
 
   let min: string | undefined;
   let max: string | undefined;

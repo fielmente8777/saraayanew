@@ -1,3 +1,10 @@
+import {
+  articleTitles,
+  createPageMetadata,
+  shortDescription,
+  siteUrl,
+} from "@/utils/metadata";
+import StructuredData from "@/components/seo/StructuredData";
 import { Metadata } from "next";
 import { blogsData } from "./components/PageData";
 import { SectionWithContainer } from "@/components/sectionComponants";
@@ -18,40 +25,15 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  const path = await params;
-  const post = await blogsData.find((post) => post.slug === path.slug);
-
-  if (!post) {
-    return {
-      title: "Post not found",
-    };
-  } else {
-    return {
-      title: post.meta.title,
-      description: post.meta.description,
-      keywords: post.meta.keyWords,
-      alternates: {
-        canonical: `https://saraayaglamps.com/blogs/${post.slug}`,
-        languages: {
-          "en-US": `https://saraayaglamps.com/blogs/${post.slug}`,
-        },
-      },
-      openGraph: {
-        title: post.meta.title,
-        description: post.meta.description,
-      },
-      robots: {
-        index: true,
-        follow: true,
-        nocache: true,
-        googleBot: {
-          index: true,
-          follow: true,
-          nocache: true,
-        },
-      },
-    };
-  }
+  const { slug } = await params;
+  const post = blogsData.find((post) => post.slug === slug);
+  if (!post) return { title: "Post not found", robots: { index: false } };
+  return createPageMetadata(
+    `/blogs/${post.slug}/`,
+    articleTitles[post.slug] || post.meta.title,
+    shortDescription(post.meta.description),
+    post.url || "/rooms/Mountain-1.png"
+  );
 }
 
 export default async function Page({ params }: Params) {
@@ -60,6 +42,29 @@ export default async function Page({ params }: Params) {
   if (!pageData) return notFound();
   return (
     <main className="">
+      <StructuredData
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: pageData.title,
+          description: pageData.description,
+          image: new URL(
+            pageData.url || "/rooms/Mountain-1.png",
+            siteUrl
+          ).toString(),
+          mainEntityOfPage: `${siteUrl}/blogs/${pageData.slug}/`,
+          author: {
+            "@type": "Organization",
+            name: "Saraaya Glamps",
+            url: siteUrl,
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Saraaya Glamps",
+            url: siteUrl,
+          },
+        }}
+      />
       <SectionWithContainer>
         <h1 className="font-semibold font-primary text-2xl md:text-5xl text-primary">
           {pageData?.title || ""}

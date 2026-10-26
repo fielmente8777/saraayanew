@@ -27,7 +27,7 @@ const LandingFooter = () => {
 
             <LinkButton
               href={contact.WhatsappCta}
-              label={footerData.cta.label}
+              label="Enquire on WhatsApp"
               target="_blank"
               rel="noopener noreferrer"
               className=" w-full flex justify-center text-secondary uppercase rounded-full max-md:mx-auto border-secondary"

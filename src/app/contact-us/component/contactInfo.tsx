@@ -28,7 +28,7 @@ type Props = {
   reservationsData: ReservationsData;
 };
 
-export default function ContactInfo({ visitData, reservationsData }: Props) {
+export default function ContactInfo({ visitData }: Props) {
   return (
     <div className="flex flex-col gap-6">
       <div className="flex items-center gap-3 text-secondary">
@@ -39,12 +39,12 @@ export default function ContactInfo({ visitData, reservationsData }: Props) {
         </p>
       </div>
 
-      <h2 className="font-primary text-[48px] font-medium text-primary">
-        {visitData.title.normal}{" "}
+      <h1 className="font-primary text-[48px] font-medium text-primary">
+        Contact Saraaya{" "}
         <span className="font-primary italic font-normal text-secondary">
-          {visitData.title.highlighted}
+          Glamps
         </span>
-      </h2>
+      </h1>
 
       {/* Contact Links */}
       <ul className="flex flex-col gap-4">
@@ -81,6 +81,7 @@ export default function ContactInfo({ visitData, reservationsData }: Props) {
               <li key={i}>
                 <Link
                   href={item.href}
+                  aria-label={item.label}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

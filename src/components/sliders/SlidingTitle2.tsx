@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import "./sliding.title.scss";
 import { JSX } from "react";
 
@@ -11,22 +10,28 @@ interface TitleSectionProps {
   colorChange?: boolean;
 }
 
-export default function SlidingTitle2 ({ items, colorChange }: TitleSectionProps) {
+export default function SlidingTitle2({
+  items,
+  colorChange,
+}: TitleSectionProps) {
   const titles = [...items, ...items];
 
   return (
-    <div className={`relative overflow-hidden py-4  max_screen_width ${colorChange ? "bg-background" : "bg-primary"}`}>
-      <Image
-        src={"/Layer-2-2.png"}
-        alt="Layer-2"
-        fill
-        className="object-cover object-center"
+    <div
+      className={`relative overflow-hidden py-4  max_screen_width ${colorChange ? "bg-background" : "bg-primary"}`}
+    >
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url('/Layer-2-2.png')" }}
       />
       <div className="marquee-wrapper">
         <div className="marquee-track">
           {titles.map((t, i) => (
             <span key={i} className="marquee-item ">
-              <span className={`flex items-center gap-2 ${colorChange ? "text-primary" : "text-white"}`}>
+              <span
+                className={`flex items-center gap-2 ${colorChange ? "text-primary" : "text-white"}`}
+              >
                 <span>{t.icon}</span>
                 <span className="md:text-sm text-xs text-nowrap uppercase">
                   {t.title}

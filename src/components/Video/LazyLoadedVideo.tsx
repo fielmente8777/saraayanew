@@ -2,11 +2,16 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
 
-
 const LazyLoadedVideo = dynamic(() => import("./SEOVideo"), {
   ssr: false,
   loading: () => (
-    <Image src="/bnr.jpg" alt="banner" fill className="object-cover" />
+    <Image
+      src="/rooms/Mountain-1.png"
+      alt="Saraaya luxury safari tent"
+      fill
+      sizes="100vw"
+      className="object-cover"
+    />
   ),
 });
 

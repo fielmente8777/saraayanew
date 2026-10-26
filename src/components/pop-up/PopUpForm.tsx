@@ -1,10 +1,11 @@
 "use client";
 import { useWebContext } from "@/context-api/WebContext";
 import { MdClose } from "react-icons/md";
-import Form1 from "../forms/Form1";
 import Form2 from "../forms/Form2";
+import { usePathname } from "next/navigation";
 
 const PopUpForm = () => {
+  const isWinter = usePathname().startsWith("/winter-landing-page");
   const { isOpenFormPopUp, setIsOpenFormPopUp } = useWebContext();
   return (
     <section
@@ -18,7 +19,10 @@ const PopUpForm = () => {
           <MdClose />
         </button>
         <div className="max-md:overflow-y-scroll hide-scroll mt-6">
-          <Form2 gridView />
+          <Form2
+            gridView
+            submitLabel={isWinter ? "Get Winter Quote" : "Enquire Now"}
+          />
         </div>
       </div>
     </section>

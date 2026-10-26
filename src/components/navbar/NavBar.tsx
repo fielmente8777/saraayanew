@@ -7,7 +7,7 @@ import LandingNav from "./LandingNav";
 const NavBar = () => {
   const pathName = usePathname();
 
-  if (pathName === "/landing-page/") {
+  if (pathName === "/landing-page/" || pathName === "/winter-landing-page/") {
     return <LandingNav/>;
   } else if (pathName === "/thank-you/") {
     return null;
