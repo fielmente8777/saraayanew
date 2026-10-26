@@ -26,7 +26,7 @@ const LandingFooter = () => {
             </div>
 
             <LinkButton
-              href= {contact.WhatsappCta}
+              href={contact.WhatsappCta}
               label={footerData.cta.label}
               target="_blank"
               rel="noopener noreferrer"
@@ -74,6 +74,7 @@ const LandingFooter = () => {
                         {item.title}
                       </span>
                     )} */}
+                    
                     <Link
                       target="_blank"
                       rel="noopener noreferrer"
@@ -106,6 +107,26 @@ const LandingFooter = () => {
                           }`}
                         >
                           {item.label2}
+                        </span>
+                      </Link>
+                    )}
+                    {item.label3 && <span className="text-white -ml-1">,</span>}
+
+                    {item.label3 && item.href3 && (
+                      <Link
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={item.href3}
+                        className="flex gap-2 max-md:ml-0"
+                      >
+                        <span
+                          className={`${
+                            index === 1
+                              ? "text-white font-aboreto text-2xl my-auto"
+                              : "md:text-lg text-white"
+                          }`}
+                        >
+                          {item.label3}
                         </span>
                       </Link>
                     )}

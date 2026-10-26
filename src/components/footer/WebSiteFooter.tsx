@@ -72,6 +72,17 @@ const WebSiteFooter = () => {
                       {item.label2}
                     </Link>
                   )}
+                  {item.href3 && <span className="mr-2">,</span>}
+
+                  {item.label3 && item.href3 && (
+                    <Link
+                      href={item.href3}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {item.label3}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
