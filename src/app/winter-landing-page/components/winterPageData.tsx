@@ -1,13 +1,15 @@
 import { winterWhatsappCta } from "./winterCtas";
 export const winterPageData = {
   hero: {
-    image: "/winter/property-hero.webp",
-    alt: "An actual Saraaya Safari suite and private deck surrounded by forest and mountain scenery",
+    image: "/winter/lounge-blue-hour.webp",
+    alt: "Saraaya at blue hour, with a bonfire, lantern-lit outdoor seating and private Safari suites surrounded by mountains",
     location: "Nauhali · Around 75 minutes from Dharamshala",
     eyebrow: "A Rare Find in the Himalayas",
     title: "Experience Dharamshala Differently This Winter",
     description:
       "Four private Safari suites. Forest, mountain views and a natural stream. Discover a boutique stay shaped by comfort, nature and unhurried experiences.",
+    mobileDescription:
+      "Four private Safari suites. Comfort, nature and experiences beyond the ordinary.",
     cta: { label: "Explore Winter Packages", href: "#winter-packages" },
     secondaryCta: {
       label: "Check Availability on WhatsApp",
@@ -24,26 +26,26 @@ export const winterPageData = {
     {
       title: "Comfort in the Mountains",
       text: "Unwind in thoughtfully furnished Safari suites featuring king-size beds, private attached bathrooms and heating facilities for your winter stay.",
-      image: "/winter/suite-bed.webp",
-      alt: "King-size bed and bedding in a Saraaya Safari suite",
+      image: "/winter/interior-lamp.webp",
+      alt: "Warm bedside lighting and thoughtful details inside a Saraaya Safari suite",
     },
     {
       title: "Experiences Beyond Your Stay",
       text: "Explore village trails, take a guided forest walk or enjoy a riverside picnic. As evening arrives, gather around a bonfire, watch an outdoor movie or gaze at the Himalayan night sky.",
-      image: "/winter/evening-experience.webp",
-      alt: "Saraaya's outdoor seating and evening bonfire setup",
+      image: "/winter/movie-night.webp",
+      alt: "An open-air movie setup at Saraaya",
     },
     {
       title: "Space to Slow Down",
       text: "Trade busy itineraries for quiet mornings, mountain views, nature walks and unhurried moments away from everyday distractions.",
-      image: "/winter/forest-picnic.webp",
-      alt: "A picnic arranged beneath the trees beside Saraaya's natural stream",
+      image: "/Saraya-309.jpg",
+      alt: "Terraced fields and natural surroundings near Saraaya",
     },
     {
       title: "A Different Side of Dharamshala",
       text: "Located in Nauhali, approximately 75 minutes from Dharamshala, Saraaya invites you to discover a quieter, lesser-known side of the region.",
-      image: "/winter/private-deck.webp",
-      alt: "A private Saraaya deck overlooking the surrounding mountain landscape",
+      image: "/winter/valley-snow-peaks.webp",
+      alt: "Forested Kangra Valley and Himalayan views",
     },
   ],
   comforts: [
@@ -91,8 +93,8 @@ export const winterPageData = {
     {
       title: "Evenings Under the Stars",
       text: "Gather around a bonfire, enjoy an open-air movie night or spend an evening stargazing beneath the Himalayan sky.",
-      image: "/winter/evening-experience.webp",
-      alt: "Outdoor seating, bonfire and Safari suite at Saraaya after sunset",
+      image: "/winter/stargazing.webp",
+      alt: "A telescope and outdoor seating prepared for stargazing at Saraaya",
       charge:
         "Bonfire and movie setups are arranged on request, with additional charges unless included in your plan.",
     },

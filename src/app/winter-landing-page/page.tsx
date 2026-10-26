@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "/winter-landing-page/",
     "Saraaya Glamps | Boutique Stay & Winter Glamping Near Dharamshala",
     "Discover Saraaya Glamps, a rare-find boutique stay near Dharamshala with four private Safari suites, winter comfort, forest walks, riverside picnics and Himalayan experiences.",
-    "/winter/property-hero.webp"
+    "/winter/lounge-blue-hour.webp"
   ),
   robots: { index: true, follow: true },
 };
@@ -61,9 +61,12 @@ export default function WinterLandingPage() {
         containerClassName="flex flex-col gap-8 md:gap-12"
       >
         <SectionIntro
-          label="Why choose Saraaya?"
-          title="Not Just a Stay. An Experience of the Himalayas."
+          label="A rare-find boutique stay"
+          title="Why Choose Saraaya?"
         >
+          <p className="font-primary text-primary text-2xl!">
+            Not Just a Stay. An Experience of the Himalayas.
+          </p>
           <p>
             Some holidays are about sightseeing. Others are about slowing down,
             reconnecting with nature and enjoying the moment.
@@ -77,9 +80,9 @@ export default function WinterLandingPage() {
           {data.why.map((item) => (
             <article
               key={item.title}
-              className="overflow-hidden rounded-2xl border border-primary/25"
+              className="grid grid-cols-[80px_1fr] gap-4 rounded-2xl border border-primary/25 p-4 md:block md:overflow-hidden md:p-0"
             >
-              <div className="relative aspect-4/3">
+              <div className="relative aspect-square overflow-hidden rounded-xl md:aspect-4/3 md:rounded-none">
                 <Image
                   src={item.image}
                   alt={item.alt}
@@ -88,11 +91,11 @@ export default function WinterLandingPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="space-y-3 p-6">
+              <div className="space-y-2 md:space-y-3 md:p-6">
                 <h3 className="font-primary text-primary text-2xl">
                   {item.title}
                 </h3>
-                <p className="text-light text-base!">{item.text}</p>
+                <p className="text-light text-sm! md:text-base!">{item.text}</p>
               </div>
             </article>
           ))}
