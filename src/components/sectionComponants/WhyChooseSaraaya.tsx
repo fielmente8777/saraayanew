@@ -28,7 +28,7 @@ export default function WhyChooseSaraaya() {
   return (
     <SectionWithContainer
       sectionId="why-choose-saraaya"
-      sectionClassName="scroll-mt-28 border-y border-primary/25 bg-background"
+      sectionClassName="relative z-10 scroll-mt-28 border-y border-primary/25 bg-background"
       containerClassName="flex flex-col gap-8 md:gap-12"
     >
       <div className="mx-auto flex max-w-3xl flex-col gap-4 text-center">
