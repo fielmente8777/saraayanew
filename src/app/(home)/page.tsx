@@ -1,3 +1,4 @@
+import PlatformRatings from "@/components/sectionComponants/PlatformRatings";
 import WhyChooseSaraaya from "@/components/sectionComponants/WhyChooseSaraaya";
 import StayGuideLinks from "@/components/seo/StayGuideLinks";
 import { createPageMetadata } from "@/utils/metadata";
@@ -24,6 +25,7 @@ const page = () => {
       <VideoBanner {...homePageData.banner} />
       <TitleSection titles={homePageData.titles} />
       <About {...homePageData.about} />
+      <PlatformRatings />
       <WhyChooseSaraaya />
       <EscapeSection {...homePageData.escapeSection} />
       <GlampsSection {...homePageData.glampsSection} />

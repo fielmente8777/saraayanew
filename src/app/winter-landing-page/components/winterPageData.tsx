@@ -115,32 +115,6 @@ export const winterPageData = {
         "Personalised arrangements, dining, food and beverages are quoted separately.",
     },
   ],
-  // Verified profiles. Google observed in the live browser on 26 October 2026;
-  // Airbnb re-fetched on the same date. Booking.com score is intentionally unset
-  // until a current platform score/count can be verified, rather than copying a cache.
-  reviewProfiles: [
-    {
-      name: "Google Reviews",
-      score: "5.0 / 5",
-      count: "55 reviews",
-      href: "https://www.google.com/travel/hotels/entity/CgsI_O2RjN6YwbCOARAB",
-      note: "Google guest reviews",
-    },
-    {
-      name: "Airbnb",
-      score: "5.0 / 5",
-      count: "6 reviews",
-      href: "https://www.airbnb.com/rooms/1666487212137913747",
-      note: "Glamping Dharmshala listing",
-    },
-    {
-      name: "Booking.com",
-      score: "See live rating",
-      count: "View current guest reviews",
-      href: "https://www.booking.com/hotel/in/saraaya.html",
-      note: "Saraaya Glamps, Dharamshala",
-    },
-  ],
   testimonials: [
     {
       name: "Ashish Jain",

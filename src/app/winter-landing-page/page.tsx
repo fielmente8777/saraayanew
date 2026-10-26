@@ -1,3 +1,4 @@
+import { RatingCards, reviewProfiles } from "@/components/sectionComponants/PlatformRatings";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -280,33 +281,7 @@ export default function WinterLandingPage() {
           </p>
           <p>Discover what our guests have to say about their stay.</p>
         </SectionIntro>
-        <div className="grid gap-5 md:grid-cols-3">
-          {data.reviewProfiles.map((profile) => (
-            <a
-              key={profile.name}
-              href={profile.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex min-h-44 flex-col gap-3 rounded-2xl border border-primary/30 p-6 transition-colors hover:bg-primary/5"
-            >
-              <h3 className="font-primary text-primary text-2xl">
-                {profile.name}
-              </h3>
-              <p className="font-primary text-primary text-3xl">
-                {profile.score}
-              </p>
-              <p className="text-light text-base!">{profile.count}</p>
-              <span className="mt-auto text-secondary text-sm! underline underline-offset-4">
-                {profile.note} ↗
-              </span>
-            </a>
-          ))}
-        </div>
-        <p className="text-center text-light text-xs!">
-          Google and Airbnb scores checked on 26 October 2026. Airbnb score
-          applies to the linked listing. Ratings and counts can change; follow
-          the platform links for the latest information.
-        </p>
+        <RatingCards />
         <div className="grid gap-6 md:grid-cols-2">
           {data.testimonials.map((review) => (
             <figure
@@ -324,7 +299,7 @@ export default function WinterLandingPage() {
         </div>
         <LinkButton
           label="Read Guest Reviews"
-          href={data.reviewProfiles[0].href}
+          href={reviewProfiles[0].href}
           target="_blank"
           rel="noopener noreferrer"
           className={ctaClass + " mx-auto"}
@@ -607,7 +582,7 @@ export default function WinterLandingPage() {
             Instagram @saraaya.dharmshala
           </a>
           <a href="https://saraayaglamps.com/">Official website</a>
-          {data.reviewProfiles.map((profile) => (
+          {reviewProfiles.map((profile) => (
             <a
               key={profile.name}
               href={profile.href}
