@@ -46,11 +46,11 @@ export default function WhyChooseSaraaya() {
           Safari suites, thoughtful comforts and time in nature come together.
         </p>
       </div>
-      <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-5 md:grid-cols-4 lg:grid-cols-6">
         {reasons.map((reason, index) => (
           <article
             key={reason.title}
-            className="flex gap-4 rounded-2xl border border-primary/25 p-5 md:flex-col md:p-7"
+            className={`flex gap-4 rounded-2xl border border-primary/25 p-5 md:col-span-2 md:flex-col md:p-7 ${index === 3 ? "lg:col-start-2" : index === 4 ? "md:col-start-2 lg:col-start-4" : ""}`}
           >
             <span
               className="font-primary text-secondary text-2xl"
