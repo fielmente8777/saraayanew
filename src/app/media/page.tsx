@@ -25,7 +25,7 @@ export default function MediaPage() {
         </div>
       </article>
       <div className="mt-12 flex flex-wrap gap-6">
-        <a href="https://www.instagram.com/saraaya.dharmshala/" target="_blank" rel="noopener noreferrer" className="border-b border-secondary pb-1 text-secondary">Follow Saraaya on Instagram ↗</a>
+        <a href="https://www.instagram.com/saraaya.dharamshala/" target="_blank" rel="noopener noreferrer" className="border-b border-secondary pb-1 text-secondary">Follow Saraaya on Instagram ↗</a>
         <Link href="/about-us/" className="border-b border-secondary pb-1 text-secondary">Read Our Story ↗</Link>
       </div>
     </section>
