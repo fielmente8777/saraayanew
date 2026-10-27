@@ -19,7 +19,13 @@ const page = () => {
       <ImgBanner {...accommodationPageData.hero} />
       <TitleSection titles={homePageData.titles} />
       <RoomAbout {...accommodationPageData.about} />
-      {/* <SlidingTitle items={accommodationPageData.title} /> */}
+      <section className="relative bg-background px-6 py-8 text-primary">
+        <div className="mx-auto max-w-4xl space-y-3">
+          <h2 className="font-primary text-3xl">Planning Your Group’s Stay</h2>
+          <p>Saraaya welcomes couples, families and small groups. Our four private Safari suites are shown on a two-guest basis. Additional sleeping arrangements may be available on request, subject to confirmation.</p>
+          <p>Please confirm the number of adults and children, children’s ages, bedding requirements and any additional charges with our team before booking.</p>
+        </div>
+      </section>
       <RoomCardSection cards={accommodationPageData.accommodations} />
       {/* <EscapeSection {...accommodationPageData.feelingSection} /> */}
       <ReviewsSection {...homePageData.reviewsSection} />

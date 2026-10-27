@@ -9,25 +9,25 @@ export const reviewProfiles = [
   { name: "Booking.com", Icon: SiBookingdotcom, color: "#003B95", score: "9.8", scale: "10", count: "6 reviews", detail: "Exceptional · October 2026 listing", href: "https://www.booking.com/hotel/in/saraaya.html" },
 ];
 
-export function RatingCards() {
+export function RatingCards({ compact = false }: { compact?: boolean }) {
   return (
     <div>
-      <div className="grid gap-5 md:grid-cols-3">
+      <div className={compact ? "grid gap-3 sm:grid-cols-3" : "grid gap-5 md:grid-cols-3"}>
         {reviewProfiles.map(({ name, Icon, color, score, scale, count, detail, href }) => (
           <a key={name} href={href} target="_blank" rel="noopener noreferrer"
             aria-label={`${name}: ${score} out of ${scale}, ${count}. Read reviews (opens in a new tab)`}
-            className="group flex flex-col rounded-2xl border border-primary/20 bg-white p-6 md:p-8 transition-colors hover:border-secondary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-secondary">
-            <div className="flex items-center gap-3">
-              <Icon aria-hidden="true" size={32} style={{ color }} />
-              <h3 className="text-xl! font-semibold text-primary">{name}</h3>
+            className={`group flex flex-col rounded-2xl border border-primary/20 bg-white transition-colors hover:border-secondary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-secondary ${compact ? "p-4" : "p-6 md:p-8"}`}>
+            <div className="flex flex-wrap items-center gap-2">
+              <Icon aria-hidden="true" size={compact ? 24 : 32} style={{ color }} />
+              <h3 className={`${compact ? "text-sm!" : "text-xl!"} font-semibold text-primary`}>{name}</h3>
             </div>
-            <div className="mt-7 flex items-baseline gap-2 text-primary">
-              <span className="font-primary text-5xl">{score}</span>
+            <div className={`${compact ? "mt-3" : "mt-7"} flex items-baseline gap-2 text-primary`}>
+              <span className={`font-primary ${compact ? "text-3xl" : "text-5xl"}`}>{score}</span>
               <span className="text-lg">/ {scale}</span>
             </div>
             <p className="mt-2 text-base! text-primary">{count}</p>
             <p className="mt-2 text-sm! text-light">{detail}</p>
-            <span className="mt-6 text-sm! text-secondary underline underline-offset-4">Read guest reviews ↗</span>
+            <span className="mt-4 text-sm! text-secondary underline underline-offset-4">Read guest reviews ↗</span>
           </a>
         ))}
       </div>

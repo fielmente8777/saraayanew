@@ -10,6 +10,7 @@ export const mainPages = [
   "/group-stays/",
   "/getting-here/",
   "/gallery/",
+  "/media/",
   "/blogs/",
   "/contact-us/",
 ];

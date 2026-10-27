@@ -1,3 +1,4 @@
+import { RatingCards } from "@/components/sectionComponants/PlatformRatings";
 import { SectionWithContainer } from "@/components/sectionComponants";
 import { SectionHeading } from "@/components/typography";
 import { LazyLoadedVideo } from "@/components/Video";
@@ -31,7 +32,7 @@ const About: React.FC<AboutProps> = ({
           <SectionHeading
             title={heading}
             level={1}
-            titleClassName="lg:text-[4rem]/[1.05] xl:text-[4.5rem]/[1.05]"
+            titleClassName="lg:text-[3.25rem]/[1.1] xl:text-[3.75rem]/[1.1]"
           />
           <div className="relative aspect-square w-full lg:hidden">
             <div className="absolute z-10 aspect-square w-26 border-t border-l border-secondary -top-2 -left-2" />
@@ -55,6 +56,10 @@ const About: React.FC<AboutProps> = ({
               dangerouslySetInnerHTML={{ __html: item }}
             />
           ))}
+          <section id="guest-ratings" aria-labelledby="home-ratings-title" className="scroll-mt-28 space-y-4">
+            <h2 id="home-ratings-title" className="font-primary text-2xl text-primary">Guest Ratings</h2>
+            <RatingCards compact />
+          </section>
           <div className="space-y-3 border-t border-secondary/30 pt-6">
             <h2 className="font-primary text-primary text-2xl">{story.title}</h2>
             <p className="text-primary">{story.text}</p>
