@@ -76,11 +76,15 @@ export default function WinterLandingPage() {
             away from crowded tourist centres and conventional hotel stays.
           </p>
         </SectionIntro>
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-wrap justify-center gap-5">
           {data.why.map((item) => (
+            // <article
+            //   key={item.title}
+            //   className="grid grid-cols-[80px_1fr] gap-4 rounded-2xl border border-primary/25 p-4 md:block md:overflow-hidden md:p-0"
+            // >
             <article
               key={item.title}
-              className="grid grid-cols-[80px_1fr] gap-4 rounded-2xl border border-primary/25 p-4 md:block md:overflow-hidden md:p-0"
+              className="grid w-full grid-cols-[80px_1fr] gap-4 rounded-2xl border border-primary/25 p-4 md:block md:w-[calc(50%-10px)] md:overflow-hidden md:p-0 lg:w-[calc(33.333%-13.34px)]"
             >
               <div className="relative aspect-square overflow-hidden rounded-xl md:aspect-4/3 md:rounded-none">
                 <Image
@@ -100,6 +104,34 @@ export default function WinterLandingPage() {
             </article>
           ))}
         </div>
+        {/* <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-6">
+          {data.why.map((item, index) => (
+            <article
+              key={item.title}
+              className={`overflow-hidden rounded-2xl border border-primary/25 lg:col-span-2 ${
+                index === 3 ? "lg:col-start-2" : ""
+              } ${index === 4 ? "lg:col-start-4" : ""}`}
+            >
+              <div className="relative aspect-4/3">
+                <Image
+                  src={item.image}
+                  alt={item.alt}
+                  fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="space-y-3 p-6">
+                <h3 className="font-primary text-primary text-2xl">
+                  {item.title}
+                </h3>
+
+                <p className="text-light text-base!">{item.text}</p>
+              </div>
+            </article>
+          ))}
+        </div> */}
         <p className="mx-auto max-w-3xl text-center text-light">
           At Saraaya, the destination is only part of the experience. How you
           spend your time here makes it memorable.{" "}

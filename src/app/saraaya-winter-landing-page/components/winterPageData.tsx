@@ -20,37 +20,37 @@ export const winterPageData = {
     {
       title: "A Rare-Find Boutique Stay",
       text: "Discover a tucked-away Himalayan setting with just four private Safari suites, offering an intimate and distinctive stay.",
-      image: "/winter/property-setting.webp",
+      image: "/winter/property-setting.jpg",
       alt: "Saraaya's four-suite setting surrounded by terraced fields and forest",
     },
     {
       title: "Comfort in the Mountains",
       text: "Unwind in thoughtfully furnished Safari suites featuring king-size beds, private attached bathrooms and heating facilities for your winter stay.",
-      image: "/winter/interior-lamp.webp",
+      image: "/winter/interior-warm.webp",
       alt: "Warm bedside lighting and thoughtful details inside a Saraaya Safari suite",
     },
     {
       title: "Experiences Beyond Your Stay",
       text: "Explore village trails, take a guided forest walk or enjoy a riverside picnic. As evening arrives, gather around a bonfire, watch an outdoor movie or gaze at the Himalayan night sky.",
-      image: "/winter/evening-experience.webp",
+      image: "/winter/evening-experience.jpg",
       alt: "Bonfire seating and a private Safari suite at Saraaya in the evening",
     },
     {
       title: "Space to Slow Down",
       text: "Trade busy itineraries for quiet mornings, mountain views, nature walks and unhurried moments away from everyday distractions.",
-      image: "/Saraya-309.jpg",
+      image: "/Saraya-301.jpg",
       alt: "Terraced fields and natural surroundings near Saraaya",
     },
     {
       title: "A Different Side of Dharamshala",
       text: "Located in Nauhali, approximately 75 minutes from Dharamshala, Saraaya invites you to discover a quieter, lesser-known side of the region.",
-      image: "/winter/valley-snow-peaks.webp",
+      image: "/winter/valley-snow-peaks.jpg",
       alt: "Forested Kangra Valley and Himalayan views",
     },
   ],
   comforts: [
     {
-      image: "/winter/suite-bed.webp",
+      image: "/rooms/Mountain-1.png",
       alt: "Actual king-size bed, cosy bedding and furnished Saraaya suite interior",
       caption: "King-size beds & cosy bedding",
     },
@@ -69,7 +69,7 @@ export const winterPageData = {
     {
       title: "Slow Living & Nature",
       text: "Take a break from the everyday rush. Enjoy peaceful mornings, forest bathing, mountain views and time surrounded by nature.",
-      image: "/winter/forest-picnic.webp",
+      image: "/winter/forest-picnic.jpg",
       alt: "Quiet forest surroundings and outdoor space at Saraaya",
       charge:
         "Enjoy the surroundings at your own pace. Ask about any hosted-session charges.",
@@ -93,7 +93,7 @@ export const winterPageData = {
     {
       title: "Evenings Under the Stars",
       text: "Gather around a bonfire or spend an evening stargazing beneath the Himalayan sky.",
-      image: "/winter/stargazing.webp",
+      image: "/winter/stargazing.jpg",
       alt: "A telescope and outdoor seating prepared for stargazing at Saraaya",
       charge:
         "Bonfire setups are arranged on request, with additional charges unless included in your plan.",

@@ -2,7 +2,7 @@
 import { usePathname } from "next/navigation";
 import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
-import { winterWhatsappCta } from "@/app/winter-landing-page/components/winterCtas";
+import { winterWhatsappCta } from "@/app/saraaya-winter-landing-page/components/winterCtas";
 import { enCodeText } from "@/utils/constent";
 
 function Whatsapp({ whatsAppNumber }: { whatsAppNumber: string }) {

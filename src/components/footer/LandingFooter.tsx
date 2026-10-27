@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { winterWhatsappCta } from "@/app/winter-landing-page/components/winterCtas";
+import { winterWhatsappCta } from "@/app/saraaya-winter-landing-page/components/winterCtas";
 import { Container } from "../sectionComponants";
 import Image from "next/image";
 import { footerData } from "./footerdata";
@@ -75,7 +75,7 @@ const LandingFooter = ({ winter = false }: { winter?: boolean }) => {
                         {item.title}
                       </span>
                     )} */}
-                    
+
                     <Link
                       target="_blank"
                       rel="noopener noreferrer"
