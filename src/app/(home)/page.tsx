@@ -1,3 +1,4 @@
+import PlatformRatings from "@/components/sectionComponants/PlatformRatings";
 import Link from "next/link";
 import WhyChooseSaraaya from "@/components/sectionComponants/WhyChooseSaraaya";
 import StayGuideLinks from "@/components/seo/StayGuideLinks";
@@ -25,6 +26,16 @@ const page = () => {
       <VideoBanner {...homePageData.banner} />
       <TitleSection titles={homePageData.titles} />
       <About {...homePageData.about} />
+      <PlatformRatings />
+      <section aria-labelledby="home-story-heading" className="relative z-10 bg-[#FFF9E1] px-6 py-14 md:py-20">
+        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-[1fr_2fr] md:gap-16">
+          <h2 id="home-story-heading" className="font-primary text-3xl text-primary md:text-5xl">{homePageData.about.story.title}</h2>
+          <div className="space-y-6">
+            <p className="text-primary leading-relaxed">{homePageData.about.story.text}</p>
+            <Link href={homePageData.about.story.href} className="inline-block border-b border-secondary pb-1 text-secondary">{homePageData.about.story.label} ↗</Link>
+          </div>
+        </div>
+      </section>
       <section className="relative z-10 bg-primary px-6 py-14 text-white md:py-20">
         <div className="mx-auto max-w-4xl space-y-6 text-center">
           <h2 className="font-primary text-3xl md:text-5xl">Your Own Private Corner of the Himalayas</h2>
