@@ -147,7 +147,7 @@ export default function WinterLandingPage() {
       >
         <div className="relative aspect-4/3 overflow-hidden rounded-3xl">
           <Image
-            src="/winter/suite-interior.webp"
+            src="/rooms/2.jpg"
             alt="A furnished private Saraaya Safari suite opening towards the surrounding landscape"
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"
