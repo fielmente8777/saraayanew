@@ -23,7 +23,7 @@ export default function SlidingTitle2({
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/Layer-2-2.png')" }}
+        style={{ backgroundImage: "url('/_next/image?url=%2FLayer-2-2.png&w=1920&q=75')" }}
       />
       <div className="marquee-wrapper">
         <div className="marquee-track">

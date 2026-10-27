@@ -17,38 +17,42 @@ import ConditionalContactButtons from "@/components/ContactButton/ConditionalCon
 import PopUpForm from "@/components/pop-up/PopUpForm";
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",
+  preload: false,
   subsets: ["latin"],
 });
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
+  preload: false,
   subsets: ["latin"],
 });
 
 const minion = localFont({
   src: [
     {
-      path: "./font/MinionPro-Regular.otf",
+      path: "./font/MinionPro-Regular.woff",
       weight: "400",
       style: "normal",
     },
     {
-      path: "./font/MinionPro-It.otf",
+      path: "./font/MinionPro-It.woff",
       weight: "400",
       style: "italic",
     },
     {
-      path: "./font/MinionPro-Bold.otf",
+      path: "./font/MinionPro-Bold.woff",
       weight: "700",
       style: "normal",
     },
     {
-      path: "./font/MinionPro-BoldIt.otf",
+      path: "./font/MinionPro-BoldIt.woff",
       weight: "700",
       style: "italic",
     },
   ],
   variable: "--font-minion",
+  preload: false,
+  display: "swap",
 });
 
 const inter = Inter({
@@ -85,7 +89,7 @@ export default function RootLayout({
       className={`${playfairDisplay.variable} ${inter.variable} ${minion.variable} ${montserrat.variable} h-full antialiased`}
     >
       <head>
-        <Script id="microsoft-clarity" strategy="afterInteractive">
+        <Script id="microsoft-clarity" strategy="lazyOnload">
           {`(function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
             t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
@@ -93,7 +97,7 @@ export default function RootLayout({
         })(window, document, "clarity", "script", "wit1af7fpf");`}
         </Script>
         {/* <!-- Meta Pixel Code --> */}
-        <script>
+        <Script id="meta-pixel" strategy="lazyOnload">
           {`!function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
             n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -104,7 +108,7 @@ export default function RootLayout({
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '1297264175884694');
             fbq('track', 'PageView');`}
-        </script>
+        </Script>
         <noscript>
           <Image
             height="1"
@@ -121,23 +125,17 @@ export default function RootLayout({
         <Script
           id="ga4-primary-loader"
           async
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           src="https://www.googletagmanager.com/gtag/js?id=G-J2HMM3JFSZ"
         ></Script>
-        <Script id="ga4-primary-config" strategy="afterInteractive">
+        <Script id="ga4-primary-config" strategy="lazyOnload">
           {` window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
             gtag('config', 'G-J2HMM3JFSZ');`}
         </Script>
-        <Script
-          async
-          id="ga4-secondary-loader"
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-PVZG7NGGMG"
-        ></Script>
-        <Script id="ga4-secondary-config" strategy="afterInteractive">
+        <Script id="ga4-secondary-config" strategy="lazyOnload">
           {` window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -147,7 +145,7 @@ export default function RootLayout({
         {/* <!-- Google Tag Manager --> */}
         <Script
           id="gtm-container"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -191,7 +189,7 @@ export default function RootLayout({
                 image: siteUrl + "/rooms/Mountain-1.png",
                 logo: siteUrl + "/logo-1.png",
                 description:
-                  "A family-hosted boutique stay with four private safari suites in Nauhali near Dharamshala.",
+                  "A distinctive boutique stay with four private safari suites in Nauhali near Dharamshala.",
                 address: {
                   "@type": "PostalAddress",
                   streetAddress: "Village Nauhali",
@@ -233,7 +231,7 @@ export default function RootLayout({
         </WebProvider>
 
         {/* <!-- Eazbot Script (Next.js) --> */}
-        {/* <Script id="chatbot-config" strategy="afterInteractive">
+        {/* <Script id="chatbot-config" strategy="lazyOnload">
           {`
             window.eazbotConfig = {
               ndid: "48efe4a5-80fe-4f2a-9615-9e4f98dc57a3",
@@ -243,7 +241,7 @@ export default function RootLayout({
         </Script>
         <Script
           src="https://cb-script.dyq28lyxrazm2.amplifyapp.com/widget/lead-chatbot.js"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         /> */}
       </body>
     </html>

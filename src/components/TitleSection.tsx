@@ -19,7 +19,7 @@ const TitleSection = ({ titles, colorChange }: TitleSectionProps) => {
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/Layer-2-2.png')" }}
+          style={{ backgroundImage: "url('/_next/image?url=%2FLayer-2-2.png&w=1920&q=75')" }}
         />
         <Container className="flex items-center justify-between gap-4 px-4 py-4">
           {titles.map((title, index) => (

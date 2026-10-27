@@ -21,7 +21,7 @@ const LandingFooter = ({ winter = false }: { winter?: boolean }) => {
                 src={footerData.logo}
                 alt="logo"
                 fill
-                sizes="100%"
+                sizes="(min-width: 768px) 200px, 80vw"
                 className="object-contain"
               />
             </div>
@@ -31,7 +31,7 @@ const LandingFooter = ({ winter = false }: { winter?: boolean }) => {
               label="Enquire on WhatsApp"
               target="_blank"
               rel="noopener noreferrer"
-              className=" w-full flex justify-center text-secondary uppercase rounded-full max-md:mx-auto border-secondary"
+              className=" w-full flex justify-center text-white uppercase rounded-full max-md:mx-auto border-secondary"
             />
           </div>
 

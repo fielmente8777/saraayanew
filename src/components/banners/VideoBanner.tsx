@@ -15,6 +15,7 @@ const VideoBanner: React.FC<VideoBannerProps> = ({ video }) => {
     >
       <div className="relative w-full lg:aspect-16/8 aspect-4/3 ">
         <LazyLoadedVideo
+          priority
           src={video.src}
           poster={video.poster}
           controls={false}

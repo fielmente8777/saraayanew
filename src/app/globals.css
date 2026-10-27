@@ -11,7 +11,7 @@
 :root {
   --background: #FFF9E1;
   --primary: #283619;
-  --secondary: #BE6D28;
+  --secondary: #96501C;
   --light: #555555;
 }
 
@@ -29,4 +29,8 @@
 
 body {
   font-family: var(--font-body);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; scroll-behavior: auto !important; transition: none !important; }
 }

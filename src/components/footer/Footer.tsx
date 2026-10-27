@@ -1,6 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
-import LandingFooter from "./LandingFooter";
+import dynamic from "next/dynamic";
+const LandingFooter = dynamic(() => import("./LandingFooter"));
 import WebSiteFooter from "./WebSiteFooter";
 
 const Footer = () => {
