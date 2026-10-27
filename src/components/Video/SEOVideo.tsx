@@ -35,7 +35,7 @@ export default function SEOVideo({ src, poster, loop = true, priority = false }:
       {(!playing || failed) && poster && (
         <Image src={poster} alt="Saraaya's mountain setting and private Safari suites" fill
           sizes={priority ? "100vw" : "(min-width: 1024px) 50vw, 100vw"}
-          priority={priority} className="object-cover" />
+          priority={priority} fetchPriority={priority ? "high" : "auto"} className="object-cover" />
       )}
       {playing && !failed ? (
         <video ref={videoRef} src={src} autoPlay muted loop={loop} controls playsInline

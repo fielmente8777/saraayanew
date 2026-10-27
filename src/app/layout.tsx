@@ -30,22 +30,22 @@ const montserrat = Montserrat({
 const minion = localFont({
   src: [
     {
-      path: "./font/MinionPro-Regular.woff",
+      path: "./font/MinionPro-Regular.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "./font/MinionPro-It.woff",
+      path: "./font/MinionPro-It.woff2",
       weight: "400",
       style: "italic",
     },
     {
-      path: "./font/MinionPro-Bold.woff",
+      path: "./font/MinionPro-Bold.woff2",
       weight: "700",
       style: "normal",
     },
     {
-      path: "./font/MinionPro-BoldIt.woff",
+      path: "./font/MinionPro-BoldIt.woff2",
       weight: "700",
       style: "italic",
     },
@@ -135,13 +135,7 @@ export default function RootLayout({
 
             gtag('config', 'G-J2HMM3JFSZ');`}
         </Script>
-        <Script id="ga4-secondary-config" strategy="lazyOnload">
-          {` window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-PVZG7NGGMG');`}
-        </Script>
+        {/* G-PVZG7NGGMG is configured by GTM-PKWH43HK; avoid a duplicate page-view config. */}
         {/* <!-- Google Tag Manager --> */}
         <Script
           id="gtm-container"
