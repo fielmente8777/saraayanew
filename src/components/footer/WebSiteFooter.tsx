@@ -115,7 +115,7 @@ const WebSiteFooter = () => {
             {" "}
             <span className="text-white">
               © {new Date().getFullYear()}{" "}
-              <span className="font-primary uppercase text-xl">Saraaya</span>
+              <span className="font-primary uppercase text-xl">Saraaya Glamps</span>
             </span>
             <span className="md:block hidden text-xl">|</span>
             <span className="text-white">All Rights Reserved</span>
