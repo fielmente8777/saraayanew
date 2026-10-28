@@ -145,6 +145,7 @@ export default function WinterLandingPage() {
         sectionClassName={sectionClass}
         containerClassName="grid items-center gap-8 lg:grid-cols-2 lg:gap-16"
       >
+        
         <div className="relative aspect-4/3 overflow-hidden rounded-3xl">
           <Image
             src="/rooms/2.jpg"
