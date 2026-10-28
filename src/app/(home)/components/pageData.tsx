@@ -17,7 +17,7 @@ export const homePageData = {
   banner: {
     video: {
       src: "/home/Copy-of-Drone-clips.mp4",
-      poster: "/home/Copy-of-Drone-clips.png",
+      poster: "/optimized/copy-of-drone-clips.webp",
     },
     // images: ["/bnr-1.png", "/bnr-2.png", "/bnr-3.png", "/bnr-4.png"],
   },
@@ -59,28 +59,28 @@ export const homePageData = {
       {
         id: "01",
         title: 'Devdar "The Keeper" ',
-        image: "/rooms/Mountain-1.png",
+        image: "/optimized/mountain-1.webp",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
         cta: { label: "Explore Devdar safari suite", href: "/rooms/#devdar" },
       },
       {
         id: "02",
         title: 'Rai "The Watcher"',
-        image: "/rooms/Mountain-2.png",
+        image: "/optimized/mountain-2.webp",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
         cta: { label: "Explore Rai safari suite", href: "/rooms/#rai" },
       },
       {
         id: "03",
         title: 'Buransh  "The Nurturer" ',
-        image: "/rooms/Mountain-3.png",
+        image: "/optimized/mountain-3.webp",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
         cta: { label: "Explore Buransh safari suite", href: "/rooms/#buransh" },
       },
       {
         id: "04",
         title: 'Kail " The Wanderer" ',
-        image: "/rooms/Mountain-4.png",
+        image: "/optimized/mountain-4.webp",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
         cta: { label: "Explore Kail safari suite", href: "/rooms/#kail" },
       },

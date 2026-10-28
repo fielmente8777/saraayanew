@@ -15,8 +15,8 @@ import TitleSection from "@/components/TitleSection";
 
 export const metadata = createPageMetadata(
   "/",
-  "Boutique Stay Near Dharamshala, Himachal Pradesh | Saraaya",
-  "Discover Saraaya near Dharamshala: four private Safari suites, mountain views, heaters and thoughtful comforts. Plan your Himalayan stay with our hosts."
+  "Glamping Near Dharamshala | Saraaya Glamps, Nauhali",
+  "Discover glamping near Dharamshala at Saraaya Glamps, Nauhali. Four private Safari suites, forest views and unhurried Himalayan experiences."
 );
 
 const page = () => {
@@ -49,9 +49,17 @@ const page = () => {
       <ExperiencesSection {...homePageData.experiencesSection} />
       <section className="relative z-10 border-y border-primary/20 bg-background px-6 py-12 text-center">
         <p className="mb-3 text-sm! uppercase tracking-widest text-secondary">Saraaya in the Media</p>
-        <h2 className="font-primary text-3xl text-primary md:text-4xl">Featured on NDTV’s Instagram</h2>
+        <h2 className="font-primary text-3xl text-primary md:text-4xl">An NDTV Feature, Shared by Saraaya Glamps</h2>
         <p className="mx-auto my-5 max-w-2xl text-primary">See Saraaya through a different lens. Explore the feature and follow the story on Instagram.</p>
         <Link href="/media/" className="inline-block rounded-full bg-primary px-6 py-3 text-white">Visit our Media page ↗</Link>
+      </section>
+      <section className="relative z-10 bg-background px-6 py-14 text-primary">
+        <div className="mx-auto max-w-4xl space-y-5 text-center">
+          <h2 className="font-primary text-3xl md:text-4xl">Nauhali, Forest Trails & Kareri Lake</h2>
+          <p>Stay in Nauhali for village walks and time beside the stream. If Kareri Lake is on your itinerary, ask our hosts about the route, local guides and conditions before planning a trek.</p>
+          <Link href="/nauhali-kareri-lake/" className="inline-block border-b border-secondary pb-1">Explore Nauhali and plan a Kareri Lake visit ↗</Link>
+          <p>Planning a winter break? <Link href="/winter-landing-page/" className="underline underline-offset-4">Explore winter stays and request your dates.</Link></p>
+        </div>
       </section>
       <StayGuideLinks />
       <TitleSection titles={homePageData.titles} colorChange={true} />

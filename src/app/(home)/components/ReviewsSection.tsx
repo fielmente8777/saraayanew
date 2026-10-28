@@ -21,7 +21,7 @@ const ReviewsSection: React.FC<ReviewsSectionProps> = ({ title, reviews }) => {
     <Section className="relative" defaultPadding={false}>
       <div className="relative reviews-bg bg-[#1F2D2A]">
         <Image
-          src="/home/reviews-bg.png"
+          src="/optimized/reviews-bg.webp"
           alt="Image"
           fill
           sizes="100vw"
@@ -32,7 +32,7 @@ const ReviewsSection: React.FC<ReviewsSectionProps> = ({ title, reviews }) => {
             <div className="relative aspect-square w-full lg:block hidden">
               <LazyLoadedVideo
                 src="/video/Saraya-Room-reel-2.mp4"
-                poster="/video/Saraya-Room-reel-2.png"
+                poster="/optimized/saraya-room-reel-2.webp"
                 controls={false}
                 muted
                 autoPlay
@@ -48,7 +48,7 @@ const ReviewsSection: React.FC<ReviewsSectionProps> = ({ title, reviews }) => {
                   <div className="relative aspect-square w-full lg:hidden">
                     <LazyLoadedVideo
                       src="/video/Saraya-Room-reel-2.mp4"
-                      poster="/video/Saraya-Room-reel-2.png"
+                      poster="/optimized/saraya-room-reel-2.webp"
                       controls={false}
                       muted
                       autoPlay

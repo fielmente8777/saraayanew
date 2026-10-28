@@ -23,10 +23,10 @@ export default function MediaPage() {
         </div>
         <div className="flex flex-col justify-center gap-6 p-7 md:p-12">
           <p className="text-sm! uppercase tracking-widest text-secondary">Instagram feature</p>
-          <h2 className="font-primary text-4xl">Featured on NDTV’s Instagram</h2>
+          <h2 className="font-primary text-4xl">An NDTV Feature, Shared by Saraaya Glamps</h2>
           <p>Watch the feature here and discover Saraaya’s corner of the Himalayas.</p>
           <a href={reel} target="_blank" rel="noopener noreferrer" className="w-fit rounded-full bg-primary px-6 py-3 text-white">Open reel on Instagram ↗</a>
-          <p className="text-xs! text-light">This reel is embedded from Instagram. If it does not load or play, open it on Instagram; sign-in may be required. Media content belongs to its original publisher.</p>
+          <p className="text-xs! text-light">This NDTV-branded reel is shared by @saraaya.dharamshala and embedded from Instagram. If it does not load or play, open it on Instagram; sign-in may be required. Media content belongs to its original publisher.</p>
         </div>
       </article>
       <div className="mt-12 flex flex-wrap gap-6">

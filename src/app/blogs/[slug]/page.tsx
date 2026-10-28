@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     `/blogs/${post.slug}/`,
     articleTitles[post.slug] || post.meta.title,
     shortDescription(post.meta.description),
-    post.url || "/rooms/Mountain-1.png"
+    post.url || "/optimized/mountain-1.webp"
   );
 }
 
@@ -49,7 +49,7 @@ export default async function Page({ params }: Params) {
           headline: pageData.title,
           description: pageData.description,
           image: new URL(
-            pageData.url || "/rooms/Mountain-1.png",
+            pageData.url || "/optimized/mountain-1.webp",
             siteUrl
           ).toString(),
           mainEntityOfPage: `${siteUrl}/blogs/${pageData.slug}/`,

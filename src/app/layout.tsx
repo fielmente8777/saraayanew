@@ -1,5 +1,5 @@
 import StructuredData from "@/components/seo/StructuredData";
-import { createPageMetadata, siteUrl } from "@/utils/metadata";
+import { createPageMetadata, siteUrl, pageRobots } from "@/utils/metadata";
 import type { Metadata } from "next";
 import { Playfair_Display, Montserrat, Inter } from "next/font/google";
 import "./globals.css";
@@ -64,18 +64,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   ...createPageMetadata(
     "/",
-    "Saraaya Glamps | A Private Glamping Experience in the Himalayas",
+    "Glamping Near Dharamshala | Saraaya Glamps, Nauhali",
     "Discover Saraaya near Dharamshala: four private Safari suites, mountain views, heaters and thoughtful comforts. Plan your Himalayan stay with our hosts."
   ),
   icons: {
     icon: "/favicon.ico",
     apple: [{ url: "/apple-icon", sizes: "180x180", type: "image/png" }],
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true, "max-image-preview": "large" },
-  },
+  robots: pageRobots,
 };
 
 export default function RootLayout({
@@ -178,9 +174,9 @@ export default function RootLayout({
                 "@id": siteUrl + "/#lodging",
                 name: "Saraaya Glamps",
                 url: siteUrl + "/",
-                telephone: "+918988334372",
+                telephone: contact.phone.map((phone) => phone.replace(/ /g, "")),
                 email: contact.email,
-                image: siteUrl + "/rooms/Mountain-1.png",
+                image: siteUrl + "/optimized/mountain-1.webp",
                 logo: siteUrl + "/logo-1.png",
                 description:
                   "A distinctive boutique stay with four private safari suites in Nauhali near Dharamshala.",

@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 
+export const isPreview = process.env.VERCEL_ENV !== "production";
+export const pageRobots: Metadata["robots"] = { index: !isPreview, follow: !isPreview };
+
 export const siteUrl = "https://saraayaglamps.com";
 export const mainPages = [
   "/",
@@ -11,6 +14,7 @@ export const mainPages = [
   "/getting-here/",
   "/gallery/",
   "/media/",
+  "/nauhali-kareri-lake/",
   "/blogs/",
   "/contact-us/",
 ];
@@ -19,12 +23,14 @@ export function createPageMetadata(
   path: string,
   title: string,
   description: string,
-  image = "/rooms/Mountain-1.png"
+  image = "/optimized/mountain-1.webp"
 ): Metadata {
   const url = new URL(path, siteUrl).toString();
+  description = shortDescription(description);
   return {
     title,
     description,
+    robots: pageRobots,
     alternates: { canonical: url },
     openGraph: {
       title,

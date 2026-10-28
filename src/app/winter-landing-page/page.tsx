@@ -1,3 +1,5 @@
+import { contact } from "@/utils/constent";
+import { stayInformation } from "@/content/stayInformation";
 import { RatingCards, reviewProfiles } from "@/components/sectionComponants/PlatformRatings";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -19,11 +21,10 @@ import {
 export const metadata: Metadata = {
   ...createPageMetadata(
     "/winter-landing-page/",
-    "Saraaya Glamps | Boutique Stay & Winter Glamping Near Dharamshala",
-    "Discover Saraaya Glamps, a rare-find boutique stay near Dharamshala with four private Safari suites, winter comfort, forest walks, riverside picnics and Himalayan experiences.",
+    "Winter Stay Near Dharamshala | Saraaya Glamps, Nauhali",
+    "Plan a winter stay near Dharamshala at Saraaya Glamps, Nauhali. Four private Safari suites, cosy bedding, bonfires and time in nature.",
     "/winter/lounge-blue-hour.webp"
   ),
-  robots: { index: true, follow: true },
 };
 const headingClass =
   "font-primary text-primary text-3xl/tight md:text-5xl/tight";
@@ -62,19 +63,19 @@ export default function WinterLandingPage() {
         containerClassName="flex flex-col gap-8 md:gap-12"
       >
         <SectionIntro
-          label="A rare-find boutique stay"
-          title="Why Choose Saraaya?"
+          label="Your winter stay"
+          title="Make Room for a Slower Himalayan Winter"
         >
           <p className="font-primary text-primary text-2xl!">
-            Not Just a Stay. An Experience of the Himalayas.
+            Crisp mornings, cosy bedding and evenings together.
           </p>
           <p>
-            Some holidays are about sightseeing. Others are about slowing down,
-            reconnecting with nature and enjoying the moment.
+            Plan a winter break around a private Safari suite, a quiet morning
+            on the deck and time to explore Nauhali.
           </p>
           <p>
-            Saraaya Glamps offers a different way to experience Dharamshala,
-            away from crowded tourist centres and conventional hotel stays.
+            Choose your dates, then ask our hosts to arrange meals and
+            weather-dependent experiences that suit your stay.
           </p>
         </SectionIntro>
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -326,7 +327,7 @@ export default function WinterLandingPage() {
             organise it.
           </p>
         </SectionIntro>
-        <div className="grid gap-5 lg:grid-cols-3">
+        <div className="mx-auto grid w-full max-w-5xl gap-5 md:grid-cols-2">
           {data.stayOptions.map((option, index) => (
             <article
               key={option.title}
@@ -370,11 +371,11 @@ export default function WinterLandingPage() {
               </dl>
               <LinkButton
                 label={
-                  index === 2
+                  index === 1
                     ? "Enquire About a Group Stay"
                     : `Ask About ${option.title}`
                 }
-                href={index === 2 ? takeoverWhatsappCta : winterWhatsappCta}
+                href={index === 1 ? takeoverWhatsappCta : winterWhatsappCta}
                 trackingEvent="winter_package_click"
                 trackingLocation={option.title}
                 target="_blank"
@@ -461,14 +462,11 @@ export default function WinterLandingPage() {
         </ol>
         <div className="mx-auto max-w-3xl space-y-4 text-center text-light">
           <p>
-            The final approach involves reaching our designated pickup point,
-            followed by a 4x4 transfer and a short walk to the property. Our
-            team will coordinate arrival arrangements and assist with luggage as
-            applicable.
+            {stayInformation.arrival}
           </p>
           <p>
             Contact us before beginning the final stretch for current
-            directions, transfer availability and any applicable charges.
+            directions and your confirmed arrival arrangements.
           </p>
           <Link className={linkClass} href="/getting-here/">
             Read our full arrival guide
@@ -482,6 +480,12 @@ export default function WinterLandingPage() {
           rel="noopener noreferrer"
           className={ctaClass + " mx-auto max-sm:w-full! justify-center"}
         />
+      </SectionWithContainer>
+      <SectionWithContainer sectionId="nauhali-winter" sectionClassName={sectionClass} containerClassName="space-y-5 text-center">
+        <h2 className={headingClass}>A Winter Stay in Nauhali, with Kareri Lake in Mind</h2>
+        <p className="mx-auto max-w-3xl text-light">Make time for village trails and forest surroundings during your stay. Kareri Lake is a separate mountain trek; winter ice, snow and local conditions can affect access. Ask about a local guide and suitable routes before setting out.</p>
+        <Link className={linkClass} href="/nauhali-kareri-lake/">Read our Nauhali and Kareri Lake planning guide</Link>
+        <p><Link className={linkClass} href="/media/">Watch the NDTV-branded Saraaya Glamps feature</Link></p>
       </SectionWithContainer>
       <WinterFaq title="Frequently Asked Questions" items={data.faqs} />
       <SectionWithContainer
@@ -568,20 +572,21 @@ export default function WinterLandingPage() {
         containerClassName="flex flex-col items-center gap-4 text-center"
       >
         <h2 className="font-primary text-primary text-3xl">
-          Saraaya Glamps Dharmshala
+          Saraaya Glamps
         </h2>
         <p className="font-primary text-secondary text-2xl italic">
           Serenity in Wilderness
         </p>
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-4 text-sm! underline underline-offset-4">
           <a
-            href="https://www.instagram.com/saraaya.dharmshala/"
+            href={contact.socialMedia.instagram}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Instagram @saraaya.dharmshala
+            Instagram @saraaya.dharamshala
           </a>
-          <a href="https://saraayaglamps.com/">Official website</a>
+          <Link href="/">Official website</Link>
+          <Link href="/media/">Media: watch the NDTV-branded feature</Link>
           {reviewProfiles.map((profile) => (
             <a
               key={profile.name}

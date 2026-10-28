@@ -5,7 +5,7 @@ import { SiAirbnb, SiBookingdotcom } from "react-icons/si";
 // Booking.com: indexed property page (October 2026); live access is bot-protected.
 export const reviewProfiles = [
   { name: "Google", Icon: FcGoogle, color: "", score: "5.0", scale: "5", count: "55 reviews", detail: "Google guest reviews", href: "https://www.google.com/travel/hotels/entity/CgsI_O2RjN6YwbCOARAB" },
-  { name: "Airbnb", Icon: SiAirbnb, color: "#FF5A5F", score: "5.0", scale: "5", count: "6 reviews", detail: "Glamping Dharmshala listing", href: "https://www.airbnb.com/rooms/1666487212137913747" },
+  { name: "Airbnb", Icon: SiAirbnb, color: "#FF5A5F", score: "5.0", scale: "5", count: "6 reviews", detail: "Dharamshala listing", href: "https://www.airbnb.com/rooms/1666487212137913747" },
   { name: "Booking.com", Icon: SiBookingdotcom, color: "#003B95", score: "9.8", scale: "10", count: "6 reviews", detail: "Exceptional · October 2026 listing", href: "https://www.booking.com/hotel/in/saraaya.html" },
 ];
 
@@ -32,7 +32,7 @@ export function RatingCards({ compact = false }: { compact?: boolean }) {
         ))}
       </div>
       <p className="mx-auto mt-5 max-w-3xl text-center text-xs! leading-relaxed text-light">
-        Ratings researched on 26 October 2026. Booking.com reflects its indexed October listing; Airbnb applies to the linked listing. Scores and review counts may change. Visit each platform for the latest reviews.
+        Checked on 26 October 2026. Booking.com reflects its indexed October listing; Airbnb applies to the linked listing. Scores and review counts may change. Visit each platform for the latest reviews.
       </p>
     </div>
   );

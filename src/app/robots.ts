@@ -1,13 +1,14 @@
 import type { MetadataRoute } from "next";
-import { siteUrl } from "@/utils/metadata";
+import { siteUrl, isPreview } from "@/utils/metadata";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
+      // Let crawlers read the preview noindex meta and HTTP header.
       allow: "/",
       disallow: ["/admin/", "/login/", "/dashboard/"],
     },
-    sitemap: `${siteUrl}/sitemap.xml`,
+    sitemap: isPreview ? undefined : `${siteUrl}/sitemap.xml`,
   };
 }

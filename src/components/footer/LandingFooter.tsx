@@ -126,7 +126,7 @@ const LandingFooter = ({ winter = false }: { winter?: boolean }) => {
         <div className="md:flex max-md:space-x-2 text-center flex-wrap items-center justify-center gap-2 text-white md:text-lg">
           {" "}
           <span className="text-white">
-            © {new Date().getFullYear()} Saraaya
+            © {new Date().getFullYear()} Saraaya Glamps
           </span>
           <span className="md:block hidden">|</span>
           <span className="text-white">All Rights Reserved</span>

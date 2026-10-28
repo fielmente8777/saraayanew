@@ -47,7 +47,7 @@ const About: React.FC<AboutProps> = ({
           <div className="absolute z-10 aspect-square w-26 border-r border-b border-secondary -bottom-2 -right-2" />
           <LazyLoadedVideo
             src="/video/Saraya-Room-Reel.mp4"
-            poster="/video/Saraya-Room-Reel.png"
+            poster="/optimized/saraya-room-reel.webp"
             controls={false}
             muted
             autoPlay

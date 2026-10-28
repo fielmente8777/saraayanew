@@ -55,10 +55,10 @@ export const landingPageData = {
       {
         title: "Mountain View Safari Suites",
         images: [
-          "/rooms/Mountain-1.png",
-          "/rooms/Mountain-2.png",
-          "/rooms/Mountain-3.png",
-          "/rooms/Mountain-4.png",
+          "/optimized/mountain-1.webp",
+          "/optimized/mountain-2.webp",
+          "/optimized/mountain-3.webp",
+          "/optimized/mountain-4.webp",
           "/rooms/Mountain-5.png",
           "/rooms/Mountain-6.png",
         ],
