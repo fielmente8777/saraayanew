@@ -1,3 +1,4 @@
+import { stayInformation } from "@/content/stayInformation";
 import { winterWhatsappCta } from "./winterCtas";
 export const winterPageData = {
   hero: {
@@ -5,7 +6,7 @@ export const winterPageData = {
     alt: "Saraaya at blue hour, with a bonfire, lantern-lit outdoor seating and private Safari suites surrounded by mountains",
     location: "Nauhali · Around 75 minutes from Dharamshala",
     eyebrow: "A Rare Find in the Himalayas",
-    title: "Experience Dharamshala Differently This Winter",
+    title: "Winter Glamping Near Dharamshala at Saraaya, Nauhali",
     description:
       "Four private Safari suites. Forest, mountain views and a natural stream. Discover a boutique stay shaped by comfort, nature and unhurried experiences.",
     mobileDescription:
@@ -17,41 +18,14 @@ export const winterPageData = {
     },
   },
   why: [
-    {
-      title: "A Rare-Find Boutique Stay",
-      text: "Discover a tucked-away Himalayan setting with just four private Safari suites, offering an intimate and distinctive stay.",
-      image: "/winter/property-setting.jpg",
-      alt: "Saraaya's four-suite setting surrounded by terraced fields and forest",
-    },
-    {
-      title: "Comfort in the Mountains",
-      text: "Unwind in thoughtfully furnished Safari suites featuring king-size beds, private attached bathrooms and heating facilities for your winter stay.",
-      image: "/winter/interior-warm.webp",
-      alt: "Warm bedside lighting and thoughtful details inside a Saraaya Safari suite",
-    },
-    {
-      title: "Experiences Beyond Your Stay",
-      text: "Explore village trails, take a guided forest walk or enjoy a riverside picnic. As evening arrives, gather around a bonfire, watch an outdoor movie or gaze at the Himalayan night sky.",
-      image: "/winter/evening-experience.jpg",
-      alt: "Bonfire seating and a private Safari suite at Saraaya in the evening",
-    },
-    {
-      title: "Space to Slow Down",
-      text: "Trade busy itineraries for quiet mornings, mountain views, nature walks and unhurried moments away from everyday distractions.",
-      image: "/Saraya-301.jpg",
-      alt: "Terraced fields and natural surroundings near Saraaya",
-    },
-    {
-      title: "A Different Side of Dharamshala",
-      text: "Located in Nauhali, approximately 75 minutes from Dharamshala, Saraaya invites you to discover a quieter, lesser-known side of the region.",
-      image: "/winter/valley-snow-peaks.jpg",
-      alt: "Forested Kangra Valley and Himalayan views",
-    },
+    { title: "Settle into Your Winter Suite", text: "King-size beds, layered bedding and private bathrooms offer a comfortable base between time outdoors. See the power information before booking.", image: "/winter/suite-bed.webp", alt: "King-size bed and layered bedding in a Saraaya Glamps Safari suite" },
+    { title: "Choose Your Winter Evenings", text: "Ask about a bonfire, stargazing or Movie under the Stars for your dates. Hosted activities depend on weather and the inclusions in your quote.", image: "/winter/evening-experience.webp", alt: "Bonfire seating beside a Safari suite at dusk" },
+    { title: "Plan Your Days at Your Pace", text: "Leave room for Nauhali village walks, forest surroundings and unhurried mornings. Our hosts can help you choose outings suited to local winter conditions.", image: "/winter/local-walk.webp", alt: "A village trail through the countryside near Nauhali" },
   ],
   comforts: [
     {
-      image: "/rooms/Mountain-1.png",
-      alt: "Actual king-size bed, cosy bedding and furnished Saraaya suite interior",
+      image: "/winter/suite-bed.webp",
+      alt: "King-size bed, cosy bedding and furnished Saraaya suite interior",
       caption: "King-size beds & cosy bedding",
     },
     {
@@ -69,7 +43,7 @@ export const winterPageData = {
     {
       title: "Slow Living & Nature",
       text: "Take a break from the everyday rush. Enjoy peaceful mornings, forest bathing, mountain views and time surrounded by nature.",
-      image: "/winter/forest-picnic.jpg",
+      image: "/winter/forest-picnic.webp",
       alt: "Quiet forest surroundings and outdoor space at Saraaya",
       charge:
         "Enjoy the surroundings at your own pace. Ask about any hosted-session charges.",
@@ -86,14 +60,14 @@ export const winterPageData = {
       title: "Riverside Moments",
       text: "Enjoy a thoughtfully arranged riverside picnic or a sundowner experience beside the natural stream, subject to weather and local conditions.",
       image: "/winter/stream-picnic.webp",
-      alt: "A real Saraaya picnic setup beside the stream",
+      alt: "Picnic setup at Saraaya Glamps beside the stream",
       charge:
         "Arranged setups cost extra unless included in your plan. Food and beverages are charged separately.",
     },
     {
       title: "Evenings Under the Stars",
       text: "Gather around a bonfire or spend an evening stargazing beneath the Himalayan sky.",
-      image: "/winter/stargazing.jpg",
+      image: "/winter/stargazing.webp",
       alt: "A telescope and outdoor seating prepared for stargazing at Saraaya",
       charge:
         "Bonfire setups are arranged on request, with additional charges unless included in your plan.",
@@ -115,32 +89,6 @@ export const winterPageData = {
         "Personalised arrangements, dining, food and beverages are quoted separately.",
     },
   ],
-  // Verified profiles. Google observed in the live browser on 26 October 2026;
-  // Airbnb re-fetched on the same date. Booking.com score is intentionally unset
-  // until a current platform score/count can be verified, rather than copying a cache.
-  reviewProfiles: [
-    {
-      name: "Google Reviews",
-      score: "5.0 / 5",
-      count: "55 reviews",
-      href: "https://www.google.com/travel/hotels/entity/CgsI_O2RjN6YwbCOARAB",
-      note: "Google guest reviews",
-    },
-    {
-      name: "Airbnb",
-      score: "5.0 / 5",
-      count: "6 reviews",
-      href: "https://www.airbnb.com/rooms/1666487212137913747",
-      note: "Glamping Dharmshala listing",
-    },
-    {
-      name: "Booking.com",
-      score: "See live rating",
-      count: "View current guest reviews",
-      href: "https://www.booking.com/hotel/in/saraaya.html",
-      note: "Saraaya Glamps, Dharamshala",
-    },
-  ],
   testimonials: [
     {
       name: "Ashish Jain",
@@ -155,24 +103,14 @@ export const winterPageData = {
   ],
   stayOptions: [
     {
-      title: "Winter Stay",
-      text: "Enjoy a stay in one of our private Safari suites, with the meal inclusions and facilities specified in your selected package.",
+      title: "Private Suite Winter Stay",
+      text: "Choose one private Safari suite for your winter break. Ask for meals and any selected experiences to be itemised in a single stay quote.",
       basis:
         "Two guests per suite as standard; confirm dates and additional guests.",
       meals:
         "Breakfast, lunch and dinner: request the inclusions for your selected plan.",
       extras:
         "Hosted experiences and additional guests are quoted separately unless expressly included.",
-    },
-    {
-      title: "Winter Experience",
-      text: "Discuss combining your stay with selected meals and experiences for a more immersive Himalayan getaway.",
-      basis:
-        "Quote based on your dates, suite and number of adults and children.",
-      meals:
-        "Ask for a stay-and-meal quote and a list of included experiences.",
-      extras:
-        "Confirm each activity, setup, food and beverage charge before booking.",
     },
     {
       title: "Private Group Stay",
@@ -200,7 +138,7 @@ export const winterPageData = {
     },
     {
       q: "How do guests reach the property?",
-      a: "Guests travel to our designated pickup point, followed by a 4x4 transfer and a short walk to the property. Contact our team before arrival for current directions and coordination.",
+      a: stayInformation.arrival,
     },
     {
       q: "What activities can guests enjoy?",
@@ -212,7 +150,7 @@ export const winterPageData = {
     },
     {
       q: "Is Wi-Fi available?",
-      a: "Wi-Fi is available, but service depends on local electricity and network conditions. BSNL generally offers the most reliable mobile connectivity in the area; network availability may vary.",
+      a: stayInformation.wifi,
     },
     {
       q: "Can we celebrate an anniversary or birthday at Saraaya?",
@@ -229,10 +167,10 @@ export const winterPageData = {
   ],
   disclaimers: [
     "The property is located in a natural mountain setting. Weather and local conditions may affect outdoor activities and travel arrangements.",
-    "Electricity can be interrupted, and there is currently no power backup. Heaters and hot-water facilities may be affected during interruptions. Confirm current arrangements before travelling.",
-    "Wi-Fi and mobile connectivity can be inconsistent. BSNL generally works best in the area, although network availability may vary.",
+    stayInformation.power,
+    stayInformation.wifi,
     "Outdoor activities, riverside experiences and stargazing depend on weather, safety conditions and availability. Certain experiences incur additional charges; confirm inclusions before booking.",
-    "The final approach involves a 4x4 transfer and a short walk through fields and uneven terrain. Contact us before arrival for current directions, luggage assistance and transfer arrangements, including any applicable charge.",
+    stayInformation.arrival,
     "Package prices, availability, meal inclusions, extra-bed charges, taxes and payment, cancellation and refund terms must be confirmed in your written booking details.",
   ],
 };

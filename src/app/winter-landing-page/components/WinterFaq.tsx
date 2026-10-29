@@ -11,6 +11,20 @@ const WinterFaq: React.FC<WinterFaqProps> = ({ title, items }) => {
       sectionClassName="bg-background border-t border-primary"
       containerClassName="mx-auto flex max-w-4xl! flex-col gap-8"
     >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: items.map(({ q, a }) => ({
+              "@type": "Question",
+              name: q,
+              acceptedAnswer: { "@type": "Answer", text: a },
+            })),
+          }).replace(/</g, "\\u003c"),
+        }}
+      />
       <div className="line text-center">
         <h2
           className="font-primary text-primary text-2xl md:text-5xl/tight"

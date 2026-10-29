@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { winterWhatsappCta } from "@/app/landing-page/components/winterCtas";
+import { winterWhatsappCta } from "@/app/winter-landing-page/components/winterCtas";
 import { Container } from "../sectionComponants";
 import Image from "next/image";
 import { footerData } from "./footerdata";
@@ -21,7 +21,7 @@ const LandingFooter = ({ winter = false }: { winter?: boolean }) => {
                 src={footerData.logo}
                 alt="logo"
                 fill
-                sizes="100%"
+                sizes="(min-width: 768px) 200px, 80vw"
                 className="object-contain"
               />
             </div>
@@ -31,7 +31,7 @@ const LandingFooter = ({ winter = false }: { winter?: boolean }) => {
               label="Enquire on WhatsApp"
               target="_blank"
               rel="noopener noreferrer"
-              className=" w-full flex justify-center text-secondary uppercase rounded-full max-md:mx-auto border-secondary"
+              className=" w-full flex justify-center text-white uppercase rounded-full max-md:mx-auto border-secondary"
             />
           </div>
 
@@ -75,7 +75,6 @@ const LandingFooter = ({ winter = false }: { winter?: boolean }) => {
                         {item.title}
                       </span>
                     )} */}
-
                     <Link
                       target="_blank"
                       rel="noopener noreferrer"
@@ -111,26 +110,6 @@ const LandingFooter = ({ winter = false }: { winter?: boolean }) => {
                         </span>
                       </Link>
                     )}
-                    {item.label3 && <span className="text-white -ml-1">,</span>}
-
-                    {item.label3 && item.href3 && (
-                      <Link
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href={item.href3}
-                        className="flex gap-2 max-md:ml-0"
-                      >
-                        <span
-                          className={`${
-                            index === 1
-                              ? "text-white font-aboreto text-2xl my-auto"
-                              : "md:text-lg text-white"
-                          }`}
-                        >
-                          {item.label3}
-                        </span>
-                      </Link>
-                    )}
                   </li>
                 ))}
               </ul>
@@ -147,7 +126,7 @@ const LandingFooter = ({ winter = false }: { winter?: boolean }) => {
         <div className="md:flex max-md:space-x-2 text-center flex-wrap items-center justify-center gap-2 text-white md:text-lg">
           {" "}
           <span className="text-white">
-            © {new Date().getFullYear()} Saraaya
+            © {new Date().getFullYear()} Saraaya Glamps
           </span>
           <span className="md:block hidden">|</span>
           <span className="text-white">All Rights Reserved</span>

@@ -30,7 +30,7 @@ export const storyPageData = {
     {
       "title": "More Than a Stay",
       "paragraphs": [
-        "Today, Saraaya Glamps Dharmshala is home to four private Safari suites in Nauhali, surrounded by the forests and mountain landscapes of Himachal Pradesh.",
+        "Today, Saraaya Glamps is home to four private Safari suites in Nauhali, surrounded by the forests and mountain landscapes of Himachal Pradesh.",
         "Here, the experience extends beyond the accommodation. It might mean exploring a forest trail, taking a village walk, enjoying a picnic beside a mountain stream, gathering around a bonfire or simply sitting quietly and absorbing the surroundings.",
         "We wanted to create a place where guests could discover a quieter side of Dharamshala, away from the crowds and the familiar tourist experience, without giving up the comfort of a good stay.",
         "Equally important is the connection to the place we call home. Creating opportunities for local people and being part of the surrounding community remain integral to why Saraaya exists.",
@@ -49,6 +49,6 @@ export const storyPageData = {
       "That vision also shaped our choice of location. By building in a quieter village, I hoped to create something distinctive for travellers while generating employment opportunities for the local community."
     ]
   },
-  "signature": "Saraaya Glamps Dharmshala",
+  "signature": "Saraaya Glamps",
   "tagline": "Serenity in Wilderness."
 };

@@ -3,6 +3,16 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   trailingSlash: true,
+  async redirects() {
+    return ["/saraaya-winter-landing-page/", "/landing-page/", "/landingpage/"].map((source) => ({ source, destination: "/winter-landing-page/", permanent: true }));
+  },
+  async headers() {
+    return [{
+      source: "/:path*",
+      has: [{ type: "host", value: ".*\\.vercel\\.app" }],
+      headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+    }];
+  },
   compress: true,
 
   poweredByHeader: false,

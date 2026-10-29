@@ -1,4 +1,4 @@
-import RoomsSlider from "@/app/landingpage/components/sliders/RoomsSlider";
+import RoomsSlider from "@/app/landing-page/components/sliders/RoomsSlider";
 import { RoomsType } from "@/@types/type";
 import LinkButton from "@/components/buttons/LinkButton";
 import { Container, Section } from "@/components/sectionComponants";

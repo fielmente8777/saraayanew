@@ -167,6 +167,7 @@ export default async function Page({ params }: Params) {
           />
         </div>
       </SectionWithContainer>
+      {guide === "nauhali-kareri-lake" && <p className="mx-auto max-w-4xl px-6 pb-10 text-sm! text-light">Route and season reference: <a href="https://hpkangra.nic.in/tourist-place/kareri-lake/" target="_blank" rel="noopener noreferrer" className="underline">Kangra District Tourism — Kareri Lake</a>. Confirm current conditions locally before travelling.</p>}
       <StayGuideLinks />
     </main>
   );

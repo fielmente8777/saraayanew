@@ -9,6 +9,7 @@ export const navData = {
     { label: "Group Stays", href: "/group-stays/" },
     { label: "Getting Here", href: "/getting-here/" },
     { label: "Gallery", href: "/gallery/" },
+    { label: "Media", href: "/media/" },
     { label: "Contact", href: "/contact-us/" },
     { label: "Blog", href: "/blogs/" },
   ],

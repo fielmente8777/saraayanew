@@ -53,7 +53,7 @@ const GlampsSection: React.FC<Props> = ({
                 onClick={() => setSelectRoom(acc.title)}
                 key={acc.id}
                 className={`w-full py-3 text-2xl font-primary flex items-center gap-4 transition-colors ${
-                  acc.title === selectRoom ? "text-primary" : "text-[#28361980]"
+                  acc.title === selectRoom ? "text-primary" : "text-[#59614c]"
                 }`}
               >
                 <span className="text-sm text-secondary">{acc.id}</span>

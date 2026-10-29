@@ -65,7 +65,7 @@ const WebSiteNav = () => {
           isTransparent
             ? scrolled
               ? "bg-primary backdrop-blur-xl"
-              : "bg-transparent"
+              : "bg-primary/95"
             : "bg-background"
         }
       `}
@@ -82,6 +82,7 @@ const WebSiteNav = () => {
               src={isTransparent ? "/logo-white.png" : "/logo-green.png"}
               alt="Saraaya Glamps home"
               fill
+              sizes="160px"
               priority
               className="object-contain"
             />

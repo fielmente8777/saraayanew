@@ -1,9 +1,9 @@
 "use client";
 import { LazyLoadedVideo } from "@/components/Video";
 import { Container, Section } from "@/components/sectionComponants";
-import { useWebContext } from "@/context-api/WebContext";
+import { useState } from "react";
 import Image from "next/image";
-import ReviewsSlider from "./slider/ReviewsSlider";
+
 
 interface ReviewsSectionProps {
   title: string;
@@ -13,15 +13,18 @@ interface ReviewsSectionProps {
   }[];
 }
 const ReviewsSection: React.FC<ReviewsSectionProps> = ({ title, reviews }) => {
-  const { current, total } = useWebContext();
+  const [index, setIndex] = useState(0);
+  const current = index + 1;
+  const total = reviews.length;
 
   return (
     <Section className="relative" defaultPadding={false}>
       <div className="relative reviews-bg bg-[#1F2D2A]">
         <Image
-          src="/home/reviews-bg.png"
+          src="/optimized/reviews-bg.webp"
           alt="Image"
           fill
+          sizes="100vw"
           className="object-cover"
         />
         <div className="md:py-20 py-10">
@@ -29,7 +32,7 @@ const ReviewsSection: React.FC<ReviewsSectionProps> = ({ title, reviews }) => {
             <div className="relative aspect-square w-full lg:block hidden">
               <LazyLoadedVideo
                 src="/video/Saraya-Room-reel-2.mp4"
-                poster="/video/Saraya-Room-reel-2.png"
+                poster="/optimized/saraya-room-reel-2.webp"
                 controls={false}
                 muted
                 autoPlay
@@ -45,7 +48,7 @@ const ReviewsSection: React.FC<ReviewsSectionProps> = ({ title, reviews }) => {
                   <div className="relative aspect-square w-full lg:hidden">
                     <LazyLoadedVideo
                       src="/video/Saraya-Room-reel-2.mp4"
-                      poster="/video/Saraya-Room-reel-2.png"
+                      poster="/optimized/saraya-room-reel-2.webp"
                       controls={false}
                       muted
                       autoPlay
@@ -54,17 +57,20 @@ const ReviewsSection: React.FC<ReviewsSectionProps> = ({ title, reviews }) => {
                   <span className="block">
                     <Foo />
                   </span>
-                  <ReviewsSlider cards={reviews} />
+                  <figure className="space-y-4 text-white" aria-live="polite">
+                    <blockquote><p>{reviews[index]?.text}</p></blockquote>
+                    <figcaption>{reviews[index]?.name}</figcaption>
+                  </figure>
                 </div>
                 <div className="flex items-center gap-6">
-                  <button className="text-white border flex items-center justify-center gap-2 testimonials-prev px-5 py-5 active:scale-95 pointer-events-auto">
+                  <button onClick={() => setIndex((index + total - 1) % total)} className="text-white border flex items-center justify-center gap-2 testimonials-prev px-5 py-5 active:scale-95 pointer-events-auto">
                     <PrevIcon />
                     <span className="sr-only">Previous</span>
                   </button>
                   <span className="text-white">
                     0{current} - 0{total}
                   </span>
-                  <button className="text-white border flex items-center justify-center gap-2 testimonials-next px-5 py-5 active:scale-95 pointer-events-auto">
+                  <button onClick={() => setIndex((index + 1) % total)} className="text-white border flex items-center justify-center gap-2 testimonials-next px-5 py-5 active:scale-95 pointer-events-auto">
                     <span className="sr-only">Next</span>
                     <NextIcon />
                   </button>

@@ -1,18 +1,2 @@
-"use client";
-import dynamic from "next/dynamic";
-import Image from "next/image";
-
-const LazyLoadedVideo = dynamic(() => import("./SEOVideo"), {
-  ssr: false,
-  loading: () => (
-    <Image
-      src="/rooms/Mountain-1.png"
-      alt="Saraaya private Safari suite"
-      fill
-      sizes="100vw"
-      className="object-cover"
-    />
-  ),
-});
-
-export default LazyLoadedVideo;
+// Server-render the responsive poster so the first image is discoverable immediately.
+export { default } from "./SEOVideo";

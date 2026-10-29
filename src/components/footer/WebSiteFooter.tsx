@@ -10,7 +10,7 @@ const WebSiteFooter = () => {
       <div
         aria-hidden="true"
         className="relative w-full aspect-[16/1.79] bg-contain bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/footer.png')" }}
+        style={{ backgroundImage: "url('/_next/image?url=%2Ffooter.png&w=1920&q=75')" }}
       />
       <div className="w-full bg-primary py-10 lg:py-18 mt-[-0.8px] border-b border-white">
         <Container className="grid lg:grid-cols-[auto_1fr_auto] grid-cols-1 gap-4 text-sm">
@@ -49,6 +49,7 @@ const WebSiteFooter = () => {
                 src={websiteFooterData.logo}
                 alt="Saraaya Glamps logo"
                 fill
+                sizes="260px"
                 className="object-contain"
               />
             </Link>
@@ -56,7 +57,7 @@ const WebSiteFooter = () => {
               <div
                 aria-hidden="true"
                 className="w-85 relative aspect-[4/.8] mx-auto bg-cover bg-center"
-                style={{ backgroundImage: "url('/Vector-5.png')" }}
+                style={{ backgroundImage: "url('/_next/image?url=%2FVector-5.png&w=384&q=75')" }}
               />
             </div>
           </div>
@@ -87,21 +88,10 @@ const WebSiteFooter = () => {
                       {item.label2}
                     </Link>
                   )}
-                  {item.href3 && <span className="mr-2">,</span>}
-
-                  {item.label3 && item.href3 && (
-                    <Link
-                      href={item.href3}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {item.label3}
-                    </Link>
-                  )}
                 </li>
               ))}
             </ul>
-            <ul className="flex items-center gap-8 text-secondary">
+            <ul className="flex items-center gap-8 text-white">
               {socialMedia.map((item, i) => (
                 <li key={i}>
                   <Link
@@ -125,7 +115,7 @@ const WebSiteFooter = () => {
             {" "}
             <span className="text-white">
               © {new Date().getFullYear()}{" "}
-              <span className="font-primary uppercase text-xl">Saraaya</span>
+              <span className="font-primary uppercase text-xl">Saraaya Glamps</span>
             </span>
             <span className="md:block hidden text-xl">|</span>
             <span className="text-white">All Rights Reserved</span>

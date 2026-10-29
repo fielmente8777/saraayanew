@@ -1,4 +1,43 @@
+import { stayInformation } from "./stayInformation";
 export const stayGuides = {
+  "nauhali-kareri-lake": {
+    title: "Stay in Nauhali & Plan Your Kareri Lake Trek",
+    metaTitle: "Nauhali & Kareri Lake Stay Guide | Saraaya Glamps",
+    description: "Stay at Saraaya Glamps in Nauhali near Dharamshala. Plan village walks and a Kareri Lake trek with local route advice and seasonal guidance.",
+    image: "/winter/property-setting.webp",
+    imageAlt: "Private Safari suites among terraced fields and forest at Saraaya Glamps in Nauhali",
+    intro: "Nauhali offers a quieter setting for a mountain stay. Saraaya Glamps has four private Safari suites, forest surroundings and a nearby stream. Combine unhurried days here with a carefully planned Kareri Lake outing when local conditions allow.",
+    sections: [
+      {
+        title: "Make Nauhali part of your stay",
+        paragraphs: [
+          "Enjoy the village setting beyond your suite: quiet mornings on the deck, a walk through the surrounding landscape or a hosted village visit. Ask the team which local paths suit your time, interests and walking ability.",
+          "Leave room in your itinerary to spend time here. Meals, guided walks and riverside setups should be arranged with the hosts, with inclusions and any additional charges agreed before booking."
+        ]
+      },
+      {
+        title: "Kareri Lake needs a separate trek plan",
+        paragraphs: [
+          "Kareri Lake is a mountain trekking destination in the Dhauladhar range, at approximately 2,934 metres. The Kangra district tourism guide describes an approach from Kareri village. Staying in Nauhali does not mean the lake is a short walk from your suite.",
+          "Before booking a trek, ask our hosts and a local guide to confirm the appropriate trailhead, transfers, walking time, permits if required, and your group's fitness. We do not quote an unverified distance from Saraaya Glamps to the trailhead."
+        ]
+      },
+      {
+        title: "Winter views, flexible plans",
+        paragraphs: [
+          "The district tourism guide notes that the lake can remain frozen from December into March or April. Snow and ice can change access and trail conditions; a lake trek should never be assumed to be available throughout winter.",
+          "Plan around current local advice and the weather for your dates. If a lake trek is unsuitable, ask about shorter village or forest walks instead. A guided activity is not automatically included with accommodation."
+        ]
+      },
+      {
+        title: "Prepare your stay and arrival",
+        paragraphs: [
+          "Share your dates, adult and child counts, preferred number of nights and trekking plans. Our team can coordinate your property arrival and discuss luggage arrangements, meal timings and any requests before an early start.",
+          "Saraaya Glamps is approximately 75 minutes by road from Dharamshala, depending on conditions. The final approach includes a 4x4 transfer and a short walk. Confirm the route and arrangements before travelling."
+        ]
+      }
+    ]
+  },
   experiences: {
     title: "Things to Do at Saraaya near Dharamshala",
     metaTitle: "Glamping Experiences near Dharamshala | Saraaya",
@@ -54,7 +93,7 @@ export const stayGuides = {
     image: "/winter/hero-night-suite.webp",
     imageAlt: "Saraaya's safari suites illuminated on a mountain evening",
     intro:
-      "A winter break at Saraaya brings the character of a safari suite together with thoughtful indoor comforts. The retreat is in Nauhali near Dharamshala, away from the pace of a town-centre hotel. Choose it for time together, mountain surroundings and a slower holiday.",
+      "A winter break at Saraaya brings the character of a safari suite together with thoughtful indoor comforts. The property is in Nauhali near Dharamshala, away from the pace of a town-centre hotel. Choose it for time together, mountain surroundings and a slower holiday.",
     sections: [
       {
         title: "What is inside a winter safari suite?",
@@ -114,7 +153,7 @@ export const stayGuides = {
         title: "Meals and evenings together",
         paragraphs: [
           "Discuss a shared meal plan, dietary requirements and timings in advance. If you would like a bonfire, movie evening or cultural experience, ask the team about availability and charges. Food and beverages for experience setups are billed separately.",
-          "Saraaya is a quiet retreat, so a group stay should be planned around the atmosphere of the property. Special occasions, decorations or other arrangements need to be agreed with the hosts. A group enquiry does not automatically include event facilities or unrestricted parties.",
+          "Saraaya is a quiet stay, so a group stay should be planned around the atmosphere of the property. Special occasions, decorations or other arrangements need to be agreed with the hosts. A group enquiry does not automatically include event facilities or unrestricted parties.",
         ],
       },
       {
@@ -146,7 +185,7 @@ export const stayGuides = {
       {
         title: "The 4x4 transfer and final walk",
         paragraphs: [
-          "From the pickup point, the team arranges an approximately 2-minute 4x4 ride. A scenic walk of around 5–10 minutes through the fields then leads to the retreat. A dedicated porter assists with luggage and guides you on the final stretch.",
+          stayInformation.arrival,
           "The approach includes uneven ground. Wear shoes with grip and discuss any mobility needs, luggage concerns or young children's requirements before booking. The team can explain the route so you can decide whether it suits your group.",
         ],
       },
@@ -160,7 +199,8 @@ export const stayGuides = {
       {
         title: "Connectivity and arrival questions",
         paragraphs: [
-          "Complimentary Wi-Fi is available at Saraaya, but mountain conditions can affect connectivity. Mobile coverage varies, and electricity interruptions may occur in adverse weather. If a reliable connection or powered equipment is essential, discuss your needs before reserving.",
+          stayInformation.wifi,
+          stayInformation.power,
           "For directions or arrival help, contact our team on +91 89883 34372 or +91 78766 24372, or email info@saraayaglamps.com. Confirm your check-in arrangements, meal preferences and any travel changes with the hosts before you begin the final approach.",
         ],
       },

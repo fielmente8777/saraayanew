@@ -1,4 +1,5 @@
-const whatsappBase = "https://wa.me/918988334372";
+import { contact } from "@/utils/constent";
+const whatsappBase = `https://wa.me/${contact.whatsappNumber.replace(/\D/g, "")}`;
 export const winterEnquiryMessage =
   "Hello Saraaya Glamps, I would like to enquire about a winter stay. My preferred dates are [dates], and we are [number of adults] adults and [number of children] children. Please share the available packages and prices.";
 const whatsappLink = (message: string) =>

@@ -1,4 +1,4 @@
-import { landingPageData } from "@/app/landingpage/components/landingPageData";
+import { landingPageData } from "@/app/landing-page/components/landingPageData";
 import { contact } from "@/utils/constent";
 import {
   CloudIcon,
@@ -17,15 +17,15 @@ export const homePageData = {
   banner: {
     video: {
       src: "/home/Copy-of-Drone-clips.mp4",
-      poster: "/home/Copy-of-Drone-clips.png",
+      poster: "/optimized/copy-of-drone-clips.webp",
     },
     // images: ["/bnr-1.png", "/bnr-2.png", "/bnr-3.png", "/bnr-4.png"],
   },
   about: {
     image: "/home/about-img.png",
     logo: "/home/Vector-1.png",
-    title: "A DISTINCTIVE BOUTIQUE STAY",
-    heading: "A Private Glamping<br/><i>Experience in the Himalayas</i>",
+    title: "A Private Glamping Experience in the Himalayas",
+    heading: "A Rare-Find Boutique Stay Near Dharamshala, Himachal Pradesh",
     description: [
       "Saraaya is a distinctive boutique stay in Nauhali near Dharamshala, Himachal Pradesh. Four private safari suites bring together Himalayan views, forest surroundings and the comforts of a thoughtfully furnished stay.",
       "Unwind on your private deck, settle into a king-size bed and enjoy a quieter pace in the Kangra Valley. With attached bathrooms, heaters and personal attention from our hosts, this is a mountain escape for couples, families and small groups.",
@@ -43,7 +43,7 @@ export const homePageData = {
     title: "FAR AWAY FROM DUTY, CROWDS, AND CHAOS.",
     heading: "Experience an unhurried stay in the heart of nature, with panoramic mountain views, a glacier stream nearby, and forest trails to explore.",
     cta: {
-      label: "PLAN YOUR EXCAPE",
+      label: "PLAN YOUR ESCAPE",
       href: contact.WhatsappCta,
     },
   },
@@ -51,37 +51,36 @@ export const homePageData = {
   glampsSection: {
     title: "THE GLAMPS",
     heading: {
-      normal: "Four Suites. One forest. Endless ways to",
-      highlight: "Disappear.",
+      normal: "Four Private Safari Suites.",
+      highlight: "One Secluded Himalayan Setting.",
     },
-    // description:
-    //   "Each glamp is hand-built from cedar, canvas and stone, a private kingdom of one suite, one view, one fireplace.",
+    description: "Saraaya welcomes couples, families and small groups. Additional sleeping arrangements may be available on request, subject to confirmation. Please confirm your group size, children’s ages and bedding requirements with our team before booking.",
     accommodations: [
       {
         id: "01",
         title: 'Devdar "The Keeper" ',
-        image: "/rooms/Mountain-1.png",
+        image: "/optimized/mountain-1.webp",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
         cta: { label: "Explore Devdar safari suite", href: "/rooms/#devdar" },
       },
       {
         id: "02",
         title: 'Rai "The Watcher"',
-        image: "/rooms/Mountain-2.png",
+        image: "/optimized/mountain-2.webp",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
         cta: { label: "Explore Rai safari suite", href: "/rooms/#rai" },
       },
       {
         id: "03",
         title: 'Buransh  "The Nurturer" ',
-        image: "/rooms/Mountain-3.png",
+        image: "/optimized/mountain-3.webp",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
         cta: { label: "Explore Buransh safari suite", href: "/rooms/#buransh" },
       },
       {
         id: "04",
         title: 'Kail " The Wanderer" ',
-        image: "/rooms/Mountain-4.png",
+        image: "/optimized/mountain-4.webp",
         amenities: { title: "SLEEPS 2", icon: <SleepsIcon /> },
         cta: { label: "Explore Kail safari suite", href: "/rooms/#kail" },
       },
@@ -165,7 +164,7 @@ export const homePageData = {
   //   heading:
   //     "Mornings Wrapped in Mist. Evenings Lit by Fire. Nights Filled with Stars.",
   //   cta: {
-  //     label: "PLAN YOUR EXCAPE",
+  //     label: "PLAN YOUR ESCAPE",
   //     href: "/about",
   //   },
   // },
