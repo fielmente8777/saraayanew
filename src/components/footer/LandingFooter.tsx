@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { winterWhatsappCta } from "@/app/winter-landing-page/components/winterCtas";
+import { winterWhatsappCta } from "@/app/landing-page/components/winterCtas";
 import { Container } from "../sectionComponants";
 import Image from "next/image";
 import { footerData } from "./footerdata";
@@ -109,6 +109,28 @@ const LandingFooter = ({ winter = false }: { winter?: boolean }) => {
                           {item.label2}
                         </span>
                       </Link>
+                    )}
+                    {item.label3 && item.href3 && (
+                      <>
+                        <span className="text-white -ml-1">,</span>
+
+                        <Link
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href={item.href3}
+                          className="flex gap-2 max-md:ml-0"
+                        >
+                          <span
+                            className={`${
+                              index === 1
+                                ? "text-white font-aboreto text-2xl my-auto"
+                                : "md:text-lg text-white"
+                            }`}
+                          >
+                            {item.label3}
+                          </span>
+                        </Link>
+                      </>
                     )}
                   </li>
                 ))}

@@ -21,7 +21,7 @@ const PopUpButton = () => {
   const handleClick = () => setOpenInfoPopup(true);
 
   // Winter information is displayed inline near the footer; keep the hero clear.
-  if (pathname.startsWith("/winter-landing-page")) return null;
+  if (pathname.startsWith("/landing-page")) return null;
 
   return (
     <button

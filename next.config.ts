@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   trailingSlash: true,
   async redirects() {
-    return ["/saraaya-winter-landing-page/", "/landing-page/", "/landingpage/"].map((source) => ({ source, destination: "/winter-landing-page/", permanent: true }));
+    return ["/saraaya-winter-landing-page/", "/winter-landing-page/"].map((source) => ({ source, destination: "/landing-page/", permanent: true }));
   },
   async headers() {
     return [{

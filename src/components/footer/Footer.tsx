@@ -9,9 +9,9 @@ const Footer = () => {
   switch (pathName) {
     case "/thank-you/":
       return null;
+    case "/landingpage/":
     case "/landing-page/":
-    case "/winter-landing-page/":
-      return <LandingFooter winter={pathName === "/winter-landing-page/"} />;
+      return <LandingFooter winter={pathName === "/landing-page/"} />;
     default:
       return <WebSiteFooter />;
   }

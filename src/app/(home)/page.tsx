@@ -58,7 +58,7 @@ const page = () => {
           <h2 className="font-primary text-3xl md:text-4xl">Nauhali, Forest Trails & Kareri Lake</h2>
           <p>Stay in Nauhali for village walks and time beside the stream. If Kareri Lake is on your itinerary, ask our hosts about the route, local guides and conditions before planning a trek.</p>
           <Link href="/nauhali-kareri-lake/" className="inline-block border-b border-secondary pb-1">Explore Nauhali and plan a Kareri Lake visit ↗</Link>
-          <p>Planning a winter break? <Link href="/winter-landing-page/" className="underline underline-offset-4">Explore winter stays and request your dates.</Link></p>
+          <p>Planning a winter break? <Link href="/landing-page/" className="underline underline-offset-4">Explore winter stays and request your dates.</Link></p>
         </div>
       </section>
       <StayGuideLinks />

@@ -2,7 +2,7 @@
 import { usePathname } from "next/navigation";
 import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
-import { winterWhatsappCta } from "@/app/winter-landing-page/components/winterCtas";
+import { winterWhatsappCta } from "@/app/landing-page/components/winterCtas";
 import { enCodeText } from "@/utils/constent";
 
 function Whatsapp({ whatsAppNumber }: { whatsAppNumber: string }) {
@@ -16,12 +16,12 @@ function Whatsapp({ whatsAppNumber }: { whatsAppNumber: string }) {
       {" "}
       <Link
         href={
-          pathName.startsWith("/winter-landing-page")
+          pathName.startsWith("/landing-page")
             ? winterWhatsappCta
             : `https://wa.me/${whatsAppNumber.replace(/[^0-9]/g, "")}?text=${enCodeText}`
         }
         onClick={() => {
-          if (!pathName.startsWith("/winter-landing-page")) return;
+          if (!pathName.startsWith("/landing-page")) return;
           window.dataLayer = window.dataLayer || [];
           window.dataLayer.push({
             event: "whatsapp_click",

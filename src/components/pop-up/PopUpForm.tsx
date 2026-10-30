@@ -6,7 +6,7 @@ const Form2 = dynamic(() => import("../forms/Form2"));
 import { usePathname } from "next/navigation";
 
 const PopUpForm = () => {
-  const isWinter = usePathname().startsWith("/winter-landing-page");
+  const isWinter = usePathname().startsWith("/landing-page");
   const { isOpenFormPopUp, setIsOpenFormPopUp } = useWebContext();
   if (!isOpenFormPopUp) return null;
   return (

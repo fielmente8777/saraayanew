@@ -14,6 +14,8 @@ type VisitData = {
     href: string;
     label2?: string;
     href2?: string;
+    label3?: string;
+    href3?: string;
     icon?: React.ElementType;
   }[];
 };
@@ -51,17 +53,23 @@ export default function ContactInfo({ visitData }: Props) {
         {visitData.links.map((item, i) => (
           <li
             key={i}
-            className="flex items-center flex-wrap text-[18px] text-primary"
+            className="flex items-center flex-wrap text-[18px] text-primary max-md:flex-col max-md:items-start max-md:gap-1"
           >
             <Link href={item.href} className="flex items-center gap-3">
               {item.icon && <item.icon />}
 
               <span>{item.label}</span>
             </Link>
-            {item.href2 && <span className="text-secondary">, </span>}
+            {item.href2 && <span className="text-secondary max-md:hidden">, </span>}
             {item.href2 && (
-              <Link href={item.href2} className="flex items-center gap-3">
+              <Link href={item.href2} className="flex items-center gap-3 max-md:pl-[27px]">
                 {item.label2}
+              </Link>
+            )}
+            {item.href3 && <span className="text-secondary max-md:hidden">, </span>}
+            {item.href3 && (
+              <Link href={item.href3} className="flex items-center gap-3 max-md:pl-[27px]">
+                {item.label3}
               </Link>
             )}
           </li>

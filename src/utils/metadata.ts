@@ -17,6 +17,7 @@ export const mainPages = [
   "/nauhali-kareri-lake/",
   "/blogs/",
   "/contact-us/",
+  "/landing-page/",
 ];
 
 export function createPageMetadata(

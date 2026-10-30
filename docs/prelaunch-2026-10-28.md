@@ -3,7 +3,7 @@
 ## Implemented in the preview
 - Shared arrival, Wi-Fi and power wording in the pop-up, winter FAQ/disclaimer and arrival guide. No unconfirmed inclusion or backup promise.
 - Preview builds emit noindex/nofollow metadata; Vercel hostnames additionally receive X-Robots-Tag. Production custom-domain builds remain indexable.
-- Permanent redirect: /saraaya-winter-landing-page/ → /winter-landing-page/. Canonical and sitemap use the latter.
+- Permanent redirects: /saraaya-winter-landing-page/ and /winter-landing-page/ → /landing-page/. Canonical and sitemap use the latter. The older noindex landing page now lives at /landingpage/.
 - Homepage targets glamping near Dharamshala; winter page targets winter stays, with the requested H1. Both have one H1, title <60 characters and description <155.
 - Winter introduction is distinct from homepage Why Choose Saraaya. Duplicate winter offers merged; separate group-stay option retained.
 - Homepage and winter page use the same ratings component and contact configuration. Rating dates say Checked on; original checking date is retained.

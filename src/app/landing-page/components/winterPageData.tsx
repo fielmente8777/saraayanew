@@ -18,13 +18,13 @@ export const winterPageData = {
     },
   },
   why: [
-    { title: "Settle into Your Winter Suite", text: "King-size beds, layered bedding and private bathrooms offer a comfortable base between time outdoors. See the power information before booking.", image: "/winter/suite-bed.webp", alt: "King-size bed and layered bedding in a Saraaya Glamps Safari suite" },
-    { title: "Choose Your Winter Evenings", text: "Ask about a bonfire, stargazing or Movie under the Stars for your dates. Hosted activities depend on weather and the inclusions in your quote.", image: "/winter/evening-experience.webp", alt: "Bonfire seating beside a Safari suite at dusk" },
+    { title: "Settle into Your Winter Suite", text: "King-size beds, layered bedding and private bathrooms offer a comfortable base between time outdoors. See the power information before booking.", image: "/rooms/2.jpg", alt: "King-size bed and layered bedding in a Saraaya Glamps Safari suite" },
+    { title: "Choose Your Winter Evenings", text: "Ask about a bonfire, stargazing or Movie under the Stars for your dates. Hosted activities depend on weather and the inclusions in your quote.", image: "/winter/evening-experience.jpg", alt: "Bonfire seating beside a Safari suite at dusk" },
     { title: "Plan Your Days at Your Pace", text: "Leave room for Nauhali village walks, forest surroundings and unhurried mornings. Our hosts can help you choose outings suited to local winter conditions.", image: "/winter/local-walk.webp", alt: "A village trail through the countryside near Nauhali" },
   ],
   comforts: [
     {
-      image: "/winter/suite-bed.webp",
+      image: "/rooms/Copy of Saraya-5.jpg",
       alt: "King-size bed, cosy bedding and furnished Saraaya suite interior",
       caption: "King-size beds & cosy bedding",
     },
@@ -43,7 +43,7 @@ export const winterPageData = {
     {
       title: "Slow Living & Nature",
       text: "Take a break from the everyday rush. Enjoy peaceful mornings, forest bathing, mountain views and time surrounded by nature.",
-      image: "/winter/forest-picnic.webp",
+      image: "/winter/forest-picnic.jpg",
       alt: "Quiet forest surroundings and outdoor space at Saraaya",
       charge:
         "Enjoy the surroundings at your own pace. Ask about any hosted-session charges.",
@@ -67,7 +67,7 @@ export const winterPageData = {
     {
       title: "Evenings Under the Stars",
       text: "Gather around a bonfire or spend an evening stargazing beneath the Himalayan sky.",
-      image: "/winter/stargazing.webp",
+      image: "/winter/stargazing.jpg",
       alt: "A telescope and outdoor seating prepared for stargazing at Saraaya",
       charge:
         "Bonfire setups are arranged on request, with additional charges unless included in your plan.",

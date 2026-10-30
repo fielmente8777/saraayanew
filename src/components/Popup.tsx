@@ -16,7 +16,7 @@ const Popup = () => {
 
   const isThankYouPage =
     pathname === "/thank-you" ||
-    pathname === "/landing-page/" ||
+    pathname === "/landingpage/" ||
     pathname === "/thankyou" ||
     pathname?.includes("thank-you") ||
     pathname?.includes("thankyou");

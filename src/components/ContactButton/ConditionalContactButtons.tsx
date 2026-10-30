@@ -8,7 +8,7 @@ import { contact } from "@/utils/constent";
 export default function ConditionalContactButtons() {
   const pathname = usePathname();
 
-  const isLandingPage = pathname.startsWith("/landing-page");
+  const isLandingPage = pathname.startsWith("/landingpage");
 
   return (
     <>

@@ -6,10 +6,10 @@ import LinkButton from "../buttons/LinkButton";
 import { contact } from "@/utils/constent";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { winterWhatsappCta } from "@/app/winter-landing-page/components/winterCtas";
+import { winterWhatsappCta } from "@/app/landing-page/components/winterCtas";
 
 const LandingNav = () => {
-  const isWinter = usePathname().startsWith("/winter-landing-page");
+  const isWinter = usePathname().startsWith("/landing-page");
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {

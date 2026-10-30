@@ -1,4 +1,4 @@
-import { landingPageData } from "@/app/landing-page/components/landingPageData";
+import { landingPageData } from "@/app/landingpage/components/landingPageData";
 import { contact } from "@/utils/constent";
 import {
   CloudIcon,
